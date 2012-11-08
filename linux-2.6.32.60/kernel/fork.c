@@ -1376,6 +1376,9 @@ long do_fork(unsigned long clone_flags,
 	int trace = 0;
 	long nr;
 
+        /*DACCHANGE - testing compilation with printk on process creation */
+	printk("Hello, world!  New process forked.\n");
+
 	/*
 	 * Do some preliminary argument and permissions checking before we
 	 * actually start allocating stuff
