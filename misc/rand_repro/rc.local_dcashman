@@ -1,0 +1,39 @@
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+
+working_dir="/home/dcashman/thesis/misc/rand_repro"
+boots_left=`cat ${working_dir}/boots_left`
+
+#get num boots left from file
+if [ $boots_left -gt 0 ]; then
+
+        #read from urandom and record
+        dd if=/dev/urandom of=${working_dir}/urand_files/read_${boots_left} bs=128 count=1
+        echo `cat ${working_dir}/urand_files/read_${boots_left}` >> ${working_dir}/urand_vals.txt
+
+	#record kernel message from urandom read, but only most recent
+        dmesg | grep urandom > ${working_dir}/urand_files/dmesg_${boots_left}
+        echo `sed -n '$p' ${working_dir}/urand_files/dmesg_${boots_left}` > \
+            ${working_dir}/urand_files/dmesg_${boots_left}
+	echo `cat ${working_dir}/urand_files/dmesg_${boots_left}` >> \
+	    ${working_dir}/dmesg_vals.txt
+
+        #decrement boots left
+        echo $(($boots_left - 1)) > ${working_dir}/boots_left
+        boots_left=`cat ${working_dir}/boots_left`
+        #reboot
+	#reboot
+fi
+exit 0
+
