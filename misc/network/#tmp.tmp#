@@ -1,0 +1,48 @@
+00:32:09.743646 IP6 fe80::c9b7:b5ee:c0f:8fa7.51617 > ff02::c.1900: UDP, length 146
+00:32:09.744726 IP ubuntu.local.19987 > 192.168.43.2.domain: 31331+ PTR? c.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa. (90)
+00:32:09.792911 IP 192.168.43.2.domain > ubuntu.local.19987: 31331- 0/6/0 (198)
+00:32:09.793509 IP ubuntu.local.12564 > 192.168.43.2.domain: 20052+ PTR? 7.a.f.8.f.0.c.0.e.e.5.b.7.b.9.c.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa. (90)
+00:32:09.840069 IP 192.168.43.2.domain > ubuntu.local.12564: 20052- 0/6/0 (198)
+00:32:09.840534 IP ubuntu.local.47945 > 192.168.43.2.domain: 49208+ PTR? 2.43.168.192.in-addr.arpa. (43)
+00:32:09.887575 IP 192.168.43.2.domain > ubuntu.local.47945: 49208- 0/2/2 (135)
+00:32:09.991364 IP6 fe80::20c:29ff:fe92:1c46.mdns > ff02::fb.mdns: 0 PTR (QM)? 2.43.168.192.in-addr.arpa. (43)
+00:32:09.991536 IP ubuntu.local.mdns > 224.0.0.251.mdns: 0 PTR (QM)? 2.43.168.192.in-addr.arpa. (43)
+00:32:10.992405 IP6 fe80::20c:29ff:fe92:1c46.mdns > ff02::fb.mdns: 0 PTR (QM)? 2.43.168.192.in-addr.arpa. (43)
+00:32:10.992642 IP ubuntu.local.mdns > 224.0.0.251.mdns: 0 PTR (QM)? 2.43.168.192.in-addr.arpa. (43)
+00:32:12.743602 IP6 fe80::c9b7:b5ee:c0f:8fa7.51617 > ff02::c.1900: UDP, length 146
+00:32:12.994584 IP6 fe80::20c:29ff:fe92:1c46.mdns > ff02::fb.mdns: 0 PTR (QM)? 2.43.168.192.in-addr.arpa. (43)
+00:32:12.996628 IP ubuntu.local.mdns > 224.0.0.251.mdns: 0 PTR (QM)? 2.43.168.192.in-addr.arpa. (43)
+00:32:13.570865 IP ubuntu.local.5900 > 192.168.43.2.domain: 33662+ AAAA? www.example.com. (33)
+00:32:13.619909 IP 192.168.43.2.domain > ubuntu.local.5900: 33662- 1/2/0 AAAA 2001:500:88:200::10 (109)
+00:32:13.620300 IP ubuntu.local.4782 > 192.168.43.2.domain: 40379+ A? www.example.com. (33)
+00:32:13.668220 IP 192.168.43.2.domain > ubuntu.local.4782: 40379- 1/2/0 A 192.0.43.10 (97)
+00:32:13.668652 IP ubuntu.local.48023 > 192.0.43.10.4000: Flags [S], seq 1374935044, win 14600, options [mss 1460,sackOK,TS val 57991113 ecr 0,nop,wscale 6], length 0
+00:32:14.669273 IP ubuntu.local.48023 > 192.0.43.10.4000: Flags [S], seq 1374935044, win 14600, options [mss 1460,sackOK,TS val 57991364 ecr 0,nop,wscale 6], length 0
+00:32:14.749227 ARP, Request who-has 192.168.43.2 tell ubuntu.local, length 28
+00:32:14.749428 ARP, Reply 192.168.43.2 is-at 00:50:56:e9:10:2f (oui Unknown), length 46
+00:32:14.909756 IP ubuntu.local.64639 > 192.168.43.2.domain: 34872+ PTR? 128.43.168.192.in-addr.arpa. (45)
+00:32:14.956824 IP 192.168.43.2.domain > ubuntu.local.64639: 34872- 0/2/2 (137)
+00:32:14.957619 IP ubuntu.local.58258 > 192.168.43.2.domain: 24780+ PTR? b.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa. (90)
+00:32:15.004355 IP 192.168.43.2.domain > ubuntu.local.58258: 24780- 0/6/0 (198)
+00:32:15.004973 IP ubuntu.local.47639 > 192.168.43.2.domain: 11473+ PTR? 6.4.c.1.2.9.e.f.f.f.9.2.c.0.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa. (90)
+00:32:15.055009 IP 192.168.43.2.domain > ubuntu.local.47639: 11473- 0/6/0 (198)
+00:32:15.055499 IP ubuntu.local.22034 > 192.168.43.2.domain: 27621+ PTR? 251.0.0.224.in-addr.arpa. (42)
+00:32:15.109038 IP 192.168.43.2.domain > ubuntu.local.22034: 27621- 0/6/0 (154)
+00:32:15.210464 IP6 fe80::20c:29ff:fe92:1c46.mdns > ff02::fb.mdns: 0 PTR (QM)? 251.0.0.224.in-addr.arpa. (42)
+00:32:15.210753 IP ubuntu.local.mdns > 224.0.0.251.mdns: 0 PTR (QM)? 251.0.0.224.in-addr.arpa. (42)
+00:32:15.745510 IP6 fe80::c9b7:b5ee:c0f:8fa7.51617 > ff02::c.1900: UDP, length 146
+00:32:16.213476 IP6 fe80::20c:29ff:fe92:1c46.mdns > ff02::fb.mdns: 0 PTR (QM)? 251.0.0.224.in-addr.arpa. (42)
+00:32:16.213724 IP ubuntu.local.mdns > 224.0.0.251.mdns: 0 PTR (QM)? 251.0.0.224.in-addr.arpa. (42)
+00:32:16.673291 IP ubuntu.local.48023 > 192.0.43.10.4000: Flags [S], seq 1374935044, win 14600, options [mss 1460,sackOK,TS val 57991865 ecr 0,nop,wscale 6], length 0
+00:32:18.215503 IP6 fe80::20c:29ff:fe92:1c46.mdns > ff02::fb.mdns: 0 PTR (QM)? 251.0.0.224.in-addr.arpa. (42)
+00:32:18.215735 IP ubuntu.local.mdns > 224.0.0.251.mdns: 0 PTR (QM)? 251.0.0.224.in-addr.arpa. (42)
+00:32:19.799282 IP6 fe80::c9b7:b5ee:c0f:8fa7.51617 > ff02::c.1900: UDP, length 146
+00:32:20.112873 IP ubuntu.local.5150 > 192.168.43.2.domain: 56215+ PTR? 10.43.0.192.in-addr.arpa. (42)
+00:32:20.166430 IP 192.168.43.2.domain > ubuntu.local.5150: 56215- 0/8/11 (414)
+00:32:20.267629 IP6 fe80::20c:29ff:fe92:1c46.mdns > ff02::fb.mdns: 0 PTR (QM)? 10.43.0.192.in-addr.arpa. (42)
+00:32:20.267906 IP ubuntu.local.mdns > 224.0.0.251.mdns: 0 PTR (QM)? 10.43.0.192.in-addr.arpa. (42)
+00:32:20.685389 IP ubuntu.local.48023 > 192.0.43.10.4000: Flags [S], seq 1374935044, win 14600, options [mss 1460,sackOK,TS val 57992868 ecr 0,nop,wscale 6], length 0
+00:32:21.270793 IP6 fe80::20c:29ff:fe92:1c46.mdns > ff02::fb.mdns: 0 PTR (QM)? 10.43.0.192.in-addr.arpa. (42)
+00:32:21.270987 IP ubuntu.local.mdns > 224.0.0.251.mdns: 0 PTR (QM)? 10.43.0.192.in-addr.arpa. (42)
+00:32:22.158029 IP ubuntu.local.37763 > 72.215.225.9.http: Flags [S], seq 3743257759, win 14600, options [mss 1460,sackOK,TS val 57993236 ecr 0,nop,wscale 6], length 0
+
