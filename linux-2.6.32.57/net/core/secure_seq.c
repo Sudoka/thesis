@@ -31,7 +31,8 @@ static u32 seq_scale(u32 seq)
 	 *	overlaps less than one time per MSL (2 minutes).
 	 *	Choosing a clock of 64 ns period is OK. (period of 274 s)
 	 */
-	return seq + (ktime_to_ns(ktime_get_real()) >> 6);
+        /* dcashman change - got rid of time component */
+        return seq /* + (ktime_to_ns(ktime_get_real()) >> 6) */;
 }
 
 #if defined(CONFIG_IPV6) || defined(CONFIG_IPV6_MODULE)
