@@ -76,7 +76,12 @@ int main(int argc, char *argv[]){
     s = socket(PF_INET/PF_INET6, SOCK_STREAM/SOCK_DGRAM, 
            0/getprotobyname("udp")/getprotobyname("tcp));
     */
+    if(close(s) != 0){
+      fprintf(stderr, "Error closing socket descriptor: %dn", s);
+      return 4;
+    }
   }
+
 
   freeaddrinfo(res);
   

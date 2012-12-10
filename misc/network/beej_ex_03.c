@@ -64,6 +64,10 @@ int main(int argc, char *argv[]){
   bind(sockfd, (struct sockaddr *) &my_addr, sizeof(my_addr));
   */
 
+  if(close(sockfd) != 0){
+    fprintf(stderr, "Error closing socket descriptor: %dn", sockfd);
+    return 4;
+  }
 
   return 0;
 }
