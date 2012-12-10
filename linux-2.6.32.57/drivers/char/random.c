@@ -395,7 +395,7 @@ static int debug;
 module_param(debug, bool, 0644);
 #define DEBUG_ENT(fmt, arg...) do { \
 		printk(KERN_DEBUG "random %04d %04d %04d %08x %08x: " \
-q		fmt,\
+		fmt,\
 		input_pool.entropy_count,\
 		blocking_pool.entropy_count,\
 		nonblocking_pool.entropy_count,\
