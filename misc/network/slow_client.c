@@ -21,22 +21,30 @@
 int main(int argc, char *argv[]){
   short local_port, dest_port;
   int sockfd, status;
+  char *dest_ip_addr;
   struct sockaddr_in cli_addr, serv_addr;
 
-  if(argc != 3){
-    fprintf(stderr, "Error.  Usage: cli local-port dest-port\n");
+  if(argc != 4){
+    fprintf(stderr, "Error.  Usage: cli local-port dest-ip dest-port\n");
     return -1;
   }else{
+    /* check arguments for validity */
     if((sscanf(argv[1], "%hd", &local_port)) < 0){
       fprintf(stderr, "Input local-port must be a short integer. %s\n", 
 	      strerror(errno));
       return -1;
     }
-    if((sscanf(argv[2], "%hd", &dest_port)) < 0){
+    dest_ip_addr = argv[2];
+    if(!isValidIpAddress(dest_ip_addr)){
+      fprintf(stderr, "Input dest-ip address invalid.\n");
+      return -1;
+    }
+    if((sscanf(argv[3], "%hd", &dest_port)) < 0){
       fprintf(stderr, "Input dest-port must be a short integer. %s\n", 
 	      strerror(errno));
       return -1;
     }
+
   }
   /* init client address info */
   cli_addr.sin_family = AF_INET;
@@ -46,7 +54,7 @@ int main(int argc, char *argv[]){
   /* init server address info */
   serv_addr.sin_family = AF_INET;
   serv_addr.sin_port = htons(dest_port); // short, network byte order
-  serv_addr.sin_addr.s_addr = inet_addr("127.0.0.1");
+  serv_addr.sin_addr.s_addr = inet_addr(dest_ip_addr);
   memset(serv_addr.sin_zero, '\0', sizeof serv_addr.sin_zero);
   
   //create a socket

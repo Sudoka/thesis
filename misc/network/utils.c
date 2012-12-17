@@ -24,4 +24,13 @@ void dump_bytes(const unsigned char *data_buffer, const unsigned int length){
   }
   return;
 }
+
+/* isValidIpAddress 
+ * 
+ */
+bool isValidIpAddress(char *ipAddress){
+  struct sockaddr_in sa;
+  int result = inet_pton(AF_INET, ipAddress, &(sa.sin_addr));
+  return result != 0;
+}
 	
