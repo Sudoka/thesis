@@ -1,0 +1,31 @@
+2012-12-17 16:15:31.420634 IP (tos 0x0, ttl 64, id 14034, offset 0, flags [DF], proto TCP (6), length 60)
+    localhost.55555 > localhost.4444: Flags [S], cksum 0x1815 (correct), seq 3325165193, win 32792, options [mss 16396,sackOK,TS val 182363 ecr 0,nop,wscale 6], length 0
+2012-12-17 16:15:31.420644 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 60)
+    localhost.4444 > localhost.55555: Flags [S.], cksum 0xb701 (correct), seq 425230180, ack 3325165194, win 32768, options [mss 16396,sackOK,TS val 182363 ecr 182363,nop,wscale 6], length 0
+2012-12-17 16:15:31.420653 IP (tos 0x0, ttl 64, id 14035, offset 0, flags [DF], proto TCP (6), length 52)
+    localhost.55555 > localhost.4444: Flags [.], cksum 0x9e24 (correct), seq 1, ack 1, win 513, options [nop,nop,TS val 182363 ecr 182363], length 0
+2012-12-17 16:15:31.422456 IP (tos 0x0, ttl 64, id 46910, offset 0, flags [DF], proto TCP (6), length 65)
+    localhost.4444 > localhost.55555: Flags [P.], cksum 0xfe35 (incorrect -> 0x1eca), seq 1:14, ack 1, win 512, options [nop,nop,TS val 182364 ecr 182363], length 13
+2012-12-17 16:15:31.422491 IP (tos 0x0, ttl 64, id 14036, offset 0, flags [DF], proto TCP (6), length 52)
+    localhost.55555 > localhost.4444: Flags [.], cksum 0x9e15 (correct), seq 1, ack 14, win 513, options [nop,nop,TS val 182364 ecr 182364], length 0
+2012-12-17 16:15:31.422524 IP (tos 0x0, ttl 64, id 14037, offset 0, flags [DF], proto TCP (6), length 57)
+    localhost.55555 > localhost.4444: Flags [P.], cksum 0xfe2d (incorrect -> 0xb537), seq 1:6, ack 14, win 513, options [nop,nop,TS val 182364 ecr 182364], length 5
+2012-12-17 16:15:31.422550 IP (tos 0x0, ttl 64, id 46911, offset 0, flags [DF], proto TCP (6), length 52)
+    localhost.4444 > localhost.55555: Flags [.], cksum 0x9e11 (correct), seq 14, ack 6, win 512, options [nop,nop,TS val 182364 ecr 182364], length 0
+2012-12-17 16:15:31.425618 IP (tos 0x0, ttl 64, id 46912, offset 0, flags [DF], proto TCP (6), length 57)
+    localhost.4444 > localhost.55555: Flags [P.], cksum 0xfe2d (incorrect -> 0xb533), seq 14:19, ack 6, win 512, options [nop,nop,TS val 182364 ecr 182364], length 5
+2012-12-17 16:15:31.427155 IP (tos 0x0, ttl 64, id 14038, offset 0, flags [DF], proto TCP (6), length 57)
+    localhost.55555 > localhost.4444: Flags [P.], cksum 0xfe2d (incorrect -> 0xb52c), seq 6:11, ack 19, win 513, options [nop,nop,TS val 182365 ecr 182364], length 5
+2012-12-17 16:15:31.430135 IP (tos 0x0, ttl 64, id 46913, offset 0, flags [DF], proto TCP (6), length 57)
+    localhost.4444 > localhost.55555: Flags [P.], cksum 0xfe2d (incorrect -> 0xb527), seq 19:24, ack 11, win 512, options [nop,nop,TS val 182365 ecr 182365], length 5
+2012-12-17 16:15:31.466188 IP (tos 0x0, ttl 64, id 14039, offset 0, flags [DF], proto TCP (6), length 52)
+    localhost.55555 > localhost.4444: Flags [.], cksum 0x9df5 (correct), seq 11, ack 24, win 513, options [nop,nop,TS val 182375 ecr 182365], length 0
+2012-12-17 16:15:41.428718 IP (tos 0x0, ttl 64, id 14040, offset 0, flags [DF], proto TCP (6), length 57)
+    localhost.55555 > localhost.4444: Flags [P.], cksum 0xfe2d (incorrect -> 0xab5d), seq 11:16, ack 24, win 513, options [nop,nop,TS val 184865 ecr 182365], length 5
+2012-12-17 16:15:41.431641 IP (tos 0x0, ttl 64, id 46914, offset 0, flags [DF], proto TCP (6), length 57)
+    localhost.4444 > localhost.55555: Flags [P.], cksum 0xfe2d (incorrect -> 0xa194), seq 24:29, ack 16, win 512, options [nop,nop,TS val 184866 ecr 184865], length 5
+2012-12-17 16:15:41.431646 IP (tos 0x0, ttl 64, id 14041, offset 0, flags [DF], proto TCP (6), length 52)
+    localhost.55555 > localhost.4444: Flags [.], cksum 0x8a6b (correct), seq 16, ack 29, win 513, options [nop,nop,TS val 184866 ecr 184866], length 0
+2012-12-17 16:15:43.168441 IP (tos 0x0, ttl 64, id 14042, offset 0, flags [DF], proto TCP (6), length 52)
+    localhost.55555 > localhost.4444: Flags [R.], cksum 0x88b5 (correct), seq 16, ack 29, win 513, options [nop,nop,TS val 185300 ecr 184866], length 0
+
