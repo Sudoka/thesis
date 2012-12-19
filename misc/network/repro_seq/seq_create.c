@@ -11,15 +11,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <errno.h>
 #include <arpa/inet.h>
 /*#include <sys/types.h>
   #include <asm/types.h> */
 #include <linux/types.h>
 #include "md5.h"
 #include "seq_create.h"
+#include "../src/utils.h"
 
-
-extern u32 net_secret[];
+extern unsigned char const net_secret_char[];
+static u32 *net_secret = (u32 *)net_secret_char;
 
 /* exact copy of scaling function from net/core/secure.c */
 static u32 seq_scale(u32 seq)
@@ -57,5 +59,61 @@ __u32 secure_tcp_sequence_number(u32 saddr, u32 daddr,
 int main(int argc, char *argv[]){
   printf("Your \"random\" sequence number is 4!\n");
 
+  printf("Value of net_secret[15] is %x\n", net_secret[15]);  //compare to printk output
+
+  /* do real work */
+  unsigned short src_port, dest_port;
+  char *src_ip_addr, *dest_ip_addr;
+  u32 saddr, daddr;
+  u16 sport, dport;
+  __u32 seq_num;
+  //struct sockaddr_in cli_addr, serv_addr;
+
+  if(argc != 5){
+    fprintf(stderr, "Error.  Usage: src-ip, src-port dest-ip dest-port\n");
+    return -1;
+  }else{
+    /* check arguments for validity */
+    /* src ip addr */
+    src_ip_addr = argv[1];
+    if(!isValidIpAddress(src_ip_addr)){
+      fprintf(stderr, "Input src-ip address invalid.\n");
+      return -1;
+    }
+    /* src port */
+    if((sscanf(argv[2], "%hd", &src_port)) < 0){
+      fprintf(stderr, "Input src-port must be a short integer. %s\n", 
+	      strerror(errno));
+      return -1;
+    }
+    /* dest ip addr */
+    dest_ip_addr = argv[3];
+    if(!isValidIpAddress(dest_ip_addr)){
+      fprintf(stderr, "Input dest-ip address invalid.\n");
+      return -1;
+    }
+    /* dest port */
+    if((sscanf(argv[4], "%hd", &dest_port)) < 0){
+      fprintf(stderr, "Input dest-port must be a short integer. %s\n", 
+	      strerror(errno));
+      return -1;
+    }
+
+  }
+
+  /* initialize values */
+  saddr =  inet_addr(src_ip_addr);
+  sport = htons(src_port);
+  daddr =  inet_addr(dest_ip_addr);
+  dport = htons(dest_port);
+
+  /* verify values: */
+  printf("saddr after init:\t%x\n", saddr);
+  
+  seq_num = secure_tcp_sequence_number(saddr, daddr, sport, dport);
+  
+  printf("sequence number without clock:\t%d\n", seq_num);
+  printf("sequence number (hex)  without clock:\t%x\n", seq_num);
+  
   return 0;
 }
