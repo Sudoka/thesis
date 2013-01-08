@@ -1020,9 +1020,11 @@ static void init_std_data(struct entropy_store *r)
 	spin_unlock_irqrestore(&r->lock, flags);
 
 	now = ktime_get_real();
+
 // jhalderm: save initial now value
 r->init_now = now;
 // ewust: testing removing time from entropy seeding:
+
 //mix_pool_bytes(r, &now, sizeof(now));
 // jhalderm: easier to compare boots if we don't keep this:
 //mix_pool_bytes(r, utsname(), sizeof(*(utsname())));
@@ -1041,6 +1043,30 @@ static int rand_initialize(void)
 memset(input_pool_data, 0, INPUT_POOL_WORDS * sizeof(__u32)); 
 memset(blocking_pool_data, 0, OUTPUT_POOL_WORDS * sizeof(__u32)); 
 memset(nonblocking_pool_data, 0, OUTPUT_POOL_WORDS * sizeof(__u32)); 
+
+/* dcashman change - adding timing seed back after 0's */
+/*  code from init_std_data */
+	ktime_t now;
+	unsigned long flags;
+
+	spin_lock_irqsave(&nonblocking_pool.lock, flags);
+	nonblocking_pool.entropy_count = 0;
+	spin_unlock_irqrestore(&nonblocking_pool.lock, flags);
+
+	now = ktime_get_real();
+	//dcashman change - printing ktime_get_real val at boot
+        printk(KERN_DEBUG "KTIME ENTROYPY reading nsecs: %d\n", (int) (ktime_to_ns(now)));
+
+
+        struct tm thyme;
+        struct timeval tv;
+        tv = ns_to_timeval(ktime_to_ns(now));
+	time_to_tm(tv.tv_sec, 0, &thyme);
+	printk(KERN_DEBUG "KTIME ENTROPY TIME: %d:%02d:%02d\n", thyme.tm_hour, thyme.tm_min, 
+	       thyme.tm_sec);
+	mix_pool_bytes(&nonblocking_pool, &now, sizeof(now));
+        
+        
 	return 0;
 }
 module_init(rand_initialize);

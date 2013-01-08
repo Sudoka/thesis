@@ -467,7 +467,27 @@ static u64 clocksource_max_deferment(struct clocksource *cs)
  * which is selected by userspace override.
  */
 static void clocksource_select(void)
-{
+{       
+
+  /* dacashman - CLOCKSOURCE SELECTION here.  First need to select 
+       appropriate clocksource, then make sure it is initialized
+       to 0. */
+        printk(KERN_DEBUG "CLOCKSOURCE SELECTION\n");
+        struct clocksource  *curr_pos;
+	list_for_each_entry(curr_pos, &clocksource_list, list){
+	  printk(KERN_DEBUG "Clocksource: %s with rating:"
+		 " %d\n", curr_pos->name, curr_pos->rating);
+	}
+       
+        printk(KERN_DEBUG "BACKTRACE\n");
+	dump_stack();
+        printk(KERN_DEBUG "BACKTRACE_END\n");
+
+	/****** dacashman end change  ******/
+
+
+
+
 	struct clocksource *best, *cs;
 
 	if (!finished_booting || list_empty(&clocksource_list))
@@ -558,6 +578,12 @@ static void clocksource_enqueue(struct clocksource *cs)
  */
 int clocksource_register(struct clocksource *cs)
 {
+
+        /* dacashman - tracking how/when this is called, we want just default */
+          printk(KERN_DEBUG "CLOCKSOURCE_REGISTER_BACKTRACE: %s\n", cs->name);
+          dump_stack();
+          printk(KERN_DEBUG "CLOCKSOURCE_REGISTER_BACKTRACE_END\n");
+        /*********** dacashman - end change */
 	/* calculate max idle time permitted for this clocksource */
 	cs->max_idle_ns = clocksource_max_deferment(cs);
 
