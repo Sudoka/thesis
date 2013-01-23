@@ -63,6 +63,12 @@ struct timekeeper timekeeper;
  */
 static void timekeeper_setup_internals(struct clocksource *clock)
 {
+
+  /*    dacashman - still trying to force a lack of real-time clock */
+        printk(KERN_DEBUG "TIMEKEEPER_SETUP\n");
+        dump_stack();
+        printk(KERN_DEBUG "clocksource: %s with init reading: %x\n", clock->name, (u32) clock->read(clock));
+        /* ********* dacashman end **********/
 	cycle_t interval;
 	u64 tmp, ntpinterval;
 
