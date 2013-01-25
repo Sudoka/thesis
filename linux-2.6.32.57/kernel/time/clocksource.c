@@ -466,6 +466,8 @@ static u64 clocksource_max_deferment(struct clocksource *cs)
  * Select the clocksource with the best rating, or the clocksource,
  * which is selected by userspace override.
  */
+
+/* dcashman -BOOM this has to be where we choose what we want */
 static void clocksource_select(void)
 {       
 

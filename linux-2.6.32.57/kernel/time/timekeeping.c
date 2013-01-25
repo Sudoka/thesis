@@ -590,7 +590,7 @@ void __init timekeeping_init(void)
 
 	ntp_init();
 
-	clock = clocksource_default_clock();
+	clock = clocksource_default_clock();  /* dcashman - first clock setup */
 	if (clock->enable)
 		clock->enable(clock);
 	timekeeper_setup_internals(clock);

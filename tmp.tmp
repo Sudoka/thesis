@@ -1,0 +1,664 @@
+128d127
+<  *	void add_device_randomness(const void *buf, unsigned int size);
+131,140c130
+<  *	void add_interrupt_randomness(int irq, int irq_flags);
+<  * 	void add_disk_randomness(struct gendisk *disk);
+<  *
+<  * add_device_randomness() is for adding data to the random pool that
+<  * is likely to differ between two devices (or possibly even per boot).
+<  * This would be things like MAC addresses or serial numbers, or the
+<  * read-out of the RTC. This does *not* add any actual entropy to the
+<  * pool, but it initializes the pool to different values for devices
+<  * that might otherwise be identical and have very little entropy
+<  * available to them (particularly common in the embedded world).
+---
+>  * 	void add_interrupt_randomness(int irq);
+145,153c135,141
+<  * add_interrupt_randomness() uses the interrupt timing as random
+<  * inputs to the entropy pool. Using the cycle counters and the irq source
+<  * as inputs, it feeds the randomness roughly once a second.
+<  *
+<  * add_disk_randomness() uses what amounts to the seek time of block
+<  * layer request events, on a per-disk_devt basis, as input to the
+<  * entropy pool. Note that high-speed solid state drives with very low
+<  * seek times do not make for good sources of entropy, as their seek
+<  * times are usually fairly consistent.
+---
+>  * add_interrupt_randomness() uses the inter-interrupt timing as random
+>  * inputs to the entropy pool.  Note that not all interrupts are good
+>  * sources of randomness!  For example, the timer interrupts is not a
+>  * good choice, because the periodicity of the interrupts is too
+>  * regular, and hence predictable to an attacker.  Disk interrupts are
+>  * a better measure, since the timing of the disk interrupts are more
+>  * unpredictable.
+256,257d243
+< #include <linux/ptrace.h>
+< #include <linux/kmemcheck.h>
+266d251
+< #include <asm/irq_regs.h>
+275,277d259
+< #define EXTRACT_SIZE 10
+< 
+< #define LONGS(x) (((x) + sizeof(unsigned long) - 1)/sizeof(unsigned long))
+348a331,340
+> // jhalderm: /////////////////////////////
+> 
+> static int nb_stir_count = 0;
+> static int nb_reentry_count = 0;
+> static int nb_input_bytes = 0;
+> static int nb_entry_count = 0;
+> static spinlock_t nb_lock = __SPIN_LOCK_UNLOCKED(&nb_lock);
+> 
+> //////////////////////////////////////////
+> 
+399c391
+< #if 0
+---
+> #if 1
+403,405c395,396
+< 	if (debug) \
+< 		printk(KERN_DEBUG "random %04d %04d %04d: " \
+< 		fmt,\
+---
+> 		printk(KERN_DEBUG "random %04d %04d %04d %08x %08x: " \
+> q		fmt,\
+408a400,401
+> 		nonblocking_pool_data[0],\
+> 		nonblocking_pool_data[1],\
+427d419
+< 	struct entropy_store *pull;
+428a421
+> 	struct entropy_store *pull;
+433d425
+< 	unsigned input_rotate;
+435,437c427,431
+< 	int entropy_total;
+< 	unsigned int initialized:1;
+< 	__u8 last_data[EXTRACT_SIZE];
+---
+> 	int input_rotate;
+> 	__u8 *last_data;
+> 
+> //jhalderm
+> ktime_t init_now;
+469,472d462
+< static __u32 const twist_table[8] = {
+< 	0x00000000, 0x3b6e20c8, 0x76dc4190, 0x4db26158,
+< 	0xedb88320, 0xd6d6a3e8, 0x9b64c2b0, 0xa00ae278 };
+< 
+483,484c473,474
+< static void __mix_pool_bytes(struct entropy_store *r, const void *in,
+< 			     int nbytes, __u8 out[64])
+---
+> static void mix_pool_bytes_extract(struct entropy_store *r, const void *in,
+> 				   int nbytes, __u8 out[64])
+485a476,478
+> 	static __u32 const twist_table[8] = {
+> 		0x00000000, 0x3b6e20c8, 0x76dc4190, 0x4db26158,
+> 		0xedb88320, 0xd6d6a3e8, 0x9b64c2b0, 0xa00ae278 };
+490a484
+> 	unsigned long flags;
+491a486
+> 	/* Taps are constant, so we can load them without holding r->lock.  */
+498,500c493,499
+< 	smp_rmb();
+< 	input_rotate = ACCESS_ONCE(r->input_rotate);
+< 	i = ACCESS_ONCE(r->add_ptr);
+---
+> 	spin_lock_irqsave(&r->lock, flags);
+> 	input_rotate = r->input_rotate;
+> 	i = r->add_ptr;
+> 
+> // jhalderm
+> if (nbytes && (r == &nonblocking_pool))
+>   nb_stir_count+=nbytes;
+527,529c526,527
+< 	ACCESS_ONCE(r->input_rotate) = input_rotate;
+< 	ACCESS_ONCE(r->add_ptr) = i;
+< 	smp_wmb();
+---
+> 	r->input_rotate = input_rotate;
+> 	r->add_ptr = i;
+534d531
+< }
+536,542d532
+< static void mix_pool_bytes(struct entropy_store *r, const void *in,
+< 			     int nbytes, __u8 out[64])
+< {
+< 	unsigned long flags;
+< 
+< 	spin_lock_irqsave(&r->lock, flags);
+< 	__mix_pool_bytes(r, in, nbytes, out);
+546,559c536
+< struct fast_pool {
+< 	__u32		pool[4];
+< 	unsigned long	last;
+< 	unsigned short	count;
+< 	unsigned char	rotate;
+< 	unsigned char	last_timer_intr;
+< };
+< 
+< /*
+<  * This is a fast mixing routine used by the interrupt randomness
+<  * collector.  It's hardcoded for an 128 bit pool and assumes that any
+<  * locks that might be needed are taken by the caller.
+<  */
+< static void fast_mix(struct fast_pool *f, const void *in, int nbytes)
+---
+> static void mix_pool_bytes(struct entropy_store *r, const void *in, int bytes)
+561,573c538,551
+< 	const char	*bytes = in;
+< 	__u32		w;
+< 	unsigned	i = f->count;
+< 	unsigned	input_rotate = f->rotate;
+< 
+< 	while (nbytes--) {
+< 		w = rol32(*bytes++, input_rotate & 31) ^ f->pool[i & 3] ^
+< 			f->pool[(i + 1) & 3];
+< 		f->pool[i & 3] = (w >> 3) ^ twist_table[w & 7];
+< 		input_rotate += (i++ & 3) ? 7 : 14;
+< 	}
+< 	f->count = i;
+< 	f->rotate = input_rotate;
+---
+> // jhalderm2:
+> unsigned long flags;
+> spin_lock_irqsave(&nb_lock, flags);
+> nb_entry_count++;
+> spin_unlock_irqrestore(&nb_lock, flags);
+> 
+>        mix_pool_bytes_extract(r, in, bytes, NULL);
+> 
+> // jhalderm2:
+> spin_lock_irqsave(&nb_lock, flags);
+> nb_entry_count--;
+> if (nb_entry_count > 0)
+>   nb_reentry_count++;
+> spin_unlock_irqrestore(&nb_lock, flags);
+581c559,560
+< 	int entropy_count, orig;
+---
+> 	unsigned long flags;
+> 	int entropy_count;
+585a565,566
+> 	spin_lock_irqsave(&r->lock, flags);
+> 
+587,588c568
+< retry:
+< 	entropy_count = orig = ACCESS_ONCE(r->entropy_count);
+---
+> 	entropy_count = r->entropy_count;
+595,602c575
+< 	if (cmpxchg(&r->entropy_count, orig, entropy_count) != orig)
+< 		goto retry;
+< 
+< 	if (!r->initialized && nbits > 0) {
+< 		r->entropy_total += nbits;
+< 		if (r->entropy_total > 128)
+< 			r->initialized = 1;
+< 	}
+---
+> 	r->entropy_count = entropy_count;
+608a582
+> 	spin_unlock_irqrestore(&r->lock, flags);
+624,632c598,602
+< /*
+<  * Add device- or boot-specific data to the input and nonblocking
+<  * pools to help initialize them to unique values.
+<  *
+<  * None of this adds any entropy, it is meant to avoid the
+<  * problem of the nonblocking pool having similar initial state
+<  * across largely identical devices.
+<  */
+< void add_device_randomness(const void *buf, unsigned int size)
+---
+> #ifndef CONFIG_GENERIC_HARDIRQS
+> 
+> static struct timer_rand_state *irq_timer_state[NR_IRQS];
+> 
+> static struct timer_rand_state *get_timer_rand_state(unsigned int irq)
+634c604,605
+< 	unsigned long time = get_cycles() ^ jiffies;
+---
+> 	return irq_timer_state[irq];
+> }
+636,639c607,631
+< 	mix_pool_bytes(&input_pool, buf, size, NULL);
+< 	mix_pool_bytes(&input_pool, &time, sizeof(time), NULL);
+< 	mix_pool_bytes(&nonblocking_pool, buf, size, NULL);
+< 	mix_pool_bytes(&nonblocking_pool, &time, sizeof(time), NULL);
+---
+> static void set_timer_rand_state(unsigned int irq,
+> 				 struct timer_rand_state *state)
+> {
+> 	irq_timer_state[irq] = state;
+> }
+> 
+> #else
+> 
+> static struct timer_rand_state *get_timer_rand_state(unsigned int irq)
+> {
+> 	struct irq_desc *desc;
+> 
+> 	desc = irq_to_desc(irq);
+> 
+> 	return desc->timer_rand_state;
+> }
+> 
+> static void set_timer_rand_state(unsigned int irq,
+> 				 struct timer_rand_state *state)
+> {
+> 	struct irq_desc *desc;
+> 
+> 	desc = irq_to_desc(irq);
+> 
+> 	desc->timer_rand_state = state;
+641c633
+< EXPORT_SYMBOL(add_device_randomness);
+---
+> #endif
+657a650
+> 		cycles_t cycles;
+659d651
+< 		unsigned cycles;
+663a656,657
+> 	DEBUG_ENT("add_timer_randomness(.. %u)", num);
+> 
+673c667
+< 	mix_pool_bytes(&input_pool, &sample, sizeof(sample), NULL);
+---
+> 	mix_pool_bytes(&input_pool, &sample, sizeof(sample));
+723c717
+< 	DEBUG_ENT("input event\n");
+---
+> 	DEBUG_ENT("add_input_randomness(%d, %d, %d)", type, code, value);
+730,732c724
+< static DEFINE_PER_CPU(struct fast_pool, irq_randomness);
+< 
+< void add_interrupt_randomness(int irq, int irq_flags)
+---
+> void add_interrupt_randomness(int irq)
+734,746c726
+< 	struct entropy_store	*r;
+< 	struct fast_pool	*fast_pool = &__get_cpu_var(irq_randomness);
+< 	struct pt_regs		*regs = get_irq_regs();
+< 	unsigned long		now = jiffies;
+< 	__u32			input[4], cycles = get_cycles();
+< 
+< 	input[0] = cycles ^ jiffies;
+< 	input[1] = irq;
+< 	if (regs) {
+< 		__u64 ip = instruction_pointer(regs);
+< 		input[2] = ip;
+< 		input[3] = ip >> 32;
+< 	}
+---
+> 	struct timer_rand_state *state;
+748c728
+< 	fast_mix(fast_pool, input, sizeof(input));
+---
+> 	state = get_timer_rand_state(irq);
+750,751c730
+< 	if ((fast_pool->count & 1023) &&
+< 	    !time_after(now, fast_pool->last + HZ))
+---
+> 	if (state == NULL)
+754,771c733,734
+< 	fast_pool->last = now;
+< 
+< 	r = nonblocking_pool.initialized ? &input_pool : &nonblocking_pool;
+< 	__mix_pool_bytes(r, &fast_pool->pool, sizeof(fast_pool->pool), NULL);
+< 	/*
+< 	 * If we don't have a valid cycle counter, and we see
+< 	 * back-to-back timer interrupts, then skip giving credit for
+< 	 * any entropy.
+< 	 */
+< 	if (cycles == 0) {
+< 		if (irq_flags & __IRQF_TIMER) {
+< 			if (fast_pool->last_timer_intr)
+< 				return;
+< 			fast_pool->last_timer_intr = 1;
+< 		} else
+< 			fast_pool->last_timer_intr = 0;
+< 	}
+< 	credit_entropy_bits(r, 1);
+---
+> 	DEBUG_ENT("add_interrupt_randomness(%d)", irq);
+> 	add_timer_randomness(state, 0x100 + irq);
+778a742
+> 
+780,781c744,746
+< 	DEBUG_ENT("disk event %d:%d\n",
+< 		  MAJOR(disk_devt(disk)), MINOR(disk_devt(disk)));
+---
+> 	DEBUG_ENT("add_disk_randomness(%d:%d) %08x %08x", 
+> 		MAJOR(disk_devt(disk)), MINOR(disk_devt(disk)), 
+> 		nonblocking_pool_data[0], nonblocking_pool_data[1]);
+786a752,753
+> #define EXTRACT_SIZE 10
+> 
+803c770,772
+< 	__u32	tmp[OUTPUT_POOL_WORDS];
+---
+> 	__u32 tmp[OUTPUT_POOL_WORDS];
+> 
+> //  return; //ewust
+808c777
+< 		int rsvd = r->limit ? 0 : random_read_wakeup_thresh/4;
+---
+> 	        int rsvd = r->limit ? 0 : random_read_wakeup_thresh/4; // jah: seems to be opposite of above comment!  bug?
+812c781
+< 		bytes = max_t(int, bytes, random_read_wakeup_thresh / 8);
+---
+> 		bytes = max_t(int, bytes, random_read_wakeup_thresh / 8); // 64/8 jah
+814c783
+< 		bytes = min_t(int, bytes, sizeof(tmp));
+---
+> 		bytes = min_t(int, bytes, sizeof(tmp));  // 32 jah
+822c791,798
+< 		mix_pool_bytes(r, tmp, bytes, NULL);
+---
+> // jhalderm
+> unsigned long flags;
+>  spin_lock_irqsave(&nb_lock, flags);
+> if (r == &nonblocking_pool)
+>   nb_input_bytes += bytes; //jhalderm
+> spin_unlock_irqrestore(&nb_lock, flags);
+> 
+> 		mix_pool_bytes(r, tmp, bytes);
+881,885c857
+< 	union {
+< 		__u32 w[5];
+< 		unsigned long l[LONGS(EXTRACT_SIZE)];
+< 	} hash;
+< 	__u32 workspace[SHA_WORKSPACE_WORDS];
+---
+> 	__u32 hash[5], workspace[SHA_WORKSPACE_WORDS];
+887c859,860
+< 	unsigned long flags;
+---
+> 
+> //	DEBUG_ENT("extract_buf\n");
+890,891c863,870
+< 	sha_init(hash.w);
+< 	spin_lock_irqsave(&r->lock, flags);
+---
+> 	sha_init(hash);
+> 
+> // jhalderm2:
+> unsigned long flags;
+> spin_lock_irqsave(&nb_lock, flags);
+> nb_entry_count++;
+> spin_unlock_irqrestore(&nb_lock, flags);
+> 
+893c872
+< 		sha_transform(hash.w, (__u8 *)(r->pool + i), workspace);
+---
+> 		sha_transform(hash, (__u8 *)(r->pool + i), workspace);
+904,905c883,891
+< 	__mix_pool_bytes(r, hash.w, sizeof(hash.w), extract);
+< 	spin_unlock_irqrestore(&r->lock, flags);
+---
+> 
+> 	mix_pool_bytes_extract(r, hash, sizeof(hash), extract);
+> 
+> // jhalderm2:
+> spin_lock_irqsave(&nb_lock, flags);
+> nb_entry_count--;
+> if (nb_entry_count > 0)
+>   nb_reentry_count++;
+> spin_unlock_irqrestore(&nb_lock, flags);
+911c897
+< 	sha_transform(hash.w, extract, workspace);
+---
+> 	sha_transform(hash, extract, workspace);
+920,922c906,910
+< 	hash.w[0] ^= hash.w[3];
+< 	hash.w[1] ^= hash.w[4];
+< 	hash.w[2] ^= rol32(hash.w[2], 16);
+---
+> 	hash[0] ^= hash[3];
+> 	hash[1] ^= hash[4];
+> 	hash[2] ^= rol32(hash[2], 16);
+> 	memcpy(out, hash, EXTRACT_SIZE);
+> 	memset(hash, 0, sizeof(hash));
+924,936c912
+< 	/*
+< 	 * If we have a architectural hardware random number
+< 	 * generator, mix that in, too.
+< 	 */
+< 	for (i = 0; i < LONGS(EXTRACT_SIZE); i++) {
+< 		unsigned long v;
+< 		if (!arch_get_random_long(&v))
+< 			break;
+< 		hash.l[i] ^= v;
+< 	}
+< 
+< 	memcpy(out, &hash, EXTRACT_SIZE);
+< 	memset(&hash, 0, sizeof(hash));
+---
+> //	DEBUG_ENT("extract_buf done\n");
+940c916
+< 				 size_t nbytes, int min, int reserved)
+---
+> 			       size_t nbytes, int min, int reserved)
+943a920,922
+> 	unsigned long flags;
+> 
+> 	DEBUG_ENT("extract_entropy(.. %d ..)\n", nbytes);	
+951,953c930
+< 		if (fips_enabled) {
+< 			unsigned long flags;
+< 
+---
+> 		if (r->last_data) {
+978a956
+> 	DEBUG_ENT("extract_entropy_user(%d)", nbytes);
+980a959
+> 	DEBUG_ENT("  got %d bytes\n", nbytes);
+992c971
+< 		extract_buf(r, tmp);
+---
+> 		extract_buf(r, tmp);		
+1012,1014c991,992
+<  * number of good random numbers, suitable for key generation, seeding
+<  * TCP sequence numbers, etc.  It does not use the hw random number
+<  * generator, if available; use get_random_bytes_arch() for that.
+---
+>  * number of good random numbers, suitable for seeding TCP sequence
+>  * numbers, etc.
+1017a996,997
+>   DEBUG_ENT("get_random_bytes(%d) %08x %08x", nbytes,
+> 	    nonblocking_pool_data[0], nonblocking_pool_data[1]); //ewust
+1023,1054d1002
+<  * This function will use the architecture-specific hardware random
+<  * number generator if it is available.  The arch-specific hw RNG will
+<  * almost certainly be faster than what we can do in software, but it
+<  * is impossible to verify that it is implemented securely (as
+<  * opposed, to, say, the AES encryption of a sequence number using a
+<  * key known by the NSA).  So it's useful if we need the speed, but
+<  * only if we're willing to trust the hardware manufacturer not to
+<  * have put in a back door.
+<  */
+< void get_random_bytes_arch(void *buf, int nbytes)
+< {
+< 	char *p = buf;
+< 
+< 	while (nbytes) {
+< 		unsigned long v;
+< 		int chunk = min(nbytes, (int)sizeof(unsigned long));
+< 
+< 		if (!arch_get_random_long(&v))
+< 			break;
+< 
+< 		memcpy(p, &v, chunk);
+< 		p += chunk;
+< 		nbytes -= chunk;
+< 	}
+< 
+< 	if (nbytes)
+< 		extract_entropy(&nonblocking_pool, p, nbytes, 0, 0);
+< }
+< EXPORT_SYMBOL(get_random_bytes_arch);
+< 
+< 
+< /*
+1065,1067c1013,1014
+< 	int i;
+< 	ktime_t now = ktime_get_real();
+< 	unsigned long rv;
+---
+> 	ktime_t now;
+> 	unsigned long flags;
+1068a1016
+> 	spin_lock_irqsave(&r->lock, flags);
+1070,1077c1018,1029
+< 	r->entropy_total = 0;
+< 	mix_pool_bytes(r, &now, sizeof(now), NULL);
+< 	for (i = r->poolinfo->POOLBYTES; i > 0; i -= sizeof(rv)) {
+< 		if (!arch_get_random_long(&rv))
+< 			break;
+< 		mix_pool_bytes(r, &rv, sizeof(rv), NULL);
+< 	}
+< 	mix_pool_bytes(r, utsname(), sizeof(*(utsname())), NULL);
+---
+> 	spin_unlock_irqrestore(&r->lock, flags);
+> 
+> 	now = ktime_get_real();
+> // jhalderm: save initial now value
+> r->init_now = now;
+> // ewust: testing removing time from entropy seeding:
+> //mix_pool_bytes(r, &now, sizeof(now));
+> // jhalderm: easier to compare boots if we don't keep this:
+> //mix_pool_bytes(r, utsname(), sizeof(*(utsname())));
+> 	/* Enable continuous test in fips mode */
+> 	if (fips_enabled)
+> 		r->last_data = kmalloc(EXTRACT_SIZE, GFP_KERNEL);
+1080,1089d1031
+< /*
+<  * Note that setup_arch() may call add_device_randomness()
+<  * long before we get here. This allows seeding of the pools
+<  * with some platform dependent data very early in the boot
+<  * process. But it limits our options here. We must use
+<  * statically allocated structures that already have all
+<  * initializations complete at compile time. We should also
+<  * take care not to overwrite the precious per platform data
+<  * we were given.
+<  */
+1091a1034,1035
+> //ewust: we DO clear the entropy pool:
+>   DEBUG_ENT("initializing\n");
+1094a1039,1041
+> memset(input_pool_data, 0, INPUT_POOL_WORDS * sizeof(__u32)); 
+> memset(blocking_pool_data, 0, OUTPUT_POOL_WORDS * sizeof(__u32)); 
+> memset(nonblocking_pool_data, 0, OUTPUT_POOL_WORDS * sizeof(__u32)); 
+1098a1046,1063
+> void rand_initialize_irq(int irq)
+> {
+> 	struct timer_rand_state *state;
+> 
+> 	state = get_timer_rand_state(irq);
+> 
+> 	if (state)
+> 		return;
+> 
+> 	/*
+> 	 * If kzalloc returns null, we just won't use that entropy
+> 	 * source.
+> 	 */
+> 	state = kzalloc(sizeof(struct timer_rand_state), GFP_KERNEL);
+> 	if (state)
+> 		set_timer_rand_state(irq, state);
+> }
+> 
+1173c1138,1139
+< 	return extract_entropy_user(&nonblocking_pool, buf, nbytes);
+---
+>   DEBUG_ENT("urandom_read(%d): %08x %08x pid=%u\n", nbytes,  nonblocking_pool_data[0], nonblocking_pool_data[1], current->pid); // ewust
+>   return extract_entropy_user(&nonblocking_pool, buf, nbytes);
+1197a1164,1165
+> DEBUG_ENT("write_pool(.., %d)", count); // jhalderm
+> 
+1206c1174
+< 		mix_pool_bytes(r, buf, bytes, NULL);
+---
+> 		mix_pool_bytes(r, buf, bytes);
+1216a1185
+> 	DEBUG_ENT("random_write(.., %d)", count);
+1347,1354c1316
+< 		generate_random_uuid(uuid);
+< 	} else {
+< 		static DEFINE_SPINLOCK(bootid_spinlock);
+< 
+< 		spin_lock(&bootid_spinlock);
+< 		if (!uuid[8])
+< 			generate_random_uuid(uuid);
+< 		spin_unlock(&bootid_spinlock);
+---
+> 		uuid[8] = 0;
+1355a1318,1319
+> 	if (uuid[8] == 0)
+> 		generate_random_uuid(uuid);
+1455a1420,1471
+> // jhalderm: //////////////////////////////////////////
+> 	{
+> 		.ctl_name	= RANDOM_UUID+1,
+> 		.procname	= "now_input",
+> 		.maxlen		= sizeof(ktime_t),
+> 		.mode		= 0444,
+> 		.proc_handler	= &proc_dointvec,
+> 		.data		= &input_pool.init_now,
+> 	},
+> 	{
+> 		.ctl_name	= RANDOM_UUID+2,
+> 		.procname	= "now_blocking",
+> 		.maxlen		= sizeof(ktime_t),
+> 		.mode		= 0444,
+> 		.proc_handler	= &proc_dointvec,
+> 		.data		= &blocking_pool.init_now,
+> 	},
+> 	{
+> 		.ctl_name	= RANDOM_UUID+3,
+> 		.procname	= "now_nonblocking",
+> 		.maxlen		= sizeof(ktime_t),
+> 		.mode		= 0444,
+> 		.proc_handler	= &proc_dointvec,
+> 		.data		= &nonblocking_pool.init_now,
+> 	},
+> 	{
+> 		.ctl_name	= RANDOM_UUID+4,
+> 		.procname	= "nb_input_bytes",
+> 		.maxlen		= sizeof(nb_input_bytes),
+> 		.mode		= 0444,
+> 		.proc_handler	= &proc_dointvec,
+> 		.data		= &nb_input_bytes,
+> 	},
+> 	{
+> 		.ctl_name	= RANDOM_UUID+5,
+> 		.procname	= "nb_stir_count",
+> 		.maxlen		= sizeof(nb_stir_count),
+> 		.mode		= 0444,
+> 		.proc_handler	= &proc_dointvec,
+> 		.data		= &nb_stir_count,
+> 	},
+> 	{
+> 		.ctl_name	= RANDOM_UUID+6,
+> 		.procname	= "nb_reentry_count",
+> 		.maxlen		= sizeof(nb_reentry_count),
+> 		.mode		= 0444,
+> 		.proc_handler	= &proc_dointvec,
+> 		.data		= &nb_reentry_count,
+> 	},
+> 
+> // //////////////////////////////////////////////////
+> 
+1478c1494
+< 	__u32 *hash;
+---
+> 	__u32 *hash = get_cpu_var(get_random_int_hash);
+1480,1484d1495
+< 
+< 	if (arch_get_random_int(&ret))
+< 		return ret;
+< 
+< 	hash = get_cpu_var(get_random_int_hash);
