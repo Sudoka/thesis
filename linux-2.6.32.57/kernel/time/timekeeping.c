@@ -65,7 +65,7 @@ static void timekeeper_setup_internals(struct clocksource *clock)
 {
 
   /*    dacashman - still trying to force a lack of real-time clock */
-        printk(KERN_DEBUG "TIMEKEEPER_SETUP\n");
+        printk(KERN_DEBUG "TIMEKEEPING TIMEKEEPER_SETUP\n");
         dump_stack();
         printk(KERN_DEBUG "clocksource: %s with init reading: %x\n", clock->name, (u32) clock->read(clock));
         /* ********* dacashman end **********/
@@ -463,7 +463,10 @@ ktime_t ktime_get_real(void)
 
 	getnstimeofday(&now);
 
-	return timespec_to_ktime(now);
+	/* dacashman change - seeing if this breaks the kernel. Assume 0 secs */
+	/* now.tv_sec = 0;
+	   now.tv_nsec = 0; */
+	return timespec_to_ktime(now); 
 }
 EXPORT_SYMBOL_GPL(ktime_get_real);
 
@@ -560,6 +563,28 @@ void __init timekeeping_init(void)
 
 	read_persistent_clock(&now);
 	read_boot_clock(&boot);
+	
+	/* dacashman - viewing initial timekeeping values */
+	/* dacashman - print now from read_persistent */
+        struct tm thyme;
+        struct timeval tv;
+        tv = ns_to_timeval(ktime_to_ns(timespec_to_ktime(now)));
+	time_to_tm(tv.tv_sec, 0, &thyme);
+	printk(KERN_DEBUG "TIMEKEEPING init value of now (persistent): %d:%02d:%02d\n", thyme.tm_hour, thyme.tm_min, 
+	       thyme.tm_sec);
+
+	/* dacashman - print boot from read_boot */
+        tv = ns_to_timeval(ktime_to_ns(timespec_to_ktime(boot)));
+	time_to_tm(tv.tv_sec, 0, &thyme);
+	printk(KERN_DEBUG "TIMEKEEPING init value of boot: %d:%02d:%02d\n", thyme.tm_hour, thyme.tm_min, 
+	       thyme.tm_sec);
+
+	/* dacashman - now modifying now to be 0's */
+	printk(KERN_DEBUG "TIMEKEEPING init: modifying now (persistent) to be 0\n");
+	now.tv_sec = 0;
+	now.tv_nsec = 0;
+
+        /********************************/
 
 	write_seqlock_irqsave(&xtime_lock, flags);
 
