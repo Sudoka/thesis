@@ -418,6 +418,14 @@ static void tcp_options_write(__be32 *ptr, struct tcp_sock *tp,
 		}
 		*ptr++ = htonl(opts->tsval);
 		*ptr++ = htonl(opts->tsecr);
+		/* dacashman - determining if tsval is accurate here */
+		u64 ktime_ns = ktime_to_ns(ktime_get_real())
+		printk(KERN_DEBUG "TIME tsval orig: %d\t%x\n", opts->tsval, opts->tsval);
+		printk(KERN_DEBUG "TIME tsecr orig: %d\t%x\n", opts->tsecr, opts->tsecr);
+		printk(KERN_DEBUG "TIME tsval htonl: %d\t%x\n", htonl(opts->tsval), htonl(opts->tsval));
+		printk(KERN_DEBUG "TIME tsecr htonl: %d\t%x\n", htonl(opts->tsecr), htonl(opts->tsecr));
+		printk(KERN_DEUBG "TIME ktime_ns value long: %llu\t%llx\n", ktime_ns, ktime_ns);
+		printk(KERN_DEUBG "TIME ktime_ns value: %d\t%x\n", ktime_ns, ktime_ns);
 	}
 
 	if (unlikely(OPTION_SACK_ADVERTISE & opts->options &&
