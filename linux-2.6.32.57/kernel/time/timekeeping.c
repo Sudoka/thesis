@@ -639,11 +639,11 @@ void __init timekeeping_init(void)
 	total_sleep_time.tv_sec = 0;
 	total_sleep_time.tv_nsec = 0;
 	/* dacashman change */
-	printk(KERN_DEBUG "Number of jiffies at timekeeping init - signed 32bit: %d, hex %x\n", jiffies);
+	/*printk(KERN_DEBUG "Number of jiffies at timekeeping init - signed 32bit: %d, hex %x\n", jiffies);
         u64 temp_addition = ktime_to_ns(ktime_get_real()) ;
 	u64 temp_addition2 = jiffies_to_ns();
 	printk(KERN_DEBUG "TIME Value of ktime_to_ns at timekeeping_init %llu\n", temp_addition);
-	printk(KERN_DEBUG "TIME Value of jiffies_to_ns at timekeeping_init %llu\n", temp_addition2);
+	printk(KERN_DEBUG "TIME Value of jiffies_to_ns at timekeeping_init %llu\n", temp_addition2); */
 
 
 	/* dacashman change end */

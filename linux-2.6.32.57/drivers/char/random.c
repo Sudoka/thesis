@@ -1054,12 +1054,13 @@ memset(nonblocking_pool_data, 0, OUTPUT_POOL_WORDS * sizeof(__u32));
 	spin_unlock_irqrestore(&nonblocking_pool.lock, flags);
 
 	now = ktime_get_real();
-	//dacashman change - printing ktime_get_real val at boot
-	u64 temp_addition = ktime_to_ns(now);
-	u64 temp_addition2 = jiffies_to_ns();
-	printk(KERN_DEBUG "TIME Value of ktime_to_ns at rand_initialize %llu\n", temp_addition);
-	printk(KERN_DEBUG "TIME Value of jiffies_to_ns at rand_initialize %llu\n", temp_addition2);
-        printk(KERN_DEBUG "TIME ENTROYPY reading nsecs: %d\n", (int) (ktime_to_ns(now)));
+	/*dacashman change - printing ktime_get_real val at boot */
+	s64 temp_ktime_ns = ktime_to_ns(now);
+	s64 temp_jiffy_ns = jiffies_to_ns();
+	printk(KERN_DEBUG "TIME Value of ktime_to_ns at rand_initialize %lld, %llx\n", temp_ktime_ns, temp_ktime_ns);
+	printk(KERN_DEBUG "TIME Value of jiffies_to_ns at rand_initialize %lld, %llx\n", temp_jiffy_ns, temp_jiffy_ns); 
+	//	printk(KERN_DEBUG "TIME Value of jiffies_to_ns w/out adjustment at rand_initialize %lld, %llx\n", temp_jiffy_ns , temp_jiffy_ns); 
+        
 
 
         struct tm thyme;
