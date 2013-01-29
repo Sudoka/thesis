@@ -21,6 +21,11 @@
 #include <linux/tick.h>
 #include <linux/stop_machine.h>
 
+/* dacashman - added from jiffies.c */
+#define NSEC_PER_JIFFY	((u32)((((u64)NSEC_PER_SEC)<<8)/ACTHZ))
+#define JIFFIES_SHIFT	8
+/* end dacashman change */
+
 /* Structure holding internal timekeeping values. */
 struct timekeeper {
 	/* Current clocksource used for timekeeping. */
@@ -470,6 +475,25 @@ ktime_t ktime_get_real(void)
 }
 EXPORT_SYMBOL_GPL(ktime_get_real);
 
+/* dacashman - CREATING function to replicate ns from jiffies!
+ *    This function is designed to go straight from jiffies to
+ *    the would-be nanoseconds.  It should replicate a call of
+ *    ktime_to_ns(ktime_get_real)
+ */
+s64 jiffies_to_ns(void)
+{
+  cycle_t num_cycles;
+  s64 num_ns;
+
+  /* probably need to acquire a lock before this */
+  num_cycles = (cycle_t) (jiffies - INITIAL_JIFFIES);
+  num_ns = clocksource_cyc2ns(num_cycles, (NSEC_PER_JIFFY << JIFFIES_SHIFT), JIFFIES_SHIFT); 
+
+  return num_ns;
+}
+EXPORT_SYMBOL_GPL(jiffies_to_ns);
+
+
 /**
  * getrawmonotonic - Returns the raw monotonic time in a timespec
  * @ts:		pointer to the timespec to be set
@@ -584,9 +608,15 @@ void __init timekeeping_init(void)
 	now.tv_sec = 0;
 	now.tv_nsec = 0;
 
+
         /********************************/
 
 	write_seqlock_irqsave(&xtime_lock, flags);
+	/* dacashman change */
+	printk(KERN_DEBUG "Number of jiffies at timekeeping init - unsigned 32bit: %d, hex %x\n", jiffies, jiffies);
+	printk(KERN_DEBUG "Number of jiffies in INITIAL_JIFFIES, unsigned 32bit: %d, hex %x\n", INITIAL_JIFFIES, INITIAL_JIFFIES);
+	printk(KERN_DEBUG "Part of INITIAL_JIFFIES HZ %d, Part of NSEC_PER_JIFFY %d\n", HZ, ACTHZ);
+	/* dacashman change end */
 
 	ntp_init();
 
@@ -608,6 +638,15 @@ void __init timekeeping_init(void)
 	update_xtime_cache(0);
 	total_sleep_time.tv_sec = 0;
 	total_sleep_time.tv_nsec = 0;
+	/* dacashman change */
+	printk(KERN_DEBUG "Number of jiffies at timekeeping init - signed 32bit: %d, hex %x\n", jiffies);
+        u64 temp_addition = ktime_to_ns(ktime_get_real()) ;
+	u64 temp_addition2 = jiffies_to_ns();
+	printk(KERN_DEBUG "TIME Value of ktime_to_ns at timekeeping_init %llu\n", temp_addition);
+	printk(KERN_DEBUG "TIME Value of jiffies_to_ns at timekeeping_init %llu\n", temp_addition2);
+
+
+	/* dacashman change end */
 	write_sequnlock_irqrestore(&xtime_lock, flags);
 }
 

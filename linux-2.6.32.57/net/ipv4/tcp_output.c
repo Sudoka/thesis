@@ -419,13 +419,14 @@ static void tcp_options_write(__be32 *ptr, struct tcp_sock *tp,
 		*ptr++ = htonl(opts->tsval);
 		*ptr++ = htonl(opts->tsecr);
 		/* dacashman - determining if tsval is accurate here */
-		u64 ktime_ns = ktime_to_ns(ktime_get_real())
-		printk(KERN_DEBUG "TIME tsval orig: %d\t%x\n", opts->tsval, opts->tsval);
-		printk(KERN_DEBUG "TIME tsecr orig: %d\t%x\n", opts->tsecr, opts->tsecr);
-		printk(KERN_DEBUG "TIME tsval htonl: %d\t%x\n", htonl(opts->tsval), htonl(opts->tsval));
-		printk(KERN_DEBUG "TIME tsecr htonl: %d\t%x\n", htonl(opts->tsecr), htonl(opts->tsecr));
-		printk(KERN_DEUBG "TIME ktime_ns value long: %llu\t%llx\n", ktime_ns, ktime_ns);
-		printk(KERN_DEUBG "TIME ktime_ns value: %d\t%x\n", ktime_ns, ktime_ns);
+		dump_stack();
+		u64 ktime_ns = ktime_to_ns(ktime_get_real());
+		printk(KERN_DEBUG "TIME tsval orig: %u\t%x\n", opts->tsval, opts->tsval);
+		printk(KERN_DEBUG "TIME tsecr orig: %u\t%x\n", opts->tsecr, opts->tsecr);
+		printk(KERN_DEBUG "TIME tsval htonl: %u\t%x\n", htonl(opts->tsval), htonl(opts->tsval));
+		printk(KERN_DEBUG "TIME tsecr htonl: %u\t%x\n", htonl(opts->tsecr), htonl(opts->tsecr));
+		printk(KERN_DEBUG "TIME ktime_ns value long: %llu\t%llx\n", ktime_ns, ktime_ns);
+		printk(KERN_DEBUG "TIME ktime_ns value: %u\t%x\n", ktime_ns, ktime_ns);
 	}
 
 	if (unlikely(OPTION_SACK_ADVERTISE & opts->options &&
@@ -500,6 +501,11 @@ static unsigned tcp_syn_options(struct sock *sk, struct sk_buff *skb,
 		opts->tsval = TCP_SKB_CB(skb)->when;
 		opts->tsecr = tp->rx_opt.ts_recent;
 		size += TCPOLEN_TSTAMP_ALIGNED;
+		
+		/* dacashman TIMESTAMP */
+		dump_stack();
+		printk(KERN_DEBUG "TIMESTAMP tsval syn-ack-options orig: %u\t%x\n", opts->tsval, opts->tsval);
+		
 	}
 	if (likely(sysctl_tcp_window_scaling)) {
 		opts->ws = tp->rx_opt.rcv_wscale;
@@ -590,6 +596,11 @@ static unsigned tcp_established_options(struct sock *sk, struct sk_buff *skb,
 		opts->tsval = tcb ? tcb->when : 0;
 		opts->tsecr = tp->rx_opt.ts_recent;
 		size += TCPOLEN_TSTAMP_ALIGNED;
+
+		/* dacashman TIMESTAMP */
+		dump_stack();
+		printk(KERN_DEBUG "TIMESTAMP tsval established orig: %u\t%x\n", opts->tsval, opts->tsval);
+
 	}
 
 	eff_sacks = tp->rx_opt.num_sacks + tp->rx_opt.dsack;
@@ -1523,6 +1534,9 @@ static int tcp_mtu_probe(struct sock *sk)
 
 	/* We're ready to send.  If this fails, the probe will
 	 * be resegmented into mss-sized pieces by tcp_write_xmit(). */
+
+	/* dacashman - might be a key tcp_time_stamp area */
+
 	TCP_SKB_CB(nskb)->when = tcp_time_stamp;
 	if (!tcp_transmit_skb(sk, nskb, 1, GFP_ATOMIC)) {
 		/* Decrement cwnd here because we are sending
@@ -1603,6 +1617,8 @@ static int tcp_write_xmit(struct sock *sk, unsigned int mss_now, int nonagle,
 		if (skb->len > limit &&
 		    unlikely(tso_fragment(sk, skb, limit, mss_now)))
 			break;
+
+		/* dacashman - another tcp_time_stamp possibility */
 
 		TCP_SKB_CB(skb)->when = tcp_time_stamp;
 
@@ -1962,6 +1978,9 @@ int tcp_retransmit_skb(struct sock *sk, struct sk_buff *skb)
 	/* Make a copy, if the first transmission SKB clone we made
 	 * is still in somebody's hands, else make a clone.
 	 */
+
+	/* dacashman - another tcp_time_stamp possibility */
+
 	TCP_SKB_CB(skb)->when = tcp_time_stamp;
 
 	err = tcp_transmit_skb(sk, skb, 1, GFP_ATOMIC);
@@ -2185,6 +2204,9 @@ void tcp_send_active_reset(struct sock *sk, gfp_t priority)
 	tcp_init_nondata_skb(skb, tcp_acceptable_seq(sk),
 			     TCPCB_FLAG_ACK | TCPCB_FLAG_RST);
 	/* Send it off. */
+
+	/* dacashman - another place */
+
 	TCP_SKB_CB(skb)->when = tcp_time_stamp;
 	if (tcp_transmit_skb(sk, skb, 0, priority))
 		NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPABORTFAILED);
@@ -2224,6 +2246,9 @@ int tcp_send_synack(struct sock *sk)
 		TCP_SKB_CB(skb)->flags |= TCPCB_FLAG_ACK;
 		TCP_ECN_send_synack(tcp_sk(sk), skb);
 	}
+
+	/* dacashman - yet another */
+
 	TCP_SKB_CB(skb)->when = tcp_time_stamp;
 	return tcp_transmit_skb(sk, skb, 1, GFP_ATOMIC);
 }
@@ -2275,6 +2300,7 @@ struct sk_buff *tcp_make_synack(struct sock *sk, struct dst_entry *dst,
 		TCP_SKB_CB(skb)->when = cookie_init_timestamp(req);
 	else
 #endif
+	  /* dacashman - another another */
 	TCP_SKB_CB(skb)->when = tcp_time_stamp;
 	tcp_header_size = tcp_synack_options(sk, req, mss,
 					     skb, &opts, &md5) +
@@ -2394,6 +2420,8 @@ int tcp_connect(struct sock *sk)
 	TCP_ECN_send_syn(sk, buff);
 
 	/* Send it off. */
+
+	/* dacashman - another another */
 	TCP_SKB_CB(buff)->when = tcp_time_stamp;
 	tp->retrans_stamp = TCP_SKB_CB(buff)->when;
 	skb_header_release(buff);
@@ -2531,6 +2559,9 @@ static int tcp_xmit_probe_skb(struct sock *sk, int urgent)
 	 * send it.
 	 */
 	tcp_init_nondata_skb(skb, tp->snd_una - !urgent, TCPCB_FLAG_ACK);
+
+	/* dacashman - another another another */
+
 	TCP_SKB_CB(skb)->when = tcp_time_stamp;
 	return tcp_transmit_skb(sk, skb, 0, GFP_ATOMIC);
 }
@@ -2567,6 +2598,9 @@ int tcp_write_wakeup(struct sock *sk)
 			tcp_set_skb_tso_segs(sk, skb, mss);
 
 		TCP_SKB_CB(skb)->flags |= TCPCB_FLAG_PSH;
+
+		/* dacashman - another another another */
+
 		TCP_SKB_CB(skb)->when = tcp_time_stamp;
 		err = tcp_transmit_skb(sk, skb, 1, GFP_ATOMIC);
 		if (!err)

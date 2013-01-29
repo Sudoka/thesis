@@ -1044,7 +1044,7 @@ memset(input_pool_data, 0, INPUT_POOL_WORDS * sizeof(__u32));
 memset(blocking_pool_data, 0, OUTPUT_POOL_WORDS * sizeof(__u32)); 
 memset(nonblocking_pool_data, 0, OUTPUT_POOL_WORDS * sizeof(__u32)); 
 
-/* dcashman change - adding timing seed back after 0's */
+/* dacashman change - adding timing seed back after 0's */
 /*  code from init_std_data */
 	ktime_t now;
 	unsigned long flags;
@@ -1054,8 +1054,12 @@ memset(nonblocking_pool_data, 0, OUTPUT_POOL_WORDS * sizeof(__u32));
 	spin_unlock_irqrestore(&nonblocking_pool.lock, flags);
 
 	now = ktime_get_real();
-	//dcashman change - printing ktime_get_real val at boot
-        printk(KERN_DEBUG "KTIME ENTROYPY reading nsecs: %d\n", (int) (ktime_to_ns(now)));
+	//dacashman change - printing ktime_get_real val at boot
+	u64 temp_addition = ktime_to_ns(now);
+	u64 temp_addition2 = jiffies_to_ns();
+	printk(KERN_DEBUG "TIME Value of ktime_to_ns at rand_initialize %llu\n", temp_addition);
+	printk(KERN_DEBUG "TIME Value of jiffies_to_ns at rand_initialize %llu\n", temp_addition2);
+        printk(KERN_DEBUG "TIME ENTROYPY reading nsecs: %d\n", (int) (ktime_to_ns(now)));
 
 
         struct tm thyme;

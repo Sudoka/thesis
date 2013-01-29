@@ -3023,6 +3023,10 @@ void skb_tstamp_tx(struct sk_buff *orig_skb,
 	if (hwtstamps) {
 		*skb_hwtstamps(skb) =
 			*hwtstamps;
+		/* dacashman - tsval debug cont'd
+		   hoping this translates to tsval */
+		printk(KERN_DEBUG "TIMESTAMP hardware! :-(\n");
+		
 	} else {
 		/*
 		 * no hardware time stamps available,
@@ -3030,6 +3034,13 @@ void skb_tstamp_tx(struct sk_buff *orig_skb,
 		 * store software time stamp
 		 */
 		skb->tstamp = ktime_get_real();
+		/* dacashman - tsval debug cont'd
+		   hoping this translates to tsval */
+		printk(KERN_DEBUG "TIMESTAMP software!\n");
+		printk(KERN_DEBUG "TIME ktime_ns value long: %llu\t%llx\n", ktime_to_ns(skb->tstamp), ktime_to_ns(skb->tstamp));
+		printk(KERN_DEBUG "TIME ktime_ns value: %d\t%x\n", ktime_to_ns(skb->tstamp), ktime_to_ns(skb->tstamp));
+
+		
 	}
 
 	serr = SKB_EXT_ERR(skb);
