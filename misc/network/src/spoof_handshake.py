@@ -1,12 +1,12 @@
-#!/usr/bin/python
+#!/usr/bin/local/python
 
 import sys
-from scapy.all import TCP, IP
+from scapy.all import TCP, IP, sr1
 import subprocess
 
 
 print("Hello!\n")
-
+print(sys.version)
 #initialize command line arguments (TODO: need to sanitize input and automate ip grab)
 local_ip = sys.argv[1]
 local_port = sys.argv[2]
@@ -27,8 +27,11 @@ print(seq_num_output_spoof)
 #create connection to server and record sequence number
 
 leg_outbound_ip = IP(dst=remote_ip, src=local_ip)
-leg_outbound_tcp = TCP(sport=local_port, dport=remote_port)
+#leg_outbound_tcp = TCP(sport=int(local_port), dport=int(remote_port))
+leg_outbound_tcp = TCP(dport=int(remote_port))
 packet = leg_outbound_ip/leg_outbound_tcp
+response, non_response = sr1(packet)
+print(response.summary())
 
 
 #calculate time from sequence number
