@@ -1,4 +1,4 @@
-#!/usr/bin/local/python
+#!/usr/local/bin/python
 
 import sys
 from scapy.all import TCP, IP, sr1
