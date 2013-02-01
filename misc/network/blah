@@ -1,1 +1,2261 @@
-\x18\x5c\x2b\x01\x90\x19\x3c\xf2\x82\x2a\xb3\xa2\x3f\x05\x52\x77\x57\x79\x16\x43\x84\xc3\xe9\x79\x50\x8e\x3f\xf3\x19\x2a\xfd\xfb\x62\x3c\xac\x1c\x3b\x3b\x15\x27\xa8\x22\xc5\x9a\x05\x6c\xa8\x3a\x44\xaf\x13\xe0\x9d\x22\x0f\xc9\x6c\x28\x87\x79\x69\x91\x8a\xf9
+10c90>] tcp_data_snd_check+0x20/0xe0
+[   12.441433]  [<c051487b>] tcp_rcv_state_process+0x1cb/0x970
+[   12.441433]  [<c051d9eb>] tcp_child_process+0x7b/0xa0
+[   12.441433]  [<c051b88f>] tcp_v4_do_rcv+0x2ff/0x3c0
+[   12.441433]  [<c051cda1>] tcp_v4_rcv+0x541/0x740
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c04fe6d7>] ip_local_deliver_finish+0xa7/0x270
+[   12.441433]  [<c04fe92f>] ip_local_deliver+0x8f/0xa0
+[   12.441433]  [<c04fdf8b>] ip_rcv_finish+0xeb/0x380
+[   12.441433]  [<c04fe43e>] ip_rcv+0x21e/0x2e0
+[   12.441433]  [<c059ec1b>] ? dump_stack+0x73/0x7a
+[   12.441433]  [<c04d968f>] netif_receive_skb+0x36f/0x5a0
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c04d992f>] process_backlog+0x6f/0xb0
+[   12.441433]  [<c04da03d>] net_rx_action+0xed/0x1d0
+[   12.441433]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   12.441433]  [<c051b708>] ? tcp_v4_do_rcv+0x178/0x3c0
+[   12.441433]  [<c0159495>] do_softirq+0x45/0x50
+[   12.441433]  [<c01599cd>] local_bh_enable_ip+0x7d/0x90
+[   12.441433]  [<c05a1b36>] _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8c7c>] release_sock+0x9c/0xb0
+[   12.441433]  [<c052a5ad>] inet_stream_connect+0x14d/0x270
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c04c68e6>] sys_connect+0xb6/0xd0
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c03c7450>] ? n_tty_write+0x0/0x3c0
+[   12.441433]  [<c04c7ca6>] sys_socketcall+0x246/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c03c1b15>] ? mix_pool_bytes_extract+0x145/0x160
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c05a1aa7>] ? _spin_lock_bh+0x17/0x20
+[   12.441433]  [<c0509110>] tcp_send_mss+0x20/0xe0
+[   12.441433]  [<c050bf40>] tcp_sendmsg+0x90/0x900
+[   12.441433]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   12.441433]  [<c0107e3a>] ? __switch_to+0xba/0x170
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c04cb647>] ? __skb_clone+0x27/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 4294917271	ffff3c97
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIME tsval orig: 4294917271	ffff3c97
+[   12.441433] TIME tsecr orig: 4294917271	ffff3c97
+[   12.441433] TIME tsval htonl: 2537357311	973cffff
+[   12.441433] TIME tsecr htonl: 2537357311	973cffff
+[   12.441433] TIME ktime_ns value long: 99901641624	17429a1398
+[   12.441433] TIME ktime_ns value: 1117393816	17
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c0510c90>] tcp_data_snd_check+0x20/0xe0
+[   12.441433]  [<c0514273>] tcp_rcv_established+0x313/0x750
+[   12.441433]  [<c0109543>] ? sysenter_do_call+0x12/0x28
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c051cda1>] tcp_v4_rcv+0x541/0x740
+[   12.441433]  [<c04fe6d7>] ip_local_deliver_finish+0xa7/0x270
+[   12.441433]  [<c04fe92f>] ip_local_deliver+0x8f/0xa0
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04fdf8b>] ip_rcv_finish+0xeb/0x380
+[   12.441433]  [<c04fe43e>] ip_rcv+0x21e/0x2e0
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c04d968f>] netif_receive_skb+0x36f/0x5a0
+[   12.441433]  [<c034ce76>] ? put_dec+0x136/0x140
+[   12.441433]  [<c04d992f>] process_backlog+0x6f/0xb0
+[   12.441433]  [<c04da03d>] net_rx_action+0xed/0x1d0
+[   12.441433]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   12.441433]  [<c04449cb>] ? loopback_xmit+0x5b/0x80
+[   12.441433]  [<c04d8c91>] ? dev_hard_start_xmit+0x191/0x370
+[   12.441433]  [<c0159495>] do_softirq+0x45/0x50
+[   12.441433]  [<c015966d>] local_bh_enable+0x7d/0x90
+[   12.441433]  [<c04d8f69>] dev_queue_xmit+0xf9/0x4b0
+[   12.441433]  [<c0503518>] ip_finish_output+0x138/0x2c0
+[   12.441433]  [<c0503747>] ip_output+0xa7/0xb0
+[   12.441433]  [<c05028cd>] ip_local_out+0x1d/0x30
+[   12.441433]  [<c0502ffe>] ip_queue_xmit+0x14e/0x3a0
+[   12.441433]  [<c0177e52>] ? getnstimeofday+0x52/0x110
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c051596e>] ? tcp_options_write+0x11e/0x200
+[   12.441433]  [<c0515ded>] tcp_transmit_skb+0x39d/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c0517433>] ? tcp_send_ack+0x33/0x110
+[   12.441433]  [<c05174bc>] tcp_send_ack+0xbc/0x110
+[   12.441433]  [<c050f6a6>] __tcp_ack_snd_check+0x56/0x90
+[   12.441433]  [<c051428e>] tcp_rcv_established+0x32e/0x750
+[   12.441433]  [<c0109543>] ? sysenter_do_call+0x12/0x28
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c051cda1>] tcp_v4_rcv+0x541/0x740
+[   12.441433]  [<c04fe6d7>] ip_local_deliver_finish+0xa7/0x270
+[   12.441433]  [<c04fe92f>] ip_local_deliver+0x8f/0xa0
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04fdf8b>] ip_rcv_finish+0xeb/0x380
+[   12.441433]  [<c04fe43e>] ip_rcv+0x21e/0x2e0
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c04d968f>] netif_receive_skb+0x36f/0x5a0
+[   12.441433]  [<c034ce76>] ? put_dec+0x136/0x140
+[   12.441433]  [<c04d992f>] process_backlog+0x6f/0xb0
+[   12.441433]  [<c04da03d>] net_rx_action+0xed/0x1d0
+[   12.441433]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   12.441433]  [<c04449cb>] ? loopback_xmit+0x5b/0x80
+[   12.441433]  [<c04d8c91>] ? dev_hard_start_xmit+0x191/0x370
+[   12.441433]  [<c0159495>] do_softirq+0x45/0x50
+[   12.441433]  [<c015966d>] local_bh_enable+0x7d/0x90
+[   12.441433]  [<c04d8f69>] dev_queue_xmit+0xf9/0x4b0
+[   12.441433]  [<c0503518>] ip_finish_output+0x138/0x2c0
+[   12.441433]  [<c0503747>] ip_output+0xa7/0xb0
+[   12.441433]  [<c05028cd>] ip_local_out+0x1d/0x30
+[   12.441433]  [<c0502ffe>] ip_queue_xmit+0x14e/0x3a0
+[   12.441433]  [<c0177e52>] ? getnstimeofday+0x52/0x110
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c051596e>] ? tcp_options_write+0x11e/0x200
+[   12.441433]  [<c0515ded>] tcp_transmit_skb+0x39d/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 4294917271	ffff3c97
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c0517433>] ? tcp_send_ack+0x33/0x110
+[   12.441433]  [<c05174bc>] tcp_send_ack+0xbc/0x110
+[   12.441433]  [<c050f6a6>] __tcp_ack_snd_check+0x56/0x90
+[   12.441433]  [<c051428e>] tcp_rcv_established+0x32e/0x750
+[   12.441433]  [<c0109543>] ? sysenter_do_call+0x12/0x28
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c051cda1>] tcp_v4_rcv+0x541/0x740
+[   12.441433]  [<c04fe6d7>] ip_local_deliver_finish+0xa7/0x270
+[   12.441433]  [<c04fe92f>] ip_local_deliver+0x8f/0xa0
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04fdf8b>] ip_rcv_finish+0xeb/0x380
+[   12.441433]  [<c04fe43e>] ip_rcv+0x21e/0x2e0
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c04d968f>] netif_receive_skb+0x36f/0x5a0
+[   12.441433]  [<c034ce76>] ? put_dec+0x136/0x140
+[   12.441433]  [<c04d992f>] process_backlog+0x6f/0xb0
+[   12.441433]  [<c04da03d>] net_rx_action+0xed/0x1d0
+[   12.441433]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   12.441433]  [<c04449cb>] ? loopback_xmit+0x5b/0x80
+[   12.441433]  [<c04d8c91>] ? dev_hard_start_xmit+0x191/0x370
+[   12.441433]  [<c0159495>] do_softirq+0x45/0x50
+[   12.441433]  [<c015966d>] local_bh_enable+0x7d/0x90
+[   12.441433]  [<c04d8f69>] dev_queue_xmit+0xf9/0x4b0
+[   12.441433]  [<c0503518>] ip_finish_output+0x138/0x2c0
+[   12.441433]  [<c0503747>] ip_output+0xa7/0xb0
+[   12.441433]  [<c05028cd>] ip_local_out+0x1d/0x30
+[   12.441433]  [<c0502ffe>] ip_queue_xmit+0x14e/0x3a0
+[   12.441433]  [<c0177e52>] ? getnstimeofday+0x52/0x110
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c051596e>] ? tcp_options_write+0x11e/0x200
+[   12.441433]  [<c0515ded>] tcp_transmit_skb+0x39d/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIME tsval orig: 4294917271	ffff3c97
+[   12.441433] TIME tsecr orig: 4294917271	ffff3c97
+[   12.441433] TIME tsval htonl: 2537357311	973cffff
+[   12.441433] TIME tsecr htonl: 2537357311	973cffff
+[   12.441433] TIME ktime_ns value long: 99901641624	17429a1398
+[   12.441433] TIME ktime_ns value: 1117393816	17
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c0510c90>] tcp_data_snd_check+0x20/0xe0
+[   12.441433]  [<c051448f>] tcp_rcv_established+0x52f/0x750
+[   12.441433]  [<c04c90b4>] ? sk_reset_timer+0x14/0x20
+[   12.441433]  [<c0517aa7>] ? tcp_event_new_data_sent+0x87/0xb0
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c04c8c32>] release_sock+0x52/0xb0
+[   12.441433]  [<c050928a>] ? tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c535>] tcp_sendmsg+0x685/0x900
+[   12.441433]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 729, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8c7c>] ? release_sock+0x9c/0xb0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c05a1aa7>] ? _spin_lock_bh+0x17/0x20
+[   12.441433]  [<c0509110>] tcp_send_mss+0x20/0xe0
+[   12.441433]  [<c050bf40>] tcp_sendmsg+0x90/0x900
+[   12.441433]  [<c04c8468>] ? sock_common_recvmsg+0x48/0x60
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[   12.441433]  [<c051b708>] ? tcp_v4_do_rcv+0x178/0x3c0
+[   12.441433]  [<c059ffcd>] ? schedule_timeout+0x1ad/0x280
+[   12.441433]  [<c05a1aa7>] ? _spin_lock_bh+0x17/0x20
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c04c68e6>] ? sys_connect+0xb6/0xd0
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 729, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c04cb647>] ? __skb_clone+0x27/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[   12.441433]  [<c051b708>] ? tcp_v4_do_rcv+0x178/0x3c0
+[   12.441433]  [<c059ffcd>] ? schedule_timeout+0x1ad/0x280
+[   12.441433]  [<c05a1aa7>] ? _spin_lock_bh+0x17/0x20
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c04c68e6>] ? sys_connect+0xb6/0xd0
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 4294917271	ffff3c97
+[   12.441433] Pid: 729, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[   12.441433]  [<c051b708>] ? tcp_v4_do_rcv+0x178/0x3c0
+[   12.441433]  [<c059ffcd>] ? schedule_timeout+0x1ad/0x280
+[   12.441433]  [<c05a1aa7>] ? _spin_lock_bh+0x17/0x20
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c04c68e6>] ? sys_connect+0xb6/0xd0
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIME tsval orig: 4294917271	ffff3c97
+[   12.441433] TIME tsecr orig: 4294917271	ffff3c97
+[   12.441433] TIME tsval htonl: 2537357311	973cffff
+[   12.441433] TIME tsecr htonl: 2537357311	973cffff
+[   12.441433] TIME ktime_ns value long: 99901641624	17429a1398
+[   12.441433] TIME ktime_ns value: 1117393816	17
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c03500f9>] ? copy_to_user+0x39/0x130
+[   12.441433]  [<c0517433>] ? tcp_send_ack+0x33/0x110
+[   12.441433]  [<c05174bc>] tcp_send_ack+0xbc/0x110
+[   12.441433]  [<c050f6a6>] __tcp_ack_snd_check+0x56/0x90
+[   12.441433]  [<c0514183>] tcp_rcv_established+0x223/0x750
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c04c8d27>] ? lock_sock_nested+0x97/0xa0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c921c>] ? sk_wait_data+0x8c/0xc0
+[   12.441433]  [<c0509322>] tcp_prequeue_process+0x62/0x80
+[   12.441433]  [<c050bbcc>] tcp_recvmsg+0x8fc/0xbe0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8468>] sock_common_recvmsg+0x48/0x60
+[   12.441433]  [<c04c6e95>] sock_recvmsg+0xf5/0x120
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6fd4>] sys_recvfrom+0xc4/0x160
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c70ab>] sys_recv+0x3b/0x40
+[   12.441433]  [<c04c7c02>] sys_socketcall+0x1a2/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 4294917271	ffff3c97
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c03500f9>] ? copy_to_user+0x39/0x130
+[   12.441433]  [<c0517433>] ? tcp_send_ack+0x33/0x110
+[   12.441433]  [<c05174bc>] tcp_send_ack+0xbc/0x110
+[   12.441433]  [<c050f6a6>] __tcp_ack_snd_check+0x56/0x90
+[   12.441433]  [<c0514183>] tcp_rcv_established+0x223/0x750
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c04c8d27>] ? lock_sock_nested+0x97/0xa0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c921c>] ? sk_wait_data+0x8c/0xc0
+[   12.441433]  [<c0509322>] tcp_prequeue_process+0x62/0x80
+[   12.441433]  [<c050bbcc>] tcp_recvmsg+0x8fc/0xbe0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8468>] sock_common_recvmsg+0x48/0x60
+[   12.441433]  [<c04c6e95>] sock_recvmsg+0xf5/0x120
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6fd4>] sys_recvfrom+0xc4/0x160
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c70ab>] sys_recv+0x3b/0x40
+[   12.441433]  [<c04c7c02>] sys_socketcall+0x1a2/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIME tsval orig: 4294917271	ffff3c97
+[   12.441433] TIME tsecr orig: 4294917271	ffff3c97
+[   12.441433] TIME tsval htonl: 2537357311	973cffff
+[   12.441433] TIME tsecr htonl: 2537357311	973cffff
+[   12.441433] TIME ktime_ns value long: 99901641624	17429a1398
+[   12.441433] TIME ktime_ns value: 1117393816	17
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c0510c90>] tcp_data_snd_check+0x20/0xe0
+[   12.441433]  [<c051448f>] tcp_rcv_established+0x52f/0x750
+[   12.441433]  [<c04449cb>] ? loopback_xmit+0x5b/0x80
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c051cda1>] tcp_v4_rcv+0x541/0x740
+[   12.441433]  [<c0503747>] ? ip_output+0xa7/0xb0
+[   12.441433]  [<c04fe6d7>] ip_local_deliver_finish+0xa7/0x270
+[   12.441433]  [<c0177e52>] ? getnstimeofday+0x52/0x110
+[   12.441433]  [<c04fe92f>] ip_local_deliver+0x8f/0xa0
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c04fdf8b>] ip_rcv_finish+0xeb/0x380
+[   12.441433]  [<c051596e>] ? tcp_options_write+0x11e/0x200
+[   12.441433]  [<c051a302>] ? tcp_v4_send_check+0x52/0xe0
+[   12.441433]  [<c04fe43e>] ip_rcv+0x21e/0x2e0
+[   12.441433]  [<c0515ded>] ? tcp_transmit_skb+0x39d/0x740
+[   12.441433]  [<c04d968f>] netif_receive_skb+0x36f/0x5a0
+[   12.441433]  [<c04d992f>] process_backlog+0x6f/0xb0
+[   12.441433]  [<c04da03d>] net_rx_action+0xed/0x1d0
+[   12.441433]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   12.441433]  [<c051b800>] ? tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c04c8d27>] ? lock_sock_nested+0x97/0xa0
+[   12.441433]  [<c0159495>] do_softirq+0x45/0x50
+[   12.441433]  [<c015966d>] local_bh_enable+0x7d/0x90
+[   12.441433]  [<c050932d>] tcp_prequeue_process+0x6d/0x80
+[   12.441433]  [<c050bbcc>] tcp_recvmsg+0x8fc/0xbe0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8468>] sock_common_recvmsg+0x48/0x60
+[   12.441433]  [<c04c6e95>] sock_recvmsg+0xf5/0x120
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6fd4>] sys_recvfrom+0xc4/0x160
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c70ab>] sys_recv+0x3b/0x40
+[   12.441433]  [<c04c7c02>] sys_socketcall+0x1a2/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8c7c>] ? release_sock+0x9c/0xb0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c05a1aa7>] ? _spin_lock_bh+0x17/0x20
+[   12.441433]  [<c0509110>] tcp_send_mss+0x20/0xe0
+[   12.441433]  [<c050bf40>] tcp_sendmsg+0x90/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c04cb647>] ? __skb_clone+0x27/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 4294917271	ffff3c97
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIME tsval orig: 4294917271	ffff3c97
+[   12.441433] TIME tsecr orig: 4294917271	ffff3c97
+[   12.441433] TIME tsval htonl: 2537357311	973cffff
+[   12.441433] TIME tsecr htonl: 2537357311	973cffff
+[   12.441433] TIME ktime_ns value long: 99901641624	17429a1398
+[   12.441433] TIME ktime_ns value: 1117393816	17
+[   12.441433] Pid: 729, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8c7c>] ? release_sock+0x9c/0xb0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c05a1aa7>] ? _spin_lock_bh+0x17/0x20
+[   12.441433]  [<c0509110>] tcp_send_mss+0x20/0xe0
+[   12.441433]  [<c050bf40>] tcp_sendmsg+0x90/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 729, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c04cb647>] ? __skb_clone+0x27/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 4294917271	ffff3c97
+[   12.441433] Pid: 729, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIME tsval orig: 4294917271	ffff3c97
+[   12.441433] TIME tsecr orig: 4294917271	ffff3c97
+[   12.441433] TIME tsval htonl: 2537357311	973cffff
+[   12.441433] TIME tsecr htonl: 2537357311	973cffff
+[   12.441433] TIME ktime_ns value long: 99901641624	17429a1398
+[   12.441433] TIME ktime_ns value: 1117393816	17
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c0510c90>] tcp_data_snd_check+0x20/0xe0
+[   12.441433]  [<c0514158>] tcp_rcv_established+0x1f8/0x750
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c04c8d27>] ? lock_sock_nested+0x97/0xa0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c921c>] ? sk_wait_data+0x8c/0xc0
+[   12.441433]  [<c0509322>] tcp_prequeue_process+0x62/0x80
+[   12.441433]  [<c050bbcc>] tcp_recvmsg+0x8fc/0xbe0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8468>] sock_common_recvmsg+0x48/0x60
+[   12.441433]  [<c04c6e95>] sock_recvmsg+0xf5/0x120
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6fd4>] sys_recvfrom+0xc4/0x160
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c70ab>] sys_recv+0x3b/0x40
+[   12.441433]  [<c04c7c02>] sys_socketcall+0x1a2/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8c7c>] ? release_sock+0x9c/0xb0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c05a1aa7>] ? _spin_lock_bh+0x17/0x20
+[   12.441433]  [<c0509110>] tcp_send_mss+0x20/0xe0
+[   12.441433]  [<c050bf40>] tcp_sendmsg+0x90/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c04cb647>] ? __skb_clone+0x27/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 4294917271	ffff3c97
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIME tsval orig: 4294917271	ffff3c97
+[   12.441433] TIME tsecr orig: 4294917271	ffff3c97
+[   12.441433] TIME tsval htonl: 2537357311	973cffff
+[   12.441433] TIME tsecr htonl: 2537357311	973cffff
+[   12.441433] TIME ktime_ns value long: 99901641624	17429a1398
+[   12.441433] TIME ktime_ns value: 1117393816	17
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c0510c90>] tcp_data_snd_check+0x20/0xe0
+[   12.441433]  [<c0514158>] tcp_rcv_established+0x1f8/0x750
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c051cda1>] tcp_v4_rcv+0x541/0x740
+[   12.441433]  [<c04fe6d7>] ip_local_deliver_finish+0xa7/0x270
+[   12.441433]  [<c04fe92f>] ip_local_deliver+0x8f/0xa0
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04fdf8b>] ip_rcv_finish+0xeb/0x380
+[   12.441433]  [<c04fe43e>] ip_rcv+0x21e/0x2e0
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c04d968f>] netif_receive_skb+0x36f/0x5a0
+[   12.441433]  [<c034ce76>] ? put_dec+0x136/0x140
+[   12.441433]  [<c04d992f>] process_backlog+0x6f/0xb0
+[   12.441433]  [<c04da03d>] net_rx_action+0xed/0x1d0
+[   12.441433]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   12.441433]  [<c04449cb>] ? loopback_xmit+0x5b/0x80
+[   12.441433]  [<c04d8c91>] ? dev_hard_start_xmit+0x191/0x370
+[   12.441433]  [<c0159495>] do_softirq+0x45/0x50
+[   12.441433]  [<c015966d>] local_bh_enable+0x7d/0x90
+[   12.441433]  [<c04d8f69>] dev_queue_xmit+0xf9/0x4b0
+[   12.441433]  [<c0503518>] ip_finish_output+0x138/0x2c0
+[   12.441433]  [<c0503747>] ip_output+0xa7/0xb0
+[   12.441433]  [<c05028cd>] ip_local_out+0x1d/0x30
+[   12.441433]  [<c0502ffe>] ip_queue_xmit+0x14e/0x3a0
+[   12.441433]  [<c0177e52>] ? getnstimeofday+0x52/0x110
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c051596e>] ? tcp_options_write+0x11e/0x200
+[   12.441433]  [<c0515ded>] tcp_transmit_skb+0x39d/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 0, comm: swapper Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c0517433>] ? tcp_send_ack+0x33/0x110
+[   12.441433]  [<c05174bc>] tcp_send_ack+0xbc/0x110
+[   12.441433]  [<c0518e8c>] tcp_delack_timer+0x11c/0x210
+[   12.441433]  [<c0161fde>] run_timer_softirq+0x13e/0x2c0
+[   12.441433]  [<c0161a4e>] ? update_process_times+0x4e/0x60
+[   12.441433]  [<c0518d70>] ? tcp_delack_timer+0x0/0x210
+[   12.441433]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c010ce07>] ? enable_8259A_irq+0x47/0x70
+[   12.441433]  [<c0159495>] do_softirq+0x45/0x50
+[   12.441433]  [<c01595e5>] irq_exit+0x65/0x70
+[   12.441433]  [<c05a5b05>] do_IRQ+0x55/0xc0
+[   12.441433]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[   12.441433]  [<c0109c70>] common_interrupt+0x30/0x40
+[   12.441433]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[   12.441433]  [<c01083d4>] cpu_idle+0x94/0xd0
+[   12.441433]  [<c058b8a2>] rest_init+0x62/0x70
+[   12.441433]  [<c07c68e5>] start_kernel+0x356/0x35c
+[   12.441433]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[   12.441433]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[   12.441433] TIMESTAMP tsval established orig: 4294917281	ffff3ca1
+[   12.441433] Pid: 0, comm: swapper Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c0517433>] ? tcp_send_ack+0x33/0x110
+[   12.441433]  [<c05174bc>] tcp_send_ack+0xbc/0x110
+[   12.441433]  [<c0518e8c>] tcp_delack_timer+0x11c/0x210
+[   12.441433]  [<c0161fde>] run_timer_softirq+0x13e/0x2c0
+[   12.441433]  [<c0161a4e>] ? update_process_times+0x4e/0x60
+[   12.441433]  [<c0518d70>] ? tcp_delack_timer+0x0/0x210
+[   12.441433]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c010ce07>] ? enable_8259A_irq+0x47/0x70
+[   12.441433]  [<c0159495>] do_softirq+0x45/0x50
+[   12.441433]  [<c01595e5>] irq_exit+0x65/0x70
+[   12.441433]  [<c05a5b05>] do_IRQ+0x55/0xc0
+[   12.441433]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[   12.441433]  [<c0109c70>] common_interrupt+0x30/0x40
+[   12.441433]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[   12.441433]  [<c01083d4>] cpu_idle+0x94/0xd0
+[   12.441433]  [<c058b8a2>] rest_init+0x62/0x70
+[   12.441433]  [<c07c68e5>] start_kernel+0x356/0x35c
+[   12.441433]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[   12.441433]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[   12.441433] TIME tsval orig: 4294917281	ffff3ca1
+[   12.441433] TIME tsecr orig: 4294917271	ffff3c97
+[   12.441433] TIME tsval htonl: 2705129471	a13cffff
+[   12.441433] TIME tsecr htonl: 2537357311	973cffff
+[   12.441433] TIME ktime_ns value long: 99941642851	1744fc7263
+[   12.441433] TIME ktime_ns value: 1157395043	17
+[   12.441433] Pid: 728, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c0510c90>] tcp_data_snd_check+0x20/0xe0
+[   12.441433]  [<c051448f>] tcp_rcv_established+0x52f/0x750
+[   12.441433]  [<c059ffcd>] ? schedule_timeout+0x1ad/0x280
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c04c8d27>] ? lock_sock_nested+0x97/0xa0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c921c>] ? sk_wait_data+0x8c/0xc0
+[   12.441433]  [<c0509322>] tcp_prequeue_process+0x62/0x80
+[   12.441433]  [<c050bbcc>] tcp_recvmsg+0x8fc/0xbe0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8468>] sock_common_recvmsg+0x48/0x60
+[   12.441433]  [<c04c6e95>] sock_recvmsg+0xf5/0x120
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6fd4>] sys_recvfrom+0xc4/0x160
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c70ab>] sys_recv+0x3b/0x40
+[   12.441433]  [<c04c7c02>] sys_socketcall+0x1a2/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 729, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c0516275>] ? tcp_send_active_reset+0x25/0x170
+[   12.441433]  [<c05162fe>] tcp_send_active_reset+0xae/0x170
+[   12.441433]  [<c050a2b0>] tcp_close+0xd0/0x420
+[   12.441433]  [<c052a8db>] inet_release+0x3b/0x60
+[   12.441433]  [<c04c5b90>] sock_release+0x20/0x80
+[   12.441433]  [<c020ff07>] ? __fput+0x177/0x1f0
+[   12.441433]  [<c04c5c07>] sock_close+0x17/0x30
+[   12.441433]  [<c020fe6f>] __fput+0xdf/0x1f0
+[   12.441433]  [<c020ff9d>] fput+0x1d/0x30
+[   12.441433]  [<c020c69c>] filp_close+0x4c/0x80
+[   12.441433]  [<c015456b>] put_files_struct+0x6b/0xb0
+[   12.441433]  [<c01545f8>] exit_files+0x48/0x60
+[   12.441433]  [<c01563c4>] do_exit+0x134/0x6f0
+[   12.441433]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   12.441433]  [<c01643a2>] ? dequeue_signal+0x32/0x180
+[   12.441433]  [<c01569be>] do_group_exit+0x3e/0xa0
+[   12.441433]  [<c0165d92>] get_signal_to_deliver+0x1a2/0x3c0
+[   12.441433]  [<c01089fb>] do_signal+0x6b/0xa50
+[   12.441433]  [<c03500f9>] ? copy_to_user+0x39/0x130
+[   12.441433]  [<c01725ba>] ? hrtimer_nanosleep+0xea/0x140
+[   12.441433]  [<c0171560>] ? hrtimer_wakeup+0x0/0x30
+[   12.441433]  [<c0109435>] do_notify_resume+0x55/0x80
+[   12.441433]  [<c0109708>] work_notifysig+0x13/0x1b
+[   12.441433] TIMESTAMP tsval established orig: 4294917966	ffff3f4e
+[   12.441433] Pid: 729, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c0516275>] ? tcp_send_active_reset+0x25/0x170
+[   12.441433]  [<c05162fe>] tcp_send_active_reset+0xae/0x170
+[   12.441433]  [<c050a2b0>] tcp_close+0xd0/0x420
+[   12.441433]  [<c052a8db>] inet_release+0x3b/0x60
+[   12.441433]  [<c04c5b90>] sock_release+0x20/0x80
+[   12.441433]  [<c020ff07>] ? __fput+0x177/0x1f0
+[   12.441433]  [<c04c5c07>] sock_close+0x17/0x30
+[   12.441433]  [<c020fe6f>] __fput+0xdf/0x1f0
+[   12.441433]  [<c020ff9d>] fput+0x1d/0x30
+[   12.441433]  [<c020c69c>] filp_close+0x4c/0x80
+[   12.441433]  [<c015456b>] put_files_struct+0x6b/0xb0
+[   12.441433]  [<c01545f8>] exit_files+0x48/0x60
+[   12.441433]  [<c01563c4>] do_exit+0x134/0x6f0
+[   12.441433]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   12.441433]  [<c01643a2>] ? dequeue_signal+0x32/0x180
+[   12.441433]  [<c01569be>] do_group_exit+0x3e/0xa0
+[   12.441433]  [<c0165d92>] get_signal_to_deliver+0x1a2/0x3c0
+[   12.441433]  [<c01089fb>] do_signal+0x6b/0xa50
+[   12.441433]  [<c03500f9>] ? copy_to_user+0x39/0x130
+[   12.441433]  [<c01725ba>] ? hrtimer_nanosleep+0xea/0x140
+[   12.441433]  [<c0171560>] ? hrtimer_wakeup+0x0/0x30
+[   12.441433]  [<c0109435>] do_notify_resume+0x55/0x80
+[   12.441433]  [<c0109708>] work_notifysig+0x13/0x1b
+[   12.441433] TIME tsval orig: 4294917966	ffff3f4e
+[   12.441433] TIME tsecr orig: 4294917271	ffff3c97
+[   12.441433] TIME tsval htonl: 1312817151	4e3fffff
+[   12.441433] TIME tsecr htonl: 2537357311	973cffff
+[   12.441433] TIME ktime_ns value long: 102681727936	17e84ed3c0
+[   12.441433] TIME ktime_ns value: 3897480128	17
+[   12.441433] TCP_SEQ BYTE ORDER TEST
+[   12.441433] saddr normal: 100007f
+[   12.441433] saddr htonl: 7f000001
+[   12.441433] saddr ntohl: 7f000001
+[   12.441433] net_secret[15]: cf7fdc24
+[   12.441433] Sequence num: 514a6b8e
+[   12.441433] Sequence num ntohl: 8e6b4a51
+[   12.441433] TIME Value of ktime_to_ns at seq_scale 1796906872
+[   12.441433] TIME Value of jiffies_to_ns at seq_scale 1796987304
+[   12.441433] Value of seq+ns reading 64-bit: 3160738566
+[   12.441433] Value of seq+ns reading 32-bit: 3160738566
+[   12.441433] Pid: 731, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0516117>] tcp_transmit_skb+0x6c7/0x740
+[   12.441433]  [<c051784e>] ? tcp_connect+0x21e/0x3f0
+[   12.441433]  [<c0517961>] tcp_connect+0x331/0x3f0
+[   12.441433]  [<c051be26>] tcp_v4_connect+0x3e6/0x4d0
+[   12.441433]  [<c052a676>] inet_stream_connect+0x216/0x270
+[   12.441433]  [<c04c68e6>] sys_connect+0xb6/0xd0
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c03c7450>] ? n_tty_write+0x0/0x3c0
+[   12.441433]  [<c04c7ca6>] sys_socketcall+0x246/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval syn-ack-options orig: 4294921046	ffff4b56
+[   12.441433] Pid: 731, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c051784e>] ? tcp_connect+0x21e/0x3f0
+[   12.441433]  [<c0517961>] tcp_connect+0x331/0x3f0
+[   12.441433]  [<c051be26>] tcp_v4_connect+0x3e6/0x4d0
+[   12.441433]  [<c052a676>] inet_stream_connect+0x216/0x270
+[   12.441433]  [<c04c68e6>] sys_connect+0xb6/0xd0
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c03c7450>] ? n_tty_write+0x0/0x3c0
+[   12.441433]  [<c04c7ca6>] sys_socketcall+0x246/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIME tsval orig: 4294921046	ffff4b56
+[   12.441433] TIME tsecr orig: 0	0
+[   12.441433] TIME tsval htonl: 1447821311	564bffff
+[   12.441433] TIME tsecr htonl: 0	0
+[   12.441433] TIME ktime_ns value long: 115002039852	1ac6a7de2c
+[   12.441433] TIME ktime_ns value: 3332890156	1a
+[   12.441433] TCP_SEQ BYTE ORDER TEST
+[   12.441433] saddr normal: 100007f
+[   12.441433] saddr htonl: 7f000001
+[   12.441433] saddr ntohl: 7f000001
+[   12.441433] net_secret[15]: cf7fdc24
+[   12.441433] Sequence num: 4bcd3819
+[   12.441433] Sequence num ntohl: 1938cd4b
+[   12.441433] TIME Value of ktime_to_ns at seq_scale 1796906872
+[   12.441433] TIME Value of jiffies_to_ns at seq_scale 1796987304
+[   12.441433] Value of seq+ns reading 64-bit: 3068647313
+[   12.441433] Value of seq+ns reading 32-bit: 3068647313
+[   12.441433] Pid: 731, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c04c932b>] ? sock_wmalloc+0x4b/0x70
+[   12.441433]  [<c051662c>] tcp_make_synack+0x26c/0x340
+[   12.441433]  [<c051a3b9>] __tcp_v4_send_synack+0x29/0xe0
+[   12.441433]  [<c051d2fd>] tcp_v4_conn_request+0x35d/0x4d0
+[   12.441433]  [<c0514793>] tcp_rcv_state_process+0xe3/0x970
+[   12.441433]  [<c051b708>] tcp_v4_do_rcv+0x178/0x3c0
+[   12.441433]  [<c051cda1>] tcp_v4_rcv+0x541/0x740
+[   12.441433]  [<c04fe6d7>] ip_local_deliver_finish+0xa7/0x270
+[   12.441433]  [<c04fe92f>] ip_local_deliver+0x8f/0xa0
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04fdf8b>] ip_rcv_finish+0xeb/0x380
+[   12.441433]  [<c04fe43e>] ip_rcv+0x21e/0x2e0
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c04d968f>] netif_receive_skb+0x36f/0x5a0
+[   12.441433]  [<c034ce76>] ? put_dec+0x136/0x140
+[   12.441433]  [<c04d992f>] process_backlog+0x6f/0xb0
+[   12.441433]  [<c04da03d>] net_rx_action+0xed/0x1d0
+[   12.441433]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   12.441433]  [<c04449cb>] ? loopback_xmit+0x5b/0x80
+[   12.441433]  [<c04d8c91>] ? dev_hard_start_xmit+0x191/0x370
+[   12.441433]  [<c0159495>] do_softirq+0x45/0x50
+[   12.441433]  [<c015966d>] local_bh_enable+0x7d/0x90
+[   12.441433]  [<c04d8f69>] dev_queue_xmit+0xf9/0x4b0
+[   12.441433]  [<c0503518>] ip_finish_output+0x138/0x2c0
+[   12.441433]  [<c0503747>] ip_output+0xa7/0xb0
+[   12.441433]  [<c05028cd>] ip_local_out+0x1d/0x30
+[   12.441433]  [<c0502ffe>] ip_queue_xmit+0x14e/0x3a0
+[   12.441433]  [<c0177e52>] ? getnstimeofday+0x52/0x110
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c051596e>] ? tcp_options_write+0x11e/0x200
+[   12.441433]  [<c051a302>] ? tcp_v4_send_check+0x52/0xe0
+[   12.441433]  [<c0515ded>] tcp_transmit_skb+0x39d/0x740
+[   12.441433]  [<c051784e>] ? tcp_connect+0x21e/0x3f0
+[   12.441433]  [<c0517961>] tcp_connect+0x331/0x3f0
+[   12.441433]  [<c051be26>] tcp_v4_connect+0x3e6/0x4d0
+[   12.441433]  [<c052a676>] inet_stream_connect+0x216/0x270
+[   12.441433]  [<c04c68e6>] sys_connect+0xb6/0xd0
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c03c7450>] ? n_tty_write+0x0/0x3c0
+[   12.441433]  [<c04c7ca6>] sys_socketcall+0x246/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIME tsval orig: 4294921046	ffff4b56
+[   12.441433] TIME tsecr orig: 4294921046	ffff4b56
+[   12.441433] TIME tsval htonl: 1447821311	564bffff
+[   12.441433] TIME tsecr htonl: 1447821311	564bffff
+[   12.441433] TIME ktime_ns value long: 115002039852	1ac6a7de2c
+[   12.441433] TIME ktime_ns value: 3332890156	1a
+[   12.441433] Pid: 731, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c0517433>] ? tcp_send_ack+0x33/0x110
+[   12.441433]  [<c05174bc>] tcp_send_ack+0xbc/0x110
+[   12.441433]  [<c0514ff2>] tcp_rcv_state_process+0x942/0x970
+[   12.441433]  [<c051b708>] tcp_v4_do_rcv+0x178/0x3c0
+[   12.441433]  [<c04c8c32>] release_sock+0x52/0xb0
+[   12.441433]  [<c052a5ad>] inet_stream_connect+0x14d/0x270
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c04c68e6>] sys_connect+0xb6/0xd0
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c03c7450>] ? n_tty_write+0x0/0x3c0
+[   12.441433]  [<c04c7ca6>] sys_socketcall+0x246/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 4294921046	ffff4b56
+[   12.441433] Pid: 731, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c0517433>] ? tcp_send_ack+0x33/0x110
+[   12.441433]  [<c05174bc>] tcp_send_ack+0xbc/0x110
+[   12.441433]  [<c0514ff2>] tcp_rcv_state_process+0x942/0x970
+[   12.441433]  [<c051b708>] tcp_v4_do_rcv+0x178/0x3c0
+[   12.441433]  [<c04c8c32>] release_sock+0x52/0xb0
+[   12.441433]  [<c052a5ad>] inet_stream_connect+0x14d/0x270
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c04c68e6>] sys_connect+0xb6/0xd0
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c03c7450>] ? n_tty_write+0x0/0x3c0
+[   12.441433]  [<c04c7ca6>] sys_socketcall+0x246/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIME tsval orig: 4294921046	ffff4b56
+[   12.441433] TIME tsecr orig: 4294921046	ffff4b56
+[   12.441433] TIME tsval htonl: 1447821311	564bffff
+[   12.441433] TIME tsecr htonl: 1447821311	564bffff
+[   12.441433] TIME ktime_ns value long: 115002039852	1ac6a7de2c
+[   12.441433] TIME ktime_ns value: 3332890156	1a
+[   12.441433] Pid: 731, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c0517433>] ? tcp_send_ack+0x33/0x110
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c0510c90>] tcp_data_snd_check+0x20/0xe0
+[   12.441433]  [<c051500b>] tcp_rcv_state_process+0x95b/0x970
+[   12.441433]  [<c051b708>] tcp_v4_do_rcv+0x178/0x3c0
+[   12.441433]  [<c04c8c32>] release_sock+0x52/0xb0
+[   12.441433]  [<c052a5ad>] inet_stream_connect+0x14d/0x270
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c04c68e6>] sys_connect+0xb6/0xd0
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c03c7450>] ? n_tty_write+0x0/0x3c0
+[   12.441433]  [<c04c7ca6>] sys_socketcall+0x246/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 731, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c0510c90>] tcp_data_snd_check+0x20/0xe0
+[   12.441433]  [<c051487b>] tcp_rcv_state_process+0x1cb/0x970
+[   12.441433]  [<c051d9eb>] tcp_child_process+0x7b/0xa0
+[   12.441433]  [<c051b88f>] tcp_v4_do_rcv+0x2ff/0x3c0
+[   12.441433]  [<c051cda1>] tcp_v4_rcv+0x541/0x740
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c04fe6d7>] ip_local_deliver_finish+0xa7/0x270
+[   12.441433]  [<c04fe92f>] ip_local_deliver+0x8f/0xa0
+[   12.441433]  [<c04fdf8b>] ip_rcv_finish+0xeb/0x380
+[   12.441433]  [<c04fe43e>] ip_rcv+0x21e/0x2e0
+[   12.441433]  [<c059ec1b>] ? dump_stack+0x73/0x7a
+[   12.441433]  [<c04d968f>] netif_receive_skb+0x36f/0x5a0
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c04d992f>] process_backlog+0x6f/0xb0
+[   12.441433]  [<c04da03d>] net_rx_action+0xed/0x1d0
+[   12.441433]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   12.441433]  [<c051b708>] ? tcp_v4_do_rcv+0x178/0x3c0
+[   12.441433]  [<c0159495>] do_softirq+0x45/0x50
+[   12.441433]  [<c01599cd>] local_bh_enable_ip+0x7d/0x90
+[   12.441433]  [<c05a1b36>] _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8c7c>] release_sock+0x9c/0xb0
+[   12.441433]  [<c052a5ad>] inet_stream_connect+0x14d/0x270
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c04c68e6>] sys_connect+0xb6/0xd0
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c03c7450>] ? n_tty_write+0x0/0x3c0
+[   12.441433]  [<c04c7ca6>] sys_socketcall+0x246/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c03c1b15>] ? mix_pool_bytes_extract+0x145/0x160
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c05a1aa7>] ? _spin_lock_bh+0x17/0x20
+[   12.441433]  [<c0509110>] tcp_send_mss+0x20/0xe0
+[   12.441433]  [<c050bf40>] tcp_sendmsg+0x90/0x900
+[   12.441433]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   12.441433]  [<c0107e3a>] ? __switch_to+0xba/0x170
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c04cb647>] ? __skb_clone+0x27/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 4294921046	ffff4b56
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIME tsval orig: 4294921046	ffff4b56
+[   12.441433] TIME tsecr orig: 4294921046	ffff4b56
+[   12.441433] TIME tsval htonl: 1447821311	564bffff
+[   12.441433] TIME tsecr htonl: 1447821311	564bffff
+[   12.441433] TIME ktime_ns value long: 115002039852	1ac6a7de2c
+[   12.441433] TIME ktime_ns value: 3332890156	1a
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c0510c90>] tcp_data_snd_check+0x20/0xe0
+[   12.441433]  [<c0514273>] tcp_rcv_established+0x313/0x750
+[   12.441433]  [<c0109543>] ? sysenter_do_call+0x12/0x28
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c051cda1>] tcp_v4_rcv+0x541/0x740
+[   12.441433]  [<c04fe6d7>] ip_local_deliver_finish+0xa7/0x270
+[   12.441433]  [<c04fe92f>] ip_local_deliver+0x8f/0xa0
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04fdf8b>] ip_rcv_finish+0xeb/0x380
+[   12.441433]  [<c04fe43e>] ip_rcv+0x21e/0x2e0
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c04d968f>] netif_receive_skb+0x36f/0x5a0
+[   12.441433]  [<c034ce76>] ? put_dec+0x136/0x140
+[   12.441433]  [<c04d992f>] process_backlog+0x6f/0xb0
+[   12.441433]  [<c04da03d>] net_rx_action+0xed/0x1d0
+[   12.441433]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   12.441433]  [<c04449cb>] ? loopback_xmit+0x5b/0x80
+[   12.441433]  [<c04d8c91>] ? dev_hard_start_xmit+0x191/0x370
+[   12.441433]  [<c0159495>] do_softirq+0x45/0x50
+[   12.441433]  [<c015966d>] local_bh_enable+0x7d/0x90
+[   12.441433]  [<c04d8f69>] dev_queue_xmit+0xf9/0x4b0
+[   12.441433]  [<c0503518>] ip_finish_output+0x138/0x2c0
+[   12.441433]  [<c0503747>] ip_output+0xa7/0xb0
+[   12.441433]  [<c05028cd>] ip_local_out+0x1d/0x30
+[   12.441433]  [<c0502ffe>] ip_queue_xmit+0x14e/0x3a0
+[   12.441433]  [<c0177e52>] ? getnstimeofday+0x52/0x110
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c051596e>] ? tcp_options_write+0x11e/0x200
+[   12.441433]  [<c0515ded>] tcp_transmit_skb+0x39d/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c0517433>] ? tcp_send_ack+0x33/0x110
+[   12.441433]  [<c05174bc>] tcp_send_ack+0xbc/0x110
+[   12.441433]  [<c050f6a6>] __tcp_ack_snd_check+0x56/0x90
+[   12.441433]  [<c051428e>] tcp_rcv_established+0x32e/0x750
+[   12.441433]  [<c0109543>] ? sysenter_do_call+0x12/0x28
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c051cda1>] tcp_v4_rcv+0x541/0x740
+[   12.441433]  [<c04fe6d7>] ip_local_deliver_finish+0xa7/0x270
+[   12.441433]  [<c04fe92f>] ip_local_deliver+0x8f/0xa0
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04fdf8b>] ip_rcv_finish+0xeb/0x380
+[   12.441433]  [<c04fe43e>] ip_rcv+0x21e/0x2e0
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c04d968f>] netif_receive_skb+0x36f/0x5a0
+[   12.441433]  [<c034ce76>] ? put_dec+0x136/0x140
+[   12.441433]  [<c04d992f>] process_backlog+0x6f/0xb0
+[   12.441433]  [<c04da03d>] net_rx_action+0xed/0x1d0
+[   12.441433]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   12.441433]  [<c04449cb>] ? loopback_xmit+0x5b/0x80
+[   12.441433]  [<c04d8c91>] ? dev_hard_start_xmit+0x191/0x370
+[   12.441433]  [<c0159495>] do_softirq+0x45/0x50
+[   12.441433]  [<c015966d>] local_bh_enable+0x7d/0x90
+[   12.441433]  [<c04d8f69>] dev_queue_xmit+0xf9/0x4b0
+[   12.441433]  [<c0503518>] ip_finish_output+0x138/0x2c0
+[   12.441433]  [<c0503747>] ip_output+0xa7/0xb0
+[   12.441433]  [<c05028cd>] ip_local_out+0x1d/0x30
+[   12.441433]  [<c0502ffe>] ip_queue_xmit+0x14e/0x3a0
+[   12.441433]  [<c0177e52>] ? getnstimeofday+0x52/0x110
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c051596e>] ? tcp_options_write+0x11e/0x200
+[   12.441433]  [<c0515ded>] tcp_transmit_skb+0x39d/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 4294921046	ffff4b56
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c0517433>] ? tcp_send_ack+0x33/0x110
+[   12.441433]  [<c05174bc>] tcp_send_ack+0xbc/0x110
+[   12.441433]  [<c050f6a6>] __tcp_ack_snd_check+0x56/0x90
+[   12.441433]  [<c051428e>] tcp_rcv_established+0x32e/0x750
+[   12.441433]  [<c0109543>] ? sysenter_do_call+0x12/0x28
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c051cda1>] tcp_v4_rcv+0x541/0x740
+[   12.441433]  [<c04fe6d7>] ip_local_deliver_finish+0xa7/0x270
+[   12.441433]  [<c04fe92f>] ip_local_deliver+0x8f/0xa0
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04fdf8b>] ip_rcv_finish+0xeb/0x380
+[   12.441433]  [<c04fe43e>] ip_rcv+0x21e/0x2e0
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c04d968f>] netif_receive_skb+0x36f/0x5a0
+[   12.441433]  [<c034ce76>] ? put_dec+0x136/0x140
+[   12.441433]  [<c04d992f>] process_backlog+0x6f/0xb0
+[   12.441433]  [<c04da03d>] net_rx_action+0xed/0x1d0
+[   12.441433]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   12.441433]  [<c04449cb>] ? loopback_xmit+0x5b/0x80
+[   12.441433]  [<c04d8c91>] ? dev_hard_start_xmit+0x191/0x370
+[   12.441433]  [<c0159495>] do_softirq+0x45/0x50
+[   12.441433]  [<c015966d>] local_bh_enable+0x7d/0x90
+[   12.441433]  [<c04d8f69>] dev_queue_xmit+0xf9/0x4b0
+[   12.441433]  [<c0503518>] ip_finish_output+0x138/0x2c0
+[   12.441433]  [<c0503747>] ip_output+0xa7/0xb0
+[   12.441433]  [<c05028cd>] ip_local_out+0x1d/0x30
+[   12.441433]  [<c0502ffe>] ip_queue_xmit+0x14e/0x3a0
+[   12.441433]  [<c0177e52>] ? getnstimeofday+0x52/0x110
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c051596e>] ? tcp_options_write+0x11e/0x200
+[   12.441433]  [<c0515ded>] tcp_transmit_skb+0x39d/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIME tsval orig: 4294921046	ffff4b56
+[   12.441433] TIME tsecr orig: 4294921046	ffff4b56
+[   12.441433] TIME tsval htonl: 1447821311	564bffff
+[   12.441433] TIME tsecr htonl: 1447821311	564bffff
+[   12.441433] TIME ktime_ns value long: 115002039852	1ac6a7de2c
+[   12.441433] TIME ktime_ns value: 3332890156	1a
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c0510c90>] tcp_data_snd_check+0x20/0xe0
+[   12.441433]  [<c051448f>] tcp_rcv_established+0x52f/0x750
+[   12.441433]  [<c04c90b4>] ? sk_reset_timer+0x14/0x20
+[   12.441433]  [<c0517aa7>] ? tcp_event_new_data_sent+0x87/0xb0
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c04c8c32>] release_sock+0x52/0xb0
+[   12.441433]  [<c050928a>] ? tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c535>] tcp_sendmsg+0x685/0x900
+[   12.441433]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 731, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8c7c>] ? release_sock+0x9c/0xb0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c05a1aa7>] ? _spin_lock_bh+0x17/0x20
+[   12.441433]  [<c0509110>] tcp_send_mss+0x20/0xe0
+[   12.441433]  [<c050bf40>] tcp_sendmsg+0x90/0x900
+[   12.441433]  [<c04c8468>] ? sock_common_recvmsg+0x48/0x60
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[   12.441433]  [<c051b708>] ? tcp_v4_do_rcv+0x178/0x3c0
+[   12.441433]  [<c059ffcd>] ? schedule_timeout+0x1ad/0x280
+[   12.441433]  [<c05a1aa7>] ? _spin_lock_bh+0x17/0x20
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c04c68e6>] ? sys_connect+0xb6/0xd0
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 731, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c04cb647>] ? __skb_clone+0x27/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[   12.441433]  [<c051b708>] ? tcp_v4_do_rcv+0x178/0x3c0
+[   12.441433]  [<c059ffcd>] ? schedule_timeout+0x1ad/0x280
+[   12.441433]  [<c05a1aa7>] ? _spin_lock_bh+0x17/0x20
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c04c68e6>] ? sys_connect+0xb6/0xd0
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 4294921046	ffff4b56
+[   12.441433] Pid: 731, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[   12.441433]  [<c051b708>] ? tcp_v4_do_rcv+0x178/0x3c0
+[   12.441433]  [<c059ffcd>] ? schedule_timeout+0x1ad/0x280
+[   12.441433]  [<c05a1aa7>] ? _spin_lock_bh+0x17/0x20
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c04c68e6>] ? sys_connect+0xb6/0xd0
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIME tsval orig: 4294921046	ffff4b56
+[   12.441433] TIME tsecr orig: 4294921046	ffff4b56
+[   12.441433] TIME tsval htonl: 1447821311	564bffff
+[   12.441433] TIME tsecr htonl: 1447821311	564bffff
+[   12.441433] TIME ktime_ns value long: 115002039852	1ac6a7de2c
+[   12.441433] TIME ktime_ns value: 3332890156	1a
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c03500f9>] ? copy_to_user+0x39/0x130
+[   12.441433]  [<c0517433>] ? tcp_send_ack+0x33/0x110
+[   12.441433]  [<c05174bc>] tcp_send_ack+0xbc/0x110
+[   12.441433]  [<c050f6a6>] __tcp_ack_snd_check+0x56/0x90
+[   12.441433]  [<c0514183>] tcp_rcv_established+0x223/0x750
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c04c8d27>] ? lock_sock_nested+0x97/0xa0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c921c>] ? sk_wait_data+0x8c/0xc0
+[   12.441433]  [<c0509322>] tcp_prequeue_process+0x62/0x80
+[   12.441433]  [<c050bbcc>] tcp_recvmsg+0x8fc/0xbe0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8468>] sock_common_recvmsg+0x48/0x60
+[   12.441433]  [<c04c6e95>] sock_recvmsg+0xf5/0x120
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6fd4>] sys_recvfrom+0xc4/0x160
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c70ab>] sys_recv+0x3b/0x40
+[   12.441433]  [<c04c7c02>] sys_socketcall+0x1a2/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 4294921046	ffff4b56
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c03500f9>] ? copy_to_user+0x39/0x130
+[   12.441433]  [<c0517433>] ? tcp_send_ack+0x33/0x110
+[   12.441433]  [<c05174bc>] tcp_send_ack+0xbc/0x110
+[   12.441433]  [<c050f6a6>] __tcp_ack_snd_check+0x56/0x90
+[   12.441433]  [<c0514183>] tcp_rcv_established+0x223/0x750
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c04c8d27>] ? lock_sock_nested+0x97/0xa0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c921c>] ? sk_wait_data+0x8c/0xc0
+[   12.441433]  [<c0509322>] tcp_prequeue_process+0x62/0x80
+[   12.441433]  [<c050bbcc>] tcp_recvmsg+0x8fc/0xbe0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8468>] sock_common_recvmsg+0x48/0x60
+[   12.441433]  [<c04c6e95>] sock_recvmsg+0xf5/0x120
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6fd4>] sys_recvfrom+0xc4/0x160
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c70ab>] sys_recv+0x3b/0x40
+[   12.441433]  [<c04c7c02>] sys_socketcall+0x1a2/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIME tsval orig: 4294921046	ffff4b56
+[   12.441433] TIME tsecr orig: 4294921046	ffff4b56
+[   12.441433] TIME tsval htonl: 1447821311	564bffff
+[   12.441433] TIME tsecr htonl: 1447821311	564bffff
+[   12.441433] TIME ktime_ns value long: 115002039852	1ac6a7de2c
+[   12.441433] TIME ktime_ns value: 3332890156	1a
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c0510c90>] tcp_data_snd_check+0x20/0xe0
+[   12.441433]  [<c051448f>] tcp_rcv_established+0x52f/0x750
+[   12.441433]  [<c04449cb>] ? loopback_xmit+0x5b/0x80
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c051cda1>] tcp_v4_rcv+0x541/0x740
+[   12.441433]  [<c0503747>] ? ip_output+0xa7/0xb0
+[   12.441433]  [<c04fe6d7>] ip_local_deliver_finish+0xa7/0x270
+[   12.441433]  [<c0177e52>] ? getnstimeofday+0x52/0x110
+[   12.441433]  [<c04fe92f>] ip_local_deliver+0x8f/0xa0
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c04fdf8b>] ip_rcv_finish+0xeb/0x380
+[   12.441433]  [<c051596e>] ? tcp_options_write+0x11e/0x200
+[   12.441433]  [<c051a302>] ? tcp_v4_send_check+0x52/0xe0
+[   12.441433]  [<c04fe43e>] ip_rcv+0x21e/0x2e0
+[   12.441433]  [<c0515ded>] ? tcp_transmit_skb+0x39d/0x740
+[   12.441433]  [<c04d968f>] netif_receive_skb+0x36f/0x5a0
+[   12.441433]  [<c04d992f>] process_backlog+0x6f/0xb0
+[   12.441433]  [<c04da03d>] net_rx_action+0xed/0x1d0
+[   12.441433]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   12.441433]  [<c051b800>] ? tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c04c8d27>] ? lock_sock_nested+0x97/0xa0
+[   12.441433]  [<c0159495>] do_softirq+0x45/0x50
+[   12.441433]  [<c015966d>] local_bh_enable+0x7d/0x90
+[   12.441433]  [<c050932d>] tcp_prequeue_process+0x6d/0x80
+[   12.441433]  [<c050bbcc>] tcp_recvmsg+0x8fc/0xbe0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8468>] sock_common_recvmsg+0x48/0x60
+[   12.441433]  [<c04c6e95>] sock_recvmsg+0xf5/0x120
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6fd4>] sys_recvfrom+0xc4/0x160
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c70ab>] sys_recv+0x3b/0x40
+[   12.441433]  [<c04c7c02>] sys_socketcall+0x1a2/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8c7c>] ? release_sock+0x9c/0xb0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c05a1aa7>] ? _spin_lock_bh+0x17/0x20
+[   12.441433]  [<c0509110>] tcp_send_mss+0x20/0xe0
+[   12.441433]  [<c050bf40>] tcp_sendmsg+0x90/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c04cb647>] ? __skb_clone+0x27/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 4294921046	ffff4b56
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIME tsval orig: 4294921046	ffff4b56
+[   12.441433] TIME tsecr orig: 4294921046	ffff4b56
+[   12.441433] TIME tsval htonl: 1447821311	564bffff
+[   12.441433] TIME tsecr htonl: 1447821311	564bffff
+[   12.441433] TIME ktime_ns value long: 115002039852	1ac6a7de2c
+[   12.441433] TIME ktime_ns value: 3332890156	1a
+[   12.441433] Pid: 731, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8c7c>] ? release_sock+0x9c/0xb0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c05a1aa7>] ? _spin_lock_bh+0x17/0x20
+[   12.441433]  [<c0509110>] tcp_send_mss+0x20/0xe0
+[   12.441433]  [<c050bf40>] tcp_sendmsg+0x90/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 731, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c04cb647>] ? __skb_clone+0x27/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 4294921046	ffff4b56
+[   12.441433] Pid: 731, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIME tsval orig: 4294921046	ffff4b56
+[   12.441433] TIME tsecr orig: 4294921046	ffff4b56
+[   12.441433] TIME tsval htonl: 1447821311	564bffff
+[   12.441433] TIME tsecr htonl: 1447821311	564bffff
+[   12.441433] TIME ktime_ns value long: 115002039852	1ac6a7de2c
+[   12.441433] TIME ktime_ns value: 3332890156	1a
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c0510c90>] tcp_data_snd_check+0x20/0xe0
+[   12.441433]  [<c0514158>] tcp_rcv_established+0x1f8/0x750
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c04c8d27>] ? lock_sock_nested+0x97/0xa0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c921c>] ? sk_wait_data+0x8c/0xc0
+[   12.441433]  [<c0509322>] tcp_prequeue_process+0x62/0x80
+[   12.441433]  [<c050bbcc>] tcp_recvmsg+0x8fc/0xbe0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8468>] sock_common_recvmsg+0x48/0x60
+[   12.441433]  [<c04c6e95>] sock_recvmsg+0xf5/0x120
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6fd4>] sys_recvfrom+0xc4/0x160
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c70ab>] sys_recv+0x3b/0x40
+[   12.441433]  [<c04c7c02>] sys_socketcall+0x1a2/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8c7c>] ? release_sock+0x9c/0xb0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c05a1aa7>] ? _spin_lock_bh+0x17/0x20
+[   12.441433]  [<c0509110>] tcp_send_mss+0x20/0xe0
+[   12.441433]  [<c050bf40>] tcp_sendmsg+0x90/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c04cb647>] ? __skb_clone+0x27/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 4294921046	ffff4b56
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIME tsval orig: 4294921046	ffff4b56
+[   12.441433] TIME tsecr orig: 4294921046	ffff4b56
+[   12.441433] TIME tsval htonl: 1447821311	564bffff
+[   12.441433] TIME tsecr htonl: 1447821311	564bffff
+[   12.441433] TIME ktime_ns value long: 115002039852	1ac6a7de2c
+[   12.441433] TIME ktime_ns value: 3332890156	1a
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c0510c90>] tcp_data_snd_check+0x20/0xe0
+[   12.441433]  [<c0514158>] tcp_rcv_established+0x1f8/0x750
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c051cda1>] tcp_v4_rcv+0x541/0x740
+[   12.441433]  [<c04fe6d7>] ip_local_deliver_finish+0xa7/0x270
+[   12.441433]  [<c04fe92f>] ip_local_deliver+0x8f/0xa0
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04fdf8b>] ip_rcv_finish+0xeb/0x380
+[   12.441433]  [<c04fe43e>] ip_rcv+0x21e/0x2e0
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c04d968f>] netif_receive_skb+0x36f/0x5a0
+[   12.441433]  [<c034ce76>] ? put_dec+0x136/0x140
+[   12.441433]  [<c04d992f>] process_backlog+0x6f/0xb0
+[   12.441433]  [<c04da03d>] net_rx_action+0xed/0x1d0
+[   12.441433]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   12.441433]  [<c04449cb>] ? loopback_xmit+0x5b/0x80
+[   12.441433]  [<c04d8c91>] ? dev_hard_start_xmit+0x191/0x370
+[   12.441433]  [<c0159495>] do_softirq+0x45/0x50
+[   12.441433]  [<c015966d>] local_bh_enable+0x7d/0x90
+[   12.441433]  [<c04d8f69>] dev_queue_xmit+0xf9/0x4b0
+[   12.441433]  [<c0503518>] ip_finish_output+0x138/0x2c0
+[   12.441433]  [<c0503747>] ip_output+0xa7/0xb0
+[   12.441433]  [<c05028cd>] ip_local_out+0x1d/0x30
+[   12.441433]  [<c0502ffe>] ip_queue_xmit+0x14e/0x3a0
+[   12.441433]  [<c0177e52>] ? getnstimeofday+0x52/0x110
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c051596e>] ? tcp_options_write+0x11e/0x200
+[   12.441433]  [<c0515ded>] tcp_transmit_skb+0x39d/0x740
+[   12.441433]  [<c0517dbc>] tcp_write_xmit+0x18c/0x940
+[   12.441433]  [<c059ed34>] ? printk+0x1d/0x21
+[   12.441433]  [<c05186b6>] __tcp_push_pending_frames+0x36/0xa0
+[   12.441433]  [<c050928a>] tcp_push+0x7a/0xb0
+[   12.441433]  [<c050c47a>] tcp_sendmsg+0x5ca/0x900
+[   12.441433]  [<c010f088>] ? sched_clock+0x8/0x10
+[   12.441433]  [<c04c6b95>] sock_sendmsg+0xe5/0x110
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6d0a>] sys_sendto+0xfa/0x150
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c6d9b>] sys_send+0x3b/0x40
+[   12.441433]  [<c04c7c21>] sys_socketcall+0x1c1/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 0, comm: swapper Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c0517433>] ? tcp_send_ack+0x33/0x110
+[   12.441433]  [<c05174bc>] tcp_send_ack+0xbc/0x110
+[   12.441433]  [<c0518e8c>] tcp_delack_timer+0x11c/0x210
+[   12.441433]  [<c0161fde>] run_timer_softirq+0x13e/0x2c0
+[   12.441433]  [<c0161a4e>] ? update_process_times+0x4e/0x60
+[   12.441433]  [<c0518d70>] ? tcp_delack_timer+0x0/0x210
+[   12.441433]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c010ce07>] ? enable_8259A_irq+0x47/0x70
+[   12.441433]  [<c0159495>] do_softirq+0x45/0x50
+[   12.441433]  [<c01595e5>] irq_exit+0x65/0x70
+[   12.441433]  [<c05a5b05>] do_IRQ+0x55/0xc0
+[   12.441433]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[   12.441433]  [<c0109c70>] common_interrupt+0x30/0x40
+[   12.441433]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[   12.441433]  [<c01083d4>] cpu_idle+0x94/0xd0
+[   12.441433]  [<c058b8a2>] rest_init+0x62/0x70
+[   12.441433]  [<c07c68e5>] start_kernel+0x356/0x35c
+[   12.441433]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[   12.441433]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[   12.441433] TIMESTAMP tsval established orig: 4294921056	ffff4b60
+[   12.441433] Pid: 0, comm: swapper Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c0517433>] ? tcp_send_ack+0x33/0x110
+[   12.441433]  [<c05174bc>] tcp_send_ack+0xbc/0x110
+[   12.441433]  [<c0518e8c>] tcp_delack_timer+0x11c/0x210
+[   12.441433]  [<c0161fde>] run_timer_softirq+0x13e/0x2c0
+[   12.441433]  [<c0161a4e>] ? update_process_times+0x4e/0x60
+[   12.441433]  [<c0518d70>] ? tcp_delack_timer+0x0/0x210
+[   12.441433]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c010ce07>] ? enable_8259A_irq+0x47/0x70
+[   12.441433]  [<c0159495>] do_softirq+0x45/0x50
+[   12.441433]  [<c01595e5>] irq_exit+0x65/0x70
+[   12.441433]  [<c05a5b05>] do_IRQ+0x55/0xc0
+[   12.441433]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[   12.441433]  [<c0109c70>] common_interrupt+0x30/0x40
+[   12.441433]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[   12.441433]  [<c01083d4>] cpu_idle+0x94/0xd0
+[   12.441433]  [<c058b8a2>] rest_init+0x62/0x70
+[   12.441433]  [<c07c68e5>] start_kernel+0x356/0x35c
+[   12.441433]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[   12.441433]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[   12.441433] TIME tsval orig: 4294921056	ffff4b60
+[   12.441433] TIME tsecr orig: 4294921046	ffff4b56
+[   12.441433] TIME tsval htonl: 1615593471	604bffff
+[   12.441433] TIME tsecr htonl: 1447821311	564bffff
+[   12.441433] TIME ktime_ns value long: 115042040555	1ac90a3aeb
+[   12.441433] TIME ktime_ns value: 3372890859	1a
+[   12.441433] Pid: 730, comm: serv Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c05156d2>] tcp_current_mss+0x42/0x60
+[   12.441433]  [<c0510c90>] tcp_data_snd_check+0x20/0xe0
+[   12.441433]  [<c051448f>] tcp_rcv_established+0x52f/0x750
+[   12.441433]  [<c059ffcd>] ? schedule_timeout+0x1ad/0x280
+[   12.441433]  [<c051b800>] tcp_v4_do_rcv+0x270/0x3c0
+[   12.441433]  [<c04c8d27>] ? lock_sock_nested+0x97/0xa0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c921c>] ? sk_wait_data+0x8c/0xc0
+[   12.441433]  [<c0509322>] tcp_prequeue_process+0x62/0x80
+[   12.441433]  [<c050bbcc>] tcp_recvmsg+0x8fc/0xbe0
+[   12.441433]  [<c05a1b36>] ? _spin_unlock_bh+0x16/0x20
+[   12.441433]  [<c04c8468>] sock_common_recvmsg+0x48/0x60
+[   12.441433]  [<c04c6e95>] sock_recvmsg+0xf5/0x120
+[   12.441433]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   12.441433]  [<c0140097>] ? task_rq_lock+0x47/0x80
+[   12.441433]  [<c014b3f8>] ? try_to_wake_up+0x308/0x4f0
+[   12.441433]  [<c0139718>] ? __wake_up_common+0x48/0x70
+[   12.441433]  [<c04c6fd4>] sys_recvfrom+0xc4/0x160
+[   12.441433]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   12.441433]  [<c05a18bf>] ? _spin_lock_irqsave+0x2f/0x50
+[   12.441433]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   12.441433]  [<c03cab65>] ? put_ldisc+0x55/0xb0
+[   12.441433]  [<c03cac5d>] ? tty_ldisc_deref+0xd/0x10
+[   12.441433]  [<c03c5cb8>] ? tty_write+0x1b8/0x210
+[   12.441433]  [<c04c70ab>] sys_recv+0x3b/0x40
+[   12.441433]  [<c04c7c02>] sys_socketcall+0x1a2/0x280
+[   12.441433]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   12.441433] TIMESTAMP tsval established orig: 0	0
+[   12.441433] Pid: 731, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0515623>] tcp_established_options+0x63/0xd0
+[   12.441433]  [<c0515b0d>] tcp_transmit_skb+0xbd/0x740
+[   12.441433]  [<c0516275>] ? tcp_send_active_reset+0x25/0x170
+[   12.441433]  [<c05162fe>] tcp_send_active_reset+0xae/0x170
+[   12.441433]  [<c050a2b0>] tcp_close+0xd0/0x420
+[   12.441433]  [<c052a8db>] inet_release+0x3b/0x60
+[   12.441433]  [<c04c5b90>] sock_release+0x20/0x80
+[   12.441433]  [<c020ff07>] ? __fput+0x177/0x1f0
+[   12.441433]  [<c04c5c07>] sock_close+0x17/0x30
+[   12.441433]  [<c020fe6f>] __fput+0xdf/0x1f0
+[   12.441433]  [<c020ff9d>] fput+0x1d/0x30
+[   12.441433]  [<c020c69c>] filp_close+0x4c/0x80
+[   12.441433]  [<c015456b>] put_files_struct+0x6b/0xb0
+[   12.441433]  [<c01545f8>] exit_files+0x48/0x60
+[   12.441433]  [<c01563c4>] do_exit+0x134/0x6f0
+[   12.441433]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   12.441433]  [<c01643a2>] ? dequeue_signal+0x32/0x180
+[   12.441433]  [<c01569be>] do_group_exit+0x3e/0xa0
+[   12.441433]  [<c0165d92>] get_signal_to_deliver+0x1a2/0x3c0
+[   12.441433]  [<c01089fb>] do_signal+0x6b/0xa50
+[   12.441433]  [<c03500f9>] ? copy_to_user+0x39/0x130
+[   12.441433]  [<c01725ba>] ? hrtimer_nanosleep+0xea/0x140
+[   12.441433]  [<c0171560>] ? hrtimer_wakeup+0x0/0x30
+[   12.441433]  [<c0109435>] do_notify_resume+0x55/0x80
+[   12.441433]  [<c0109708>] work_notifysig+0x13/0x1b
+[   12.441433] TIMESTAMP tsval established orig: 4294922464	ffff50e0
+[   12.441433] Pid: 731, comm: cli Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c05158bb>] tcp_options_write+0x6b/0x200
+[   12.441433]  [<c051563a>] ? tcp_established_options+0x7a/0xd0
+[   12.441433]  [<c0515c9f>] tcp_transmit_skb+0x24f/0x740
+[   12.441433]  [<c0516275>] ? tcp_send_active_reset+0x25/0x170
+[   12.441433]  [<c05162fe>] tcp_send_active_reset+0xae/0x170
+[   12.441433]  [<c050a2b0>] tcp_close+0xd0/0x420
+[   12.441433]  [<c052a8db>] inet_release+0x3b/0x60
+[   12.441433]  [<c04c5b90>] sock_release+0x20/0x80
+[   12.441433]  [<c020ff07>] ? __fput+0x177/0x1f0
+[   12.441433]  [<c04c5c07>] sock_close+0x17/0x30
+[   12.441433]  [<c020fe6f>] __fput+0xdf/0x1f0
+[   12.441433]  [<c020ff9d>] fput+0x1d/0x30
+[   12.441433]  [<c020c69c>] filp_close+0x4c/0x80
+[   12.441433]  [<c015456b>] put_files_struct+0x6b/0xb0
+[   12.441433]  [<c01545f8>] exit_files+0x48/0x60
+[   12.441433]  [<c01563c4>] do_exit+0x134/0x6f0
+[   12.441433]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   12.441433]  [<c01643a2>] ? dequeue_signal+0x32/0x180
+[   12.441433]  [<c01569be>] do_group_exit+0x3e/0xa0
+[   12.441433]  [<c0165d92>] get_signal_to_deliver+0x1a2/0x3c0
+[   12.441433]  [<c01089fb>] do_signal+0x6b/0xa50
+[   12.441433]  [<c03500f9>] ? copy_to_user+0x39/0x130
+[   12.441433]  [<c01725ba>] ? hrtimer_nanosleep+0xea/0x140
+[   12.441433]  [<c0171560>] ? hrtimer_wakeup+0x0/0x30
+[   12.441433]  [<c0109435>] do_notify_resume+0x55/0x80
+[   12.441433]  [<c0109708>] work_notifysig+0x13/0x1b
+[   12.441433] TIME tsval orig: 4294922464	ffff50e0
+[   12.441433] TIME tsecr orig: 4294921046	ffff4b56
+[   12.441433] TIME tsval htonl: 3763404799	e050ffff
+[   12.441433] TIME tsecr htonl: 1447821311	564bffff
+[   12.441433] TIME ktime_ns value long: 120674142099	1c18bd4793
+[   12.441433] TIME ktime_ns value: 415057811	1c
+[   12.441433] Pid: 0, comm: swapper Not tainted 2.6.32.57 #55
+[   12.441433] Call Trace:
+[   12.441433]  [<c0179d4a>] jiffies_read+0x4a/0x110
+[   12.441433]  [<c0177d6b>] ktime_get+0x6b/0x100
+[   12.441433]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[   12.441433]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[   12.441433]  [<c017d729>] tick_check_idle+0xe9/0xf0
+[   12.441433]  [<c015927c>] irq_enter+0x4c/0x70
+[   12.441433]  [<c05a5ade>] do_IRQ+0x2e/0xc0
+[   12.441433]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[   12.441433]  [<c0109c70>] common_interrupt+0x30/0x40
+[   12.441433]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[   12.441433]  [<c01083d4>] cpu_idle+0x94/0xd0
+[   12.441433]  [<c058b8a2>] rest_init+0x62/0x70
+[   12.441433]  [<c07c68e5>] start_kernel+0x356/0x35c
+[   12.441433]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[   12.441433]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[   12.441433] JIFFIES_READ: read #200000 long value: 4294928288
+[   12.441433] JIFFIES_READ: read #200000 long jiffies_64 value: 4294928288
+[   12.441433] JIFFIES_READ unsigned 32bit read #200000 value: 4294928288, ffff67a0
+[   12.441433] JIFFIES_READ unsigned 32bit 2nd read #200000 value: 4294928288, ffff67a0
+[   12.441433] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[   12.441433] TCP_SEQ BYTE ORDER TEST
+[   12.441433] saddr normal: e45fef84
+[   12.441433] saddr htonl: 84ef5fe4
+[   12.441433] saddr ntohl: 84ef5fe4
+[   12.441433] net_secret[15]: cf7fdc24
+[   12.441433] Sequence num: 9cf5d685
+[   12.441433] Sequence num ntohl: 85d6f59c
+[   12.441433] TIME Value of ktime_to_ns at seq_scale 2895057328
+[   12.441433] TIME Value of jiffies_to_ns at seq_scale 2895180937
+[   12.441433] Value of seq+ns reading 64-bit: 5528414261
+[   12.441433] Value of seq+ns reading 32-bit: 1233446965
+[   12.441433] EXT4-fs (sda1): warning: mounting fs with errors, running e2fsck is recommended

@@ -1,0 +1,2087 @@
+4>[    0.011938]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[    0.011941]  [<c0149e91>] scheduler_tick+0x31/0x290
+[    0.011944]  [<c0159944>] ? raise_softirq+0x44/0x50
+[    0.011947]  [<c01aa219>] ? rcu_check_callbacks+0x69/0xf0
+[    0.011950]  [<c0161a47>] update_process_times+0x47/0x60
+[    0.011952]  [<c017c2ca>] tick_periodic+0x2a/0x80
+[    0.011955]  [<c017c33e>] tick_handle_periodic+0x1e/0x90
+[    0.011958]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[    0.011960]  [<c01a5994>] handle_IRQ_event+0x54/0x150
+[    0.011963]  [<c05a1a79>] ? _spin_unlock_irqrestore+0x19/0x20
+[    0.011966]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[    0.011968]  [<c01a7fa4>] handle_level_irq+0x74/0x100
+[    0.011971]  [<c010bb6d>] handle_irq+0x1d/0x30
+[    0.011974]  [<c05a5b7c>] do_IRQ+0x4c/0xc0
+[    0.011976]  [<c0109c70>] common_interrupt+0x30/0x40
+[    0.011980]  [<c012e60a>] ? native_safe_halt+0xa/0x10
+[    0.011982]  [<c07ceeb8>] check_bugs+0xb5/0xe9
+[    0.011985]  [<c07c68d1>] start_kernel+0x342/0x35c
+[    0.011988]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[    0.011991]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[    0.011993] JIFFIES_READ: read #9 long value: 13865877714101000971
+[    0.011995] JIFFIES_READ: read #9 long jiffies_64 value: 4294892299
+[    0.011997] JIFFIES_READ unsigned 32bit read #9 value: 4294892299, fffedb0b
+[    0.011999] JIFFIES_READ unsigned 32bit 2nd read #9 value: 4294892299, fffedb0b
+[    0.012000] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[    0.020003] OK.
+[    0.020759] SMP alternatives: switching to UP code
+[    0.027824] ACPI: Core revision 20090903
+[    0.034622] ACPI: setting ELCR to 0200 (from 0cb8)
+[    0.036006] ftrace: converting mcount calls to 0f 1f 44 00 00
+[    0.036010] ftrace: allocating 20940 entries in 41 pages
+[    0.040042] Enabling APIC mode:  Flat.  Using 1 I/O APICs
+[    0.040044] SMP mode deactivated.
+[    0.040047] SMP disabled
+[    0.040115] Brought up 1 CPUs
+[    0.040116] Total of 1 processors activated (4987.46 BogoMIPS).
+[    0.040121] CPU0 attaching NULL sched-domain.
+[    0.040183] devtmpfs: initialized
+[    0.040314] sysctl table check failed: /kernel/random/now_input .1.40.7 Unknown sysctl binary path
+[    0.040530] Pid: 1, comm: swapper Not tainted 2.6.32.57 #57
+[    0.040532] Call Trace:
+[    0.040537]  [<c059edb4>] ? printk+0x1d/0x21
+[    0.040541]  [<c01766af>] set_fail+0x4f/0x60
+[    0.040544]  [<c0176a0e>] sysctl_check_table+0x34e/0x690
+[    0.040546]  [<c0176650>] ? sysctl_check_lookup+0x120/0x130
+[    0.040549]  [<c0176a27>] sysctl_check_table+0x367/0x690
+[    0.040552]  [<c0176650>] ? sysctl_check_lookup+0x120/0x130
+[    0.040554]  [<c0176a27>] sysctl_check_table+0x367/0x690
+[    0.040558]  [<c07ded5c>] sysctl_init+0x25/0x29
+[    0.040560]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.040562]  [<c07ded37>] ? sysctl_init+0x0/0x29
+[    0.040566]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.040568]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.040571]  [<c010a2c7>] kernel_thread_helper+0x7/0x10
+[    0.040573] sysctl table check failed: /kernel/random/now_blocking .1.40.8 Unknown sysctl binary path
+[    0.040786] Pid: 1, comm: swapper Not tainted 2.6.32.57 #57
+[    0.040787] Call Trace:
+[    0.040790]  [<c059edb4>] ? printk+0x1d/0x21
+[    0.040792]  [<c01766af>] set_fail+0x4f/0x60
+[    0.040795]  [<c0176a0e>] sysctl_check_table+0x34e/0x690
+[    0.040797]  [<c0176650>] ? sysctl_check_lookup+0x120/0x130
+[    0.040800]  [<c0176a27>] sysctl_check_table+0x367/0x690
+[    0.040803]  [<c0176650>] ? sysctl_check_lookup+0x120/0x130
+[    0.040805]  [<c0176a27>] sysctl_check_table+0x367/0x690
+[    0.040808]  [<c07ded5c>] sysctl_init+0x25/0x29
+[    0.040810]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.040813]  [<c07ded37>] ? sysctl_init+0x0/0x29
+[    0.040815]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.040818]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.040820]  [<c010a2c7>] kernel_thread_helper+0x7/0x10
+[    0.040822] sysctl table check failed: /kernel/random/now_nonblocking .1.40.9 Unknown sysctl binary path
+[    0.041036] Pid: 1, comm: swapper Not tainted 2.6.32.57 #57
+[    0.041037] Call Trace:
+[    0.041039]  [<c059edb4>] ? printk+0x1d/0x21
+[    0.041042]  [<c01766af>] set_fail+0x4f/0x60
+[    0.041044]  [<c0176a0e>] sysctl_check_table+0x34e/0x690
+[    0.041047]  [<c0176650>] ? sysctl_check_lookup+0x120/0x130
+[    0.041050]  [<c0176a27>] sysctl_check_table+0x367/0x690
+[    0.041052]  [<c0176650>] ? sysctl_check_lookup+0x120/0x130
+[    0.041055]  [<c0176a27>] sysctl_check_table+0x367/0x690
+[    0.041057]  [<c07ded5c>] sysctl_init+0x25/0x29
+[    0.041060]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.041062]  [<c07ded37>] ? sysctl_init+0x0/0x29
+[    0.041065]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.041067]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.041070]  [<c010a2c7>] kernel_thread_helper+0x7/0x10
+[    0.041071] sysctl table check failed: /kernel/random/nb_input_bytes .1.40.10 Unknown sysctl binary path
+[    0.041285] Pid: 1, comm: swapper Not tainted 2.6.32.57 #57
+[    0.041286] Call Trace:
+[    0.041288]  [<c059edb4>] ? printk+0x1d/0x21
+[    0.041291]  [<c01766af>] set_fail+0x4f/0x60
+[    0.041294]  [<c0176a0e>] sysctl_check_table+0x34e/0x690
+[    0.041296]  [<c0176650>] ? sysctl_check_lookup+0x120/0x130
+[    0.041299]  [<c0176a27>] sysctl_check_table+0x367/0x690
+[    0.041301]  [<c0176650>] ? sysctl_check_lookup+0x120/0x130
+[    0.041304]  [<c0176a27>] sysctl_check_table+0x367/0x690
+[    0.041306]  [<c07ded5c>] sysctl_init+0x25/0x29
+[    0.041308]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.041311]  [<c07ded37>] ? sysctl_init+0x0/0x29
+[    0.041313]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.041316]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.041318]  [<c010a2c7>] kernel_thread_helper+0x7/0x10
+[    0.041320] sysctl table check failed: /kernel/random/nb_stir_count .1.40.11 Unknown sysctl binary path
+[    0.041534] Pid: 1, comm: swapper Not tainted 2.6.32.57 #57
+[    0.041535] Call Trace:
+[    0.041537]  [<c059edb4>] ? printk+0x1d/0x21
+[    0.041540]  [<c01766af>] set_fail+0x4f/0x60
+[    0.041542]  [<c0176a0e>] sysctl_check_table+0x34e/0x690
+[    0.041545]  [<c0176650>] ? sysctl_check_lookup+0x120/0x130
+[    0.041547]  [<c0176a27>] sysctl_check_table+0x367/0x690
+[    0.041550]  [<c0176650>] ? sysctl_check_lookup+0x120/0x130
+[    0.041552]  [<c0176a27>] sysctl_check_table+0x367/0x690
+[    0.041555]  [<c07ded5c>] sysctl_init+0x25/0x29
+[    0.041557]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.041559]  [<c07ded37>] ? sysctl_init+0x0/0x29
+[    0.041562]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.041564]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.041566]  [<c010a2c7>] kernel_thread_helper+0x7/0x10
+[    0.041568] sysctl table check failed: /kernel/random/nb_reentry_count .1.40.12 Unknown sysctl binary path
+[    0.041782] Pid: 1, comm: swapper Not tainted 2.6.32.57 #57
+[    0.041783] Call Trace:
+[    0.041785]  [<c059edb4>] ? printk+0x1d/0x21
+[    0.041788]  [<c01766af>] set_fail+0x4f/0x60
+[    0.041790]  [<c0176a0e>] sysctl_check_table+0x34e/0x690
+[    0.041793]  [<c0176650>] ? sysctl_check_lookup+0x120/0x130
+[    0.041796]  [<c0176a27>] sysctl_check_table+0x367/0x690
+[    0.041798]  [<c0176650>] ? sysctl_check_lookup+0x120/0x130
+[    0.041801]  [<c0176a27>] sysctl_check_table+0x367/0x690
+[    0.041803]  [<c07ded5c>] sysctl_init+0x25/0x29
+[    0.041805]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.041808]  [<c07ded37>] ? sysctl_init+0x0/0x29
+[    0.041810]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.041813]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.041815]  [<c010a2c7>] kernel_thread_helper+0x7/0x10
+[    0.041926] CLOCKSOURCE_REGISTER_BACKTRACE: jiffies
+[    0.041928] Pid: 1, comm: swapper Not tainted 2.6.32.57 #57
+[    0.041929] Call Trace:
+[    0.041932]  [<c059edb4>] ? printk+0x1d/0x21
+[    0.041934]  [<c01797e7>] clocksource_register+0x27/0x240
+[    0.041937]  [<c014b634>] ? wake_up_process+0x14/0x20
+[    0.041940]  [<c07dfa86>] init_jiffies_clocksource+0xd/0xf
+[    0.041942]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.041945]  [<c07dfa79>] ? init_jiffies_clocksource+0x0/0xf
+[    0.041947]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.041950]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.041952]  [<c010a2c7>] kernel_thread_helper+0x7/0x10
+[    0.041954] CLOCKSOURCE_REGISTER_BACKTRACE_END
+[    0.041955] CLOCKSOURCE SELECTION
+[    0.041957] Clocksource: jiffies with rating: 301
+[    0.041958] Clocksource: tsc with rating: 300
+[    0.041960] Clocksource: hpet with rating: 250
+[    0.041961] BACKTRACE
+[    0.041962] Pid: 1, comm: swapper Not tainted 2.6.32.57 #57
+[    0.041963] Call Trace:
+[    0.041966]  [<c059edb4>] ? printk+0x1d/0x21
+[    0.041968]  [<c0179154>] clocksource_select+0x44/0x120
+[    0.041970]  [<c0179984>] clocksource_register+0x1c4/0x240
+[    0.041973]  [<c07dfa86>] init_jiffies_clocksource+0xd/0xf
+[    0.041975]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.041978]  [<c07dfa79>] ? init_jiffies_clocksource+0x0/0xf
+[    0.041980]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.041982]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.041985]  [<c010a2c7>] kernel_thread_helper+0x7/0x10
+[    0.041986] BACKTRACE_END
+[    0.042012] regulator: core version 0.5
+[    0.042032] Time:  1:01:08  Date: 01/31/13
+[    0.042063] NET: Registered protocol family 16
+[    0.042135] EISA bus registered
+[    0.042140] ACPI: bus type pci registered
+[    0.042190] PCI: MCFG configuration 0: base f0000000 segment 0 buses 0 - 63
+[    0.042192] PCI: Not using MMCONFIG.
+[    0.042317] PCI: Using configuration type 1 for base access
+[    0.042909] bio: create slab <bio-0> at 0
+[    0.043436] ACPI: EC: Look up EC in DSDT
+[    0.045287] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.049182] ACPI: Interpreter enabled
+[    0.049187] ACPI: (supports S0 S1 S3 S4 S5)
+[    0.049204] ACPI: Using PIC for interrupt routing
+[    0.049244] PCI: MCFG configuration 0: base f0000000 segment 0 buses 0 - 63
+[    0.050646] PCI: MCFG area at f0000000 reserved in ACPI motherboard resources
+[    0.050647] PCI: Using MMCONFIG for extended config space
+[    0.056738] ACPI: No dock devices found.
+[    0.056987] ACPI: PCI Root Bridge [PCI0] (0000:00)
+[    0.057069] pci 0000:00:01.0: PME# supported from D0 D3hot D3cold
+[    0.057072] pci 0000:00:01.0: PME# disabled
+[    0.057128] pci 0000:00:1a.0: reg 20 io port: [0xc000-0xc01f]
+[    0.057191] pci 0000:00:1a.1: reg 20 io port: [0xc080-0xc09f]
+[    0.057254] pci 0000:00:1a.2: reg 20 io port: [0xc400-0xc41f]
+[    0.057320] pci 0000:00:1a.7: reg 10 32bit mmio: [0xfe9ff400-0xfe9ff7ff]
+[    0.057381] pci 0000:00:1a.7: PME# supported from D0 D3hot D3cold
+[    0.057384] pci 0000:00:1a.7: PME# disabled
+[    0.057417] pci 0000:00:1b.0: reg 10 64bit mmio: [0xfe9f8000-0xfe9fbfff]
+[    0.057462] pci 0000:00:1b.0: PME# supported from D0 D3hot D3cold
+[    0.057465] pci 0000:00:1b.0: PME# disabled
+[    0.057528] pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+[    0.057530] pci 0000:00:1c.0: PME# disabled
+[    0.057597] pci 0000:00:1c.5: PME# supported from D0 D3hot D3cold
+[    0.057600] pci 0000:00:1c.5: PME# disabled
+[    0.057644] pci 0000:00:1d.0: reg 20 io port: [0xc480-0xc49f]
+[    0.057707] pci 0000:00:1d.1: reg 20 io port: [0xc800-0xc81f]
+[    0.057769] pci 0000:00:1d.2: reg 20 io port: [0xc880-0xc89f]
+[    0.057837] pci 0000:00:1d.7: reg 10 32bit mmio: [0xfe9ff800-0xfe9ffbff]
+[    0.057898] pci 0000:00:1d.7: PME# supported from D0 D3hot D3cold
+[    0.057901] pci 0000:00:1d.7: PME# disabled
+[    0.058055] pci 0000:00:1f.2: reg 10 io port: [0x00-0x07]
+[    0.058059] pci 0000:00:1f.2: reg 14 io port: [0x00-0x03]
+[    0.058064] pci 0000:00:1f.2: reg 18 io port: [0x00-0x07]
+[    0.058068] pci 0000:00:1f.2: reg 1c io port: [0x00-0x03]
+[    0.058073] pci 0000:00:1f.2: reg 20 io port: [0xff90-0xff9f]
+[    0.058078] pci 0000:00:1f.2: reg 24 io port: [0xffa0-0xffaf]
+[    0.058123] pci 0000:00:1f.3: reg 10 64bit mmio: [0xfe9ffc00-0xfe9ffcff]
+[    0.058134] pci 0000:00:1f.3: reg 20 io port: [0x400-0x41f]
+[    0.058173] pci 0000:04:00.0: reg 10 64bit mmio pref: [0xe0000000-0xefffffff]
+[    0.058180] pci 0000:04:00.0: reg 18 64bit mmio: [0xfebe0000-0xfebeffff]
+[    0.058185] pci 0000:04:00.0: reg 20 io port: [0xe000-0xe0ff]
+[    0.058192] pci 0000:04:00.0: reg 30 32bit mmio pref: [0xfebc0000-0xfebdffff]
+[    0.058219] pci 0000:04:00.0: supports D1 D2
+[    0.058246] pci 0000:04:00.1: reg 10 64bit mmio: [0xfebfc000-0xfebfffff]
+[    0.058285] pci 0000:04:00.1: supports D1 D2
+[    0.058320] pci 0000:00:01.0: bridge io port: [0xe000-0xefff]
+[    0.058323] pci 0000:00:01.0: bridge 32bit mmio: [0xfeb00000-0xfebfffff]
+[    0.058326] pci 0000:00:01.0: bridge 64bit mmio pref: [0xe0000000-0xefffffff]
+[    0.058400] pci 0000:02:00.0: reg 10 io port: [0xd800-0xd8ff]
+[    0.058418] pci 0000:02:00.0: reg 18 64bit mmio: [0xfeaff000-0xfeafffff]
+[    0.058430] pci 0000:02:00.0: reg 20 64bit mmio pref: [0xdfffc000-0xdfffffff]
+[    0.058437] pci 0000:02:00.0: reg 30 32bit mmio pref: [0xfeac0000-0xfeadffff]
+[    0.058495] pci 0000:02:00.0: supports D1 D2
+[    0.058497] pci 0000:02:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.058501] pci 0000:02:00.0: PME# disabled
+[    0.058547] pci 0000:00:1c.5: bridge io port: [0xd000-0xdfff]
+[    0.058551] pci 0000:00:1c.5: bridge 32bit mmio: [0xfea00000-0xfeafffff]
+[    0.058555] pci 0000:00:1c.5: bridge 64bit mmio pref: [0xdff00000-0xdfffffff]
+[    0.058594] pci 0000:00:1e.0: transparent bridge
+[    0.058613] pci_bus 0000:00: on NUMA node 0
+[    0.058616] ACPI: PCI Interrupt Routing Table [\_SB_.PCI0._PRT]
+[    0.058775] ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.P0P2._PRT]
+[    0.058858] ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.P0P4._PRT]
+[    0.058917] ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.P0P9._PRT]
+[    0.071143] ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 6 7 *10 11 12 14 15)
+[    0.071235] ACPI: PCI Interrupt Link [LNKB] (IRQs *5)
+[    0.071321] ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 6 7 10 *11 12 14 15)
+[    0.071410] ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 6 7 10 11 12 14 15) *0, disabled.
+[    0.071498] ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 6 *7 10 11 12 14 15)
+[    0.071587] ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 6 7 *10 11 12 14 15)
+[    0.071674] ACPI: PCI Interrupt Link [LNKG] (IRQs 3 *4 6 7 10 11 12 14 15)
+[    0.071762] ACPI: PCI Interrupt Link [LNKH] (IRQs *3 4 6 7 10 11 12 14 15)
+[    0.071838] vgaarb: device added: PCI:0000:04:00.0,decodes=io+mem,owns=io+mem,locks=none
+[    0.071840] vgaarb: loaded
+[    0.071915] SCSI subsystem initialized
+[    0.071941] libata version 3.00 loaded.
+[    0.071987] usbcore: registered new interface driver usbfs
+[    0.072009] usbcore: registered new interface driver hub
+[    0.072027] usbcore: registered new device driver usb
+[    0.072106] ACPI: WMI: Mapper loaded
+[    0.072107] PCI: Using ACPI for IRQ routing
+[    0.072205] NetLabel: Initializing
+[    0.072207] NetLabel:  domain hash size = 128
+[    0.072208] NetLabel:  protocols = UNLABELED CIPSOv4
+[    0.072216] NetLabel:  unlabeled traffic allowed by default
+[    0.072237] HPET: 4 timers in total, 0 timers will be used for per-cpu timer
+[    0.072242] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0, 0
+[    0.072245] hpet0: 4 comparators, 64-bit 14.318180 MHz counter
+[    0.076016] CLOCKSOURCE SELECTION
+[    0.076018] Clocksource: jiffies with rating: 301
+[    0.076020] Clocksource: tsc with rating: 300
+[    0.076021] Clocksource: hpet with rating: 250
+[    0.076022] BACKTRACE
+[    0.076025] Pid: 1, comm: swapper Not tainted 2.6.32.57 #57
+[    0.076026] Call Trace:
+[    0.076030]  [<c059edb4>] ? printk+0x1d/0x21
+[    0.076034]  [<c0179154>] clocksource_select+0x44/0x120
+[    0.076038]  [<c07df9a1>] clocksource_done_booting+0x41/0x4f
+[    0.076040]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.076044]  [<c07df960>] ? clocksource_done_booting+0x0/0x4f
+[    0.076047]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.076050]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.076053]  [<c010a2c7>] kernel_thread_helper+0x7/0x10
+[    0.076055] BACKTRACE_END
+[    0.077378] pnp: PnP ACPI init
+[    0.077386] ACPI: bus type pnp registered
+[    0.079033] pnp: PnP ACPI: found 14 devices
+[    0.079035] ACPI: ACPI bus type pnp unregistered
+[    0.079038] PnPBIOS: Disabled by ACPI PNP
+[    0.079045] system 00:01: iomem range 0xfed14000-0xfed19fff has been reserved
+[    0.079047] system 00:01: iomem range 0xfed90000-0xfed93fff has been reserved
+[    0.079053] system 00:06: ioport range 0x4d0-0x4d1 has been reserved
+[    0.079055] system 00:06: ioport range 0x800-0x87f has been reserved
+[    0.079057] system 00:06: ioport range 0x500-0x57f has been reserved
+[    0.079059] system 00:06: iomem range 0xfed1c000-0xfed1ffff has been reserved
+[    0.079061] system 00:06: iomem range 0xfed20000-0xfed3ffff has been reserved
+[    0.079064] system 00:06: iomem range 0xfed40000-0xfed8ffff has been reserved
+[    0.079068] system 00:09: iomem range 0xffc00000-0xffefffff has been reserved
+[    0.079072] system 00:0a: iomem range 0xfec00000-0xfec00fff has been reserved
+[    0.079074] system 00:0a: iomem range 0xfee00000-0xfee00fff has been reserved
+[    0.079078] system 00:0b: ioport range 0xa00-0xadf has been reserved
+[    0.079082] system 00:0c: iomem range 0xf0000000-0xf3ffffff has been reserved
+[    0.079086] system 00:0d: iomem range 0x0-0x9ffff could not be reserved
+[    0.079088] system 00:0d: iomem range 0xc0000-0xcffff could not be reserved
+[    0.079090] system 00:0d: iomem range 0xe0000-0xfffff could not be reserved
+[    0.079092] system 00:0d: iomem range 0x100000-0xcfffffff could not be reserved
+[    0.079095] system 00:0d: iomem range 0xfed90000-0xffffffff could not be reserved
+[    0.113696] CLOCKSOURCE_REGISTER_BACKTRACE: acpi_pm
+[    0.113698] Pid: 1, comm: swapper Not tainted 2.6.32.57 #57
+[    0.113700] Call Trace:
+[    0.113703]  [<c059edb4>] ? printk+0x1d/0x21
+[    0.113706]  [<c01797e7>] clocksource_register+0x27/0x240
+[    0.113709]  [<c07f9acd>] init_acpi_pm_clocksource+0x1c0/0x1c8
+[    0.113712]  [<c05a0679>] ? mutex_lock+0x19/0x40
+[    0.113714]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.113717]  [<c07f990d>] ? init_acpi_pm_clocksource+0x0/0x1c8
+[    0.113720]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.113722]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.113724]  [<c010a2c7>] kernel_thread_helper+0x7/0x10
+[    0.113726] CLOCKSOURCE_REGISTER_BACKTRACE_END
+[    0.113727] CLOCKSOURCE SELECTION
+[    0.113729] Clocksource: jiffies with rating: 301
+[    0.113730] Clocksource: tsc with rating: 300
+[    0.113731] Clocksource: hpet with rating: 250
+[    0.113733] Clocksource: acpi_pm with rating: 200
+[    0.113734] BACKTRACE
+[    0.113735] Pid: 1, comm: swapper Not tainted 2.6.32.57 #57
+[    0.113736] Call Trace:
+[    0.113739]  [<c059edb4>] ? printk+0x1d/0x21
+[    0.113741]  [<c0179154>] clocksource_select+0x44/0x120
+[    0.113743]  [<c0179984>] clocksource_register+0x1c4/0x240
+[    0.113746]  [<c07f9acd>] init_acpi_pm_clocksource+0x1c0/0x1c8
+[    0.113749]  [<c05a0679>] ? mutex_lock+0x19/0x40
+[    0.113751]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.113754]  [<c07f990d>] ? init_acpi_pm_clocksource+0x0/0x1c8
+[    0.113756]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.113759]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.113761]  [<c010a2c7>] kernel_thread_helper+0x7/0x10
+[    0.113762] BACKTRACE_END
+[    0.113792] pci 0000:00:01.0: PCI bridge, secondary bus 0000:04
+[    0.113794] pci 0000:00:01.0:   IO window: 0xe000-0xefff
+[    0.113798] pci 0000:00:01.0:   MEM window: 0xfeb00000-0xfebfffff
+[    0.113800] pci 0000:00:01.0:   PREFETCH window: 0x000000e0000000-0x000000efffffff
+[    0.113804] pci 0000:00:1c.0: PCI bridge, secondary bus 0000:03
+[    0.113806] pci 0000:00:1c.0:   IO window: 0x1000-0x1fff
+[    0.113810] pci 0000:00:1c.0:   MEM window: 0xd0000000-0xd01fffff
+[    0.113813] pci 0000:00:1c.0:   PREFETCH window: 0x000000d0200000-0x000000d03fffff
+[    0.113818] pci 0000:00:1c.5: PCI bridge, secondary bus 0000:02
+[    0.113820] pci 0000:00:1c.5:   IO window: 0xd000-0xdfff
+[    0.113824] pci 0000:00:1c.5:   MEM window: 0xfea00000-0xfeafffff
+[    0.113828] pci 0000:00:1c.5:   PREFETCH window: 0x000000dff00000-0x000000dfffffff
+[    0.113832] pci 0000:00:1e.0: PCI bridge, secondary bus 0000:01
+[    0.113834] pci 0000:00:1e.0:   IO window: disabled
+[    0.113837] pci 0000:00:1e.0:   MEM window: disabled
+[    0.113840] pci 0000:00:1e.0:   PREFETCH window: disabled
+[    0.113950] ACPI: PCI Interrupt Link [LNKA] enabled at IRQ 10
+[    0.113952] PCI: setting IRQ 10 as level-triggered
+[    0.113957] pci 0000:00:01.0: PCI INT A -> Link[LNKA] -> GSI 10 (level, low) -> IRQ 10
+[    0.113960] pci 0000:00:01.0: setting latency timer to 64
+[    0.113966] pci 0000:00:1c.0: enabling device (0104 -> 0107)
+[    0.114065] ACPI: PCI Interrupt Link [LNKB] enabled at IRQ 5
+[    0.114067] PCI: setting IRQ 5 as level-triggered
+[    0.114071] pci 0000:00:1c.0: PCI INT A -> Link[LNKB] -> GSI 5 (level, low) -> IRQ 5
+[    0.114075] pci 0000:00:1c.0: setting latency timer to 64
+[    0.114082] pci 0000:00:1c.5: PCI INT B -> Link[LNKA] -> GSI 10 (level, low) -> IRQ 10
+[    0.114085] pci 0000:00:1c.5: setting latency timer to 64
+[    0.114090] pci 0000:00:1e.0: setting latency timer to 64
+[    0.114093] pci_bus 0000:00: resource 0 io:  [0x00-0xffff]
+[    0.114095] pci_bus 0000:00: resource 1 mem: [0x000000-0xffffffffffffffff]
+[    0.114097] pci_bus 0000:04: resource 0 io:  [0xe000-0xefff]
+[    0.114099] pci_bus 0000:04: resource 1 mem: [0xfeb00000-0xfebfffff]
+[    0.114101] pci_bus 0000:04: resource 2 pref mem [0xe0000000-0xefffffff]
+[    0.114103] pci_bus 0000:03: resource 0 io:  [0x1000-0x1fff]
+[    0.114105] pci_bus 0000:03: resource 1 mem: [0xd0000000-0xd01fffff]
+[    0.114107] pci_bus 0000:03: resource 2 pref mem [0xd0200000-0xd03fffff]
+[    0.114109] pci_bus 0000:02: resource 0 io:  [0xd000-0xdfff]
+[    0.114111] pci_bus 0000:02: resource 1 mem: [0xfea00000-0xfeafffff]
+[    0.114113] pci_bus 0000:02: resource 2 pref mem [0xdff00000-0xdfffffff]
+[    0.114115] pci_bus 0000:01: resource 3 io:  [0x00-0xffff]
+[    0.114117] pci_bus 0000:01: resource 4 mem: [0x000000-0xffffffffffffffff]
+[    0.114137] NET: Registered protocol family 2
+[    0.114193] IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.114395] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.114717] TCP bind hash table entries: 65536 (order: 7, 524288 bytes)
+[    0.114885] TCP: Hash tables configured (established 131072 bind 65536)
+[    0.114886] TCP reno registered
+[    0.114930] NET: Registered protocol family 1
+[    0.115037] pci 0000:04:00.0: Boot video device
+[    0.115146] cpufreq-nforce2: No nForce2 chipset.
+[    0.115160] Scanning for low memory corruption every 60 seconds
+[    0.115232] audit: initializing netlink socket (disabled)
+[    0.115238] type=2000 audit(0.112:1): initialized
+[    0.123474] highmem bounce pool size: 64 pages
+[    0.123478] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+[    0.124467] VFS: Disk quotas dquot_6.5.2
+[    0.124504] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.124902] fuse init (API version 7.13)
+[    0.124964] msgmni has been set to 1585
+[    0.125096] alg: No test for stdrng (krng)
+[    0.125135] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+[    0.125138] io scheduler noop registered
+[    0.125139] io scheduler anticipatory registered
+[    0.125140] io scheduler deadline registered
+[    0.125167] io scheduler cfq registered (default)
+[    0.125250]   alloc irq_desc for 24 on node -1
+[    0.125252]   alloc kstat_irqs on node -1
+[    0.125259] pcieport 0000:00:01.0: irq 24 for MSI/MSI-X
+[    0.125263] pcieport 0000:00:01.0: setting latency timer to 64
+[    0.125333]   alloc irq_desc for 25 on node -1
+[    0.125334]   alloc kstat_irqs on node -1
+[    0.125339] pcieport 0000:00:1c.0: irq 25 for MSI/MSI-X
+[    0.125346] pcieport 0000:00:1c.0: setting latency timer to 64
+[    0.125431]   alloc irq_desc for 26 on node -1
+[    0.125432]   alloc kstat_irqs on node -1
+[    0.125437] pcieport 0000:00:1c.5: irq 26 for MSI/MSI-X
+[    0.125444] pcieport 0000:00:1c.5: setting latency timer to 64
+[    0.125505] pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+[    0.125518] Firmware did not grant requested _OSC control
+[    0.125532] Firmware did not grant requested _OSC control
+[    0.125551] Firmware did not grant requested _OSC control
+[    0.125560] Firmware did not grant requested _OSC control
+[    0.125570] pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+[    0.125676] input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0
+[    0.125679] ACPI: Power Button [PWRB]
+[    0.125709] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input1
+[    0.125711] ACPI: Power Button [PWRF]
+[    0.126235] ACPI: SSDT cffa0270 0022C (v01 HPQOEM SLIC-CPC 00000011 INTL 20051117)
+[    0.126425] processor LNXCPU:00: registered as cooling_device0
+[    0.128034] isapnp: Scanning for PnP cards...
+[    0.480876] isapnp: No Plug & Play device found
+[    0.480888] TIME Value of jiffies_to_ns at rand_initialize 480030000, 1c9cad30
+[    0.480890] TIME Value of ktime_to_ns at rand_initialize 480001714, 1c9c3eb2
+[    0.480891] TIME Value of jiffies_to_ns 2 at rand_initialize 480030000, 1c9cad30
+[    0.480894] KTIME ENTROPY TIME: 0:00:00
+[    0.481800] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.482741] brd: module loaded
+[    0.483047] loop: module loaded
+[    0.483101] input: Macintosh mouse button emulation as /devices/virtual/input/input2
+[    0.483170] ata_piix 0000:00:1f.2: version 2.13
+[    0.483284] ACPI: PCI Interrupt Link [LNKD] enabled at IRQ 11
+[    0.483286] PCI: setting IRQ 11 as level-triggered
+[    0.483291] ata_piix 0000:00:1f.2: PCI INT B -> Link[LNKD] -> GSI 11 (level, low) -> IRQ 11
+[    0.483294] ata_piix 0000:00:1f.2: MAP [ P0 P2 P1 P3 ]
+[    0.483326] ata_piix 0000:00:1f.2: setting latency timer to 64
+[    0.483360] scsi0 : ata_piix
+[    0.483407] scsi1 : ata_piix
+[    0.484512] ata1: SATA max UDMA/133 cmd 0x1f0 ctl 0x3f6 bmdma 0xff90 irq 14
+[    0.484516] ata2: SATA max UDMA/133 cmd 0x170 ctl 0x376 bmdma 0xff98 irq 15
+[    0.484766] Fixed MDIO Bus: probed
+[    0.484791] PPP generic driver version 2.4.2
+[    0.484818] tun: Universal TUN/TAP device driver, 1.6
+[    0.484819] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    0.484877] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.484992] ACPI: PCI Interrupt Link [LNKC] enabled at IRQ 11
+[    0.484995] ehci_hcd 0000:00:1a.7: PCI INT C -> Link[LNKC] -> GSI 11 (level, low) -> IRQ 11
+[    0.485003] ehci_hcd 0000:00:1a.7: setting latency timer to 64
+[    0.485005] ehci_hcd 0000:00:1a.7: EHCI Host Controller
+[    0.485027] ehci_hcd 0000:00:1a.7: new USB bus registered, assigned bus number 1
+[    0.485049] ehci_hcd 0000:00:1a.7: debug port 1
+[    0.488931] ehci_hcd 0000:00:1a.7: cache line size of 32 is not supported
+[    0.488957] ehci_hcd 0000:00:1a.7: irq 11, io mem 0xfe9ff400
+[    0.504008] ehci_hcd 0000:00:1a.7: USB 2.0 started, EHCI 1.00
+[    0.504087] usb usb1: configuration #1 chosen from 1 choice
+[    0.504111] hub 1-0:1.0: USB hub found
+[    0.504122] hub 1-0:1.0: 6 ports detected
+[    0.504262] ACPI: PCI Interrupt Link [LNKH] enabled at IRQ 3
+[    0.504264] PCI: setting IRQ 3 as level-triggered
+[    0.504268] ehci_hcd 0000:00:1d.7: PCI INT A -> Link[LNKH] -> GSI 3 (level, low) -> IRQ 3
+[    0.504276] ehci_hcd 0000:00:1d.7: setting latency timer to 64
+[    0.504278] ehci_hcd 0000:00:1d.7: EHCI Host Controller
+[    0.504300] ehci_hcd 0000:00:1d.7: new USB bus registered, assigned bus number 2
+[    0.504319] ehci_hcd 0000:00:1d.7: debug port 1
+[    0.508188] ehci_hcd 0000:00:1d.7: cache line size of 32 is not supported
+[    0.508193] ehci_hcd 0000:00:1d.7: irq 3, io mem 0xfe9ff800
+[    0.524008] ehci_hcd 0000:00:1d.7: USB 2.0 started, EHCI 1.00
+[    0.524076] usb usb2: configuration #1 chosen from 1 choice
+[    0.524099] hub 2-0:1.0: USB hub found
+[    0.524104] hub 2-0:1.0: 6 ports detected
+[    0.524147] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    0.524156] uhci_hcd: USB Universal Host Controller Interface driver
+[    0.524169] uhci_hcd 0000:00:1a.0: PCI INT A -> Link[LNKA] -> GSI 10 (level, low) -> IRQ 10
+[    0.524173] uhci_hcd 0000:00:1a.0: setting latency timer to 64
+[    0.524176] uhci_hcd 0000:00:1a.0: UHCI Host Controller
+[    0.524197] uhci_hcd 0000:00:1a.0: new USB bus registered, assigned bus number 3
+[    0.524217] uhci_hcd 0000:00:1a.0: irq 10, io base 0x0000c000
+[    0.524274] usb usb3: configuration #1 chosen from 1 choice
+[    0.524295] hub 3-0:1.0: USB hub found
+[    0.524300] hub 3-0:1.0: 2 ports detected
+[    0.524432] ACPI: PCI Interrupt Link [LNKF] enabled at IRQ 10
+[    0.524434] uhci_hcd 0000:00:1a.1: PCI INT B -> Link[LNKF] -> GSI 10 (level, low) -> IRQ 10
+[    0.524439] uhci_hcd 0000:00:1a.1: setting latency timer to 64
+[    0.524441] uhci_hcd 0000:00:1a.1: UHCI Host Controller
+[    0.524467] uhci_hcd 0000:00:1a.1: new USB bus registered, assigned bus number 4
+[    0.524486] uhci_hcd 0000:00:1a.1: irq 10, io base 0x0000c080
+[    0.524545] usb usb4: configuration #1 chosen from 1 choice
+[    0.524562] hub 4-0:1.0: USB hub found
+[    0.524566] hub 4-0:1.0: 2 ports detected
+[    0.524696] ACPI: PCI Interrupt Link [LNKE] enabled at IRQ 7
+[    0.524698] PCI: setting IRQ 7 as level-triggered
+[    0.524702] uhci_hcd 0000:00:1a.2: PCI INT D -> Link[LNKE] -> GSI 7 (level, low) -> IRQ 7
+[    0.524707] uhci_hcd 0000:00:1a.2: setting latency timer to 64
+[    0.524709] uhci_hcd 0000:00:1a.2: UHCI Host Controller
+[    0.524731] uhci_hcd 0000:00:1a.2: new USB bus registered, assigned bus number 5
+[    0.524751] uhci_hcd 0000:00:1a.2: irq 7, io base 0x0000c400
+[    0.524808] usb usb5: configuration #1 chosen from 1 choice
+[    0.524825] hub 5-0:1.0: USB hub found
+[    0.524829] hub 5-0:1.0: 2 ports detected
+[    0.524858] uhci_hcd 0000:00:1d.0: PCI INT A -> Link[LNKH] -> GSI 3 (level, low) -> IRQ 3
+[    0.524863] uhci_hcd 0000:00:1d.0: setting latency timer to 64
+[    0.524865] uhci_hcd 0000:00:1d.0: UHCI Host Controller
+[    0.524885] uhci_hcd 0000:00:1d.0: new USB bus registered, assigned bus number 6
+[    0.524903] uhci_hcd 0000:00:1d.0: irq 3, io base 0x0000c480
+[    0.524959] usb usb6: configuration #1 chosen from 1 choice
+[    0.524976] hub 6-0:1.0: USB hub found
+[    0.524981] hub 6-0:1.0: 2 ports detected
+[    0.525013] uhci_hcd 0000:00:1d.1: PCI INT B -> Link[LNKE] -> GSI 7 (level, low) -> IRQ 7
+[    0.525017] uhci_hcd 0000:00:1d.1: setting latency timer to 64
+[    0.525020] uhci_hcd 0000:00:1d.1: UHCI Host Controller
+[    0.525039] uhci_hcd 0000:00:1d.1: new USB bus registered, assigned bus number 7
+[    0.525058] uhci_hcd 0000:00:1d.1: irq 7, io base 0x0000c800
+[    0.525116] usb usb7: configuration #1 chosen from 1 choice
+[    0.525135] hub 7-0:1.0: USB hub found
+[    0.525139] hub 7-0:1.0: 2 ports detected
+[    0.525166] uhci_hcd 0000:00:1d.2: PCI INT C -> Link[LNKC] -> GSI 11 (level, low) -> IRQ 11
+[    0.525170] uhci_hcd 0000:00:1d.2: setting latency timer to 64
+[    0.525173] uhci_hcd 0000:00:1d.2: UHCI Host Controller
+[    0.525192] uhci_hcd 0000:00:1d.2: new USB bus registered, assigned bus number 8
+[    0.525210] uhci_hcd 0000:00:1d.2: irq 11, io base 0x0000c880
+[    0.525266] usb usb8: configuration #1 chosen from 1 choice
+[    0.525285] hub 8-0:1.0: USB hub found
+[    0.525289] hub 8-0:1.0: 2 ports detected
+[    0.525355] PNP: No PS/2 controller found. Probing ports directly.
+[    0.526825] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    0.526825] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    0.526825] mice: PS/2 mouse device common for all mice
+[    0.526825] rtc_cmos 00:03: RTC can wake from S4
+[    0.526825] rtc_cmos 00:03: rtc core: registered rtc_cmos as rtc0
+[    0.528011] rtc0: alarms up to one month, y3k, 114 bytes nvram, hpet irqs
+[    0.528078] device-mapper: uevent: version 1.0.3
+[    0.528137] device-mapper: ioctl: 4.15.0-ioctl (2009-04-01) initialised: dm-devel@redhat.com
+[    0.528167] device-mapper: multipath: version 1.1.0 loaded
+[    0.528169] device-mapper: multipath round-robin: version 1.0.0 loaded
+[    0.528238] EISA: Probing bus 0 at eisa.0
+[    0.528242] Cannot allocate resource for EISA slot 1
+[    0.528259] EISA: Detected 0 cards.
+[    0.528286] cpuidle: using governor ladder
+[    0.528287] cpuidle: using governor menu
+[    0.528546] TCP cubic registered
+[    0.528652] NET: Registered protocol family 10
+[    0.529137] NET: Registered protocol family 17
+[    0.529412] Using IPI No-Shortcut mode
+[    0.529459] PM: Resume from disk failed.
+[    0.529468] registered taskstats version 1
+[    0.529726]   Magic number: 13:362:4
+[    0.529769] TIME XTIME do_settimeofday() called, with 1359594069 seconds input.
+[    0.529798] TIME XTIME do_settimeofday() called, with 500000000 nanosecs input.
+[    0.529827] Pid: 1, comm: swapper Not tainted 2.6.32.57 #57
+[    0.529828] Call Trace:
+[    0.529834]  [<c059edb4>] ? printk+0x1d/0x21
+[    0.529837]  [<c0177c3a>] do_settimeofday+0x3a/0x150
+[    0.529841]  [<c07f6f8e>] rtc_hctosys+0x7a/0x146
+[    0.529844]  [<c03c211e>] ? extract_entropy+0x6e/0x120
+[    0.529847]  [<c059edb4>] ? printk+0x1d/0x21
+[    0.529849]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.529851]  [<c07f6f14>] ? rtc_hctosys+0x0/0x146
+[    0.529855]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.529857]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.529859]  [<c010a2c7>] kernel_thread_helper+0x7/0x10
+[    0.529863] rtc_cmos 00:03: setting system clock to 2013-01-31 01:01:09 UTC (1359594069)
+[    0.529865] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+[    0.529866] EDD information not available.
+[    0.529901] BEGIN NET_SECRET:
+[    0.529902] \x8
+[    0.529903] \x50
+[    0.529904] \x43
+[    0.529904] \xa4
+[    0.529905] \xc
+[    0.529906] \x87
+[    0.529907] \xc6
+[    0.529908] \xc3
+[    0.529909] \x70
+[    0.529909] \xf6
+[    0.529910] \xcd
+[    0.529911] \xf8
+[    0.529912] \x38
+[    0.529912] \x8f
+[    0.529913] \xea
+[    0.529914] \xc2
+[    0.529915] \xe5
+[    0.529916] \x9a
+[    0.529916] \x78
+[    0.529917] \xa1
+[    0.529918] \xb8
+[    0.529919] \x9e
+[    0.529920] \x6f
+[    0.529920] \x4
+[    0.529921] \xf0
+[    0.529922] \x55
+[    0.529923] \xc4
+[    0.529924] \x30
+[    0.529924] \xf7
+[    0.529925] \x3e
+[    0.529926] \x74
+[    0.529927] \x73
+[    0.529928] \xe2
+[    0.529928] \xdc
+[    0.529929] \xab
+[    0.529930] \xf2
+[    0.529931] \xa9
+[    0.529932] \xb5
+[    0.529932] \x5e
+[    0.529933] \xdd
+[    0.529934] \x1
+[    0.529935] \x89
+[    0.529936] \x92
+[    0.529936] \x4d
+[    0.529937] \xed
+[    0.529938] \xe8
+[    0.529939] \xdc
+[    0.529940] \x4
+[    0.529940] \x3e
+[    0.529941] \xd5
+[    0.529942] \x0
+[    0.529943] \xf9
+[    0.529944] \x43
+[    0.529945] \xab
+[    0.529945] \x80
+[    0.529946] \x7
+[    0.529947] \xd9
+[    0.529948] \xba
+[    0.529949] \xb8
+[    0.529949] \x93
+[    0.529950] \x24
+[    0.529951] \xdc
+[    0.529952] \x7f
+[    0.529953] \xcf
+[    0.529953] 
+[    0.529954] END NET_SECRET
+[    0.816013] usb 1-6: new high speed USB device using ehci_hcd and address 2
+[    1.028056] usb 1-6: configuration #1 chosen from 1 choice
+[    1.280054] ata1.00: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[    1.280065] ata1.01: SATA link down (SStatus 0 SControl 300)
+[    1.284052] ata2.00: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+[    1.284064] ata2.01: SATA link down (SStatus 0 SControl 300)
+[    1.284074] ata2.01: link offline, clearing class 3 to NONE
+[    1.288341] ata2.00: ATAPI: TSSTcorp CDDVDW TS-H653R, 0301, max UDMA/33
+[    1.288429] ata1.00: ATA-8: WDC WD6400AAKS-65A7B2, 01.03B01, max UDMA/133
+[    1.288431] ata1.00: 1250263728 sectors, multi 16: LBA48 NCQ (depth 0/32)
+[    1.304357] ata2.00: configured for UDMA/33
+[    1.304430] ata1.00: configured for UDMA/133
+[    1.304513] scsi 0:0:0:0: Direct-Access     ATA      WDC WD6400AAKS-6 01.0 PQ: 0 ANSI: 5
+[    1.304587] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    1.304633] sd 0:0:0:0: [sda] 1250263728 512-byte logical blocks: (640 GB/596 GiB)
+[    1.304666] sd 0:0:0:0: [sda] Write Protect is off
+[    1.304668] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    1.304686] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    1.304771]  sda:
+[    1.304849] scsi 1:0:0:0: CD-ROM            TSSTcorp CDDVDW TS-H653R  0301 PQ: 0 ANSI: 5
+[    1.308020] sr0: scsi3-mmc drive: 40x/40x writer dvd-ram cd/rw xa/form2 cdda tray
+[    1.308022] Uniform CD-ROM driver Revision: 3.20
+[    1.308087] sr 1:0:0:0: Attached scsi CD-ROM sr0
+[    1.308127] sr 1:0:0:0: Attached scsi generic sg1 type 5
+[    1.332026]  sda1 sda2 < sda5 >
+[    1.360209] sd 0:0:0:0: [sda] Attached SCSI disk
+[    1.360218] md: Waiting for all devices to be available before autodetect
+[    1.360220] md: If you don't use raid, use raid=noautodetect
+[    1.360278] md: Autodetecting RAID arrays.
+[    1.360280] md: Scanned 0 and added 0 devices.
+[    1.360281] md: autorun ...
+[    1.360282] md: ... autorun DONE.
+[    1.384010] usb 7-2: new low speed USB device using uhci_hcd and address 2
+[    1.388021] EXT3-fs: sda1: couldn't mount because of unsupported optional features (240).
+[    1.388127] EXT2-fs: sda1: couldn't mount because of unsupported optional features (240).
+[    1.484177] EXT4-fs (sda1): mounted filesystem with ordered data mode
+[    1.484185] VFS: Mounted root (ext4 filesystem) readonly on device 8:1.
+[    1.520022] devtmpfs: mounted
+[    1.520040] Freeing unused kernel memory: 676k freed
+[    1.520262] Write protecting the kernel text: 4764k
+[    1.520302] Write protecting the kernel read-only data: 1836k
+[    1.564074] usb 7-2: configuration #1 chosen from 1 choice
+[    2.052788] TIME XTIME do_settimeofday() called, with 1359594071 seconds input.
+[    2.052788] TIME XTIME do_settimeofday() called, with 24003000 nanosecs input.
+[    2.052788] Pid: 47, comm: hwclock Not tainted 2.6.32.57 #57
+[    2.052788] Call Trace:
+[    2.052788]  [<c059edb4>] ? printk+0x1d/0x21
+[    2.052788]  [<c0177c3a>] do_settimeofday+0x3a/0x150
+[    2.052788]  [<c01577bf>] do_sys_settimeofday+0x5f/0x120
+[    2.052788]  [<c01578b5>] sys_settimeofday+0x35/0xa0
+[    2.052788]  [<c0109543>] sysenter_do_call+0x12/0x28
+[    5.168658] udev: starting version 151
+[    5.391520] r8169 Gigabit Ethernet driver 2.3LK-NAPI loaded
+[    5.391538] r8169 0000:02:00.0: PCI INT A -> Link[LNKB] -> GSI 5 (level, low) -> IRQ 5
+[    5.391568] r8169 0000:02:00.0: setting latency timer to 64
+[    5.391605]   alloc irq_desc for 27 on node -1
+[    5.391607]   alloc kstat_irqs on node -1
+[    5.391618] r8169 0000:02:00.0: irq 27 for MSI/MSI-X
+[    5.395575] eth0: RTL8168d/8111d at 0xf8366000, 00:26:18:a5:38:24, XID 081000c0 IRQ 27
+[    5.972955] r8169: eth0: link down
+[    5.972963] r8169: eth0: link down
+[    5.973130] ADDRCONF(NETDEV_UP): eth0: link is not ready
+[    5.976329] Adding 9828344k swap on /dev/sda5.  Priority:-1 extents:1 across:9828344k 
+[    5.986679] usbcore: registered new interface driver hiddev
+[    6.016007] Initializing USB Mass Storage driver...
+[    6.050280] Linux agpgart interface v0.103
+[    6.311130] [drm] Initialized drm 1.1.0 20060810
+[    6.632167] lp: driver loaded but no devices found
+[    7.100929] ACPI: PCI Interrupt Link [LNKG] enabled at IRQ 4
+[    7.100932] PCI: setting IRQ 4 as level-triggered
+[    7.100937] HDA Intel 0000:00:1b.0: PCI INT A -> Link[LNKG] -> GSI 4 (level, low) -> IRQ 4
+[    7.100957] HDA Intel 0000:00:1b.0: setting latency timer to 64
+[    7.311693] [drm] radeon defaulting to kernel modesetting.
+[    7.311696] [drm] radeon kernel modesetting enabled.
+[    7.311733] radeon 0000:04:00.0: PCI INT A -> Link[LNKA] -> GSI 10 (level, low) -> IRQ 10
+[    7.311737] radeon 0000:04:00.0: setting latency timer to 64
+[    7.312719] [drm] radeon: Initializing kernel modesetting.
+[    7.312736] [drm] register mmio base: 0xFEBE0000
+[    7.312738] [drm] register mmio size: 65536
+[    7.312791] ATOM BIOS: 113
+[    7.312796] [drm] Clocks initialized !
+[    7.312808] mtrr: type mismatch for e0000000,10000000 old: write-back new: write-combining
+[    7.312810] [drm] Detected VRAM RAM=256M, BAR=256M
+[    7.312812] [drm] RAM width 128bits DDR
+[    7.312857] [TTM] Zone  kernel: Available graphics memory: 406134 kiB.
+[    7.312859] [TTM] Zone highmem: Available graphics memory: 3095962 kiB.
+[    7.312869] [drm] radeon: 256M of VRAM memory ready
+[    7.312871] [drm] radeon: 512M of GTT memory ready.
+[    7.312915] [drm] Loading RV730 CP Microcode
+[    7.313071] platform radeon_cp.0: firmware: requesting radeon/RV730_pfp.bin
+[    7.354611] hda_codec: ALC888: BIOS auto-probing.
+[    7.355988] input: HDA Digital PCBeep as /devices/pci0000:00/0000:00:1b.0/input/input3
+[    7.356290] platform radeon_cp.0: firmware: requesting radeon/RV730_me.bin
+[    7.364140] [drm] GART: num cpu pages 131072, num gpu pages 131072
+[    7.401376] [drm] ring test succeeded in 1 usecs
+[    7.401477] [drm] radeon: ib pool ready.
+[    7.401519] [drm] ib test succeeded in 0 usecs
+[    7.402812] [drm] Radeon Display Connectors
+[    7.402814] [drm] Connector 0:
+[    7.402816] [drm]   HDMI-A
+[    7.402818] [drm]   DDC: 0x7f10 0x7f10 0x7f14 0x7f14 0x7f18 0x7f18 0x7f1c 0x7f1c
+[    7.402819] [drm]   Encoders:
+[    7.402820] [drm]     DFP2: INTERNAL_UNIPHY1
+[    7.402822] [drm] Connector 1:
+[    7.402823] [drm]   VGA
+[    7.402824] [drm]   DDC: 0x7e50 0x7e50 0x7e54 0x7e54 0x7e58 0x7e58 0x7e5c 0x7e5c
+[    7.402826] [drm]   Encoders:
+[    7.402827] [drm]     CRT2: INTERNAL_KLDSCP_DAC2
+[    7.402828] [drm] Connector 2:
+[    7.402829] [drm]   DVI-I
+[    7.402831] [drm]   DDC: 0x7e20 0x7e20 0x7e24 0x7e24 0x7e28 0x7e28 0x7e2c 0x7e2c
+[    7.402832] [drm]   Encoders:
+[    7.402833] [drm]     CRT1: INTERNAL_KLDSCP_DAC1
+[    7.402835] [drm]     DFP1: INTERNAL_UNIPHY
+[    7.535230] [drm] fb mappable at 0xE0141000
+[    7.535232] [drm] vram apper at 0xE0000000
+[    7.535234] [drm] size 8294400
+[    7.535235] [drm] fb depth is 24
+[    7.535236] [drm]    pitch is 7680
+[    7.535335] fb0: radeondrmfb frame buffer device
+[    7.535336] registered panic notifier
+[    7.535340] [drm] Initialized radeon 2.0.0 20080528 for 0000:04:00.0 on minor 0
+[    7.535377] HDA Intel 0000:04:00.1: PCI INT B -> Link[LNKB] -> GSI 5 (level, low) -> IRQ 5
+[    7.535393] HDA Intel 0000:04:00.1: setting latency timer to 64
+[    7.587442] executing set pll
+[    7.596046] executing set crtc timing
+[    7.596076] [drm] TV-11: set mode 1920x1080 21
+[    7.602687] Console: switching to colour frame buffer device 240x67
+[    8.556044] r8169: eth0: link up
+[    8.556216] ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   11.728079] TIME XTIME do_settimeofday() called, with 1359594080 seconds input.
+[   11.728128] TIME XTIME do_settimeofday() called, with 638375000 nanosecs input.
+[   11.728175] Pid: 376, comm: ntpdate Not tainted 2.6.32.57 #57
+[   11.728177] Call Trace:
+[   11.728189]  [<c059edb4>] ? printk+0x1d/0x21
+[   11.728192]  [<c0177c3a>] do_settimeofday+0x3a/0x150
+[   11.728196]  [<c01577eb>] do_sys_settimeofday+0x8b/0x120
+[   11.728198]  [<c01578b5>] sys_settimeofday+0x35/0xa0
+[   11.728202]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   15.992092] generic-usb 0003:0BDA:0152.0001: timeout initializing reports
+[   15.992185] generic-usb 0003:0BDA:0152.0001: hiddev96,hidraw0: USB HID v1.11 Device [Generic USB2.0-CRW] on usb-0000:00:1a.7-6/input1
+[   15.993076] scsi2 : SCSI emulation for USB Mass Storage devices
+[   15.993205] usbcore: registered new interface driver usb-storage
+[   15.993207] USB Mass Storage support registered.
+[   15.994247] usb-storage: device found at 2
+[   15.994248] usb-storage: waiting for device to settle before scanning
+[   16.004288] input: CHICONY HP USB Multimedia Keyboard as /devices/pci0000:00/0000:00:1d.1/usb7/7-2/7-2:1.0/input/input4
+[   16.004336] generic-usb 0003:04F2:0841.0002: input,hidraw1: USB HID v1.11 Keyboard [CHICONY HP USB Multimedia Keyboard] on usb-0000:00:1d.1-2/input0
+[   16.028339] input: CHICONY HP USB Multimedia Keyboard as /devices/pci0000:00/0000:00:1d.1/usb7/7-2/7-2:1.1/input/input5
+[   16.028406] generic-usb 0003:04F2:0841.0003: input,hiddev97,hidraw2: USB HID v1.11 Device [CHICONY HP USB Multimedia Keyboard] on usb-0000:00:1d.1-2/input1
+[   16.028422] usbcore: registered new interface driver usbhid
+[   16.028425] usbhid: v2.6:USB HID core driver
+[   18.740097] eth0: no IPv6 routers present
+[   20.992144] usb-storage: device scan complete
+[   20.996144] scsi 2:0:0:0: Direct-Access     Generic- Compact Flash    1.00 PQ: 0 ANSI: 0 CCS
+[   21.000138] scsi 2:0:0:1: Direct-Access     Generic- SM/xD-Picture    1.00 PQ: 0 ANSI: 0 CCS
+[   21.004137] scsi 2:0:0:2: Direct-Access     Generic- SD/MMC           1.00 PQ: 0 ANSI: 0 CCS
+[   21.008137] scsi 2:0:0:3: Direct-Access     Generic- MS/MS-Pro        1.00 PQ: 0 ANSI: 0 CCS
+[   21.012551] sd 2:0:0:0: Attached scsi generic sg2 type 0
+[   21.012988] sd 2:0:0:1: Attached scsi generic sg3 type 0
+[   21.013280] sd 2:0:0:2: Attached scsi generic sg4 type 0
+[   21.013576] sd 2:0:0:3: Attached scsi generic sg5 type 0
+[   21.019304] sd 2:0:0:0: [sdb] Attached SCSI removable disk
+[   21.021505] sd 2:0:0:1: [sdc] Attached SCSI removable disk
+[   21.025237] sd 2:0:0:3: [sde] Attached SCSI removable disk
+[   21.025242] sd 2:0:0:2: [sdd] Attached SCSI removable disk
+[   66.996773] Pid: 0, comm: swapper Not tainted 2.6.32.57 #57
+[   66.996776] Call Trace:
+[   66.996781]  [<c0179d9a>] jiffies_read+0x4a/0x110
+[   66.996781]  [<c010f088>] ? sched_clock+0x8/0x10
+[   66.996781]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[   66.996781]  [<c0177dbb>] ktime_get+0x6b/0x100
+[   66.996781]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[   66.996781]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[   66.996781]  [<c017d779>] tick_check_idle+0xe9/0xf0
+[   66.996781]  [<c015927c>] irq_enter+0x4c/0x70
+[   66.996781]  [<c05a5b5e>] do_IRQ+0x2e/0xc0
+[   66.996781]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[   66.996781]  [<c0109c70>] common_interrupt+0x30/0x40
+[   66.996781]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[   66.996781]  [<c01083d4>] cpu_idle+0x94/0xd0
+[   66.996781]  [<c058b922>] rest_init+0x62/0x70
+[   66.996781]  [<c07c68e5>] start_kernel+0x356/0x35c
+[   66.996781]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[   66.996781]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[   66.996781] JIFFIES_READ: read #100000 long value: 13841598659113720948
+[   66.996781] JIFFIES_READ: read #100000 long jiffies_64 value: 4294909044
+[   66.996781] JIFFIES_READ unsigned 32bit read #100000 value: 4294909044, ffff1c74
+[   66.996781] JIFFIES_READ unsigned 32bit 2nd read #100000 value: 4294909044, ffff1c74
+[   66.996781] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[   71.470413] TCP_SEQ BYTE ORDER TEST
+[   71.470415] saddr normal: 100007f
+[   71.470417] saddr htonl: 7f000001
+[   71.470418] saddr ntohl: 7f000001
+[   71.470419] net_secret[15]: cf7fdc24
+[   71.470420] Sequence num: 2ba9eec0
+[   71.470421] Sequence num ntohl: c0eea92b
+[   71.470423] TIME Value of ktime_to_ns at seq_scale 1359594140379195735
+[   71.470425] TIME Value of jiffies_to_ns at seq_scale 71472466750
+[   71.470426] Value of seq+ns reading 64-bit: 1359594141111752727
+[   71.470428] Value of seq+ns reading 32-bit: 4222294039
+[   71.470430] TIME ktime_to_ns variability test. ns: 1359594140379195735, jiffies: 4294910163
+[   71.470662] TIME ktime_to_ns variability test. ns: 1359594140379195735, jiffies: 4294910163
+[   71.470894] TIME ktime_to_ns variability test. ns: 1359594140379195735, jiffies: 4294910163
+[   71.471126] TIME ktime_to_ns variability test. ns: 1359594140379195735, jiffies: 4294910163
+[   71.471358] TIME ktime_to_ns variability test. ns: 1359594140379195735, jiffies: 4294910163
+[   71.471591] TIME ktime_to_ns variability test. ns: 1359594140379195735, jiffies: 4294910163
+[   71.471823] TIME ktime_to_ns variability test. ns: 1359594140379195735, jiffies: 4294910163
+[   71.472055] TIME ktime_to_ns variability test. ns: 1359594140379195735, jiffies: 4294910163
+[   71.472287] TIME ktime_to_ns variability test. ns: 1359594140379195735, jiffies: 4294910163
+[   71.472519] TIME ktime_to_ns variability test. ns: 1359594140379195735, jiffies: 4294910163
+[   71.473076] TIME ktime_to_ns variability test. ns: 1359594140383195826, jiffies: 4294910164
+[   71.473309] TIME ktime_to_ns variability test. ns: 1359594140383195826, jiffies: 4294910164
+[   71.473541] TIME ktime_to_ns variability test. ns: 1359594140383195826, jiffies: 4294910164
+[   71.473773] TIME ktime_to_ns variability test. ns: 1359594140383195826, jiffies: 4294910164
+[   71.474005] TIME ktime_to_ns variability test. ns: 1359594140383195826, jiffies: 4294910164
+[   71.474237] TIME ktime_to_ns variability test. ns: 1359594140383195826, jiffies: 4294910164
+[   71.474469] TIME ktime_to_ns variability test. ns: 1359594140383195826, jiffies: 4294910164
+[   71.474701] TIME ktime_to_ns variability test. ns: 1359594140383195826, jiffies: 4294910164
+[   71.474933] TIME ktime_to_ns variability test. ns: 1359594140383195826, jiffies: 4294910164
+[   71.475166] TIME ktime_to_ns variability test. ns: 1359594140383195826, jiffies: 4294910164
+[   71.475398] TIME ktime_to_ns variability test. ns: 1359594140383195826, jiffies: 4294910164
+[   71.475630] TIME ktime_to_ns variability test. ns: 1359594140383195826, jiffies: 4294910164
+[   71.475862] TIME ktime_to_ns variability test. ns: 1359594140383195826, jiffies: 4294910164
+[   71.476095] TIME ktime_to_ns variability test. ns: 1359594140383195826, jiffies: 4294910164
+[   71.476327] TIME ktime_to_ns variability test. ns: 1359594140383195826, jiffies: 4294910164
+[   71.476559] TIME ktime_to_ns variability test. ns: 1359594140383195826, jiffies: 4294910164
+[   71.476791] TIME ktime_to_ns variability test. ns: 1359594140383195826, jiffies: 4294910164
+[   71.477037] TIME ktime_to_ns variability test. ns: 1359594140387195918, jiffies: 4294910165
+[   71.477269] TIME ktime_to_ns variability test. ns: 1359594140387195918, jiffies: 4294910165
+[   71.477501] TIME ktime_to_ns variability test. ns: 1359594140387195918, jiffies: 4294910165
+[   71.477734] TIME ktime_to_ns variability test. ns: 1359594140387195918, jiffies: 4294910165
+[   71.477966] TIME ktime_to_ns variability test. ns: 1359594140387195918, jiffies: 4294910165
+[   71.478198] TIME ktime_to_ns variability test. ns: 1359594140387195918, jiffies: 4294910165
+[   71.478430] TIME ktime_to_ns variability test. ns: 1359594140387195918, jiffies: 4294910165
+[   71.478662] TIME ktime_to_ns variability test. ns: 1359594140387195918, jiffies: 4294910165
+[   71.478895] TIME ktime_to_ns variability test. ns: 1359594140387195918, jiffies: 4294910165
+[   71.479127] TIME ktime_to_ns variability test. ns: 1359594140387195918, jiffies: 4294910165
+[   71.479359] TIME ktime_to_ns variability test. ns: 1359594140387195918, jiffies: 4294910165
+[   71.479591] TIME ktime_to_ns variability test. ns: 1359594140387195918, jiffies: 4294910165
+[   71.479824] TIME ktime_to_ns variability test. ns: 1359594140387195918, jiffies: 4294910165
+[   71.480056] TIME ktime_to_ns variability test. ns: 1359594140387195918, jiffies: 4294910165
+[   71.480288] TIME ktime_to_ns variability test. ns: 1359594140387195918, jiffies: 4294910165
+[   71.480520] TIME ktime_to_ns variability test. ns: 1359594140387195918, jiffies: 4294910165
+[   71.480753] TIME ktime_to_ns variability test. ns: 1359594140387195918, jiffies: 4294910165
+[   71.480999] TIME ktime_to_ns variability test. ns: 1359594140391196009, jiffies: 4294910166
+[   71.481232] TIME ktime_to_ns variability test. ns: 1359594140391196009, jiffies: 4294910166
+[   71.481464] TIME ktime_to_ns variability test. ns: 1359594140391196009, jiffies: 4294910166
+[   71.481696] TIME ktime_to_ns variability test. ns: 1359594140391196009, jiffies: 4294910166
+[   71.481928] TIME ktime_to_ns variability test. ns: 1359594140391196009, jiffies: 4294910166
+[   71.482160] TIME ktime_to_ns variability test. ns: 1359594140391196009, jiffies: 4294910166
+[   71.482392] TIME ktime_to_ns variability test. ns: 1359594140391196009, jiffies: 4294910166
+[   71.482624] TIME ktime_to_ns variability test. ns: 1359594140391196009, jiffies: 4294910166
+[   71.482856] TIME ktime_to_ns variability test. ns: 1359594140391196009, jiffies: 4294910166
+[   71.483089] TIME ktime_to_ns variability test. ns: 1359594140391196009, jiffies: 4294910166
+[   71.483321] TIME ktime_to_ns variability test. ns: 1359594140391196009, jiffies: 4294910166
+[   71.483553] TIME ktime_to_ns variability test. ns: 1359594140391196009, jiffies: 4294910166
+[   71.483785] TIME ktime_to_ns variability test. ns: 1359594140391196009, jiffies: 4294910166
+[   71.484018] TIME ktime_to_ns variability test. ns: 1359594140391196009, jiffies: 4294910166
+[   71.484250] TIME ktime_to_ns variability test. ns: 1359594140391196009, jiffies: 4294910166
+[   71.484482] TIME ktime_to_ns variability test. ns: 1359594140391196009, jiffies: 4294910166
+[   71.484714] TIME ktime_to_ns variability test. ns: 1359594140391196009, jiffies: 4294910166
+[   71.484959] TIME ktime_to_ns variability test. ns: 1359594140395196101, jiffies: 4294910167
+[   71.485191] TIME ktime_to_ns variability test. ns: 1359594140395196101, jiffies: 4294910167
+[   71.485424] TIME ktime_to_ns variability test. ns: 1359594140395196101, jiffies: 4294910167
+[   71.485656] TIME ktime_to_ns variability test. ns: 1359594140395196101, jiffies: 4294910167
+[   71.485888] TIME ktime_to_ns variability test. ns: 1359594140395196101, jiffies: 4294910167
+[   71.486120] TIME ktime_to_ns variability test. ns: 1359594140395196101, jiffies: 4294910167
+[   71.486352] TIME ktime_to_ns variability test. ns: 1359594140395196101, jiffies: 4294910167
+[   71.486585] TIME ktime_to_ns variability test. ns: 1359594140395196101, jiffies: 4294910167
+[   71.486817] TIME ktime_to_ns variability test. ns: 1359594140395196101, jiffies: 4294910167
+[   71.487049] TIME ktime_to_ns variability test. ns: 1359594140395196101, jiffies: 4294910167
+[   71.487281] TIME ktime_to_ns variability test. ns: 1359594140395196101, jiffies: 4294910167
+[   71.487513] TIME ktime_to_ns variability test. ns: 1359594140395196101, jiffies: 4294910167
+[   71.487746] TIME ktime_to_ns variability test. ns: 1359594140395196101, jiffies: 4294910167
+[   71.487978] TIME ktime_to_ns variability test. ns: 1359594140395196101, jiffies: 4294910167
+[   71.488210] TIME ktime_to_ns variability test. ns: 1359594140395196101, jiffies: 4294910167
+[   71.488442] TIME ktime_to_ns variability test. ns: 1359594140395196101, jiffies: 4294910167
+[   71.488675] TIME ktime_to_ns variability test. ns: 1359594140395196101, jiffies: 4294910167
+[   71.488919] TIME ktime_to_ns variability test. ns: 1359594140399196192, jiffies: 4294910168
+[   71.489151] TIME ktime_to_ns variability test. ns: 1359594140399196192, jiffies: 4294910168
+[   71.489384] TIME ktime_to_ns variability test. ns: 1359594140399196192, jiffies: 4294910168
+[   71.489616] TIME ktime_to_ns variability test. ns: 1359594140399196192, jiffies: 4294910168
+[   71.489848] TIME ktime_to_ns variability test. ns: 1359594140399196192, jiffies: 4294910168
+[   71.490081] TIME ktime_to_ns variability test. ns: 1359594140399196192, jiffies: 4294910168
+[   71.490313] TIME ktime_to_ns variability test. ns: 1359594140399196192, jiffies: 4294910168
+[   71.490545] TIME ktime_to_ns variability test. ns: 1359594140399196192, jiffies: 4294910168
+[   71.490777] TIME ktime_to_ns variability test. ns: 1359594140399196192, jiffies: 4294910168
+[   71.491010] TIME ktime_to_ns variability test. ns: 1359594140399196192, jiffies: 4294910168
+[   71.491242] TIME ktime_to_ns variability test. ns: 1359594140399196192, jiffies: 4294910168
+[   71.491474] TIME ktime_to_ns variability test. ns: 1359594140399196192, jiffies: 4294910168
+[   71.491706] TIME ktime_to_ns variability test. ns: 1359594140399196192, jiffies: 4294910168
+[   71.491938] TIME ktime_to_ns variability test. ns: 1359594140399196192, jiffies: 4294910168
+[   71.492171] TIME ktime_to_ns variability test. ns: 1359594140399196192, jiffies: 4294910168
+[   71.492403] TIME ktime_to_ns variability test. ns: 1359594140399196192, jiffies: 4294910168
+[   71.492635] TIME ktime_to_ns variability test. ns: 1359594140399196192, jiffies: 4294910168
+[   71.492867] TIME ktime_to_ns variability test. ns: 1359594140399196192, jiffies: 4294910168
+[   71.493112] TIME ktime_to_ns variability test. ns: 1359594140403196283, jiffies: 4294910169
+[   71.493344] TIME ktime_to_ns variability test. ns: 1359594140403196283, jiffies: 4294910169
+[   71.493577] TIME ktime_to_ns variability test. ns: 1359594140403196283, jiffies: 4294910169
+[   71.493809] TIME ktime_to_ns variability test. ns: 1359594140403196283, jiffies: 4294910169
+[   71.494048] Pid: 751, comm: cli Not tainted 2.6.32.57 #57
+[   71.494050] Call Trace:
+[   71.494055]  [<c0516197>] tcp_transmit_skb+0x6c7/0x740
+[   71.494058]  [<c059edb4>] ? printk+0x1d/0x21
+[   71.494060]  [<c05178ce>] ? tcp_connect+0x21e/0x3f0
+[   71.494063]  [<c05179e1>] tcp_connect+0x331/0x3f0
+[   71.494065]  [<c051bea6>] tcp_v4_connect+0x3e6/0x4d0
+[   71.494068]  [<c052a6f6>] inet_stream_connect+0x216/0x270
+[   71.494071]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.494075]  [<c04c6936>] sys_connect+0xb6/0xd0
+[   71.494077]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.494080]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.494082]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.494085]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.494088]  [<c03c74a0>] ? n_tty_write+0x0/0x3c0
+[   71.494091]  [<c04c7cf6>] sys_socketcall+0x246/0x280
+[   71.494094]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.494096] TIMESTAMP tsval syn-ack-options orig: 4294910169	ffff20d9
+[   71.494098] Pid: 751, comm: cli Not tainted 2.6.32.57 #57
+[   71.494100] Call Trace:
+[   71.494102]  [<c051593b>] tcp_options_write+0x6b/0x200
+[   71.494105]  [<c0515d1f>] tcp_transmit_skb+0x24f/0x740
+[   71.494108]  [<c059edb4>] ? printk+0x1d/0x21
+[   71.494110]  [<c05178ce>] ? tcp_connect+0x21e/0x3f0
+[   71.494112]  [<c05179e1>] tcp_connect+0x331/0x3f0
+[   71.494115]  [<c051bea6>] tcp_v4_connect+0x3e6/0x4d0
+[   71.494118]  [<c052a6f6>] inet_stream_connect+0x216/0x270
+[   71.494120]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.494123]  [<c04c6936>] sys_connect+0xb6/0xd0
+[   71.494125]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.494127]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.494130]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.494132]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.494135]  [<c03c74a0>] ? n_tty_write+0x0/0x3c0
+[   71.494137]  [<c04c7cf6>] sys_socketcall+0x246/0x280
+[   71.494140]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.494143] TIME tsval orig: 4294910169	ffff20d9
+[   71.494144] TIME tsecr orig: 0	0
+[   71.494145] TIME tsval htonl: 3642818559	d920ffff
+[   71.494146] TIME tsecr htonl: 0	0
+[   71.494148] TIME ktime_ns value long: 1359594140403196283	12de3faad16f617b
+[   71.494150] TIME ktime_ns value: 3513737595	12de3faa
+[   71.494159] TCP_SEQ BYTE ORDER TEST
+[   71.494160] saddr normal: 100007f
+[   71.494161] saddr htonl: 7f000001
+[   71.494162] saddr ntohl: 7f000001
+[   71.494163] net_secret[15]: cf7fdc24
+[   71.494165] Sequence num: 38458817
+[   71.494166] Sequence num ntohl: 17884538
+[   71.494167] TIME Value of ktime_to_ns at seq_scale 1359594140403196283
+[   71.494169] TIME Value of jiffies_to_ns at seq_scale 71496468250
+[   71.494170] Value of seq+ns reading 64-bit: 1359594141347277202
+[   71.494172] Value of seq+ns reading 32-bit: 162851218
+[   71.494173] TIME ktime_to_ns variability test. ns: 1359594140403196283, jiffies: 4294910169
+[   71.494405] TIME ktime_to_ns variability test. ns: 1359594140403196283, jiffies: 4294910169
+[   71.494637] TIME ktime_to_ns variability test. ns: 1359594140403196283, jiffies: 4294910169
+[   71.494869] TIME ktime_to_ns variability test. ns: 1359594140403196283, jiffies: 4294910169
+[   71.495101] TIME ktime_to_ns variability test. ns: 1359594140403196283, jiffies: 4294910169
+[   71.495333] TIME ktime_to_ns variability test. ns: 1359594140403196283, jiffies: 4294910169
+[   71.495565] TIME ktime_to_ns variability test. ns: 1359594140403196283, jiffies: 4294910169
+[   71.495797] TIME ktime_to_ns variability test. ns: 1359594140403196283, jiffies: 4294910169
+[   71.496030] TIME ktime_to_ns variability test. ns: 1359594140403196283, jiffies: 4294910169
+[   71.496262] TIME ktime_to_ns variability test. ns: 1359594140403196283, jiffies: 4294910169
+[   71.496494] TIME ktime_to_ns variability test. ns: 1359594140403196283, jiffies: 4294910169
+[   71.496726] TIME ktime_to_ns variability test. ns: 1359594140403196283, jiffies: 4294910169
+[   71.496971] TIME ktime_to_ns variability test. ns: 1359594140407196375, jiffies: 4294910170
+[   71.497203] TIME ktime_to_ns variability test. ns: 1359594140407196375, jiffies: 4294910170
+[   71.497435] TIME ktime_to_ns variability test. ns: 1359594140407196375, jiffies: 4294910170
+[   71.497667] TIME ktime_to_ns variability test. ns: 1359594140407196375, jiffies: 4294910170
+[   71.497899] TIME ktime_to_ns variability test. ns: 1359594140407196375, jiffies: 4294910170
+[   71.498132] TIME ktime_to_ns variability test. ns: 1359594140407196375, jiffies: 4294910170
+[   71.498364] TIME ktime_to_ns variability test. ns: 1359594140407196375, jiffies: 4294910170
+[   71.498596] TIME ktime_to_ns variability test. ns: 1359594140407196375, jiffies: 4294910170
+[   71.498828] TIME ktime_to_ns variability test. ns: 1359594140407196375, jiffies: 4294910170
+[   71.499061] TIME ktime_to_ns variability test. ns: 1359594140407196375, jiffies: 4294910170
+[   71.499293] TIME ktime_to_ns variability test. ns: 1359594140407196375, jiffies: 4294910170
+[   71.499525] TIME ktime_to_ns variability test. ns: 1359594140407196375, jiffies: 4294910170
+[   71.499757] TIME ktime_to_ns variability test. ns: 1359594140407196375, jiffies: 4294910170
+[   71.499989] TIME ktime_to_ns variability test. ns: 1359594140407196375, jiffies: 4294910170
+[   71.500222] TIME ktime_to_ns variability test. ns: 1359594140407196375, jiffies: 4294910170
+[   71.500454] TIME ktime_to_ns variability test. ns: 1359594140407196375, jiffies: 4294910170
+[   71.500686] TIME ktime_to_ns variability test. ns: 1359594140407196375, jiffies: 4294910170
+[   71.500931] TIME ktime_to_ns variability test. ns: 1359594140411196466, jiffies: 4294910171
+[   71.501163] TIME ktime_to_ns variability test. ns: 1359594140411196466, jiffies: 4294910171
+[   71.501395] TIME ktime_to_ns variability test. ns: 1359594140411196466, jiffies: 4294910171
+[   71.501628] TIME ktime_to_ns variability test. ns: 1359594140411196466, jiffies: 4294910171
+[   71.501860] TIME ktime_to_ns variability test. ns: 1359594140411196466, jiffies: 4294910171
+[   71.502092] TIME ktime_to_ns variability test. ns: 1359594140411196466, jiffies: 4294910171
+[   71.502324] TIME ktime_to_ns variability test. ns: 1359594140411196466, jiffies: 4294910171
+[   71.502557] TIME ktime_to_ns variability test. ns: 1359594140411196466, jiffies: 4294910171
+[   71.502789] TIME ktime_to_ns variability test. ns: 1359594140411196466, jiffies: 4294910171
+[   71.503021] TIME ktime_to_ns variability test. ns: 1359594140411196466, jiffies: 4294910171
+[   71.503253] TIME ktime_to_ns variability test. ns: 1359594140411196466, jiffies: 4294910171
+[   71.503486] TIME ktime_to_ns variability test. ns: 1359594140411196466, jiffies: 4294910171
+[   71.503718] TIME ktime_to_ns variability test. ns: 1359594140411196466, jiffies: 4294910171
+[   71.503950] TIME ktime_to_ns variability test. ns: 1359594140411196466, jiffies: 4294910171
+[   71.504182] TIME ktime_to_ns variability test. ns: 1359594140411196466, jiffies: 4294910171
+[   71.504414] TIME ktime_to_ns variability test. ns: 1359594140411196466, jiffies: 4294910171
+[   71.504646] TIME ktime_to_ns variability test. ns: 1359594140411196466, jiffies: 4294910171
+[   71.504890] TIME ktime_to_ns variability test. ns: 1359594140415196557, jiffies: 4294910172
+[   71.505122] TIME ktime_to_ns variability test. ns: 1359594140415196557, jiffies: 4294910172
+[   71.505355] TIME ktime_to_ns variability test. ns: 1359594140415196557, jiffies: 4294910172
+[   71.505587] TIME ktime_to_ns variability test. ns: 1359594140415196557, jiffies: 4294910172
+[   71.505819] TIME ktime_to_ns variability test. ns: 1359594140415196557, jiffies: 4294910172
+[   71.506051] TIME ktime_to_ns variability test. ns: 1359594140415196557, jiffies: 4294910172
+[   71.506284] TIME ktime_to_ns variability test. ns: 1359594140415196557, jiffies: 4294910172
+[   71.506516] TIME ktime_to_ns variability test. ns: 1359594140415196557, jiffies: 4294910172
+[   71.506748] TIME ktime_to_ns variability test. ns: 1359594140415196557, jiffies: 4294910172
+[   71.506980] TIME ktime_to_ns variability test. ns: 1359594140415196557, jiffies: 4294910172
+[   71.507212] TIME ktime_to_ns variability test. ns: 1359594140415196557, jiffies: 4294910172
+[   71.507445] TIME ktime_to_ns variability test. ns: 1359594140415196557, jiffies: 4294910172
+[   71.507677] TIME ktime_to_ns variability test. ns: 1359594140415196557, jiffies: 4294910172
+[   71.507909] TIME ktime_to_ns variability test. ns: 1359594140415196557, jiffies: 4294910172
+[   71.508141] TIME ktime_to_ns variability test. ns: 1359594140415196557, jiffies: 4294910172
+[   71.508373] TIME ktime_to_ns variability test. ns: 1359594140415196557, jiffies: 4294910172
+[   71.508606] TIME ktime_to_ns variability test. ns: 1359594140415196557, jiffies: 4294910172
+[   71.508838] TIME ktime_to_ns variability test. ns: 1359594140415196557, jiffies: 4294910172
+[   71.509082] TIME ktime_to_ns variability test. ns: 1359594140419196649, jiffies: 4294910173
+[   71.509314] TIME ktime_to_ns variability test. ns: 1359594140419196649, jiffies: 4294910173
+[   71.509546] TIME ktime_to_ns variability test. ns: 1359594140419196649, jiffies: 4294910173
+[   71.509779] TIME ktime_to_ns variability test. ns: 1359594140419196649, jiffies: 4294910173
+[   71.510011] TIME ktime_to_ns variability test. ns: 1359594140419196649, jiffies: 4294910173
+[   71.510243] TIME ktime_to_ns variability test. ns: 1359594140419196649, jiffies: 4294910173
+[   71.510475] TIME ktime_to_ns variability test. ns: 1359594140419196649, jiffies: 4294910173
+[   71.510708] TIME ktime_to_ns variability test. ns: 1359594140419196649, jiffies: 4294910173
+[   71.510940] TIME ktime_to_ns variability test. ns: 1359594140419196649, jiffies: 4294910173
+[   71.511172] TIME ktime_to_ns variability test. ns: 1359594140419196649, jiffies: 4294910173
+[   71.511404] TIME ktime_to_ns variability test. ns: 1359594140419196649, jiffies: 4294910173
+[   71.511637] TIME ktime_to_ns variability test. ns: 1359594140419196649, jiffies: 4294910173
+[   71.511869] TIME ktime_to_ns variability test. ns: 1359594140419196649, jiffies: 4294910173
+[   71.512101] TIME ktime_to_ns variability test. ns: 1359594140419196649, jiffies: 4294910173
+[   71.512333] TIME ktime_to_ns variability test. ns: 1359594140419196649, jiffies: 4294910173
+[   71.512566] TIME ktime_to_ns variability test. ns: 1359594140419196649, jiffies: 4294910173
+[   71.512798] TIME ktime_to_ns variability test. ns: 1359594140419196649, jiffies: 4294910173
+[   71.513042] TIME ktime_to_ns variability test. ns: 1359594140423196740, jiffies: 4294910174
+[   71.513274] TIME ktime_to_ns variability test. ns: 1359594140423196740, jiffies: 4294910174
+[   71.513506] TIME ktime_to_ns variability test. ns: 1359594140423196740, jiffies: 4294910174
+[   71.513739] TIME ktime_to_ns variability test. ns: 1359594140423196740, jiffies: 4294910174
+[   71.513971] TIME ktime_to_ns variability test. ns: 1359594140423196740, jiffies: 4294910174
+[   71.514203] TIME ktime_to_ns variability test. ns: 1359594140423196740, jiffies: 4294910174
+[   71.514435] TIME ktime_to_ns variability test. ns: 1359594140423196740, jiffies: 4294910174
+[   71.514668] TIME ktime_to_ns variability test. ns: 1359594140423196740, jiffies: 4294910174
+[   71.514900] TIME ktime_to_ns variability test. ns: 1359594140423196740, jiffies: 4294910174
+[   71.515132] TIME ktime_to_ns variability test. ns: 1359594140423196740, jiffies: 4294910174
+[   71.515365] TIME ktime_to_ns variability test. ns: 1359594140423196740, jiffies: 4294910174
+[   71.515597] TIME ktime_to_ns variability test. ns: 1359594140423196740, jiffies: 4294910174
+[   71.515829] TIME ktime_to_ns variability test. ns: 1359594140423196740, jiffies: 4294910174
+[   71.516086] TIME ktime_to_ns variability test. ns: 1359594140423196740, jiffies: 4294910174
+[   71.516318] TIME ktime_to_ns variability test. ns: 1359594140423196740, jiffies: 4294910174
+[   71.516551] TIME ktime_to_ns variability test. ns: 1359594140423196740, jiffies: 4294910174
+[   71.516783] TIME ktime_to_ns variability test. ns: 1359594140423196740, jiffies: 4294910174
+[   71.517027] TIME ktime_to_ns variability test. ns: 1359594140427196832, jiffies: 4294910175
+[   71.517260] TIME ktime_to_ns variability test. ns: 1359594140427196832, jiffies: 4294910175
+[   71.517494] Pid: 751, comm: cli Not tainted 2.6.32.57 #57
+[   71.517495] Call Trace:
+[   71.517498]  [<c051593b>] tcp_options_write+0x6b/0x200
+[   71.517500]  [<c04c937b>] ? sock_wmalloc+0x4b/0x70
+[   71.517503]  [<c05166ac>] tcp_make_synack+0x26c/0x340
+[   71.517506]  [<c051a439>] __tcp_v4_send_synack+0x29/0xe0
+[   71.517508]  [<c051d37d>] tcp_v4_conn_request+0x35d/0x4d0
+[   71.517511]  [<c0514813>] tcp_rcv_state_process+0xe3/0x970
+[   71.517514]  [<c051b788>] tcp_v4_do_rcv+0x178/0x3c0
+[   71.517516]  [<c051ce21>] tcp_v4_rcv+0x541/0x740
+[   71.517519]  [<c04fe757>] ip_local_deliver_finish+0xa7/0x270
+[   71.517521]  [<c04fe9af>] ip_local_deliver+0x8f/0xa0
+[   71.517524]  [<c04fe00b>] ip_rcv_finish+0xeb/0x380
+[   71.517526]  [<c04fe4be>] ip_rcv+0x21e/0x2e0
+[   71.517529]  [<c010f088>] ? sched_clock+0x8/0x10
+[   71.517532]  [<c04d970f>] netif_receive_skb+0x36f/0x5a0
+[   71.517535]  [<c034eec8>] ? vsnprintf+0xc8/0x410
+[   71.517538]  [<c04d99af>] process_backlog+0x6f/0xb0
+[   71.517540]  [<c04da0bd>] net_rx_action+0xed/0x1d0
+[   71.517543]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   71.517546]  [<c0444a1b>] ? loopback_xmit+0x5b/0x80
+[   71.517549]  [<c04d8d11>] ? dev_hard_start_xmit+0x191/0x370
+[   71.517552]  [<c0159495>] do_softirq+0x45/0x50
+[   71.517554]  [<c015966d>] local_bh_enable+0x7d/0x90
+[   71.517556]  [<c04d8fe9>] dev_queue_xmit+0xf9/0x4b0
+[   71.517559]  [<c04e9470>] ? eth_header+0x0/0xb0
+[   71.517562]  [<c04de329>] neigh_resolve_output+0xe9/0x310
+[   71.517565]  [<c0503655>] ip_finish_output+0x1f5/0x2c0
+[   71.517567]  [<c05037c7>] ip_output+0xa7/0xb0
+[   71.517569]  [<c050294d>] ip_local_out+0x1d/0x30
+[   71.517572]  [<c050307e>] ip_queue_xmit+0x14e/0x3a0
+[   71.517574]  [<c0177ea2>] ? getnstimeofday+0x52/0x110
+[   71.517577]  [<c059edb4>] ? printk+0x1d/0x21
+[   71.517579]  [<c05159ee>] ? tcp_options_write+0x11e/0x200
+[   71.517582]  [<c051a382>] ? tcp_v4_send_check+0x52/0xe0
+[   71.517584]  [<c0515e6d>] tcp_transmit_skb+0x39d/0x740
+[   71.517587]  [<c059edb4>] ? printk+0x1d/0x21
+[   71.517589]  [<c05178ce>] ? tcp_connect+0x21e/0x3f0
+[   71.517591]  [<c05179e1>] tcp_connect+0x331/0x3f0
+[   71.517594]  [<c051bea6>] tcp_v4_connect+0x3e6/0x4d0
+[   71.517597]  [<c052a6f6>] inet_stream_connect+0x216/0x270
+[   71.517599]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.517602]  [<c04c6936>] sys_connect+0xb6/0xd0
+[   71.517604]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.517606]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.517608]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.517611]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.517614]  [<c03c74a0>] ? n_tty_write+0x0/0x3c0
+[   71.517616]  [<c04c7cf6>] sys_socketcall+0x246/0x280
+[   71.517619]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.517621] TIME tsval orig: 4294910175	ffff20df
+[   71.517623] TIME tsecr orig: 4294910169	ffff20d9
+[   71.517624] TIME tsval htonl: 3743481855	df20ffff
+[   71.517626] TIME tsecr htonl: 3642818559	d920ffff
+[   71.517627] TIME ktime_ns value long: 1359594140427196832	12de3faad2dd99a0
+[   71.517629] TIME ktime_ns value: 3537738144	12de3faa
+[   71.517642] Pid: 751, comm: cli Not tainted 2.6.32.57 #57
+[   71.517644] Call Trace:
+[   71.517647]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.517650]  [<c0515b8d>] tcp_transmit_skb+0xbd/0x740
+[   71.517652]  [<c05174b3>] ? tcp_send_ack+0x33/0x110
+[   71.517654]  [<c051753c>] tcp_send_ack+0xbc/0x110
+[   71.517657]  [<c0515072>] tcp_rcv_state_process+0x942/0x970
+[   71.517659]  [<c051b788>] tcp_v4_do_rcv+0x178/0x3c0
+[   71.517662]  [<c04c8c82>] release_sock+0x52/0xb0
+[   71.517664]  [<c052a62d>] inet_stream_connect+0x14d/0x270
+[   71.517667]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.517670]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.517673]  [<c04c6936>] sys_connect+0xb6/0xd0
+[   71.517675]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.517677]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.517680]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.517682]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.517685]  [<c03c74a0>] ? n_tty_write+0x0/0x3c0
+[   71.517688]  [<c04c7cf6>] sys_socketcall+0x246/0x280
+[   71.517691]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.517692] TIMESTAMP tsval established orig: 4294910175	ffff20df
+[   71.517695] Pid: 751, comm: cli Not tainted 2.6.32.57 #57
+[   71.517696] Call Trace:
+[   71.517698]  [<c051593b>] tcp_options_write+0x6b/0x200
+[   71.517701]  [<c05156ba>] ? tcp_established_options+0x7a/0xd0
+[   71.517704]  [<c0515d1f>] tcp_transmit_skb+0x24f/0x740
+[   71.517706]  [<c05174b3>] ? tcp_send_ack+0x33/0x110
+[   71.517708]  [<c051753c>] tcp_send_ack+0xbc/0x110
+[   71.517711]  [<c0515072>] tcp_rcv_state_process+0x942/0x970
+[   71.517714]  [<c051b788>] tcp_v4_do_rcv+0x178/0x3c0
+[   71.517716]  [<c04c8c82>] release_sock+0x52/0xb0
+[   71.517719]  [<c052a62d>] inet_stream_connect+0x14d/0x270
+[   71.517721]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.517724]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.517726]  [<c04c6936>] sys_connect+0xb6/0xd0
+[   71.517729]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.517731]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.517733]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.517736]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.517738]  [<c03c74a0>] ? n_tty_write+0x0/0x3c0
+[   71.517741]  [<c04c7cf6>] sys_socketcall+0x246/0x280
+[   71.517744]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.517746] TIME tsval orig: 4294910175	ffff20df
+[   71.517748] TIME tsecr orig: 4294910175	ffff20df
+[   71.517749] TIME tsval htonl: 3743481855	df20ffff
+[   71.517750] TIME tsecr htonl: 3743481855	df20ffff
+[   71.517752] TIME ktime_ns value long: 1359594140427196832	12de3faad2dd99a0
+[   71.517754] TIME ktime_ns value: 3537738144	12de3faa
+[   71.517757] Pid: 751, comm: cli Not tainted 2.6.32.57 #57
+[   71.517758] Call Trace:
+[   71.517761]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.517763]  [<c05174b3>] ? tcp_send_ack+0x33/0x110
+[   71.517765]  [<c0515752>] tcp_current_mss+0x42/0x60
+[   71.517768]  [<c0510d10>] tcp_data_snd_check+0x20/0xe0
+[   71.517771]  [<c051508b>] tcp_rcv_state_process+0x95b/0x970
+[   71.517773]  [<c051b788>] tcp_v4_do_rcv+0x178/0x3c0
+[   71.517776]  [<c04c8c82>] release_sock+0x52/0xb0
+[   71.517778]  [<c052a62d>] inet_stream_connect+0x14d/0x270
+[   71.517780]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.517783]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.517786]  [<c04c6936>] sys_connect+0xb6/0xd0
+[   71.517788]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.517790]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.517793]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.517795]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.517798]  [<c03c74a0>] ? n_tty_write+0x0/0x3c0
+[   71.517801]  [<c04c7cf6>] sys_socketcall+0x246/0x280
+[   71.517804]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.517805] TIMESTAMP tsval established orig: 0	0
+[   71.517813] Pid: 751, comm: cli Not tainted 2.6.32.57 #57
+[   71.517814] Call Trace:
+[   71.517817]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.517820]  [<c0515752>] tcp_current_mss+0x42/0x60
+[   71.517822]  [<c0510d10>] tcp_data_snd_check+0x20/0xe0
+[   71.517825]  [<c05148fb>] tcp_rcv_state_process+0x1cb/0x970
+[   71.517828]  [<c051da6b>] tcp_child_process+0x7b/0xa0
+[   71.517830]  [<c051b90f>] tcp_v4_do_rcv+0x2ff/0x3c0
+[   71.517833]  [<c051ce21>] tcp_v4_rcv+0x541/0x740
+[   71.517836]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.517838]  [<c04fe757>] ip_local_deliver_finish+0xa7/0x270
+[   71.517841]  [<c04fe9af>] ip_local_deliver+0x8f/0xa0
+[   71.517843]  [<c04fe00b>] ip_rcv_finish+0xeb/0x380
+[   71.517845]  [<c04fe4be>] ip_rcv+0x21e/0x2e0
+[   71.517848]  [<c059ec9b>] ? dump_stack+0x73/0x7a
+[   71.517850]  [<c04d970f>] netif_receive_skb+0x36f/0x5a0
+[   71.517853]  [<c059edb4>] ? printk+0x1d/0x21
+[   71.517855]  [<c04d99af>] process_backlog+0x6f/0xb0
+[   71.517858]  [<c04da0bd>] net_rx_action+0xed/0x1d0
+[   71.517860]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   71.517863]  [<c051b788>] ? tcp_v4_do_rcv+0x178/0x3c0
+[   71.517865]  [<c0159495>] do_softirq+0x45/0x50
+[   71.517868]  [<c015966d>] local_bh_enable+0x7d/0x90
+[   71.517870]  [<c059fbd5>] __cond_resched_softirq+0x35/0x70
+[   71.517872]  [<c04c8c89>] release_sock+0x59/0xb0
+[   71.517875]  [<c052a62d>] inet_stream_connect+0x14d/0x270
+[   71.517877]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.517880]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.517883]  [<c04c6936>] sys_connect+0xb6/0xd0
+[   71.517885]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.517887]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.517889]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.517892]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.517895]  [<c03c74a0>] ? n_tty_write+0x0/0x3c0
+[   71.517897]  [<c04c7cf6>] sys_socketcall+0x246/0x280
+[   71.517900]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.517902] TIMESTAMP tsval established orig: 0	0
+[   71.519094] Pid: 750, comm: serv Not tainted 2.6.32.57 #57
+[   71.519096] Call Trace:
+[   71.519099]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.519103]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.519106]  [<c0515752>] tcp_current_mss+0x42/0x60
+[   71.519108]  [<c05a1b27>] ? _spin_lock_bh+0x17/0x20
+[   71.519111]  [<c0509190>] tcp_send_mss+0x20/0xe0
+[   71.519113]  [<c050bfc0>] tcp_sendmsg+0x90/0x900
+[   71.519116]  [<f829c119>] ? bit_clear+0xa9/0xd0 [bitblit]
+[   71.519123]  [<c04c6be5>] sock_sendmsg+0xe5/0x110
+[   71.519126]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.519129]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.519132]  [<c04c6d5a>] sys_sendto+0xfa/0x150
+[   71.519135]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.519137]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.519139]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.519141]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.519144]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.519146]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.519149]  [<c04c6deb>] sys_send+0x3b/0x40
+[   71.519151]  [<c04c7c71>] sys_socketcall+0x1c1/0x280
+[   71.519154]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.519156] TIMESTAMP tsval established orig: 0	0
+[   71.519161] Pid: 750, comm: serv Not tainted 2.6.32.57 #57
+[   71.519162] Call Trace:
+[   71.519164]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.519167]  [<c04cb697>] ? __skb_clone+0x27/0xd0
+[   71.519169]  [<c0515b8d>] tcp_transmit_skb+0xbd/0x740
+[   71.519172]  [<c0517e3c>] tcp_write_xmit+0x18c/0x940
+[   71.519175]  [<c0518736>] __tcp_push_pending_frames+0x36/0xa0
+[   71.519177]  [<c050930a>] tcp_push+0x7a/0xb0
+[   71.519180]  [<c050c4fa>] tcp_sendmsg+0x5ca/0x900
+[   71.519182]  [<f829c119>] ? bit_clear+0xa9/0xd0 [bitblit]
+[   71.519185]  [<c04c6be5>] sock_sendmsg+0xe5/0x110
+[   71.519188]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.519191]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.519194]  [<c04c6d5a>] sys_sendto+0xfa/0x150
+[   71.519197]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.519199]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.519201]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.519204]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.519206]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.519208]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.519211]  [<c04c6deb>] sys_send+0x3b/0x40
+[   71.519214]  [<c04c7c71>] sys_socketcall+0x1c1/0x280
+[   71.519217]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.519219] TIMESTAMP tsval established orig: 4294910175	ffff20df
+[   71.519221] Pid: 750, comm: serv Not tainted 2.6.32.57 #57
+[   71.519222] Call Trace:
+[   71.519224]  [<c051593b>] tcp_options_write+0x6b/0x200
+[   71.519227]  [<c05156ba>] ? tcp_established_options+0x7a/0xd0
+[   71.519230]  [<c0515d1f>] tcp_transmit_skb+0x24f/0x740
+[   71.519232]  [<c0517e3c>] tcp_write_xmit+0x18c/0x940
+[   71.519235]  [<c0518736>] __tcp_push_pending_frames+0x36/0xa0
+[   71.519238]  [<c050930a>] tcp_push+0x7a/0xb0
+[   71.519240]  [<c050c4fa>] tcp_sendmsg+0x5ca/0x900
+[   71.519242]  [<f829c119>] ? bit_clear+0xa9/0xd0 [bitblit]
+[   71.519246]  [<c04c6be5>] sock_sendmsg+0xe5/0x110
+[   71.519249]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.519251]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.519254]  [<c04c6d5a>] sys_sendto+0xfa/0x150
+[   71.519257]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.519259]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.519261]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.519264]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.519266]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.519269]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.519271]  [<c04c6deb>] sys_send+0x3b/0x40
+[   71.519274]  [<c04c7c71>] sys_socketcall+0x1c1/0x280
+[   71.519277]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.519279] TIME tsval orig: 4294910175	ffff20df
+[   71.519280] TIME tsecr orig: 4294910175	ffff20df
+[   71.519282] TIME tsval htonl: 3743481855	df20ffff
+[   71.519283] TIME tsecr htonl: 3743481855	df20ffff
+[   71.519285] TIME ktime_ns value long: 1359594140427196832	12de3faad2dd99a0
+[   71.519286] TIME ktime_ns value: 3537738144	12de3faa
+[   71.519297] Pid: 751, comm: cli Not tainted 2.6.32.57 #57
+[   71.519298] Call Trace:
+[   71.519301]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.519304]  [<c0515752>] tcp_current_mss+0x42/0x60
+[   71.519306]  [<c0510d10>] tcp_data_snd_check+0x20/0xe0
+[   71.519309]  [<c05142f3>] tcp_rcv_established+0x313/0x750
+[   71.519311]  [<c051b880>] tcp_v4_do_rcv+0x270/0x3c0
+[   71.519314]  [<c04c8c82>] release_sock+0x52/0xb0
+[   71.519316]  [<c052a62d>] inet_stream_connect+0x14d/0x270
+[   71.519319]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.519322]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.519324]  [<c04c6936>] sys_connect+0xb6/0xd0
+[   71.519327]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.519329]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.519331]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.519334]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.519336]  [<c03c74a0>] ? n_tty_write+0x0/0x3c0
+[   71.519339]  [<c04c7cf6>] sys_socketcall+0x246/0x280
+[   71.519342]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.519344] TIMESTAMP tsval established orig: 0	0
+[   71.519346] Pid: 751, comm: cli Not tainted 2.6.32.57 #57
+[   71.519347] Call Trace:
+[   71.519350]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.519352]  [<c0515b8d>] tcp_transmit_skb+0xbd/0x740
+[   71.519355]  [<c059edb4>] ? printk+0x1d/0x21
+[   71.519357]  [<c05174b3>] ? tcp_send_ack+0x33/0x110
+[   71.519360]  [<c051753c>] tcp_send_ack+0xbc/0x110
+[   71.519362]  [<c050f726>] __tcp_ack_snd_check+0x56/0x90
+[   71.519365]  [<c051430e>] tcp_rcv_established+0x32e/0x750
+[   71.519367]  [<c051b880>] tcp_v4_do_rcv+0x270/0x3c0
+[   71.519370]  [<c04c8c82>] release_sock+0x52/0xb0
+[   71.519372]  [<c052a62d>] inet_stream_connect+0x14d/0x270
+[   71.519374]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.519377]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.519380]  [<c04c6936>] sys_connect+0xb6/0xd0
+[   71.519382]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.519384]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.519387]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.519389]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.519392]  [<c03c74a0>] ? n_tty_write+0x0/0x3c0
+[   71.519394]  [<c04c7cf6>] sys_socketcall+0x246/0x280
+[   71.519397]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.519399] TIMESTAMP tsval established orig: 4294910175	ffff20df
+[   71.519401] Pid: 751, comm: cli Not tainted 2.6.32.57 #57
+[   71.519402] Call Trace:
+[   71.519405]  [<c051593b>] tcp_options_write+0x6b/0x200
+[   71.519408]  [<c05156ba>] ? tcp_established_options+0x7a/0xd0
+[   71.519410]  [<c0515d1f>] tcp_transmit_skb+0x24f/0x740
+[   71.519413]  [<c059edb4>] ? printk+0x1d/0x21
+[   71.519415]  [<c05174b3>] ? tcp_send_ack+0x33/0x110
+[   71.519417]  [<c051753c>] tcp_send_ack+0xbc/0x110
+[   71.519420]  [<c050f726>] __tcp_ack_snd_check+0x56/0x90
+[   71.519423]  [<c051430e>] tcp_rcv_established+0x32e/0x750
+[   71.519425]  [<c051b880>] tcp_v4_do_rcv+0x270/0x3c0
+[   71.519427]  [<c04c8c82>] release_sock+0x52/0xb0
+[   71.519430]  [<c052a62d>] inet_stream_connect+0x14d/0x270
+[   71.519432]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.519435]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.519438]  [<c04c6936>] sys_connect+0xb6/0xd0
+[   71.519440]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.519442]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.519445]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.519447]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.519450]  [<c03c74a0>] ? n_tty_write+0x0/0x3c0
+[   71.519452]  [<c04c7cf6>] sys_socketcall+0x246/0x280
+[   71.519455]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.519457] TIME tsval orig: 4294910175	ffff20df
+[   71.519459] TIME tsecr orig: 4294910175	ffff20df
+[   71.519460] TIME tsval htonl: 3743481855	df20ffff
+[   71.519462] TIME tsecr htonl: 3743481855	df20ffff
+[   71.519463] TIME ktime_ns value long: 1359594140427196832	12de3faad2dd99a0
+[   71.519465] TIME ktime_ns value: 3537738144	12de3faa
+[   71.519473] Pid: 750, comm: serv Not tainted 2.6.32.57 #57
+[   71.519475] Call Trace:
+[   71.519478]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.519480]  [<c0515752>] tcp_current_mss+0x42/0x60
+[   71.519483]  [<c0510d10>] tcp_data_snd_check+0x20/0xe0
+[   71.519486]  [<c051450f>] tcp_rcv_established+0x52f/0x750
+[   71.519489]  [<c05a004d>] ? schedule_timeout+0x1ad/0x280
+[   71.519492]  [<c01626e2>] ? mod_timer+0x102/0x1e0
+[   71.519494]  [<c051b880>] tcp_v4_do_rcv+0x270/0x3c0
+[   71.519496]  [<c04c8d77>] ? lock_sock_nested+0x97/0xa0
+[   71.519499]  [<c05a1bb6>] ? _spin_unlock_bh+0x16/0x20
+[   71.519501]  [<c04c926c>] ? sk_wait_data+0x8c/0xc0
+[   71.519503]  [<c05093a2>] tcp_prequeue_process+0x62/0x80
+[   71.519506]  [<c050bc4c>] tcp_recvmsg+0x8fc/0xbe0
+[   71.519508]  [<c05a1bb6>] ? _spin_unlock_bh+0x16/0x20
+[   71.519511]  [<c04c84b8>] sock_common_recvmsg+0x48/0x60
+[   71.519514]  [<c04c6ee5>] sock_recvmsg+0xf5/0x120
+[   71.519517]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.519520]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.519523]  [<c04c7024>] sys_recvfrom+0xc4/0x160
+[   71.519526]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.519528]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.519530]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.519532]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.519535]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.519537]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.519540]  [<c04c70fb>] sys_recv+0x3b/0x40
+[   71.519542]  [<c04c7c52>] sys_socketcall+0x1a2/0x280
+[   71.519545]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.519547] TIMESTAMP tsval established orig: 0	0
+[   71.519554] Pid: 751, comm: cli Not tainted 2.6.32.57 #57
+[   71.519555] Call Trace:
+[   71.519558]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.519561]  [<c05a1bb6>] ? _spin_unlock_bh+0x16/0x20
+[   71.519563]  [<c04c8ccc>] ? release_sock+0x9c/0xb0
+[   71.519565]  [<c0515752>] tcp_current_mss+0x42/0x60
+[   71.519568]  [<c05a1b27>] ? _spin_lock_bh+0x17/0x20
+[   71.519570]  [<c0509190>] tcp_send_mss+0x20/0xe0
+[   71.519572]  [<c050bfc0>] tcp_sendmsg+0x90/0x900
+[   71.519575]  [<c04c84b8>] ? sock_common_recvmsg+0x48/0x60
+[   71.519578]  [<c04c6be5>] sock_sendmsg+0xe5/0x110
+[   71.519581]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.519583]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.519586]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[   71.519588]  [<c051b880>] ? tcp_v4_do_rcv+0x270/0x3c0
+[   71.519591]  [<c05a004d>] ? schedule_timeout+0x1ad/0x280
+[   71.519594]  [<c05a1b27>] ? _spin_lock_bh+0x17/0x20
+[   71.519596]  [<c04c6d5a>] sys_sendto+0xfa/0x150
+[   71.519599]  [<c04c6936>] ? sys_connect+0xb6/0xd0
+[   71.519601]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.519603]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.519606]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.519608]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.519611]  [<c04c6deb>] sys_send+0x3b/0x40
+[   71.519613]  [<c04c7c71>] sys_socketcall+0x1c1/0x280
+[   71.519616]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.519618] TIMESTAMP tsval established orig: 0	0
+[   71.519621] Pid: 751, comm: cli Not tainted 2.6.32.57 #57
+[   71.519622] Call Trace:
+[   71.519625]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.519627]  [<c04cb697>] ? __skb_clone+0x27/0xd0
+[   71.519630]  [<c0515b8d>] tcp_transmit_skb+0xbd/0x740
+[   71.519633]  [<c0517e3c>] tcp_write_xmit+0x18c/0x940
+[   71.519636]  [<c0518736>] __tcp_push_pending_frames+0x36/0xa0
+[   71.519638]  [<c050930a>] tcp_push+0x7a/0xb0
+[   71.519641]  [<c050c4fa>] tcp_sendmsg+0x5ca/0x900
+[   71.519644]  [<c04c6be5>] sock_sendmsg+0xe5/0x110
+[   71.519647]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.519649]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.519652]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[   71.519654]  [<c051b880>] ? tcp_v4_do_rcv+0x270/0x3c0
+[   71.519657]  [<c05a004d>] ? schedule_timeout+0x1ad/0x280
+[   71.519659]  [<c05a1b27>] ? _spin_lock_bh+0x17/0x20
+[   71.519662]  [<c04c6d5a>] sys_sendto+0xfa/0x150
+[   71.519665]  [<c04c6936>] ? sys_connect+0xb6/0xd0
+[   71.519667]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.519669]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.519672]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.519674]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.519677]  [<c04c6deb>] sys_send+0x3b/0x40
+[   71.519679]  [<c04c7c71>] sys_socketcall+0x1c1/0x280
+[   71.519682]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.519684] TIMESTAMP tsval established orig: 4294910175	ffff20df
+[   71.519686] Pid: 751, comm: cli Not tainted 2.6.32.57 #57
+[   71.519687] Call Trace:
+[   71.519690]  [<c051593b>] tcp_options_write+0x6b/0x200
+[   71.519693]  [<c05156ba>] ? tcp_established_options+0x7a/0xd0
+[   71.519695]  [<c0515d1f>] tcp_transmit_skb+0x24f/0x740
+[   71.519698]  [<c0517e3c>] tcp_write_xmit+0x18c/0x940
+[   71.519701]  [<c0518736>] __tcp_push_pending_frames+0x36/0xa0
+[   71.519703]  [<c050930a>] tcp_push+0x7a/0xb0
+[   71.519705]  [<c050c4fa>] tcp_sendmsg+0x5ca/0x900
+[   71.519709]  [<c04c6be5>] sock_sendmsg+0xe5/0x110
+[   71.519712]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.519714]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.519717]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[   71.519719]  [<c051b880>] ? tcp_v4_do_rcv+0x270/0x3c0
+[   71.519722]  [<c05a004d>] ? schedule_timeout+0x1ad/0x280
+[   71.519724]  [<c05a1b27>] ? _spin_lock_bh+0x17/0x20
+[   71.519727]  [<c04c6d5a>] sys_sendto+0xfa/0x150
+[   71.519730]  [<c04c6936>] ? sys_connect+0xb6/0xd0
+[   71.519732]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.519734]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.519736]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.519739]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.519741]  [<c04c6deb>] sys_send+0x3b/0x40
+[   71.519744]  [<c04c7c71>] sys_socketcall+0x1c1/0x280
+[   71.519747]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.519749] TIME tsval orig: 4294910175	ffff20df
+[   71.519750] TIME tsecr orig: 4294910175	ffff20df
+[   71.519752] TIME tsval htonl: 3743481855	df20ffff
+[   71.519753] TIME tsecr htonl: 3743481855	df20ffff
+[   71.519755] TIME ktime_ns value long: 1359594140427196832	12de3faad2dd99a0
+[   71.519756] TIME ktime_ns value: 3537738144	12de3faa
+[   71.519764] Pid: 750, comm: serv Not tainted 2.6.32.57 #57
+[   71.519765] Call Trace:
+[   71.519768]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.519771]  [<c0515b8d>] tcp_transmit_skb+0xbd/0x740
+[   71.519774]  [<c0350149>] ? copy_to_user+0x39/0x130
+[   71.519776]  [<c05174b3>] ? tcp_send_ack+0x33/0x110
+[   71.519778]  [<c051753c>] tcp_send_ack+0xbc/0x110
+[   71.519781]  [<c050f726>] __tcp_ack_snd_check+0x56/0x90
+[   71.519784]  [<c0514203>] tcp_rcv_established+0x223/0x750
+[   71.519786]  [<c051b880>] tcp_v4_do_rcv+0x270/0x3c0
+[   71.519788]  [<c04c8d77>] ? lock_sock_nested+0x97/0xa0
+[   71.519791]  [<c05a1bb6>] ? _spin_unlock_bh+0x16/0x20
+[   71.519793]  [<c04c926c>] ? sk_wait_data+0x8c/0xc0
+[   71.519795]  [<c05093a2>] tcp_prequeue_process+0x62/0x80
+[   71.519798]  [<c050bc4c>] tcp_recvmsg+0x8fc/0xbe0
+[   71.519801]  [<c05a1bb6>] ? _spin_unlock_bh+0x16/0x20
+[   71.519803]  [<c04c84b8>] sock_common_recvmsg+0x48/0x60
+[   71.519806]  [<c04c6ee5>] sock_recvmsg+0xf5/0x120
+[   71.519809]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.519812]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.519815]  [<c04c7024>] sys_recvfrom+0xc4/0x160
+[   71.519818]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.519821]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.519823]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.519825]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.519827]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.519830]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.519832]  [<c04c70fb>] sys_recv+0x3b/0x40
+[   71.519835]  [<c04c7c52>] sys_socketcall+0x1a2/0x280
+[   71.519838]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.519840] TIMESTAMP tsval established orig: 4294910175	ffff20df
+[   71.519842] Pid: 750, comm: serv Not tainted 2.6.32.57 #57
+[   71.519843] Call Trace:
+[   71.519846]  [<c051593b>] tcp_options_write+0x6b/0x200
+[   71.519849]  [<c05156ba>] ? tcp_established_options+0x7a/0xd0
+[   71.519852]  [<c0515d1f>] tcp_transmit_skb+0x24f/0x740
+[   71.519854]  [<c0350149>] ? copy_to_user+0x39/0x130
+[   71.519856]  [<c05174b3>] ? tcp_send_ack+0x33/0x110
+[   71.519859]  [<c051753c>] tcp_send_ack+0xbc/0x110
+[   71.519861]  [<c050f726>] __tcp_ack_snd_check+0x56/0x90
+[   71.519864]  [<c0514203>] tcp_rcv_established+0x223/0x750
+[   71.519866]  [<c051b880>] tcp_v4_do_rcv+0x270/0x3c0
+[   71.519869]  [<c04c8d77>] ? lock_sock_nested+0x97/0xa0
+[   71.519871]  [<c05a1bb6>] ? _spin_unlock_bh+0x16/0x20
+[   71.519873]  [<c04c926c>] ? sk_wait_data+0x8c/0xc0
+[   71.519876]  [<c05093a2>] tcp_prequeue_process+0x62/0x80
+[   71.519878]  [<c050bc4c>] tcp_recvmsg+0x8fc/0xbe0
+[   71.519881]  [<c05a1bb6>] ? _spin_unlock_bh+0x16/0x20
+[   71.519883]  [<c04c84b8>] sock_common_recvmsg+0x48/0x60
+[   71.519886]  [<c04c6ee5>] sock_recvmsg+0xf5/0x120
+[   71.519889]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.519892]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.519895]  [<c04c7024>] sys_recvfrom+0xc4/0x160
+[   71.519898]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.519900]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.519902]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.519904]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.519907]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.519909]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.519912]  [<c04c70fb>] sys_recv+0x3b/0x40
+[   71.519914]  [<c04c7c52>] sys_socketcall+0x1a2/0x280
+[   71.519917]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.519919] TIME tsval orig: 4294910175	ffff20df
+[   71.519921] TIME tsecr orig: 4294910175	ffff20df
+[   71.519922] TIME tsval htonl: 3743481855	df20ffff
+[   71.519924] TIME tsecr htonl: 3743481855	df20ffff
+[   71.519925] TIME ktime_ns value long: 1359594140427196832	12de3faad2dd99a0
+[   71.519927] TIME ktime_ns value: 3537738144	12de3faa
+[   71.519931] Pid: 750, comm: serv Not tainted 2.6.32.57 #57
+[   71.519932] Call Trace:
+[   71.519935]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.519938]  [<c0515752>] tcp_current_mss+0x42/0x60
+[   71.519941]  [<c0510d10>] tcp_data_snd_check+0x20/0xe0
+[   71.519943]  [<c051450f>] tcp_rcv_established+0x52f/0x750
+[   71.519946]  [<c0444a1b>] ? loopback_xmit+0x5b/0x80
+[   71.519948]  [<c051b880>] tcp_v4_do_rcv+0x270/0x3c0
+[   71.519951]  [<c051ce21>] tcp_v4_rcv+0x541/0x740
+[   71.519953]  [<c05037c7>] ? ip_output+0xa7/0xb0
+[   71.519956]  [<c04fe757>] ip_local_deliver_finish+0xa7/0x270
+[   71.519958]  [<c0177ea2>] ? getnstimeofday+0x52/0x110
+[   71.519960]  [<c04fe9af>] ip_local_deliver+0x8f/0xa0
+[   71.519963]  [<c059edb4>] ? printk+0x1d/0x21
+[   71.519965]  [<c04fe00b>] ip_rcv_finish+0xeb/0x380
+[   71.519968]  [<c05159ee>] ? tcp_options_write+0x11e/0x200
+[   71.519970]  [<c051a382>] ? tcp_v4_send_check+0x52/0xe0
+[   71.519972]  [<c04fe4be>] ip_rcv+0x21e/0x2e0
+[   71.519975]  [<c0515e6d>] ? tcp_transmit_skb+0x39d/0x740
+[   71.519977]  [<c04d970f>] netif_receive_skb+0x36f/0x5a0
+[   71.519980]  [<c04d99af>] process_backlog+0x6f/0xb0
+[   71.519982]  [<c04da0bd>] net_rx_action+0xed/0x1d0
+[   71.519985]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   71.519987]  [<c051b880>] ? tcp_v4_do_rcv+0x270/0x3c0
+[   71.519990]  [<c04c8d77>] ? lock_sock_nested+0x97/0xa0
+[   71.519992]  [<c0159495>] do_softirq+0x45/0x50
+[   71.519995]  [<c015966d>] local_bh_enable+0x7d/0x90
+[   71.519997]  [<c05093ad>] tcp_prequeue_process+0x6d/0x80
+[   71.519999]  [<c050bc4c>] tcp_recvmsg+0x8fc/0xbe0
+[   71.520002]  [<c05a1bb6>] ? _spin_unlock_bh+0x16/0x20
+[   71.520005]  [<c04c84b8>] sock_common_recvmsg+0x48/0x60
+[   71.520007]  [<c04c6ee5>] sock_recvmsg+0xf5/0x120
+[   71.520010]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.520013]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.520016]  [<c04c7024>] sys_recvfrom+0xc4/0x160
+[   71.520019]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.520021]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.520024]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.520026]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.520028]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.520031]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.520033]  [<c04c70fb>] sys_recv+0x3b/0x40
+[   71.520036]  [<c04c7c52>] sys_socketcall+0x1a2/0x280
+[   71.520039]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.520041] TIMESTAMP tsval established orig: 0	0
+[   71.522358] Pid: 750, comm: serv Not tainted 2.6.32.57 #57
+[   71.522360] Call Trace:
+[   71.522363]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.522366]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.522368]  [<c0515752>] tcp_current_mss+0x42/0x60
+[   71.522371]  [<c05a1b27>] ? _spin_lock_bh+0x17/0x20
+[   71.522373]  [<c0509190>] tcp_send_mss+0x20/0xe0
+[   71.522376]  [<c050bfc0>] tcp_sendmsg+0x90/0x900
+[   71.522378]  [<f829c119>] ? bit_clear+0xa9/0xd0 [bitblit]
+[   71.522384]  [<c04c6be5>] sock_sendmsg+0xe5/0x110
+[   71.522387]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.522390]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.522393]  [<c04c6d5a>] sys_sendto+0xfa/0x150
+[   71.522395]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.522398]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.522400]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.522402]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.522405]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.522407]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.522410]  [<c04c6deb>] sys_send+0x3b/0x40
+[   71.522412]  [<c04c7c71>] sys_socketcall+0x1c1/0x280
+[   71.522415]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.522417] TIMESTAMP tsval established orig: 0	0
+[   71.522420] Pid: 750, comm: serv Not tainted 2.6.32.57 #57
+[   71.522421] Call Trace:
+[   71.522424]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.522426]  [<c04cb697>] ? __skb_clone+0x27/0xd0
+[   71.522429]  [<c0515b8d>] tcp_transmit_skb+0xbd/0x740
+[   71.522431]  [<c0517e3c>] tcp_write_xmit+0x18c/0x940
+[   71.522434]  [<c059edb4>] ? printk+0x1d/0x21
+[   71.522436]  [<c0518736>] __tcp_push_pending_frames+0x36/0xa0
+[   71.522439]  [<c050930a>] tcp_push+0x7a/0xb0
+[   71.522441]  [<c050c4fa>] tcp_sendmsg+0x5ca/0x900
+[   71.522444]  [<f829c119>] ? bit_clear+0xa9/0xd0 [bitblit]
+[   71.522447]  [<c04c6be5>] sock_sendmsg+0xe5/0x110
+[   71.522450]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.522452]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.522456]  [<c04c6d5a>] sys_sendto+0xfa/0x150
+[   71.522458]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.522460]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.522463]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.522465]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.522467]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.522470]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.522472]  [<c04c6deb>] sys_send+0x3b/0x40
+[   71.522475]  [<c04c7c71>] sys_socketcall+0x1c1/0x280
+[   71.522478]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.522480] TIMESTAMP tsval established orig: 4294910176	ffff20e0
+[   71.522482] Pid: 750, comm: serv Not tainted 2.6.32.57 #57
+[   71.522483] Call Trace:
+[   71.522486]  [<c051593b>] tcp_options_write+0x6b/0x200
+[   71.522488]  [<c05156ba>] ? tcp_established_options+0x7a/0xd0
+[   71.522491]  [<c0515d1f>] tcp_transmit_skb+0x24f/0x740
+[   71.522494]  [<c0517e3c>] tcp_write_xmit+0x18c/0x940
+[   71.522496]  [<c059edb4>] ? printk+0x1d/0x21
+[   71.522499]  [<c0518736>] __tcp_push_pending_frames+0x36/0xa0
+[   71.522501]  [<c050930a>] tcp_push+0x7a/0xb0
+[   71.522504]  [<c050c4fa>] tcp_sendmsg+0x5ca/0x900
+[   71.522506]  [<f829c119>] ? bit_clear+0xa9/0xd0 [bitblit]
+[   71.522509]  [<c04c6be5>] sock_sendmsg+0xe5/0x110
+[   71.522512]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.522515]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.522518]  [<c04c6d5a>] sys_sendto+0xfa/0x150
+[   71.522521]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.522523]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.522525]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.522528]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.522530]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.522532]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.522535]  [<c04c6deb>] sys_send+0x3b/0x40
+[   71.522538]  [<c04c7c71>] sys_socketcall+0x1c1/0x280
+[   71.522541]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.522543] TIME tsval orig: 4294910176	ffff20e0
+[   71.522544] TIME tsecr orig: 4294910175	ffff20df
+[   71.522545] TIME tsval htonl: 3760259071	e020ffff
+[   71.522547] TIME tsecr htonl: 3743481855	df20ffff
+[   71.522548] TIME ktime_ns value long: 1359594140431196923	12de3faad31aa2fb
+[   71.522550] TIME ktime_ns value: 3541738235	12de3faa
+[   71.523710] Pid: 751, comm: cli Not tainted 2.6.32.57 #57
+[   71.523712] Call Trace:
+[   71.523715]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.523718]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.523720]  [<c0515752>] tcp_current_mss+0x42/0x60
+[   71.523723]  [<c05a1b27>] ? _spin_lock_bh+0x17/0x20
+[   71.523725]  [<c0509190>] tcp_send_mss+0x20/0xe0
+[   71.523728]  [<c050bfc0>] tcp_sendmsg+0x90/0x900
+[   71.523730]  [<f829c119>] ? bit_clear+0xa9/0xd0 [bitblit]
+[   71.523736]  [<c04c6be5>] sock_sendmsg+0xe5/0x110
+[   71.523739]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.523741]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.523745]  [<c04c6d5a>] sys_sendto+0xfa/0x150
+[   71.523747]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.523749]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.523752]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.523754]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.523756]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.523759]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.523761]  [<c04c6deb>] sys_send+0x3b/0x40
+[   71.523764]  [<c04c7c71>] sys_socketcall+0x1c1/0x280
+[   71.523767]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.523769] TIMESTAMP tsval established orig: 0	0
+[   71.523772] Pid: 751, comm: cli Not tainted 2.6.32.57 #57
+[   71.523773] Call Trace:
+[   71.523776]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.523778]  [<c04cb697>] ? __skb_clone+0x27/0xd0
+[   71.523780]  [<c0515b8d>] tcp_transmit_skb+0xbd/0x740
+[   71.523783]  [<c0517e3c>] tcp_write_xmit+0x18c/0x940
+[   71.523786]  [<c059edb4>] ? printk+0x1d/0x21
+[   71.523788]  [<c0518736>] __tcp_push_pending_frames+0x36/0xa0
+[   71.523791]  [<c050930a>] tcp_push+0x7a/0xb0
+[   71.523793]  [<c050c4fa>] tcp_sendmsg+0x5ca/0x900
+[   71.523796]  [<f829c119>] ? bit_clear+0xa9/0xd0 [bitblit]
+[   71.523799]  [<c04c6be5>] sock_sendmsg+0xe5/0x110
+[   71.523802]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.523805]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.523808]  [<c04c6d5a>] sys_sendto+0xfa/0x150
+[   71.523810]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.523813]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.523815]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.523817]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.523819]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.523822]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.523824]  [<c04c6deb>] sys_send+0x3b/0x40
+[   71.523827]  [<c04c7c71>] sys_socketcall+0x1c1/0x280
+[   71.523830]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.523832] TIMESTAMP tsval established orig: 4294910176	ffff20e0
+[   71.523834] Pid: 751, comm: cli Not tainted 2.6.32.57 #57
+[   71.523835] Call Trace:
+[   71.523838]  [<c051593b>] tcp_options_write+0x6b/0x200
+[   71.523840]  [<c05156ba>] ? tcp_established_options+0x7a/0xd0
+[   71.523843]  [<c0515d1f>] tcp_transmit_skb+0x24f/0x740
+[   71.523846]  [<c0517e3c>] tcp_write_xmit+0x18c/0x940
+[   71.523848]  [<c059edb4>] ? printk+0x1d/0x21
+[   71.523851]  [<c0518736>] __tcp_push_pending_frames+0x36/0xa0
+[   71.523853]  [<c050930a>] tcp_push+0x7a/0xb0
+[   71.523856]  [<c050c4fa>] tcp_sendmsg+0x5ca/0x900
+[   71.523858]  [<f829c119>] ? bit_clear+0xa9/0xd0 [bitblit]
+[   71.523861]  [<c04c6be5>] sock_sendmsg+0xe5/0x110
+[   71.523864]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.523867]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.523870]  [<c04c6d5a>] sys_sendto+0xfa/0x150
+[   71.523873]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.523875]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.523877]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.523879]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.523882]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.523884]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.523887]  [<c04c6deb>] sys_send+0x3b/0x40
+[   71.523889]  [<c04c7c71>] sys_socketcall+0x1c1/0x280
+[   71.523892]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.523894] TIME tsval orig: 4294910176	ffff20e0
+[   71.523896] TIME tsecr orig: 4294910176	ffff20e0
+[   71.523897] TIME tsval htonl: 3760259071	e020ffff
+[   71.523898] TIME tsecr htonl: 3760259071	e020ffff
+[   71.523900] TIME ktime_ns value long: 1359594140431196923	12de3faad31aa2fb
+[   71.523902] TIME ktime_ns value: 3541738235	12de3faa
+[   71.523910] Pid: 750, comm: serv Not tainted 2.6.32.57 #57
+[   71.523911] Call Trace:
+[   71.523914]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.523917]  [<c0515752>] tcp_current_mss+0x42/0x60
+[   71.523920]  [<c0510d10>] tcp_data_snd_check+0x20/0xe0
+[   71.523923]  [<c05141d8>] tcp_rcv_established+0x1f8/0x750
+[   71.523925]  [<c051b880>] tcp_v4_do_rcv+0x270/0x3c0
+[   71.523927]  [<c04c8d77>] ? lock_sock_nested+0x97/0xa0
+[   71.523930]  [<c05a1bb6>] ? _spin_unlock_bh+0x16/0x20
+[   71.523932]  [<c04c926c>] ? sk_wait_data+0x8c/0xc0
+[   71.523934]  [<c05093a2>] tcp_prequeue_process+0x62/0x80
+[   71.523937]  [<c050bc4c>] tcp_recvmsg+0x8fc/0xbe0
+[   71.523939]  [<c05a1bb6>] ? _spin_unlock_bh+0x16/0x20
+[   71.523942]  [<c04c84b8>] sock_common_recvmsg+0x48/0x60
+[   71.523945]  [<c04c6ee5>] sock_recvmsg+0xf5/0x120
+[   71.523948]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.523951]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.523954]  [<c04c7024>] sys_recvfrom+0xc4/0x160
+[   71.523957]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.523959]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.523961]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.523963]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.523966]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.523968]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.523971]  [<c04c70fb>] sys_recv+0x3b/0x40
+[   71.523974]  [<c04c7c52>] sys_socketcall+0x1a2/0x280
+[   71.523977]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.523978] TIMESTAMP tsval established orig: 0	0
+[   71.526281] Pid: 750, comm: serv Not tainted 2.6.32.57 #57
+[   71.526282] Call Trace:
+[   71.526285]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.526288]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.526291]  [<c0515752>] tcp_current_mss+0x42/0x60
+[   71.526293]  [<c05a1b27>] ? _spin_lock_bh+0x17/0x20
+[   71.526295]  [<c0509190>] tcp_send_mss+0x20/0xe0
+[   71.526298]  [<c050bfc0>] tcp_sendmsg+0x90/0x900
+[   71.526300]  [<f829c119>] ? bit_clear+0xa9/0xd0 [bitblit]
+[   71.526306]  [<c04c6be5>] sock_sendmsg+0xe5/0x110
+[   71.526309]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.526312]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.526315]  [<c04c6d5a>] sys_sendto+0xfa/0x150
+[   71.526317]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.526320]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.526322]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.526324]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.526326]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.526329]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.526332]  [<c04c6deb>] sys_send+0x3b/0x40
+[   71.526334]  [<c04c7c71>] sys_socketcall+0x1c1/0x280
+[   71.526337]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.526339] TIMESTAMP tsval established orig: 0	0
+[   71.526342] Pid: 750, comm: serv Not tainted 2.6.32.57 #57
+[   71.526343] Call Trace:
+[   71.526346]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.526348]  [<c04cb697>] ? __skb_clone+0x27/0xd0
+[   71.526351]  [<c0515b8d>] tcp_transmit_skb+0xbd/0x740
+[   71.526353]  [<c0517e3c>] tcp_write_xmit+0x18c/0x940
+[   71.526356]  [<c059edb4>] ? printk+0x1d/0x21
+[   71.526358]  [<c0518736>] __tcp_push_pending_frames+0x36/0xa0
+[   71.526361]  [<c050930a>] tcp_push+0x7a/0xb0
+[   71.526363]  [<c050c4fa>] tcp_sendmsg+0x5ca/0x900
+[   71.526366]  [<f829c119>] ? bit_clear+0xa9/0xd0 [bitblit]
+[   71.526369]  [<c04c6be5>] sock_sendmsg+0xe5/0x110
+[   71.526372]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.526374]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.526377]  [<c04c6d5a>] sys_sendto+0xfa/0x150
+[   71.526380]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.526382]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.526385]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.526387]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.526389]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.526392]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.526394]  [<c04c6deb>] sys_send+0x3b/0x40
+[   71.526397]  [<c04c7c71>] sys_socketcall+0x1c1/0x280
+[   71.526400]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.526402] TIMESTAMP tsval established orig: 4294910177	ffff20e1
+[   71.526404] Pid: 750, comm: serv Not tainted 2.6.32.57 #57
+[   71.526405] Call Trace:
+[   71.526408]  [<c051593b>] tcp_options_write+0x6b/0x200
+[   71.526410]  [<c05156ba>] ? tcp_established_options+0x7a/0xd0
+[   71.526413]  [<c0515d1f>] tcp_transmit_skb+0x24f/0x740
+[   71.526416]  [<c0517e3c>] tcp_write_xmit+0x18c/0x940
+[   71.526418]  [<c059edb4>] ? printk+0x1d/0x21
+[   71.526421]  [<c0518736>] __tcp_push_pending_frames+0x36/0xa0
+[   71.526423]  [<c050930a>] tcp_push+0x7a/0xb0
+[   71.526426]  [<c050c4fa>] tcp_sendmsg+0x5ca/0x900
+[   71.526428]  [<f829c119>] ? bit_clear+0xa9/0xd0 [bitblit]
+[   71.526431]  [<c04c6be5>] sock_sendmsg+0xe5/0x110
+[   71.526434]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.526437]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.526440]  [<c04c6d5a>] sys_sendto+0xfa/0x150
+[   71.526443]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.526445]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.526447]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.526450]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.526452]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.526455]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.526457]  [<c04c6deb>] sys_send+0x3b/0x40
+[   71.526460]  [<c04c7c71>] sys_socketcall+0x1c1/0x280
+[   71.526463]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.526465] TIME tsval orig: 4294910177	ffff20e1
+[   71.526466] TIME tsecr orig: 4294910176	ffff20e0
+[   71.526467] TIME tsval htonl: 3777036287	e120ffff
+[   71.526469] TIME tsecr htonl: 3760259071	e020ffff
+[   71.526470] TIME ktime_ns value long: 1359594140435197014	12de3faad357ac56
+[   71.526472] TIME ktime_ns value: 3545738326	12de3faa
+[   71.526476] Pid: 750, comm: serv Not tainted 2.6.32.57 #57
+[   71.526478] Call Trace:
+[   71.526480]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.526483]  [<c0515752>] tcp_current_mss+0x42/0x60
+[   71.526486]  [<c0510d10>] tcp_data_snd_check+0x20/0xe0
+[   71.526488]  [<c05141d8>] tcp_rcv_established+0x1f8/0x750
+[   71.526491]  [<c051b880>] tcp_v4_do_rcv+0x270/0x3c0
+[   71.526494]  [<c051ce21>] tcp_v4_rcv+0x541/0x740
+[   71.526496]  [<c04fe757>] ip_local_deliver_finish+0xa7/0x270
+[   71.526499]  [<c04fe9af>] ip_local_deliver+0x8f/0xa0
+[   71.526501]  [<c010f088>] ? sched_clock+0x8/0x10
+[   71.526504]  [<c04fe00b>] ip_rcv_finish+0xeb/0x380
+[   71.526506]  [<c04fe4be>] ip_rcv+0x21e/0x2e0
+[   71.526508]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.526511]  [<c04d970f>] netif_receive_skb+0x36f/0x5a0
+[   71.526513]  [<c034cec6>] ? put_dec+0x136/0x140
+[   71.526516]  [<c04d99af>] process_backlog+0x6f/0xb0
+[   71.526518]  [<c04da0bd>] net_rx_action+0xed/0x1d0
+[   71.526521]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   71.526523]  [<c0444a1b>] ? loopback_xmit+0x5b/0x80
+[   71.526526]  [<c04d8d11>] ? dev_hard_start_xmit+0x191/0x370
+[   71.526528]  [<c0159495>] do_softirq+0x45/0x50
+[   71.526531]  [<c015966d>] local_bh_enable+0x7d/0x90
+[   71.526533]  [<c04d8fe9>] dev_queue_xmit+0xf9/0x4b0
+[   71.526536]  [<c0503598>] ip_finish_output+0x138/0x2c0
+[   71.526538]  [<c05037c7>] ip_output+0xa7/0xb0
+[   71.526540]  [<c050294d>] ip_local_out+0x1d/0x30
+[   71.526543]  [<c050307e>] ip_queue_xmit+0x14e/0x3a0
+[   71.526545]  [<c0177ea2>] ? getnstimeofday+0x52/0x110
+[   71.526547]  [<c059edb4>] ? printk+0x1d/0x21
+[   71.526550]  [<c05159ee>] ? tcp_options_write+0x11e/0x200
+[   71.526553]  [<c0515e6d>] tcp_transmit_skb+0x39d/0x740
+[   71.526555]  [<c0517e3c>] tcp_write_xmit+0x18c/0x940
+[   71.526558]  [<c059edb4>] ? printk+0x1d/0x21
+[   71.526560]  [<c0518736>] __tcp_push_pending_frames+0x36/0xa0
+[   71.526563]  [<c050930a>] tcp_push+0x7a/0xb0
+[   71.526565]  [<c050c4fa>] tcp_sendmsg+0x5ca/0x900
+[   71.526568]  [<f829c119>] ? bit_clear+0xa9/0xd0 [bitblit]
+[   71.526571]  [<c04c6be5>] sock_sendmsg+0xe5/0x110
+[   71.526574]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.526577]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.526580]  [<c04c6d5a>] sys_sendto+0xfa/0x150
+[   71.526583]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.526585]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.526587]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.526589]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.526592]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.526594]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.526597]  [<c04c6deb>] sys_send+0x3b/0x40
+[   71.526599]  [<c04c7c71>] sys_socketcall+0x1c1/0x280
+[   71.526602]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.526604] TIMESTAMP tsval established orig: 0	0
+[   71.564885] Pid: 0, comm: swapper Not tainted 2.6.32.57 #57
+[   71.564887] Call Trace:
+[   71.564891]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.564894]  [<c0515b8d>] tcp_transmit_skb+0xbd/0x740
+[   71.564897]  [<c05174b3>] ? tcp_send_ack+0x33/0x110
+[   71.564900]  [<c051753c>] tcp_send_ack+0xbc/0x110
+[   71.564903]  [<c0518f0c>] tcp_delack_timer+0x11c/0x210
+[   71.564906]  [<c0161fde>] run_timer_softirq+0x13e/0x2c0
+[   71.564909]  [<c0161a4e>] ? update_process_times+0x4e/0x60
+[   71.564912]  [<c0518df0>] ? tcp_delack_timer+0x0/0x210
+[   71.564916]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   71.564919]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.564922]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.564925]  [<c010ce07>] ? enable_8259A_irq+0x47/0x70
+[   71.564928]  [<c0159495>] do_softirq+0x45/0x50
+[   71.564930]  [<c01595e5>] irq_exit+0x65/0x70
+[   71.564934]  [<c05a5b85>] do_IRQ+0x55/0xc0
+[   71.564937]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[   71.564940]  [<c0109c70>] common_interrupt+0x30/0x40
+[   71.564943]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[   71.564947]  [<c01083d4>] cpu_idle+0x94/0xd0
+[   71.564950]  [<c058b922>] rest_init+0x62/0x70
+[   71.564954]  [<c07c68e5>] start_kernel+0x356/0x35c
+[   71.564957]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[   71.564960]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[   71.564962] TIMESTAMP tsval established orig: 4294910187	ffff20eb
+[   71.564965] Pid: 0, comm: swapper Not tainted 2.6.32.57 #57
+[   71.564966] Call Trace:
+[   71.564969]  [<c051593b>] tcp_options_write+0x6b/0x200
+[   71.564973]  [<c05156ba>] ? tcp_established_options+0x7a/0xd0
+[   71.564976]  [<c0515d1f>] tcp_transmit_skb+0x24f/0x740
+[   71.564979]  [<c05174b3>] ? tcp_send_ack+0x33/0x110
+[   71.564982]  [<c051753c>] tcp_send_ack+0xbc/0x110
+[   71.564985]  [<c0518f0c>] tcp_delack_timer+0x11c/0x210
+[   71.564988]  [<c0161fde>] run_timer_softirq+0x13e/0x2c0
+[   71.564991]  [<c0161a4e>] ? update_process_times+0x4e/0x60
+[   71.564994]  [<c0518df0>] ? tcp_delack_timer+0x0/0x210
+[   71.565002]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   71.565005]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.565007]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.565010]  [<c010ce07>] ? enable_8259A_irq+0x47/0x70
+[   71.565012]  [<c0159495>] do_softirq+0x45/0x50
+[   71.565014]  [<c01595e5>] irq_exit+0x65/0x70
+[   71.565017]  [<c05a5b85>] do_IRQ+0x55/0xc0
+[   71.565019]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[   71.565022]  [<c0109c70>] common_interrupt+0x30/0x40
+[   71.565024]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[   71.565027]  [<c01083d4>] cpu_idle+0x94/0xd0
+[   71.565029]  [<c058b922>] rest_init+0x62/0x70
+[   71.565032]  [<c07c68e5>] start_kernel+0x356/0x35c
+[   71.565034]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[   71.565037]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[   71.565039] TIME tsval orig: 4294910187	ffff20eb
+[   71.565040] TIME tsecr orig: 4294910177	ffff20e1
+[   71.565042] TIME tsval htonl: 3944808447	eb20ffff
+[   71.565043] TIME tsecr htonl: 3777036287	e120ffff
+[   71.565045] TIME ktime_ns value long: 1359594140475197928	12de3faad5ba09e8
+[   71.565046] TIME ktime_ns value: 3585739240	12de3faa
+[   71.565056] Pid: 750, comm: serv Not tainted 2.6.32.57 #57
+[   71.565058] Call Trace:
+[   71.565061]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   71.565063]  [<c0515752>] tcp_current_mss+0x42/0x60
+[   71.565066]  [<c0510d10>] tcp_data_snd_check+0x20/0xe0
+[   71.565069]  [<c051450f>] tcp_rcv_established+0x52f/0x750
+[   71.565072]  [<c05a004d>] ? schedule_timeout+0x1ad/0x280
+[   71.565074]  [<c01626e2>] ? mod_timer+0x102/0x1e0
+[   71.565076]  [<c051b880>] tcp_v4_do_rcv+0x270/0x3c0
+[   71.565079]  [<c04c8d77>] ? lock_sock_nested+0x97/0xa0
+[   71.565081]  [<c05a1bb6>] ? _spin_unlock_bh+0x16/0x20
+[   71.565083]  [<c04c926c>] ? sk_wait_data+0x8c/0xc0
+[   71.565086]  [<c05093a2>] tcp_prequeue_process+0x62/0x80
+[   71.565088]  [<c050bc4c>] tcp_recvmsg+0x8fc/0xbe0
+[   71.565091]  [<c05a1bb6>] ? _spin_unlock_bh+0x16/0x20
+[   71.565093]  [<c04c84b8>] sock_common_recvmsg+0x48/0x60
+[   71.565096]  [<c04c6ee5>] sock_recvmsg+0xf5/0x120
+[   71.565099]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[   71.565102]  [<f829ce6a>] ? bit_cursor+0x54a/0x5bc [bitblit]
+[   71.565106]  [<c04c7024>] sys_recvfrom+0xc4/0x160
+[   71.565108]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[   71.565111]  [<c05a193f>] ? _spin_lock_irqsave+0x2f/0x50
+[   71.565113]  [<c013ff75>] ? __wake_up+0x45/0x60
+[   71.565115]  [<c03cabb5>] ? put_ldisc+0x55/0xb0
+[   71.565117]  [<c03cacad>] ? tty_ldisc_deref+0xd/0x10
+[   71.565120]  [<c03c5d08>] ? tty_write+0x1b8/0x210
+[   71.565123]  [<c04c70fb>] sys_recv+0x3b/0x40
+[   71.565125]  [<c04c7c52>] sys_socketcall+0x1a2/0x280
+[   71.565128]  [<c0109543>] sysenter_do_call+0x12/0x28
+[   71.565130] TIMESTAMP tsval established orig: 0	0
+[   74.033013] Pid: 751, comm: cli Not tainted 2.6.32.57 #57
+[   74.033015] Call Trace:
+[   74.033019]  [<c05156a3>] tcp_established_options+0x63/0xd0
+[   74.033022]  [<c0515b8d>] tcp_transmit_skb+0xbd/0x740
+[   74.033026]  [<c05162f5>] ? tcp_send_active_reset+0x25/0x170
+[   74.033029]  [<c051637e>] tcp_send_active_reset+0xae/0x170
+[   74.033032]  [<c050a330>] tcp_close+0xd0/0x420
+[   74.033035]  [<c052a95b>] inet_release+0x3b/0x60
+[   74.033038]  [<c04c5be0>] sock_release+0x20/0x80
+[   74.033042]  [<c020ff57>] ? __fput+0x177/0x1f0
+[   74.033045]  [<c04c5c57>] sock_close+0x17/0x30
+[   74.033048]  [<c020febf>] __fput+0xdf/0x1f0
+[   74.033051]  [<c020ffed>] fput+0x1d/0x30
+[   74.033053]  [<c020c6ec>] filp_close+0x4c/0x80
+[   74.033056]  [<c015456b>] put_files_struct+0x6b/0xb0
+[   74.033064]  [<c01545f8>] exit_files+0x48/0x60
+[   74.033066]  [<c01563c4>] do_exit+0x134/0x6f0
+[   74.033069]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   74.033072]  [<c01643a2>] ? dequeue_signal+0x32/0x180
+[   74.033074]  [<c01569be>] do_group_exit+0x3e/0xa0
+[   74.033077]  [<c0165d92>] get_signal_to_deliver+0x1a2/0x3c0
+[   74.033080]  [<c01089fb>] do_signal+0x6b/0xa50
+[   74.033082]  [<c0350149>] ? copy_to_user+0x39/0x130
+[   74.033085]  [<c01725ba>] ? hrtimer_nanosleep+0xea/0x140
+[   74.033088]  [<c0171560>] ? hrtimer_wakeup+0x0/0x30
+[   74.033091]  [<c0109435>] do_notify_resume+0x55/0x80
+[   74.033093]  [<c0109708>] work_notifysig+0x13/0x1b
+[   74.033095] TIMESTAMP tsval established orig: 4294910804	ffff2354
+[   74.033097] Pid: 751, comm: cli Not tainted 2.6.32.57 #57
+[   74.033098] Call Trace:
+[   74.033100]  [<c051593b>] tcp_options_write+0x6b/0x200
+[   74.033103]  [<c05156ba>] ? tcp_established_options+0x7a/0xd0
+[   74.033106]  [<c0515d1f>] tcp_transmit_skb+0x24f/0x740
+[   74.033108]  [<c05162f5>] ? tcp_send_active_reset+0x25/0x170
+[   74.033111]  [<c051637e>] tcp_send_active_reset+0xae/0x170
+[   74.033114]  [<c050a330>] tcp_close+0xd0/0x420
+[   74.033116]  [<c052a95b>] inet_release+0x3b/0x60
+[   74.033119]  [<c04c5be0>] sock_release+0x20/0x80
+[   74.033121]  [<c020ff57>] ? __fput+0x177/0x1f0
+[   74.033123]  [<c04c5c57>] sock_close+0x17/0x30
+[   74.033126]  [<c020febf>] __fput+0xdf/0x1f0
+[   74.033128]  [<c020ffed>] fput+0x1d/0x30
+[   74.033130]  [<c020c6ec>] filp_close+0x4c/0x80
+[   74.033132]  [<c015456b>] put_files_struct+0x6b/0xb0
+[   74.033134]  [<c01545f8>] exit_files+0x48/0x60
+[   74.033137]  [<c01563c4>] do_exit+0x134/0x6f0
+[   74.033139]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[   74.033142]  [<c01643a2>] ? dequeue_signal+0x32/0x180
+[   74.033144]  [<c01569be>] do_group_exit+0x3e/0xa0
+[   74.033147]  [<c0165d92>] get_signal_to_deliver+0x1a2/0x3c0
+[   74.033150]  [<c01089fb>] do_signal+0x6b/0xa50
+[   74.033152]  [<c0350149>] ? copy_to_user+0x39/0x130
+[   74.033155]  [<c01725ba>] ? hrtimer_nanosleep+0xea/0x140
+[   74.033157]  [<c0171560>] ? hrtimer_wakeup+0x0/0x30
+[   74.033160]  [<c0109435>] do_notify_resume+0x55/0x80
+[   74.033162]  [<c0109708>] work_notifysig+0x13/0x1b
+[   74.033164] TIME tsval orig: 4294910804	ffff2354
+[   74.033166] TIME tsecr orig: 4294910177	ffff20e1
+[   74.033167] TIME tsval htonl: 1411645439	5423ffff
+[   74.033169] TIME tsecr htonl: 3777036287	e120ffff
+[   74.033170] TIME ktime_ns value long: 1359594142943255295	12de3fab68d59aff
+[   74.033172] TIME ktime_ns value: 1758829311	12de3fab

@@ -43,6 +43,7 @@ static int __init rtc_hctosys(void)
 			tv.tv_nsec = NSEC_PER_SEC >> 1;
 
 			rtc_tm_to_time(&tm, &tv.tv_sec);
+			
 
 			do_settimeofday(&tv);
 

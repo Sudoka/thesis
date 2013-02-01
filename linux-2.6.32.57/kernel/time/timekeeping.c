@@ -342,6 +342,14 @@ EXPORT_SYMBOL(do_gettimeofday);
  */
 int do_settimeofday(struct timespec *tv)
 {
+  /* dacashman - checking to see if this is called and by whom */
+  printk(KERN_CRIT "TIME XTIME do_settimeofday() called, with %d seconds input.\n", tv->tv_sec);
+  printk(KERN_CRIT "TIME XTIME do_settimeofday() called, with %d nanosecs input.\n", tv->tv_nsec);
+  dump_stack();
+
+  /* dacashman end */
+
+
 	struct timespec ts_delta;
 	unsigned long flags;
 
@@ -356,9 +364,13 @@ int do_settimeofday(struct timespec *tv)
 	ts_delta.tv_nsec = tv->tv_nsec - xtime.tv_nsec;
 	wall_to_monotonic = timespec_sub(wall_to_monotonic, ts_delta);
 
+
+
 	xtime = *tv;
 
-	update_xtime_cache(0);
+	update_xtime_cache(0); 
+
+
 
 	timekeeper.ntp_error = 0;
 	ntp_clear();
@@ -663,12 +675,18 @@ static struct timespec timekeeping_suspend_time;
  */
 static int timekeeping_resume(struct sys_device *dev)
 {
+
 	unsigned long flags;
 	struct timespec ts;
 
 	read_persistent_clock(&ts);
 
 	clocksource_resume();
+
+  /* dacashman - checking to see if this is called and by whom */
+  printk(KERN_DEBUG "TIME XTIME timekeeping_resume() called, awith %d seconds input.\n", ts.tv_sec);
+  /* dacashman end */  
+
 
 	write_seqlock_irqsave(&xtime_lock, flags);
 

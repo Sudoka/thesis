@@ -46,12 +46,20 @@ static u32 seq_scale(u32 seq)
 	 *	Choosing a clock of 64 ns period is OK. (period of 274 s)
 	 */
         /* dcashman change - got rid of time component */
-        u64 temp_addition = (ktime_to_ns(ktime_get_real()) >> 6);
-	u64 temp_addition2 = (jiffies_to_ns() >> 6);
+        u64 temp_addition = ktime_to_ns(ktime_get_real());
+        u64 temp_addition2 = jiffies_to_ns();
 	printk(KERN_DEBUG "TIME Value of ktime_to_ns at seq_scale %llu\n", temp_addition);
 	printk(KERN_DEBUG "TIME Value of jiffies_to_ns at seq_scale %llu\n", temp_addition2);
 	printk(KERN_DEBUG "Value of seq+ns reading 64-bit: %llu\n", seq+temp_addition);
 	printk(KERN_DEBUG "Value of seq+ns reading 32-bit: %u\n", seq+temp_addition);
+	int i;
+	for(i = 0; i < 10000000; i++){
+	  if( i % 100000 == 0){
+	    printk(KERN_DEBUG "TIME ktime_to_ns variability test. ns: %llu, jiffies: %lu\n", 
+		   ktime_to_ns(ktime_get_real()), jiffies);
+	  }
+	}
+					  
 
         return seq /* + (ktime_to_ns(ktime_get_real()) >> 6) */;
 }

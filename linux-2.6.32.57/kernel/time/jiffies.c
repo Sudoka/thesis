@@ -57,7 +57,7 @@ static cycle_t jiffies_read(struct clocksource *cs)
 {
   /* dacashman - print out jiffies value at each read to see difference and frequency. Might need to acquire lock here */
         jiffies_read_count++;
-	if(jiffies_read_count < 10 || jiffies_read_count % 100 == 0){
+	if(jiffies_read_count < 10 || jiffies_read_count % 100000 == 0){
 	  dump_stack();
 	  printk(KERN_DEBUG "JIFFIES_READ: read #%d long value: %llu\n", jiffies_read_count, jiffies);
 	  printk(KERN_DEBUG "JIFFIES_READ: read #%d long jiffies_64 value: %llu\n", jiffies_read_count, jiffies_64);
