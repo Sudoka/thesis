@@ -22,7 +22,7 @@ for $line (<INPUT_FILE>){
 	#need to pad with a zero - could have avoided this by formatting input
 	$val = $1;
 	$output_string = $output_string . "\\x0" .  $val;
-	print "\n\\x0$val\n";
+	#print "\n\\x0$val\n"; debug print statement here, comment out
     }
 }
 close(INTPUT_FILE);
