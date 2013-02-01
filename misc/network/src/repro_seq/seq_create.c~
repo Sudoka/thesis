@@ -18,7 +18,7 @@
 #include <linux/types.h>
 #include "md5.h"
 #include "seq_create.h"
-#include "../src/utils.h"
+#include "../utils.h"
 
 extern unsigned char const net_secret_char[];
 static u32 *net_secret = (u32 *)net_secret_char;
@@ -57,9 +57,9 @@ __u32 secure_tcp_sequence_number(u32 saddr, u32 daddr,
 }
 
 int main(int argc, char *argv[]){
-  printf("Your \"random\" sequence number is 4!\n");
+  //printf("Your \"random\" sequence number is 4!\n");
 
-  printf("Value of net_secret[15] is %x\n", net_secret[15]);  //compare to printk output
+  //printf("Value of net_secret[15] is %x\n", net_secret[15]);  //compare to printk output
 
   /* do real work */
   unsigned short src_port, dest_port;
@@ -108,7 +108,7 @@ int main(int argc, char *argv[]){
   dport = htons(dest_port);
 
   /* verify values: */
-  printf("saddr after init:\t%x\n", saddr);
+  //printf("saddr after init:\t%x\n", saddr);
   
   seq_num = secure_tcp_sequence_number(saddr, daddr, sport, dport);
   
