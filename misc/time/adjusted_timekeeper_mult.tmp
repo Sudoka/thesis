@@ -1,0 +1,1554 @@
+TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.072410] TIME: timekeeping_get_ns() called
+[   47.072411] TIME: clock_read returned 4294904063, cycle_last: 4294903963, cycle_delta: 100
+[   47.072414] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 400025000
+[   47.072416] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 100, mult: 0, shift: 1024016000
+[   47.072418] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.072420] TIME: timekeeping_get_ns() called
+[   47.072422] TIME: clock_read returned 4294904063, cycle_last: 4294903963, cycle_delta: 100
+[   47.072424] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 400025000
+[   47.072426] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 100, mult: 0, shift: 1024016000
+[   47.072428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.072428] TIME: timekeeping_get_ns() called
+[   47.072428] TIME: clock_read returned 4294904064, cycle_last: 4294903963, cycle_delta: 101
+[   47.072428] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 404025250
+[   47.072428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 101, mult: 0, shift: 1024015999
+[   47.072428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.072451] TIME: timekeeping_get_ns() called
+[   47.072453] TIME: clock_read returned 4294904064, cycle_last: 4294903963, cycle_delta: 101
+[   47.072455] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 404025250
+[   47.072457] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 101, mult: 0, shift: 1024015999
+[   47.072459] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.076410] TIME: timekeeping_get_ns() called
+[   47.076411] TIME: clock_read returned 4294904064, cycle_last: 4294903963, cycle_delta: 101
+[   47.076413] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 404025250
+[   47.076416] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 101, mult: 0, shift: 1024015999
+[   47.076418] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.076420] TIME: timekeeping_get_ns() called
+[   47.076421] TIME: clock_read returned 4294904064, cycle_last: 4294903963, cycle_delta: 101
+[   47.076423] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 404025250
+[   47.076425] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 101, mult: 0, shift: 1024015999
+[   47.076428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.076428] TIME: timekeeping_get_ns() called
+[   47.076428] TIME: clock_read returned 4294904065, cycle_last: 4294903963, cycle_delta: 102
+[   47.076428] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 408025500
+[   47.076428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 102, mult: 0, shift: 1024016000
+[   47.076428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.076451] TIME: timekeeping_get_ns() called
+[   47.076453] TIME: clock_read returned 4294904065, cycle_last: 4294903963, cycle_delta: 102
+[   47.076455] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 408025500
+[   47.076457] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 102, mult: 0, shift: 1024016000
+[   47.076459] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.080410] TIME: timekeeping_get_ns() called
+[   47.080412] TIME: clock_read returned 4294904065, cycle_last: 4294903963, cycle_delta: 102
+[   47.080414] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 408025500
+[   47.080416] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 102, mult: 0, shift: 1024016000
+[   47.080418] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.080420] TIME: timekeeping_get_ns() called
+[   47.080422] TIME: clock_read returned 4294904065, cycle_last: 4294903963, cycle_delta: 102
+[   47.080424] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 408025500
+[   47.080426] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 102, mult: 0, shift: 1024016000
+[   47.080428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.080428] TIME: timekeeping_get_ns() called
+[   47.080428] TIME: clock_read returned 4294904066, cycle_last: 4294903963, cycle_delta: 103
+[   47.080428] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 412025750
+[   47.080428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 103, mult: 0, shift: 1024015999
+[   47.080428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.080451] TIME: timekeeping_get_ns() called
+[   47.080453] TIME: clock_read returned 4294904066, cycle_last: 4294903963, cycle_delta: 103
+[   47.080455] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 412025750
+[   47.080457] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 103, mult: 0, shift: 1024015999
+[   47.080459] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.084410] TIME: timekeeping_get_ns() called
+[   47.084411] TIME: clock_read returned 4294904066, cycle_last: 4294903963, cycle_delta: 103
+[   47.084414] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 412025750
+[   47.084416] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 103, mult: 0, shift: 1024015999
+[   47.084418] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.084420] TIME: timekeeping_get_ns() called
+[   47.084422] TIME: clock_read returned 4294904066, cycle_last: 4294903963, cycle_delta: 103
+[   47.084424] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 412025750
+[   47.084426] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 103, mult: 0, shift: 1024015999
+[   47.084428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.084428] TIME: timekeeping_get_ns() called
+[   47.084428] TIME: clock_read returned 4294904067, cycle_last: 4294903963, cycle_delta: 104
+[   47.084428] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 416026000
+[   47.084428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 104, mult: 0, shift: 1024016000
+[   47.084428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.084451] TIME: timekeeping_get_ns() called
+[   47.084453] TIME: clock_read returned 4294904067, cycle_last: 4294903963, cycle_delta: 104
+[   47.084455] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 416026000
+[   47.084457] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 104, mult: 0, shift: 1024016000
+[   47.084459] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.088410] TIME: timekeeping_get_ns() called
+[   47.088412] TIME: clock_read returned 4294904067, cycle_last: 4294903963, cycle_delta: 104
+[   47.088414] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 416026000
+[   47.088416] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 104, mult: 0, shift: 1024016000
+[   47.088418] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.088420] TIME: timekeeping_get_ns() called
+[   47.088422] TIME: clock_read returned 4294904067, cycle_last: 4294903963, cycle_delta: 104
+[   47.088424] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 416026000
+[   47.088426] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 104, mult: 0, shift: 1024016000
+[   47.088428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.088428] TIME: timekeeping_get_ns() called
+[   47.088428] TIME: clock_read returned 4294904068, cycle_last: 4294903963, cycle_delta: 105
+[   47.088428] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 420026250
+[   47.088428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 105, mult: 0, shift: 1024015999
+[   47.088428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.088451] TIME: timekeeping_get_ns() called
+[   47.088453] TIME: clock_read returned 4294904068, cycle_last: 4294903963, cycle_delta: 105
+[   47.088455] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 420026250
+[   47.088457] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 105, mult: 0, shift: 1024015999
+[   47.088460] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.092410] TIME: timekeeping_get_ns() called
+[   47.092412] TIME: clock_read returned 4294904068, cycle_last: 4294903963, cycle_delta: 105
+[   47.092414] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 420026250
+[   47.092416] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 105, mult: 0, shift: 1024015999
+[   47.092418] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.092420] TIME: timekeeping_get_ns() called
+[   47.092422] TIME: clock_read returned 4294904068, cycle_last: 4294903963, cycle_delta: 105
+[   47.092424] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 420026250
+[   47.092426] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 105, mult: 0, shift: 1024015999
+[   47.092428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.092428] TIME: timekeeping_get_ns() called
+[   47.092428] TIME: clock_read returned 4294904069, cycle_last: 4294903963, cycle_delta: 106
+[   47.092428] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 424026500
+[   47.092428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 106, mult: 0, shift: 1024016000
+[   47.092428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.092451] TIME: timekeeping_get_ns() called
+[   47.092453] TIME: clock_read returned 4294904069, cycle_last: 4294903963, cycle_delta: 106
+[   47.092455] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 424026500
+[   47.092457] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 106, mult: 0, shift: 1024016000
+[   47.092459] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.096410] TIME: timekeeping_get_ns() called
+[   47.096412] TIME: clock_read returned 4294904069, cycle_last: 4294903963, cycle_delta: 106
+[   47.096414] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 424026500
+[   47.096416] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 106, mult: 0, shift: 1024016000
+[   47.096418] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.096420] TIME: timekeeping_get_ns() called
+[   47.096422] TIME: clock_read returned 4294904069, cycle_last: 4294903963, cycle_delta: 106
+[   47.096424] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 424026500
+[   47.096426] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 106, mult: 0, shift: 1024016000
+[   47.096428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.096428] TIME: timekeeping_get_ns() called
+[   47.096428] TIME: clock_read returned 4294904070, cycle_last: 4294903963, cycle_delta: 107
+[   47.096428] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 428026750
+[   47.096428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 107, mult: 0, shift: 1024015999
+[   47.096428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.096451] TIME: timekeeping_get_ns() called
+[   47.096453] TIME: clock_read returned 4294904070, cycle_last: 4294903963, cycle_delta: 107
+[   47.096455] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 428026750
+[   47.096457] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 107, mult: 0, shift: 1024015999
+[   47.096460] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.100410] TIME: timekeeping_get_ns() called
+[   47.100412] TIME: clock_read returned 4294904070, cycle_last: 4294903963, cycle_delta: 107
+[   47.100415] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 428026750
+[   47.100417] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 107, mult: 0, shift: 1024015999
+[   47.100419] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.100421] TIME: timekeeping_get_ns() called
+[   47.100423] TIME: clock_read returned 4294904070, cycle_last: 4294903963, cycle_delta: 107
+[   47.100425] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 428026750
+[   47.100427] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 107, mult: 0, shift: 1024015999
+[   47.100430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.100430] TIME: timekeeping_get_ns() called
+[   47.100430] TIME: clock_read returned 4294904071, cycle_last: 4294903963, cycle_delta: 108
+[   47.100430] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 432027000
+[   47.100430] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 108, mult: 0, shift: 1024016000
+[   47.100430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.100451] TIME: timekeeping_get_ns() called
+[   47.100453] TIME: clock_read returned 4294904071, cycle_last: 4294903963, cycle_delta: 108
+[   47.100455] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 432027000
+[   47.100458] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 108, mult: 0, shift: 1024016000
+[   47.100460] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.104409] TIME: timekeeping_get_ns() called
+[   47.104411] TIME: clock_read returned 4294904071, cycle_last: 4294903963, cycle_delta: 108
+[   47.104413] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 432027000
+[   47.104415] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 108, mult: 0, shift: 1024016000
+[   47.104418] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.104419] TIME: timekeeping_get_ns() called
+[   47.104421] TIME: clock_read returned 4294904071, cycle_last: 4294903963, cycle_delta: 108
+[   47.104423] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 432027000
+[   47.104425] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 108, mult: 0, shift: 1024016000
+[   47.104428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.104428] TIME: timekeeping_get_ns() called
+[   47.104428] TIME: clock_read returned 4294904072, cycle_last: 4294903963, cycle_delta: 109
+[   47.104428] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 436027250
+[   47.104428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 109, mult: 0, shift: 1024015999
+[   47.104428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.104451] TIME: timekeeping_get_ns() called
+[   47.104453] TIME: clock_read returned 4294904072, cycle_last: 4294903963, cycle_delta: 109
+[   47.104455] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 436027250
+[   47.104458] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 109, mult: 0, shift: 1024015999
+[   47.104460] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.106027] TIME: timekeeping_get_ns() called
+[   47.106029] TIME: clock_read returned 4294904072, cycle_last: 4294903963, cycle_delta: 109
+[   47.106031] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 436027250
+[   47.106033] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 109, mult: 0, shift: 1024015999
+[   47.106036] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.106038] TIME: timekeeping_get_ns() called
+[   47.106039] TIME: clock_read returned 4294904072, cycle_last: 4294903963, cycle_delta: 109
+[   47.106041] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 436027250
+[   47.106044] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 109, mult: 0, shift: 1024015999
+[   47.106046] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.106046] TIME: timekeeping_get_ns() called
+[   47.106046] TIME: clock_read returned 4294904072, cycle_last: 4294903963, cycle_delta: 109
+[   47.106046] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 436027250
+[   47.106046] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 109, mult: 0, shift: 1024015999
+[   47.106046] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.106812] TIME: timekeeping_get_ns() called
+[   47.106814] TIME: clock_read returned 4294904072, cycle_last: 4294903963, cycle_delta: 109
+[   47.106816] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 436027250
+[   47.106818] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 109, mult: 0, shift: 1024015999
+[   47.106820] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.106822] TIME: timekeeping_get_ns() called
+[   47.106824] TIME: clock_read returned 4294904072, cycle_last: 4294903963, cycle_delta: 109
+[   47.106826] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 436027250
+[   47.106828] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 109, mult: 0, shift: 1024015999
+[   47.106830] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.106830] TIME: timekeeping_get_ns() called
+[   47.106830] TIME: clock_read returned 4294904073, cycle_last: 4294903963, cycle_delta: 110
+[   47.106830] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 440027500
+[   47.106830] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 110, mult: 0, shift: 1024016000
+[   47.106830] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.108452] TIME: timekeeping_get_ns() called
+[   47.108454] TIME: clock_read returned 4294904073, cycle_last: 4294903963, cycle_delta: 110
+[   47.108456] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 440027500
+[   47.108458] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 110, mult: 0, shift: 1024016000
+[   47.108460] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.112409] TIME: timekeeping_get_ns() called
+[   47.112411] TIME: clock_read returned 4294904073, cycle_last: 4294903963, cycle_delta: 110
+[   47.112413] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 440027500
+[   47.112416] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 110, mult: 0, shift: 1024016000
+[   47.112418] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.112420] TIME: timekeeping_get_ns() called
+[   47.112421] TIME: clock_read returned 4294904073, cycle_last: 4294903963, cycle_delta: 110
+[   47.112424] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 440027500
+[   47.112426] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 110, mult: 0, shift: 1024016000
+[   47.112428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.112428] TIME: timekeeping_get_ns() called
+[   47.112428] TIME: clock_read returned 4294904074, cycle_last: 4294903963, cycle_delta: 111
+[   47.112428] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 444027750
+[   47.112428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 111, mult: 0, shift: 1024015999
+[   47.112428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.112452] TIME: timekeeping_get_ns() called
+[   47.112453] TIME: clock_read returned 4294904074, cycle_last: 4294903963, cycle_delta: 111
+[   47.112456] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 444027750
+[   47.112458] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 111, mult: 0, shift: 1024015999
+[   47.112460] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.114418] TIME: timekeeping_get_ns() called
+[   47.114419] TIME: clock_read returned 4294904074, cycle_last: 4294903963, cycle_delta: 111
+[   47.114421] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 444027750
+[   47.114424] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 111, mult: 0, shift: 1024015999
+[   47.114426] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.114428] TIME: timekeeping_get_ns() called
+[   47.114430] TIME: clock_read returned 4294904074, cycle_last: 4294903963, cycle_delta: 111
+[   47.114432] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 444027750
+[   47.114434] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 111, mult: 0, shift: 1024015999
+[   47.114436] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.114436] TIME: timekeeping_get_ns() called
+[   47.114436] TIME: clock_read returned 4294904074, cycle_last: 4294903963, cycle_delta: 111
+[   47.114436] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 444027750
+[   47.114436] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 111, mult: 0, shift: 1024015999
+[   47.114436] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.114436] TIME: timekeeping_get_ns() called
+[   47.114436] TIME: clock_read returned 4294904074, cycle_last: 4294903963, cycle_delta: 111
+[   47.114436] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 444027750
+[   47.114436] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 111, mult: 0, shift: 1024015999
+[   47.114436] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.114436] TIME: timekeeping_get_ns() called
+[   47.114436] TIME: clock_read returned 4294904074, cycle_last: 4294903963, cycle_delta: 111
+[   47.114436] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 444027750
+[   47.114436] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 111, mult: 0, shift: 1024015999
+[   47.114436] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.114436] TIME: timekeeping_get_ns() called
+[   47.114436] TIME: clock_read returned 4294904074, cycle_last: 4294903963, cycle_delta: 111
+[   47.114436] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 444027750
+[   47.114436] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 111, mult: 0, shift: 1024015999
+[   47.114436] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.114436] TIME: timekeeping_get_ns() called
+[   47.114436] TIME: clock_read returned 4294904074, cycle_last: 4294903963, cycle_delta: 111
+[   47.114436] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 444027750
+[   47.114436] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 111, mult: 0, shift: 1024015999
+[   47.114436] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.114436] TIME: timekeeping_get_ns() called
+[   47.114436] TIME: clock_read returned 4294904074, cycle_last: 4294903963, cycle_delta: 111
+[   47.114436] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 444027750
+[   47.114436] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 111, mult: 0, shift: 1024015999
+[   47.114436] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.114436] TIME: timekeeping_get_ns() called
+[   47.114436] TIME: clock_read returned 4294904075, cycle_last: 4294903963, cycle_delta: 112
+[   47.114436] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 448028000
+[   47.114436] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 112, mult: 0, shift: 1024016000
+[   47.114436] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.116452] TIME: timekeeping_get_ns() called
+[   47.116454] TIME: clock_read returned 4294904075, cycle_last: 4294903963, cycle_delta: 112
+[   47.116456] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 448028000
+[   47.116458] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 112, mult: 0, shift: 1024016000
+[   47.116460] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.120410] TIME: timekeeping_get_ns() called
+[   47.120411] TIME: clock_read returned 4294904075, cycle_last: 4294903963, cycle_delta: 112
+[   47.120414] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 448028000
+[   47.120416] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 112, mult: 0, shift: 1024016000
+[   47.120418] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.120420] TIME: timekeeping_get_ns() called
+[   47.120422] TIME: clock_read returned 4294904075, cycle_last: 4294903963, cycle_delta: 112
+[   47.120424] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 448028000
+[   47.120426] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 112, mult: 0, shift: 1024016000
+[   47.120428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.120428] TIME: timekeeping_get_ns() called
+[   47.120428] TIME: clock_read returned 4294904076, cycle_last: 4294903963, cycle_delta: 113
+[   47.120428] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 452028250
+[   47.120428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 113, mult: 0, shift: 1024015999
+[   47.120428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.120452] TIME: timekeeping_get_ns() called
+[   47.120454] TIME: clock_read returned 4294904076, cycle_last: 4294903963, cycle_delta: 113
+[   47.120456] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 452028250
+[   47.120458] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 113, mult: 0, shift: 1024015999
+[   47.120460] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.124410] TIME: timekeeping_get_ns() called
+[   47.124412] TIME: clock_read returned 4294904076, cycle_last: 4294903963, cycle_delta: 113
+[   47.124414] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 452028250
+[   47.124416] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 113, mult: 0, shift: 1024015999
+[   47.124418] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.124420] TIME: timekeeping_get_ns() called
+[   47.124422] TIME: clock_read returned 4294904076, cycle_last: 4294903963, cycle_delta: 113
+[   47.124424] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 452028250
+[   47.124426] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 113, mult: 0, shift: 1024015999
+[   47.124428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.124428] TIME: timekeeping_get_ns() called
+[   47.124428] TIME: clock_read returned 4294904077, cycle_last: 4294903963, cycle_delta: 114
+[   47.124428] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 456028500
+[   47.124428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 114, mult: 0, shift: 1024016000
+[   47.124428] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.124452] TIME: timekeeping_get_ns() called
+[   47.124454] TIME: clock_read returned 4294904077, cycle_last: 4294903963, cycle_delta: 114
+[   47.124456] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 456028500
+[   47.124458] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 114, mult: 0, shift: 1024016000
+[   47.124460] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.128410] TIME: timekeeping_get_ns() called
+[   47.128412] TIME: clock_read returned 4294904077, cycle_last: 4294903963, cycle_delta: 114
+[   47.128414] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 456028500
+[   47.128416] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 114, mult: 0, shift: 1024016000
+[   47.128419] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.128420] TIME: timekeeping_get_ns() called
+[   47.128422] TIME: clock_read returned 4294904077, cycle_last: 4294903963, cycle_delta: 114
+[   47.128424] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 456028500
+[   47.128426] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 114, mult: 0, shift: 1024016000
+[   47.128429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.128429] TIME: timekeeping_get_ns() called
+[   47.128429] TIME: clock_read returned 4294904078, cycle_last: 4294903963, cycle_delta: 115
+[   47.128429] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 460028750
+[   47.128429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 115, mult: 0, shift: 1024015999
+[   47.128429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.128452] TIME: timekeeping_get_ns() called
+[   47.128454] TIME: clock_read returned 4294904078, cycle_last: 4294903963, cycle_delta: 115
+[   47.128456] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 460028750
+[   47.128458] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 115, mult: 0, shift: 1024015999
+[   47.128460] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.132410] TIME: timekeeping_get_ns() called
+[   47.132412] TIME: clock_read returned 4294904078, cycle_last: 4294903963, cycle_delta: 115
+[   47.132414] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 460028750
+[   47.132416] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 115, mult: 0, shift: 1024015999
+[   47.132418] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.132420] TIME: timekeeping_get_ns() called
+[   47.132422] TIME: clock_read returned 4294904078, cycle_last: 4294903963, cycle_delta: 115
+[   47.132424] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 460028750
+[   47.132426] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 115, mult: 0, shift: 1024015999
+[   47.132429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.132429] TIME: timekeeping_get_ns() called
+[   47.132429] TIME: clock_read returned 4294904079, cycle_last: 4294903963, cycle_delta: 116
+[   47.132429] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 464029000
+[   47.132429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 116, mult: 0, shift: 1024016000
+[   47.132429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.132452] TIME: timekeeping_get_ns() called
+[   47.132454] TIME: clock_read returned 4294904079, cycle_last: 4294903963, cycle_delta: 116
+[   47.132456] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 464029000
+[   47.132458] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 116, mult: 0, shift: 1024016000
+[   47.132460] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.136410] TIME: timekeeping_get_ns() called
+[   47.136412] TIME: clock_read returned 4294904079, cycle_last: 4294903963, cycle_delta: 116
+[   47.136414] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 464029000
+[   47.136416] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 116, mult: 0, shift: 1024016000
+[   47.136419] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.136420] TIME: timekeeping_get_ns() called
+[   47.136422] TIME: clock_read returned 4294904079, cycle_last: 4294903963, cycle_delta: 116
+[   47.136424] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 464029000
+[   47.136427] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 116, mult: 0, shift: 1024016000
+[   47.136429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.136429] TIME: timekeeping_get_ns() called
+[   47.136429] TIME: clock_read returned 4294904080, cycle_last: 4294903963, cycle_delta: 117
+[   47.136429] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 468029250
+[   47.136429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 117, mult: 0, shift: 1024015999
+[   47.136429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.136452] TIME: timekeeping_get_ns() called
+[   47.136454] TIME: clock_read returned 4294904080, cycle_last: 4294903963, cycle_delta: 117
+[   47.136456] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 468029250
+[   47.136458] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 117, mult: 0, shift: 1024015999
+[   47.136460] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.140410] TIME: timekeeping_get_ns() called
+[   47.140412] TIME: clock_read returned 4294904080, cycle_last: 4294903963, cycle_delta: 117
+[   47.140414] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 468029250
+[   47.140416] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 117, mult: 0, shift: 1024015999
+[   47.140419] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.140420] TIME: timekeeping_get_ns() called
+[   47.140422] TIME: clock_read returned 4294904080, cycle_last: 4294903963, cycle_delta: 117
+[   47.140424] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 468029250
+[   47.140426] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 117, mult: 0, shift: 1024015999
+[   47.140429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.140429] TIME: timekeeping_get_ns() called
+[   47.140429] TIME: clock_read returned 4294904081, cycle_last: 4294903963, cycle_delta: 118
+[   47.140429] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 472029500
+[   47.140429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 118, mult: 0, shift: 1024016000
+[   47.140429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.140452] TIME: timekeeping_get_ns() called
+[   47.140454] TIME: clock_read returned 4294904081, cycle_last: 4294903963, cycle_delta: 118
+[   47.140456] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 472029500
+[   47.140458] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 118, mult: 0, shift: 1024016000
+[   47.140460] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.144410] TIME: timekeeping_get_ns() called
+[   47.144412] TIME: clock_read returned 4294904081, cycle_last: 4294903963, cycle_delta: 118
+[   47.144414] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 472029500
+[   47.144416] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 118, mult: 0, shift: 1024016000
+[   47.144419] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.144421] TIME: timekeeping_get_ns() called
+[   47.144422] TIME: clock_read returned 4294904081, cycle_last: 4294903963, cycle_delta: 118
+[   47.144424] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 472029500
+[   47.144426] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 118, mult: 0, shift: 1024016000
+[   47.144429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.144429] TIME: timekeeping_get_ns() called
+[   47.144429] TIME: clock_read returned 4294904082, cycle_last: 4294903963, cycle_delta: 119
+[   47.144429] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 476029750
+[   47.144429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 119, mult: 0, shift: 1024015999
+[   47.144429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.144452] TIME: timekeeping_get_ns() called
+[   47.144454] TIME: clock_read returned 4294904082, cycle_last: 4294903963, cycle_delta: 119
+[   47.144456] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 476029750
+[   47.144458] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 119, mult: 0, shift: 1024015999
+[   47.144461] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.148410] TIME: timekeeping_get_ns() called
+[   47.148412] TIME: clock_read returned 4294904082, cycle_last: 4294903963, cycle_delta: 119
+[   47.148414] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 476029750
+[   47.148416] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 119, mult: 0, shift: 1024015999
+[   47.148419] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.148420] TIME: timekeeping_get_ns() called
+[   47.148422] TIME: clock_read returned 4294904082, cycle_last: 4294903963, cycle_delta: 119
+[   47.148424] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 476029750
+[   47.148427] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 119, mult: 0, shift: 1024015999
+[   47.148429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.148429] TIME: timekeeping_get_ns() called
+[   47.148429] TIME: clock_read returned 4294904083, cycle_last: 4294903963, cycle_delta: 120
+[   47.148429] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 480030000
+[   47.148429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 120, mult: 0, shift: 1024016000
+[   47.148429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.148452] TIME: timekeeping_get_ns() called
+[   47.148454] TIME: clock_read returned 4294904083, cycle_last: 4294903963, cycle_delta: 120
+[   47.148456] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 480030000
+[   47.148458] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 120, mult: 0, shift: 1024016000
+[   47.148461] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.152410] TIME: timekeeping_get_ns() called
+[   47.152412] TIME: clock_read returned 4294904083, cycle_last: 4294903963, cycle_delta: 120
+[   47.152414] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 480030000
+[   47.152416] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 120, mult: 0, shift: 1024016000
+[   47.152419] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.152420] TIME: timekeeping_get_ns() called
+[   47.152422] TIME: clock_read returned 4294904083, cycle_last: 4294903963, cycle_delta: 120
+[   47.152424] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 480030000
+[   47.152426] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 120, mult: 0, shift: 1024016000
+[   47.152429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.152429] TIME: timekeeping_get_ns() called
+[   47.152429] TIME: clock_read returned 4294904084, cycle_last: 4294903963, cycle_delta: 121
+[   47.152429] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 484030250
+[   47.152429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 121, mult: 0, shift: 1024015999
+[   47.152429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.152452] TIME: timekeeping_get_ns() called
+[   47.152454] TIME: clock_read returned 4294904084, cycle_last: 4294903963, cycle_delta: 121
+[   47.152456] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 484030250
+[   47.152458] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 121, mult: 0, shift: 1024015999
+[   47.152461] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.156411] TIME: timekeeping_get_ns() called
+[   47.156413] TIME: clock_read returned 4294904084, cycle_last: 4294903963, cycle_delta: 121
+[   47.156415] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 484030250
+[   47.156417] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 121, mult: 0, shift: 1024015999
+[   47.156419] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.156421] TIME: timekeeping_get_ns() called
+[   47.156423] TIME: clock_read returned 4294904084, cycle_last: 4294903963, cycle_delta: 121
+[   47.156425] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 484030250
+[   47.156427] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 121, mult: 0, shift: 1024015999
+[   47.156429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.156429] TIME: timekeeping_get_ns() called
+[   47.156429] TIME: clock_read returned 4294904085, cycle_last: 4294903963, cycle_delta: 122
+[   47.156429] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 488030500
+[   47.156429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 122, mult: 0, shift: 1024016000
+[   47.156429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.156452] TIME: timekeeping_get_ns() called
+[   47.156454] TIME: clock_read returned 4294904085, cycle_last: 4294903963, cycle_delta: 122
+[   47.156456] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 488030500
+[   47.156458] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 122, mult: 0, shift: 1024016000
+[   47.156461] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.160410] TIME: timekeeping_get_ns() called
+[   47.160412] TIME: clock_read returned 4294904085, cycle_last: 4294903963, cycle_delta: 122
+[   47.160414] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 488030500
+[   47.160416] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 122, mult: 0, shift: 1024016000
+[   47.160419] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.160421] TIME: timekeeping_get_ns() called
+[   47.160422] TIME: clock_read returned 4294904085, cycle_last: 4294903963, cycle_delta: 122
+[   47.160424] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 488030500
+[   47.160427] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 122, mult: 0, shift: 1024016000
+[   47.160429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.160429] TIME: timekeeping_get_ns() called
+[   47.160429] TIME: clock_read returned 4294904086, cycle_last: 4294903963, cycle_delta: 123
+[   47.160429] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 492030750
+[   47.160429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 123, mult: 0, shift: 1024015999
+[   47.160429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.160452] TIME: timekeeping_get_ns() called
+[   47.160454] TIME: clock_read returned 4294904086, cycle_last: 4294903963, cycle_delta: 123
+[   47.160456] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 492030750
+[   47.160458] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 123, mult: 0, shift: 1024015999
+[   47.160461] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.164411] TIME: timekeeping_get_ns() called
+[   47.164413] TIME: clock_read returned 4294904086, cycle_last: 4294903963, cycle_delta: 123
+[   47.164415] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 492030750
+[   47.164417] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 123, mult: 0, shift: 1024015999
+[   47.164419] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.164421] TIME: timekeeping_get_ns() called
+[   47.164423] TIME: clock_read returned 4294904086, cycle_last: 4294903963, cycle_delta: 123
+[   47.164425] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 492030750
+[   47.164427] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 123, mult: 0, shift: 1024015999
+[   47.164430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.164430] TIME: timekeeping_get_ns() called
+[   47.164430] TIME: clock_read returned 4294904087, cycle_last: 4294903963, cycle_delta: 124
+[   47.164430] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 496031000
+[   47.164430] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 124, mult: 0, shift: 1024016000
+[   47.164430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.164452] TIME: timekeeping_get_ns() called
+[   47.164454] TIME: clock_read returned 4294904087, cycle_last: 4294903963, cycle_delta: 124
+[   47.164456] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 496031000
+[   47.164458] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 124, mult: 0, shift: 1024016000
+[   47.164461] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.168410] TIME: timekeeping_get_ns() called
+[   47.168412] TIME: clock_read returned 4294904087, cycle_last: 4294903963, cycle_delta: 124
+[   47.168414] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 496031000
+[   47.168417] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 124, mult: 0, shift: 1024016000
+[   47.168419] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.168421] TIME: timekeeping_get_ns() called
+[   47.168422] TIME: clock_read returned 4294904087, cycle_last: 4294903963, cycle_delta: 124
+[   47.168425] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 496031000
+[   47.168427] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 124, mult: 0, shift: 1024016000
+[   47.168429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.168429] TIME: timekeeping_get_ns() called
+[   47.168429] TIME: clock_read returned 4294904088, cycle_last: 4294904088, cycle_delta: 0
+[   47.168429] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 0
+[   47.168429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 0, mult: 0, shift: 1024016128
+[   47.168429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.168452] TIME: timekeeping_get_ns() called
+[   47.168454] TIME: clock_read returned 4294904088, cycle_last: 4294904088, cycle_delta: 0
+[   47.168456] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 0
+[   47.168458] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 0, mult: 0, shift: 1024016128
+[   47.168461] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.172411] TIME: timekeeping_get_ns() called
+[   47.172412] TIME: clock_read returned 4294904088, cycle_last: 4294904088, cycle_delta: 0
+[   47.172414] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 0
+[   47.172417] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 0, mult: 0, shift: 1024016128
+[   47.172419] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.172421] TIME: timekeeping_get_ns() called
+[   47.172422] TIME: clock_read returned 4294904088, cycle_last: 4294904088, cycle_delta: 0
+[   47.172424] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 0
+[   47.172426] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 0, mult: 0, shift: 1024016128
+[   47.172429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.172429] TIME: timekeeping_get_ns() called
+[   47.172429] TIME: clock_read returned 4294904089, cycle_last: 4294904088, cycle_delta: 1
+[   47.172429] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 4000250
+[   47.172429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 1, mult: 0, shift: 1024016160
+[   47.172429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.172453] TIME: timekeeping_get_ns() called
+[   47.172454] TIME: clock_read returned 4294904089, cycle_last: 4294904088, cycle_delta: 1
+[   47.172457] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 4000250
+[   47.172459] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 1, mult: 0, shift: 1024016160
+[   47.172461] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.176411] TIME: timekeeping_get_ns() called
+[   47.176413] TIME: clock_read returned 4294904089, cycle_last: 4294904088, cycle_delta: 1
+[   47.176415] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 4000250
+[   47.176417] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 1, mult: 0, shift: 1024016160
+[   47.176420] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.176421] TIME: timekeeping_get_ns() called
+[   47.176423] TIME: clock_read returned 4294904089, cycle_last: 4294904088, cycle_delta: 1
+[   47.176425] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 4000250
+[   47.176427] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 1, mult: 0, shift: 1024016160
+[   47.176430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.176430] TIME: timekeeping_get_ns() called
+[   47.176430] TIME: clock_read returned 4294904090, cycle_last: 4294904088, cycle_delta: 2
+[   47.176430] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 8000500
+[   47.176430] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 2, mult: 0, shift: 1024016176
+[   47.176430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.176453] TIME: timekeeping_get_ns() called
+[   47.176454] TIME: clock_read returned 4294904090, cycle_last: 4294904088, cycle_delta: 2
+[   47.176457] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 8000500
+[   47.176459] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 2, mult: 0, shift: 1024016176
+[   47.176461] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.180411] TIME: timekeeping_get_ns() called
+[   47.180413] TIME: clock_read returned 4294904090, cycle_last: 4294904088, cycle_delta: 2
+[   47.180415] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 8000500
+[   47.180417] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 2, mult: 0, shift: 1024016176
+[   47.180420] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.180421] TIME: timekeeping_get_ns() called
+[   47.180423] TIME: clock_read returned 4294904090, cycle_last: 4294904088, cycle_delta: 2
+[   47.180425] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 8000500
+[   47.180427] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 2, mult: 0, shift: 1024016176
+[   47.180430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.180430] TIME: timekeeping_get_ns() called
+[   47.180430] TIME: clock_read returned 4294904091, cycle_last: 4294904088, cycle_delta: 3
+[   47.180430] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 12000750
+[   47.180430] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 3, mult: 0, shift: 1024016184
+[   47.180430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.180453] TIME: timekeeping_get_ns() called
+[   47.180455] TIME: clock_read returned 4294904091, cycle_last: 4294904088, cycle_delta: 3
+[   47.180457] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 12000750
+[   47.180459] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 3, mult: 0, shift: 1024016184
+[   47.180461] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.184411] TIME: timekeeping_get_ns() called
+[   47.184413] TIME: clock_read returned 4294904091, cycle_last: 4294904088, cycle_delta: 3
+[   47.184415] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 12000750
+[   47.184417] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 3, mult: 0, shift: 1024016184
+[   47.184420] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.184421] TIME: timekeeping_get_ns() called
+[   47.184423] TIME: clock_read returned 4294904091, cycle_last: 4294904088, cycle_delta: 3
+[   47.184425] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 12000750
+[   47.184427] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 3, mult: 0, shift: 1024016184
+[   47.184430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.184430] TIME: timekeeping_get_ns() called
+[   47.184430] TIME: clock_read returned 4294904092, cycle_last: 4294904088, cycle_delta: 4
+[   47.184430] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 16001000
+[   47.184430] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 4, mult: 0, shift: 1024016186
+[   47.184430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.184453] TIME: timekeeping_get_ns() called
+[   47.184455] TIME: clock_read returned 4294904092, cycle_last: 4294904088, cycle_delta: 4
+[   47.184457] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 16001000
+[   47.184459] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 4, mult: 0, shift: 1024016186
+[   47.184461] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.188411] TIME: timekeeping_get_ns() called
+[   47.188413] TIME: clock_read returned 4294904092, cycle_last: 4294904088, cycle_delta: 4
+[   47.188415] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 16001000
+[   47.188417] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 4, mult: 0, shift: 1024016186
+[   47.188420] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.188421] TIME: timekeeping_get_ns() called
+[   47.188423] TIME: clock_read returned 4294904092, cycle_last: 4294904088, cycle_delta: 4
+[   47.188425] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 16001000
+[   47.188427] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 4, mult: 0, shift: 1024016186
+[   47.188430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.188430] TIME: timekeeping_get_ns() called
+[   47.188430] TIME: clock_read returned 4294904093, cycle_last: 4294904088, cycle_delta: 5
+[   47.188430] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 20001250
+[   47.188430] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 5, mult: 0, shift: 1024016187
+[   47.188430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.188453] TIME: timekeeping_get_ns() called
+[   47.188455] TIME: clock_read returned 4294904093, cycle_last: 4294904088, cycle_delta: 5
+[   47.188457] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 20001250
+[   47.188459] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 5, mult: 0, shift: 1024016187
+[   47.188461] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.192412] TIME: timekeeping_get_ns() called
+[   47.192413] TIME: clock_read returned 4294904093, cycle_last: 4294904088, cycle_delta: 5
+[   47.192415] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 20001250
+[   47.192418] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 5, mult: 0, shift: 1024016187
+[   47.192420] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.192422] TIME: timekeeping_get_ns() called
+[   47.192424] TIME: clock_read returned 4294904093, cycle_last: 4294904088, cycle_delta: 5
+[   47.192426] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 20001250
+[   47.192428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 5, mult: 0, shift: 1024016187
+[   47.192430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.192430] TIME: timekeeping_get_ns() called
+[   47.192430] TIME: clock_read returned 4294904094, cycle_last: 4294904088, cycle_delta: 6
+[   47.192430] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 24001500
+[   47.192430] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 6, mult: 0, shift: 1024016186
+[   47.192430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.192453] TIME: timekeeping_get_ns() called
+[   47.192455] TIME: clock_read returned 4294904094, cycle_last: 4294904088, cycle_delta: 6
+[   47.192457] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 24001500
+[   47.192459] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 6, mult: 0, shift: 1024016186
+[   47.192461] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.196411] TIME: timekeeping_get_ns() called
+[   47.196413] TIME: clock_read returned 4294904094, cycle_last: 4294904088, cycle_delta: 6
+[   47.196415] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 24001500
+[   47.196417] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 6, mult: 0, shift: 1024016186
+[   47.196419] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.196421] TIME: timekeeping_get_ns() called
+[   47.196423] TIME: clock_read returned 4294904094, cycle_last: 4294904088, cycle_delta: 6
+[   47.196425] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 24001500
+[   47.196427] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 6, mult: 0, shift: 1024016186
+[   47.196429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.196429] TIME: timekeeping_get_ns() called
+[   47.196429] TIME: clock_read returned 4294904095, cycle_last: 4294904088, cycle_delta: 7
+[   47.196429] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 28001750
+[   47.196429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 7, mult: 0, shift: 1024016187
+[   47.196429] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.196453] TIME: timekeeping_get_ns() called
+[   47.196455] TIME: clock_read returned 4294904095, cycle_last: 4294904088, cycle_delta: 7
+[   47.196457] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 28001750
+[   47.196459] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 7, mult: 0, shift: 1024016187
+[   47.196461] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.200412] TIME: timekeeping_get_ns() called
+[   47.200414] TIME: clock_read returned 4294904095, cycle_last: 4294904088, cycle_delta: 7
+[   47.200416] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 28001750
+[   47.200418] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 7, mult: 0, shift: 1024016187
+[   47.200420] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.200422] TIME: timekeeping_get_ns() called
+[   47.200424] TIME: clock_read returned 4294904095, cycle_last: 4294904088, cycle_delta: 7
+[   47.200426] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 28001750
+[   47.200428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 7, mult: 0, shift: 1024016187
+[   47.200430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.200430] TIME: timekeeping_get_ns() called
+[   47.200430] TIME: clock_read returned 4294904096, cycle_last: 4294904088, cycle_delta: 8
+[   47.200430] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 32002000
+[   47.200430] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 8, mult: 0, shift: 1024016186
+[   47.200430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.200453] TIME: timekeeping_get_ns() called
+[   47.200455] TIME: clock_read returned 4294904096, cycle_last: 4294904088, cycle_delta: 8
+[   47.200457] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 32002000
+[   47.200459] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 8, mult: 0, shift: 1024016186
+[   47.200461] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.204411] TIME: timekeeping_get_ns() called
+[   47.204413] TIME: clock_read returned 4294904096, cycle_last: 4294904088, cycle_delta: 8
+[   47.204415] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 32002000
+[   47.204417] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 8, mult: 0, shift: 1024016186
+[   47.204420] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.204421] TIME: timekeeping_get_ns() called
+[   47.204423] TIME: clock_read returned 4294904096, cycle_last: 4294904088, cycle_delta: 8
+[   47.204425] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 32002000
+[   47.204427] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 8, mult: 0, shift: 1024016186
+[   47.204430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.204430] TIME: timekeeping_get_ns() called
+[   47.204430] TIME: clock_read returned 4294904097, cycle_last: 4294904088, cycle_delta: 9
+[   47.204430] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 36002250
+[   47.204430] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 9, mult: 0, shift: 1024016187
+[   47.204430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.204453] TIME: timekeeping_get_ns() called
+[   47.204455] TIME: clock_read returned 4294904097, cycle_last: 4294904088, cycle_delta: 9
+[   47.204457] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 36002250
+[   47.204459] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 9, mult: 0, shift: 1024016187
+[   47.204461] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.208412] TIME: timekeeping_get_ns() called
+[   47.208413] TIME: clock_read returned 4294904097, cycle_last: 4294904088, cycle_delta: 9
+[   47.208416] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 36002250
+[   47.208418] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 9, mult: 0, shift: 1024016187
+[   47.208420] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.208422] TIME: timekeeping_get_ns() called
+[   47.208424] TIME: clock_read returned 4294904097, cycle_last: 4294904088, cycle_delta: 9
+[   47.208426] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 36002250
+[   47.208428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 9, mult: 0, shift: 1024016187
+[   47.208430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.208430] TIME: timekeeping_get_ns() called
+[   47.208430] TIME: clock_read returned 4294904098, cycle_last: 4294904088, cycle_delta: 10
+[   47.208430] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 40002500
+[   47.208430] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 10, mult: 0, shift: 1024016186
+[   47.208430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.208453] TIME: timekeeping_get_ns() called
+[   47.208455] TIME: clock_read returned 4294904098, cycle_last: 4294904088, cycle_delta: 10
+[   47.208457] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 40002500
+[   47.208459] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 10, mult: 0, shift: 1024016186
+[   47.208462] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.212412] TIME: timekeeping_get_ns() called
+[   47.212414] TIME: clock_read returned 4294904098, cycle_last: 4294904088, cycle_delta: 10
+[   47.212416] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 40002500
+[   47.212418] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 10, mult: 0, shift: 1024016186
+[   47.212420] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.212422] TIME: timekeeping_get_ns() called
+[   47.212424] TIME: clock_read returned 4294904098, cycle_last: 4294904088, cycle_delta: 10
+[   47.212426] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 40002500
+[   47.212428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 10, mult: 0, shift: 1024016186
+[   47.212430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.212430] TIME: timekeeping_get_ns() called
+[   47.212430] TIME: clock_read returned 4294904099, cycle_last: 4294904088, cycle_delta: 11
+[   47.212430] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 44002750
+[   47.212430] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 11, mult: 0, shift: 1024016187
+[   47.212430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.212453] TIME: timekeeping_get_ns() called
+[   47.212455] TIME: clock_read returned 4294904099, cycle_last: 4294904088, cycle_delta: 11
+[   47.212457] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 44002750
+[   47.212459] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 11, mult: 0, shift: 1024016187
+[   47.212462] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.216412] TIME: timekeeping_get_ns() called
+[   47.216413] TIME: clock_read returned 4294904099, cycle_last: 4294904088, cycle_delta: 11
+[   47.216415] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 44002750
+[   47.216418] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 11, mult: 0, shift: 1024016187
+[   47.216420] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.216422] TIME: timekeeping_get_ns() called
+[   47.216423] TIME: clock_read returned 4294904099, cycle_last: 4294904088, cycle_delta: 11
+[   47.216426] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 44002750
+[   47.216428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 11, mult: 0, shift: 1024016187
+[   47.216430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.216430] TIME: timekeeping_get_ns() called
+[   47.216430] TIME: clock_read returned 4294904100, cycle_last: 4294904088, cycle_delta: 12
+[   47.216430] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 48003000
+[   47.216430] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 12, mult: 0, shift: 1024016186
+[   47.216430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.216453] TIME: timekeeping_get_ns() called
+[   47.216455] TIME: clock_read returned 4294904100, cycle_last: 4294904088, cycle_delta: 12
+[   47.216457] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 48003000
+[   47.216459] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 12, mult: 0, shift: 1024016186
+[   47.216462] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.220412] TIME: timekeeping_get_ns() called
+[   47.220414] TIME: clock_read returned 4294904100, cycle_last: 4294904088, cycle_delta: 12
+[   47.220416] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 48003000
+[   47.220418] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 12, mult: 0, shift: 1024016186
+[   47.220420] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.220422] TIME: timekeeping_get_ns() called
+[   47.220424] TIME: clock_read returned 4294904100, cycle_last: 4294904088, cycle_delta: 12
+[   47.220426] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 48003000
+[   47.220428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 12, mult: 0, shift: 1024016186
+[   47.220431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.220431] TIME: timekeeping_get_ns() called
+[   47.220431] TIME: clock_read returned 4294904101, cycle_last: 4294904088, cycle_delta: 13
+[   47.220431] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 52003250
+[   47.220431] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 13, mult: 0, shift: 1024016187
+[   47.220431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.220453] TIME: timekeeping_get_ns() called
+[   47.220455] TIME: clock_read returned 4294904101, cycle_last: 4294904088, cycle_delta: 13
+[   47.220457] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 52003250
+[   47.220459] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 13, mult: 0, shift: 1024016187
+[   47.220462] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.224411] TIME: timekeeping_get_ns() called
+[   47.224413] TIME: clock_read returned 4294904101, cycle_last: 4294904088, cycle_delta: 13
+[   47.224415] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 52003250
+[   47.224417] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 13, mult: 0, shift: 1024016187
+[   47.224420] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.224422] TIME: timekeeping_get_ns() called
+[   47.224423] TIME: clock_read returned 4294904101, cycle_last: 4294904088, cycle_delta: 13
+[   47.224425] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 52003250
+[   47.224428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 13, mult: 0, shift: 1024016187
+[   47.224430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.224430] TIME: timekeeping_get_ns() called
+[   47.224430] TIME: clock_read returned 4294904102, cycle_last: 4294904088, cycle_delta: 14
+[   47.224430] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 56003500
+[   47.224430] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 14, mult: 0, shift: 1024016186
+[   47.224430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.224453] TIME: timekeeping_get_ns() called
+[   47.224455] TIME: clock_read returned 4294904102, cycle_last: 4294904088, cycle_delta: 14
+[   47.224457] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 56003500
+[   47.224459] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 14, mult: 0, shift: 1024016186
+[   47.224462] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.227187] TIME: timekeeping_get_ns() called
+[   47.227189] TIME: clock_read returned 4294904102, cycle_last: 4294904088, cycle_delta: 14
+[   47.227191] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 56003500
+[   47.227193] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 14, mult: 0, shift: 1024016186
+[   47.227196] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.227197] TIME: timekeeping_get_ns() called
+[   47.227199] TIME: clock_read returned 4294904102, cycle_last: 4294904088, cycle_delta: 14
+[   47.227201] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 56003500
+[   47.227203] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 14, mult: 0, shift: 1024016186
+[   47.227206] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.227206] TIME: timekeeping_get_ns() called
+[   47.227206] TIME: clock_read returned 4294904102, cycle_last: 4294904088, cycle_delta: 14
+[   47.227206] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 56003500
+[   47.227206] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 14, mult: 0, shift: 1024016186
+[   47.227206] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.227206] TIME: timekeeping_get_ns() called
+[   47.227206] TIME: clock_read returned 4294904102, cycle_last: 4294904088, cycle_delta: 14
+[   47.227206] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 56003500
+[   47.227206] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 14, mult: 0, shift: 1024016186
+[   47.227206] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.227206] TIME: timekeeping_get_ns() called
+[   47.227206] TIME: clock_read returned 4294904102, cycle_last: 4294904088, cycle_delta: 14
+[   47.227206] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 56003500
+[   47.227206] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 14, mult: 0, shift: 1024016186
+[   47.227206] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.227206] TIME: timekeeping_get_ns() called
+[   47.227206] TIME: clock_read returned 4294904103, cycle_last: 4294904088, cycle_delta: 15
+[   47.227206] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 60003750
+[   47.227206] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 15, mult: 0, shift: 1024016187
+[   47.227206] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.228454] TIME: timekeeping_get_ns() called
+[   47.228455] TIME: clock_read returned 4294904103, cycle_last: 4294904088, cycle_delta: 15
+[   47.228458] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 60003750
+[   47.228460] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 15, mult: 0, shift: 1024016187
+[   47.228462] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.232411] TIME: timekeeping_get_ns() called
+[   47.232413] TIME: clock_read returned 4294904103, cycle_last: 4294904088, cycle_delta: 15
+[   47.232415] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 60003750
+[   47.232417] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 15, mult: 0, shift: 1024016187
+[   47.232420] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.232422] TIME: timekeeping_get_ns() called
+[   47.232423] TIME: clock_read returned 4294904103, cycle_last: 4294904088, cycle_delta: 15
+[   47.232425] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 60003750
+[   47.232428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 15, mult: 0, shift: 1024016187
+[   47.232430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.232430] TIME: timekeeping_get_ns() called
+[   47.232430] TIME: clock_read returned 4294904104, cycle_last: 4294904088, cycle_delta: 16
+[   47.232430] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 64004000
+[   47.232430] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 16, mult: 0, shift: 1024016186
+[   47.232430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.232453] TIME: timekeeping_get_ns() called
+[   47.232455] TIME: clock_read returned 4294904104, cycle_last: 4294904088, cycle_delta: 16
+[   47.232457] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 64004000
+[   47.232460] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 16, mult: 0, shift: 1024016186
+[   47.232462] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.236412] TIME: timekeeping_get_ns() called
+[   47.236414] TIME: clock_read returned 4294904104, cycle_last: 4294904088, cycle_delta: 16
+[   47.236416] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 64004000
+[   47.236418] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 16, mult: 0, shift: 1024016186
+[   47.236421] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.236422] TIME: timekeeping_get_ns() called
+[   47.236424] TIME: clock_read returned 4294904104, cycle_last: 4294904088, cycle_delta: 16
+[   47.236426] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 64004000
+[   47.236428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 16, mult: 0, shift: 1024016186
+[   47.236431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.236431] TIME: timekeeping_get_ns() called
+[   47.236431] TIME: clock_read returned 4294904105, cycle_last: 4294904088, cycle_delta: 17
+[   47.236431] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 68004250
+[   47.236431] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 17, mult: 0, shift: 1024016187
+[   47.236431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.236454] TIME: timekeeping_get_ns() called
+[   47.236455] TIME: clock_read returned 4294904105, cycle_last: 4294904088, cycle_delta: 17
+[   47.236458] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 68004250
+[   47.236460] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 17, mult: 0, shift: 1024016187
+[   47.236462] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.240412] TIME: timekeeping_get_ns() called
+[   47.240414] TIME: clock_read returned 4294904105, cycle_last: 4294904088, cycle_delta: 17
+[   47.240416] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 68004250
+[   47.240418] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 17, mult: 0, shift: 1024016187
+[   47.240420] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.240422] TIME: timekeeping_get_ns() called
+[   47.240424] TIME: clock_read returned 4294904105, cycle_last: 4294904088, cycle_delta: 17
+[   47.240426] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 68004250
+[   47.240428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 17, mult: 0, shift: 1024016187
+[   47.240430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.240430] TIME: timekeeping_get_ns() called
+[   47.240430] TIME: clock_read returned 4294904106, cycle_last: 4294904088, cycle_delta: 18
+[   47.240430] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 72004500
+[   47.240430] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 18, mult: 0, shift: 1024016186
+[   47.240430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.240454] TIME: timekeeping_get_ns() called
+[   47.240455] TIME: clock_read returned 4294904106, cycle_last: 4294904088, cycle_delta: 18
+[   47.240458] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 72004500
+[   47.240460] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 18, mult: 0, shift: 1024016186
+[   47.240462] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.244412] TIME: timekeeping_get_ns() called
+[   47.244414] TIME: clock_read returned 4294904106, cycle_last: 4294904088, cycle_delta: 18
+[   47.244416] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 72004500
+[   47.244418] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 18, mult: 0, shift: 1024016186
+[   47.244420] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.244422] TIME: timekeeping_get_ns() called
+[   47.244424] TIME: clock_read returned 4294904106, cycle_last: 4294904088, cycle_delta: 18
+[   47.244426] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 72004500
+[   47.244428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 18, mult: 0, shift: 1024016186
+[   47.244431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.244431] TIME: timekeeping_get_ns() called
+[   47.244431] TIME: clock_read returned 4294904107, cycle_last: 4294904088, cycle_delta: 19
+[   47.244431] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 76004750
+[   47.244431] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 19, mult: 0, shift: 1024016187
+[   47.244431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.244454] TIME: timekeeping_get_ns() called
+[   47.244456] TIME: clock_read returned 4294904107, cycle_last: 4294904088, cycle_delta: 19
+[   47.244458] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 76004750
+[   47.244460] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 19, mult: 0, shift: 1024016187
+[   47.244462] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.248412] TIME: timekeeping_get_ns() called
+[   47.248414] TIME: clock_read returned 4294904107, cycle_last: 4294904088, cycle_delta: 19
+[   47.248416] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 76004750
+[   47.248418] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 19, mult: 0, shift: 1024016187
+[   47.248420] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.248422] TIME: timekeeping_get_ns() called
+[   47.248424] TIME: clock_read returned 4294904107, cycle_last: 4294904088, cycle_delta: 19
+[   47.248426] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 76004750
+[   47.248428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 19, mult: 0, shift: 1024016187
+[   47.248431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.248431] TIME: timekeeping_get_ns() called
+[   47.248431] TIME: clock_read returned 4294904108, cycle_last: 4294904088, cycle_delta: 20
+[   47.248431] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 80005000
+[   47.248431] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 20, mult: 0, shift: 1024016186
+[   47.248431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.248454] TIME: timekeeping_get_ns() called
+[   47.248456] TIME: clock_read returned 4294904108, cycle_last: 4294904088, cycle_delta: 20
+[   47.248458] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 80005000
+[   47.248460] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 20, mult: 0, shift: 1024016186
+[   47.248462] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.252412] TIME: timekeeping_get_ns() called
+[   47.252414] TIME: clock_read returned 4294904108, cycle_last: 4294904088, cycle_delta: 20
+[   47.252416] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 80005000
+[   47.252418] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 20, mult: 0, shift: 1024016186
+[   47.252420] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.252422] TIME: timekeeping_get_ns() called
+[   47.252424] TIME: clock_read returned 4294904108, cycle_last: 4294904088, cycle_delta: 20
+[   47.252426] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 80005000
+[   47.252428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 20, mult: 0, shift: 1024016186
+[   47.252430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.252430] TIME: timekeeping_get_ns() called
+[   47.252430] TIME: clock_read returned 4294904109, cycle_last: 4294904088, cycle_delta: 21
+[   47.252430] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 84005250
+[   47.252430] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 21, mult: 0, shift: 1024016187
+[   47.252430] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.252454] TIME: timekeeping_get_ns() called
+[   47.252456] TIME: clock_read returned 4294904109, cycle_last: 4294904088, cycle_delta: 21
+[   47.252458] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 84005250
+[   47.252460] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 21, mult: 0, shift: 1024016187
+[   47.252462] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.256412] TIME: timekeeping_get_ns() called
+[   47.256414] TIME: clock_read returned 4294904109, cycle_last: 4294904088, cycle_delta: 21
+[   47.256416] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 84005250
+[   47.256418] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 21, mult: 0, shift: 1024016187
+[   47.256421] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.256422] TIME: timekeeping_get_ns() called
+[   47.256424] TIME: clock_read returned 4294904109, cycle_last: 4294904088, cycle_delta: 21
+[   47.256426] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 84005250
+[   47.256428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 21, mult: 0, shift: 1024016187
+[   47.256431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.256431] TIME: timekeeping_get_ns() called
+[   47.256431] TIME: clock_read returned 4294904110, cycle_last: 4294904088, cycle_delta: 22
+[   47.256431] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 88005500
+[   47.256431] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 22, mult: 0, shift: 1024016186
+[   47.256431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.256454] TIME: timekeeping_get_ns() called
+[   47.256456] TIME: clock_read returned 4294904110, cycle_last: 4294904088, cycle_delta: 22
+[   47.256458] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 88005500
+[   47.256460] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 22, mult: 0, shift: 1024016186
+[   47.256462] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.260412] TIME: timekeeping_get_ns() called
+[   47.260414] TIME: clock_read returned 4294904110, cycle_last: 4294904088, cycle_delta: 22
+[   47.260416] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 88005500
+[   47.260418] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 22, mult: 0, shift: 1024016186
+[   47.260421] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.260422] TIME: timekeeping_get_ns() called
+[   47.260424] TIME: clock_read returned 4294904110, cycle_last: 4294904088, cycle_delta: 22
+[   47.260426] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 88005500
+[   47.260428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 22, mult: 0, shift: 1024016186
+[   47.260431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.260431] TIME: timekeeping_get_ns() called
+[   47.260431] TIME: clock_read returned 4294904111, cycle_last: 4294904088, cycle_delta: 23
+[   47.260431] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 92005750
+[   47.260431] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 23, mult: 0, shift: 1024016187
+[   47.260431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.260454] TIME: timekeeping_get_ns() called
+[   47.260456] TIME: clock_read returned 4294904111, cycle_last: 4294904088, cycle_delta: 23
+[   47.260458] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 92005750
+[   47.260460] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 23, mult: 0, shift: 1024016187
+[   47.260462] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.264412] TIME: timekeeping_get_ns() called
+[   47.264414] TIME: clock_read returned 4294904111, cycle_last: 4294904088, cycle_delta: 23
+[   47.264416] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 92005750
+[   47.264418] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 23, mult: 0, shift: 1024016187
+[   47.264421] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.264423] TIME: timekeeping_get_ns() called
+[   47.264424] TIME: clock_read returned 4294904111, cycle_last: 4294904088, cycle_delta: 23
+[   47.264426] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 92005750
+[   47.264429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 23, mult: 0, shift: 1024016187
+[   47.264431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.264431] TIME: timekeeping_get_ns() called
+[   47.264431] TIME: clock_read returned 4294904112, cycle_last: 4294904088, cycle_delta: 24
+[   47.264431] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 96006000
+[   47.264431] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 24, mult: 0, shift: 1024016186
+[   47.264431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.264454] TIME: timekeeping_get_ns() called
+[   47.264456] TIME: clock_read returned 4294904112, cycle_last: 4294904088, cycle_delta: 24
+[   47.264458] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 96006000
+[   47.264460] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 24, mult: 0, shift: 1024016186
+[   47.264462] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.268412] TIME: timekeeping_get_ns() called
+[   47.268414] TIME: clock_read returned 4294904112, cycle_last: 4294904088, cycle_delta: 24
+[   47.268416] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 96006000
+[   47.268418] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 24, mult: 0, shift: 1024016186
+[   47.268421] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.268422] TIME: timekeeping_get_ns() called
+[   47.268424] TIME: clock_read returned 4294904112, cycle_last: 4294904088, cycle_delta: 24
+[   47.268426] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 96006000
+[   47.268428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 24, mult: 0, shift: 1024016186
+[   47.268431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.268431] TIME: timekeeping_get_ns() called
+[   47.268431] TIME: clock_read returned 4294904113, cycle_last: 4294904088, cycle_delta: 25
+[   47.268431] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 100006250
+[   47.268431] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 25, mult: 0, shift: 1024016187
+[   47.268431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.268454] TIME: timekeeping_get_ns() called
+[   47.268456] TIME: clock_read returned 4294904113, cycle_last: 4294904088, cycle_delta: 25
+[   47.268458] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 100006250
+[   47.268460] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 25, mult: 0, shift: 1024016187
+[   47.268463] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.272412] TIME: timekeeping_get_ns() called
+[   47.272414] TIME: clock_read returned 4294904113, cycle_last: 4294904088, cycle_delta: 25
+[   47.272416] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 100006250
+[   47.272419] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 25, mult: 0, shift: 1024016187
+[   47.272421] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.272423] TIME: timekeeping_get_ns() called
+[   47.272425] TIME: clock_read returned 4294904113, cycle_last: 4294904088, cycle_delta: 25
+[   47.272427] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 100006250
+[   47.272429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 25, mult: 0, shift: 1024016187
+[   47.272431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.272431] TIME: timekeeping_get_ns() called
+[   47.272431] TIME: clock_read returned 4294904114, cycle_last: 4294904088, cycle_delta: 26
+[   47.272431] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 104006500
+[   47.272431] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 26, mult: 0, shift: 1024016186
+[   47.272431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.272454] TIME: timekeeping_get_ns() called
+[   47.272456] TIME: clock_read returned 4294904114, cycle_last: 4294904088, cycle_delta: 26
+[   47.272458] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 104006500
+[   47.272460] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 26, mult: 0, shift: 1024016186
+[   47.272463] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.276412] TIME: timekeeping_get_ns() called
+[   47.276414] TIME: clock_read returned 4294904114, cycle_last: 4294904088, cycle_delta: 26
+[   47.276416] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 104006500
+[   47.276418] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 26, mult: 0, shift: 1024016186
+[   47.276421] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.276422] TIME: timekeeping_get_ns() called
+[   47.276424] TIME: clock_read returned 4294904114, cycle_last: 4294904088, cycle_delta: 26
+[   47.276426] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 104006500
+[   47.276428] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 26, mult: 0, shift: 1024016186
+[   47.276431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.276431] TIME: timekeeping_get_ns() called
+[   47.276431] TIME: clock_read returned 4294904115, cycle_last: 4294904088, cycle_delta: 27
+[   47.276431] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 108006750
+[   47.276431] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 27, mult: 0, shift: 1024016187
+[   47.276431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.276454] TIME: timekeeping_get_ns() called
+[   47.276456] TIME: clock_read returned 4294904115, cycle_last: 4294904088, cycle_delta: 27
+[   47.276458] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 108006750
+[   47.276460] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 27, mult: 0, shift: 1024016187
+[   47.276463] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.280413] TIME: timekeeping_get_ns() called
+[   47.280414] TIME: clock_read returned 4294904115, cycle_last: 4294904088, cycle_delta: 27
+[   47.280416] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 108006750
+[   47.280419] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 27, mult: 0, shift: 1024016187
+[   47.280421] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.280423] TIME: timekeeping_get_ns() called
+[   47.280424] TIME: clock_read returned 4294904115, cycle_last: 4294904088, cycle_delta: 27
+[   47.280427] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 108006750
+[   47.280429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 27, mult: 0, shift: 1024016187
+[   47.280431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.280431] TIME: timekeeping_get_ns() called
+[   47.280431] TIME: clock_read returned 4294904116, cycle_last: 4294904088, cycle_delta: 28
+[   47.280431] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 112007000
+[   47.280431] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 28, mult: 0, shift: 1024016186
+[   47.280431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.280454] TIME: timekeeping_get_ns() called
+[   47.280456] TIME: clock_read returned 4294904116, cycle_last: 4294904088, cycle_delta: 28
+[   47.280458] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 112007000
+[   47.280460] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 28, mult: 0, shift: 1024016186
+[   47.280463] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.284412] TIME: timekeeping_get_ns() called
+[   47.284414] TIME: clock_read returned 4294904116, cycle_last: 4294904088, cycle_delta: 28
+[   47.284416] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 112007000
+[   47.284418] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 28, mult: 0, shift: 1024016186
+[   47.284421] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.284423] TIME: timekeeping_get_ns() called
+[   47.284424] TIME: clock_read returned 4294904116, cycle_last: 4294904088, cycle_delta: 28
+[   47.284426] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 112007000
+[   47.284429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 28, mult: 0, shift: 1024016186
+[   47.284431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.284431] TIME: timekeeping_get_ns() called
+[   47.284431] TIME: clock_read returned 4294904117, cycle_last: 4294904088, cycle_delta: 29
+[   47.284431] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 116007250
+[   47.284431] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 29, mult: 0, shift: 1024016187
+[   47.284431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.284454] TIME: timekeeping_get_ns() called
+[   47.284456] TIME: clock_read returned 4294904117, cycle_last: 4294904088, cycle_delta: 29
+[   47.284458] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 116007250
+[   47.284460] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 29, mult: 0, shift: 1024016187
+[   47.284463] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.288413] TIME: timekeeping_get_ns() called
+[   47.288414] TIME: clock_read returned 4294904117, cycle_last: 4294904088, cycle_delta: 29
+[   47.288417] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 116007250
+[   47.288419] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 29, mult: 0, shift: 1024016187
+[   47.288421] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.288423] TIME: timekeeping_get_ns() called
+[   47.288425] TIME: clock_read returned 4294904117, cycle_last: 4294904088, cycle_delta: 29
+[   47.288427] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 116007250
+[   47.288429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 29, mult: 0, shift: 1024016187
+[   47.288431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.288431] TIME: timekeeping_get_ns() called
+[   47.288431] TIME: clock_read returned 4294904118, cycle_last: 4294904088, cycle_delta: 30
+[   47.288431] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 120007500
+[   47.288431] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 30, mult: 0, shift: 1024016186
+[   47.288431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.288454] TIME: timekeeping_get_ns() called
+[   47.288456] TIME: clock_read returned 4294904118, cycle_last: 4294904088, cycle_delta: 30
+[   47.288458] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 120007500
+[   47.288460] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 30, mult: 0, shift: 1024016186
+[   47.288463] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.292413] TIME: timekeeping_get_ns() called
+[   47.292415] TIME: clock_read returned 4294904118, cycle_last: 4294904088, cycle_delta: 30
+[   47.292417] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 120007500
+[   47.292419] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 30, mult: 0, shift: 1024016186
+[   47.292421] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.292423] TIME: timekeeping_get_ns() called
+[   47.292425] TIME: clock_read returned 4294904118, cycle_last: 4294904088, cycle_delta: 30
+[   47.292427] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 120007500
+[   47.292429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 30, mult: 0, shift: 1024016186
+[   47.292431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.292431] TIME: timekeeping_get_ns() called
+[   47.292431] TIME: clock_read returned 4294904119, cycle_last: 4294904088, cycle_delta: 31
+[   47.292431] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 124007750
+[   47.292431] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 31, mult: 0, shift: 1024016187
+[   47.292431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.292455] TIME: timekeeping_get_ns() called
+[   47.292456] TIME: clock_read returned 4294904119, cycle_last: 4294904088, cycle_delta: 31
+[   47.292458] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 124007750
+[   47.292461] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 31, mult: 0, shift: 1024016187
+[   47.292463] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.296413] TIME: timekeeping_get_ns() called
+[   47.296414] TIME: clock_read returned 4294904119, cycle_last: 4294904088, cycle_delta: 31
+[   47.296416] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 124007750
+[   47.296419] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 31, mult: 0, shift: 1024016187
+[   47.296421] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.296423] TIME: timekeeping_get_ns() called
+[   47.296425] TIME: clock_read returned 4294904119, cycle_last: 4294904088, cycle_delta: 31
+[   47.296427] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 124007750
+[   47.296429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 31, mult: 0, shift: 1024016187
+[   47.296431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.296431] TIME: timekeeping_get_ns() called
+[   47.296431] TIME: clock_read returned 4294904120, cycle_last: 4294904088, cycle_delta: 32
+[   47.296431] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 128008000
+[   47.296431] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 32, mult: 0, shift: 1024016186
+[   47.296431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.296455] TIME: timekeeping_get_ns() called
+[   47.296456] TIME: clock_read returned 4294904120, cycle_last: 4294904088, cycle_delta: 32
+[   47.296458] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 128008000
+[   47.296461] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 32, mult: 0, shift: 1024016186
+[   47.296463] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.300413] TIME: timekeeping_get_ns() called
+[   47.300415] TIME: clock_read returned 4294904120, cycle_last: 4294904088, cycle_delta: 32
+[   47.300417] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 128008000
+[   47.300419] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 32, mult: 0, shift: 1024016186
+[   47.300421] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.300423] TIME: timekeeping_get_ns() called
+[   47.300425] TIME: clock_read returned 4294904120, cycle_last: 4294904088, cycle_delta: 32
+[   47.300427] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 128008000
+[   47.300429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 32, mult: 0, shift: 1024016186
+[   47.300432] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.300432] TIME: timekeeping_get_ns() called
+[   47.300432] TIME: clock_read returned 4294904121, cycle_last: 4294904088, cycle_delta: 33
+[   47.300432] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 132008250
+[   47.300432] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 33, mult: 0, shift: 1024016187
+[   47.300432] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.300455] TIME: timekeeping_get_ns() called
+[   47.300456] TIME: clock_read returned 4294904121, cycle_last: 4294904088, cycle_delta: 33
+[   47.300458] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 132008250
+[   47.300461] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 33, mult: 0, shift: 1024016187
+[   47.300463] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.304413] TIME: timekeeping_get_ns() called
+[   47.304414] TIME: clock_read returned 4294904121, cycle_last: 4294904088, cycle_delta: 33
+[   47.304417] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 132008250
+[   47.304419] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 33, mult: 0, shift: 1024016187
+[   47.304421] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.304423] TIME: timekeeping_get_ns() called
+[   47.304425] TIME: clock_read returned 4294904121, cycle_last: 4294904088, cycle_delta: 33
+[   47.304427] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 132008250
+[   47.304429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 33, mult: 0, shift: 1024016187
+[   47.304431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.304431] TIME: timekeeping_get_ns() called
+[   47.304431] TIME: clock_read returned 4294904122, cycle_last: 4294904088, cycle_delta: 34
+[   47.304431] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 136008500
+[   47.304431] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 34, mult: 0, shift: 1024016186
+[   47.304431] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.304455] TIME: timekeeping_get_ns() called
+[   47.304457] TIME: clock_read returned 4294904122, cycle_last: 4294904088, cycle_delta: 34
+[   47.304459] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 136008500
+[   47.304461] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 34, mult: 0, shift: 1024016186
+[   47.304463] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.308413] TIME: timekeeping_get_ns() called
+[   47.308415] TIME: clock_read returned 4294904122, cycle_last: 4294904088, cycle_delta: 34
+[   47.308417] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 136008500
+[   47.308419] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 34, mult: 0, shift: 1024016186
+[   47.308421] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.308423] TIME: timekeeping_get_ns() called
+[   47.308425] TIME: clock_read returned 4294904122, cycle_last: 4294904088, cycle_delta: 34
+[   47.308427] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 136008500
+[   47.308429] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 34, mult: 0, shift: 1024016186
+[   47.308432] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.308432] TIME: timekeeping_get_ns() called
+[   47.308432] TIME: clock_read returned 4294904123, cycle_last: 4294904088, cycle_delta: 35
+[   47.308432] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 140008750
+[   47.308432] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 35, mult: 0, shift: 1024016187
+[   47.308432] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.308455] TIME: timekeeping_get_ns() called
+[   47.308457] TIME: clock_read returned 4294904123, cycle_last: 4294904088, cycle_delta: 35
+[   47.308459] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 140008750
+[   47.308461] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 35, mult: 0, shift: 1024016187
+[   47.308463] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.309862] TIME: timekeeping_get_ns() called
+[   47.309864] TIME: clock_read returned 4294904123, cycle_last: 4294904088, cycle_delta: 35
+[   47.309866] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 140008750
+[   47.309869] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 35, mult: 0, shift: 1024016187
+[   47.309871] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.309873] TIME: timekeeping_get_ns() called
+[   47.309874] TIME: clock_read returned 4294904123, cycle_last: 4294904088, cycle_delta: 35
+[   47.309877] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 140008750
+[   47.309879] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 35, mult: 0, shift: 1024016187
+[   47.309881] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.309881] TCP_SEQ BYTE ORDER TEST
+[   47.309881] saddr normal: e45fef84
+[   47.309881] saddr htonl: 84ef5fe4
+[   47.309881] saddr ntohl: 84ef5fe4
+[   47.309881] net_secret[15]: cf7fdc24
+[   47.309881] Sequence num: 1ec3047e
+[   47.309881] Sequence num ntohl: 7e04c31e
+[   47.309881] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #66
+[   47.309881] Call Trace:
+[   47.309881]  [<c0178599>] ktime_get_real+0x69/0x80
+[   47.309881]  [<c04d3303>] seq_scale+0x73/0xb0
+[   47.309881]  [<c04d349b>] secure_tcp_sequence_number+0xcb/0xe0
+[   47.309881]  [<c051d8e1>] tcp_v4_conn_request+0x3b1/0x4d0
+[   47.309881]  [<c05a20c6>] ? _spin_unlock_bh+0x16/0x20
+[   47.309881]  [<c0514d23>] tcp_rcv_state_process+0xe3/0x970
+[   47.309881]  [<c051bc98>] tcp_v4_do_rcv+0x178/0x3c0
+[   47.309881]  [<c051d331>] tcp_v4_rcv+0x541/0x740
+[   47.309881]  [<c04fec67>] ip_local_deliver_finish+0xa7/0x270
+[   47.309881]  [<c04feebf>] ip_local_deliver+0x8f/0xa0
+[   47.309881]  [<c04fe51b>] ip_rcv_finish+0xeb/0x380
+[   47.309881]  [<c04fe9ce>] ip_rcv+0x21e/0x2e0
+[   47.309881]  [<c04d9c1f>] netif_receive_skb+0x36f/0x5a0
+[   47.309881]  [<c010edc0>] ? nommu_sync_single_for_device+0x0/0x10
+[   47.309881]  [<f8a5d5c1>] rtl8169_rx_interrupt+0x91/0x4f0 [r8169]
+[   47.309881]  [<f8a5db5a>] rtl8169_poll+0x3a/0x1e0 [r8169]
+[   47.309881]  [<c059f2c4>] ? printk+0x1d/0x21
+[   47.309881]  [<c04da5cd>] net_rx_action+0xed/0x1d0
+[   47.309881]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   47.309881]  [<c01a5ee4>] ? handle_IRQ_event+0x54/0x150
+[   47.309881]  [<c01a9199>] ? move_native_irq+0x19/0x50
+[   47.309881]  [<c0159495>] do_softirq+0x45/0x50
+[   47.309881]  [<c01595e5>] irq_exit+0x65/0x70
+[   47.309881]  [<c05a6095>] do_IRQ+0x55/0xc0
+[   47.309881]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[   47.309881]  [<c0109c70>] common_interrupt+0x30/0x40
+[   47.309881]  [<c08000d8>] ? ip6_route_init+0x2d/0x1a8
+[   47.309881]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[   47.309881]  [<c01083d4>] cpu_idle+0x94/0xd0
+[   47.309881]  [<c058be32>] rest_init+0x62/0x70
+[   47.309881]  [<c07c88e5>] start_kernel+0x356/0x35c
+[   47.309881]  [<c07c83bb>] ? unknown_bootoption+0x0/0x19e
+[   47.309881]  [<c07c80bb>] i386_start_kernel+0xaa/0xb1
+[   47.309881] TIME: ktime_get_real called for the 2331720582309085191th time
+[   47.309881] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #66
+[   47.309881] Call Trace:
+[   47.309881]  [<c01784e7>] getnstimeofday+0x387/0x3d0
+[   47.309881]  [<c010cb3f>] ? show_trace+0x1f/0x30
+[   47.309881]  [<c059f1ab>] ? dump_stack+0x73/0x7a
+[   47.309881]  [<c0178578>] ktime_get_real+0x48/0x80
+[   47.309881]  [<c04d3303>] seq_scale+0x73/0xb0
+[   47.309881]  [<c04d349b>] secure_tcp_sequence_number+0xcb/0xe0
+[   47.309881]  [<c051d8e1>] tcp_v4_conn_request+0x3b1/0x4d0
+[   47.309881]  [<c05a20c6>] ? _spin_unlock_bh+0x16/0x20
+[   47.309881]  [<c0514d23>] tcp_rcv_state_process+0xe3/0x970
+[   47.309881]  [<c051bc98>] tcp_v4_do_rcv+0x178/0x3c0
+[   47.309881]  [<c051d331>] tcp_v4_rcv+0x541/0x740
+[   47.309881]  [<c04fec67>] ip_local_deliver_finish+0xa7/0x270
+[   47.309881]  [<c04feebf>] ip_local_deliver+0x8f/0xa0
+[   47.309881]  [<c04fe51b>] ip_rcv_finish+0xeb/0x380
+[   47.309881]  [<c04fe9ce>] ip_rcv+0x21e/0x2e0
+[   47.309881]  [<c04d9c1f>] netif_receive_skb+0x36f/0x5a0
+[   47.309881]  [<c010edc0>] ? nommu_sync_single_for_device+0x0/0x10
+[   47.309881]  [<f8a5d5c1>] rtl8169_rx_interrupt+0x91/0x4f0 [r8169]
+[   47.309881]  [<f8a5db5a>] rtl8169_poll+0x3a/0x1e0 [r8169]
+[   47.309881]  [<c059f2c4>] ? printk+0x1d/0x21
+[   47.309881]  [<c04da5cd>] net_rx_action+0xed/0x1d0
+[   47.309881]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   47.309881]  [<c01a5ee4>] ? handle_IRQ_event+0x54/0x150
+[   47.309881]  [<c01a9199>] ? move_native_irq+0x19/0x50
+[   47.309881]  [<c0159495>] do_softirq+0x45/0x50
+[   47.309881]  [<c01595e5>] irq_exit+0x65/0x70
+[   47.309881]  [<c05a6095>] do_IRQ+0x55/0xc0
+[   47.309881]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[   47.309881]  [<c0109c70>] common_interrupt+0x30/0x40
+[   47.309881]  [<c08000d8>] ? ip6_route_init+0x2d/0x1a8
+[   47.309881]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[   47.309881]  [<c01083d4>] cpu_idle+0x94/0xd0
+[   47.309881]  [<c058be32>] rest_init+0x62/0x70
+[   47.309881]  [<c07c88e5>] start_kernel+0x356/0x35c
+[   47.309881]  [<c07c83bb>] ? unknown_bootoption+0x0/0x19e
+[   47.309881]  [<c07c80bb>] i386_start_kernel+0xaa/0xb1
+[   47.309881] TIME: getnstimeofday called
+[   47.309881] TIME: timekeeping_get_ns() called
+[   47.309881] TIME: clock_read returned 4294904123, cycle_last: 4294904088, cycle_delta: 35
+[   47.309881] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 140008750
+[   47.309881] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 35, mult: 0, shift: 1024016187
+[   47.309881] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.309881] TIME: getnstimeofday IN loop: xtime has 1360264694 secs and 407368923 ns. 140002213 nsec read from timekeeping_get_ns()
+[   47.309881] TIME: getnstimeofday IN loop nsecs after arch_gettimeoffset read: 140002213
+[   47.309881] TIME: getnstimeofday after loop: xtime has 1360264694 secs and 407368923 ns.
+[   47.309881] TIME: getnstimeofday after, after adding loop: xtime has 1360264694 secs and 547371136 ns.
+[   47.309881] TIME ktime_to_ns vari test. ns: 1360264694547371136, jiffies: 4294904123, difference from last 1360264694547371136
+[   47.310986] TIME: timekeeping_get_ns() called
+[   47.310988] TIME: clock_read returned 4294904124, cycle_last: 4294904088, cycle_delta: 36
+[   47.310990] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 144009000
+[   47.310991] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 36, mult: 0, shift: 1024016186
+[   47.310993] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.312598] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #66
+[   47.312599] Call Trace:
+[   47.312601]  [<c0178599>] ktime_get_real+0x69/0x80
+[   47.312604]  [<c05900e0>] ? quirk_p64h2_1k_io+0x91/0xa3
+[   47.312607]  [<c04d3303>] seq_scale+0x73/0xb0
+[   47.312609]  [<c04d349b>] secure_tcp_sequence_number+0xcb/0xe0
+[   47.312612]  [<c051d8e1>] tcp_v4_conn_request+0x3b1/0x4d0
+[   47.312614]  [<c05a20c6>] ? _spin_unlock_bh+0x16/0x20
+[   47.312617]  [<c0514d23>] tcp_rcv_state_process+0xe3/0x970
+[   47.312620]  [<c051bc98>] tcp_v4_do_rcv+0x178/0x3c0
+[   47.312622]  [<c051d331>] tcp_v4_rcv+0x541/0x740
+[   47.312625]  [<c04fec67>] ip_local_deliver_finish+0xa7/0x270
+[   47.312627]  [<c04feebf>] ip_local_deliver+0x8f/0xa0
+[   47.312629]  [<c04fe51b>] ip_rcv_finish+0xeb/0x380
+[   47.312632]  [<c04fe9ce>] ip_rcv+0x21e/0x2e0
+[   47.312634]  [<c04d9c1f>] netif_receive_skb+0x36f/0x5a0
+[   47.312637]  [<c010edc0>] ? nommu_sync_single_for_device+0x0/0x10
+[   47.312641]  [<f8a5d5c1>] rtl8169_rx_interrupt+0x91/0x4f0 [r8169]
+[   47.312645]  [<f8a5db5a>] rtl8169_poll+0x3a/0x1e0 [r8169]
+[   47.312648]  [<c059f2c4>] ? printk+0x1d/0x21
+[   47.312650]  [<c04da5cd>] net_rx_action+0xed/0x1d0
+[   47.312653]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   47.312655]  [<c01a5ee4>] ? handle_IRQ_event+0x54/0x150
+[   47.312657]  [<c01a9199>] ? move_native_irq+0x19/0x50
+[   47.312660]  [<c0159495>] do_softirq+0x45/0x50
+[   47.312662]  [<c01595e5>] irq_exit+0x65/0x70
+[   47.312664]  [<c05a6095>] do_IRQ+0x55/0xc0
+[   47.312667]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[   47.312669]  [<c0109c70>] common_interrupt+0x30/0x40
+[   47.312672]  [<c08000d8>] ? ip6_route_init+0x2d/0x1a8
+[   47.312675]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[   47.312677]  [<c01083d4>] cpu_idle+0x94/0xd0
+[   47.312679]  [<c058be32>] rest_init+0x62/0x70
+[   47.312682]  [<c07c88e5>] start_kernel+0x356/0x35c
+[   47.312684]  [<c07c83bb>] ? unknown_bootoption+0x0/0x19e
+[   47.312687]  [<c07c80bb>] i386_start_kernel+0xaa/0xb1
+[   47.312688] TIME: ktime_get_real called for the 6845471961884131336th time
+[   47.312690] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #66
+[   47.312691] Call Trace:
+[   47.312693]  [<c01784e7>] getnstimeofday+0x387/0x3d0
+[   47.312696]  [<c010cb3f>] ? show_trace+0x1f/0x30
+[   47.312698]  [<c059f1ab>] ? dump_stack+0x73/0x7a
+[   47.312700]  [<c0178578>] ktime_get_real+0x48/0x80
+[   47.312703]  [<c05900e0>] ? quirk_p64h2_1k_io+0x91/0xa3
+[   47.312706]  [<c04d3303>] seq_scale+0x73/0xb0
+[   47.312708]  [<c04d349b>] secure_tcp_sequence_number+0xcb/0xe0
+[   47.312711]  [<c051d8e1>] tcp_v4_conn_request+0x3b1/0x4d0
+[   47.312713]  [<c05a20c6>] ? _spin_unlock_bh+0x16/0x20
+[   47.312716]  [<c0514d23>] tcp_rcv_state_process+0xe3/0x970
+[   47.312718]  [<c051bc98>] tcp_v4_do_rcv+0x178/0x3c0
+[   47.312721]  [<c051d331>] tcp_v4_rcv+0x541/0x740
+[   47.312724]  [<c04fec67>] ip_local_deliver_finish+0xa7/0x270
+[   47.312726]  [<c04feebf>] ip_local_deliver+0x8f/0xa0
+[   47.312728]  [<c04fe51b>] ip_rcv_finish+0xeb/0x380
+[   47.312730]  [<c04fe9ce>] ip_rcv+0x21e/0x2e0
+[   47.312733]  [<c04d9c1f>] netif_receive_skb+0x36f/0x5a0
+[   47.312736]  [<c010edc0>] ? nommu_sync_single_for_device+0x0/0x10
+[   47.312740]  [<f8a5d5c1>] rtl8169_rx_interrupt+0x91/0x4f0 [r8169]
+[   47.312744]  [<f8a5db5a>] rtl8169_poll+0x3a/0x1e0 [r8169]
+[   47.312747]  [<c059f2c4>] ? printk+0x1d/0x21
+[   47.312749]  [<c04da5cd>] net_rx_action+0xed/0x1d0
+[   47.312752]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   47.312754]  [<c01a5ee4>] ? handle_IRQ_event+0x54/0x150
+[   47.312756]  [<c01a9199>] ? move_native_irq+0x19/0x50
+[   47.312759]  [<c0159495>] do_softirq+0x45/0x50
+[   47.312761]  [<c01595e5>] irq_exit+0x65/0x70
+[   47.312763]  [<c05a6095>] do_IRQ+0x55/0xc0
+[   47.312766]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[   47.312768]  [<c0109c70>] common_interrupt+0x30/0x40
+[   47.312771]  [<c08000d8>] ? ip6_route_init+0x2d/0x1a8
+[   47.312773]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[   47.312776]  [<c01083d4>] cpu_idle+0x94/0xd0
+[   47.312778]  [<c058be32>] rest_init+0x62/0x70
+[   47.312781]  [<c07c88e5>] start_kernel+0x356/0x35c
+[   47.312783]  [<c07c83bb>] ? unknown_bootoption+0x0/0x19e
+[   47.312785]  [<c07c80bb>] i386_start_kernel+0xaa/0xb1
+[   47.312787] TIME: getnstimeofday called
+[   47.312788] TIME: timekeeping_get_ns() called
+[   47.312789] TIME: clock_read returned 4294904124, cycle_last: 4294904088, cycle_delta: 36
+[   47.312791] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 144009000
+[   47.312793] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 36, mult: 0, shift: 1024016186
+[   47.312795] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.312797] TIME: getnstimeofday IN loop: xtime has 1360264694 secs and 407368924 ns. 144002276 nsec read from timekeeping_get_ns()
+[   47.312798] TIME: getnstimeofday IN loop nsecs after arch_gettimeoffset read: 144002276
+[   47.312800] TIME: getnstimeofday after loop: xtime has 1360264694 secs and 407368924 ns.
+[   47.312802] TIME: getnstimeofday after, after adding loop: xtime has 1360264694 secs and 551371200 ns.
+[   47.312804] TIME ktime_to_ns vari test. ns: 1360264694551371200, jiffies: 4294904124, difference from last 4000064
+[   47.315213] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #66
+[   47.315215] Call Trace:
+[   47.315217]  [<c0178599>] ktime_get_real+0x69/0x80
+[   47.315219]  [<c059f2c4>] ? printk+0x1d/0x21
+[   47.315222]  [<c04d3303>] seq_scale+0x73/0xb0
+[   47.315224]  [<c04d349b>] secure_tcp_sequence_number+0xcb/0xe0
+[   47.315227]  [<c051d8e1>] tcp_v4_conn_request+0x3b1/0x4d0
+[   47.315229]  [<c05a20c6>] ? _spin_unlock_bh+0x16/0x20
+[   47.315232]  [<c0514d23>] tcp_rcv_state_process+0xe3/0x970
+[   47.315235]  [<c051bc98>] tcp_v4_do_rcv+0x178/0x3c0
+[   47.315237]  [<c051d331>] tcp_v4_rcv+0x541/0x740
+[   47.315240]  [<c04fec67>] ip_local_deliver_finish+0xa7/0x270
+[   47.315242]  [<c04feebf>] ip_local_deliver+0x8f/0xa0
+[   47.315244]  [<c04fe51b>] ip_rcv_finish+0xeb/0x380
+[   47.315246]  [<c04fe9ce>] ip_rcv+0x21e/0x2e0
+[   47.315249]  [<c04d9c1f>] netif_receive_skb+0x36f/0x5a0
+[   47.315252]  [<c010edc0>] ? nommu_sync_single_for_device+0x0/0x10
+[   47.315256]  [<f8a5d5c1>] rtl8169_rx_interrupt+0x91/0x4f0 [r8169]
+[   47.315260]  [<f8a5db5a>] rtl8169_poll+0x3a/0x1e0 [r8169]
+[   47.315263]  [<c059f2c4>] ? printk+0x1d/0x21
+[   47.315265]  [<c04da5cd>] net_rx_action+0xed/0x1d0
+[   47.315268]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   47.315270]  [<c01a5ee4>] ? handle_IRQ_event+0x54/0x150
+[   47.315272]  [<c01a9199>] ? move_native_irq+0x19/0x50
+[   47.315275]  [<c0159495>] do_softirq+0x45/0x50
+[   47.315277]  [<c01595e5>] irq_exit+0x65/0x70
+[   47.315279]  [<c05a6095>] do_IRQ+0x55/0xc0
+[   47.315282]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[   47.315284]  [<c0109c70>] common_interrupt+0x30/0x40
+[   47.315287]  [<c08000d8>] ? ip6_route_init+0x2d/0x1a8
+[   47.315289]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[   47.315292]  [<c01083d4>] cpu_idle+0x94/0xd0
+[   47.315294]  [<c058be32>] rest_init+0x62/0x70
+[   47.315297]  [<c07c88e5>] start_kernel+0x356/0x35c
+[   47.315299]  [<c07c83bb>] ? unknown_bootoption+0x0/0x19e
+[   47.315302]  [<c07c80bb>] i386_start_kernel+0xaa/0xb1
+[   47.315303] TIME: ktime_get_real called for the 6862744486397607945th time
+[   47.315305] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #66
+[   47.315306] Call Trace:
+[   47.315308]  [<c01784e7>] getnstimeofday+0x387/0x3d0
+[   47.315311]  [<c010cb3f>] ? show_trace+0x1f/0x30
+[   47.315313]  [<c059f1ab>] ? dump_stack+0x73/0x7a
+[   47.315315]  [<c0178578>] ktime_get_real+0x48/0x80
+[   47.315318]  [<c059f2c4>] ? printk+0x1d/0x21
+[   47.315320]  [<c04d3303>] seq_scale+0x73/0xb0
+[   47.315323]  [<c04d349b>] secure_tcp_sequence_number+0xcb/0xe0
+[   47.315325]  [<c051d8e1>] tcp_v4_conn_request+0x3b1/0x4d0
+[   47.315328]  [<c05a20c6>] ? _spin_unlock_bh+0x16/0x20
+[   47.315331]  [<c0514d23>] tcp_rcv_state_process+0xe3/0x970
+[   47.315333]  [<c051bc98>] tcp_v4_do_rcv+0x178/0x3c0
+[   47.315336]  [<c051d331>] tcp_v4_rcv+0x541/0x740
+[   47.315338]  [<c04fec67>] ip_local_deliver_finish+0xa7/0x270
+[   47.315341]  [<c04feebf>] ip_local_deliver+0x8f/0xa0
+[   47.315343]  [<c04fe51b>] ip_rcv_finish+0xeb/0x380
+[   47.315345]  [<c04fe9ce>] ip_rcv+0x21e/0x2e0
+[   47.315348]  [<c04d9c1f>] netif_receive_skb+0x36f/0x5a0
+[   47.315350]  [<c010edc0>] ? nommu_sync_single_for_device+0x0/0x10
+[   47.315355]  [<f8a5d5c1>] rtl8169_rx_interrupt+0x91/0x4f0 [r8169]
+[   47.315358]  [<f8a5db5a>] rtl8169_poll+0x3a/0x1e0 [r8169]
+[   47.315361]  [<c059f2c4>] ? printk+0x1d/0x21
+[   47.315364]  [<c04da5cd>] net_rx_action+0xed/0x1d0
+[   47.315366]  [<c0159338>] __do_softirq+0x98/0x1b0
+[   47.315368]  [<c01a5ee4>] ? handle_IRQ_event+0x54/0x150
+[   47.315371]  [<c01a9199>] ? move_native_irq+0x19/0x50
+[   47.315373]  [<c0159495>] do_softirq+0x45/0x50
+[   47.315375]  [<c01595e5>] irq_exit+0x65/0x70
+[   47.315378]  [<c05a6095>] do_IRQ+0x55/0xc0
+[   47.315380]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[   47.315383]  [<c0109c70>] common_interrupt+0x30/0x40
+[   47.315385]  [<c08000d8>] ? ip6_route_init+0x2d/0x1a8
+[   47.315388]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[   47.315390]  [<c01083d4>] cpu_idle+0x94/0xd0
+[   47.315393]  [<c058be32>] rest_init+0x62/0x70
+[   47.315395]  [<c07c88e5>] start_kernel+0x356/0x35c
+[   47.315398]  [<c07c83bb>] ? unknown_bootoption+0x0/0x19e
+[   47.315400]  [<c07c80bb>] i386_start_kernel+0xaa/0xb1
+[   47.315401] TIME: getnstimeofday called
+[   47.315402] TIME: timekeeping_get_ns() called
+[   47.315404] TIME: clock_read returned 4294904124, cycle_last: 4294904088, cycle_delta: 36
+[   47.315406] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 144009000
+[   47.315407] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 36, mult: 0, shift: 1024016186
+[   47.315409] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.315411] TIME: getnstimeofday IN loop: xtime has 1360264694 secs and 407368924 ns. 144002276 nsec read from timekeeping_get_ns()
+[   47.315413] TIME: getnstimeofday IN loop nsecs after arch_gettimeoffset read: 144002276
+[   47.315415] TIME: getnstimeofday after loop: xtime has 1360264694 secs and 407368924 ns.
+[   47.315416] TIME: getnstimeofday after, after adding loop: xtime has 1360264694 secs and 551371200 ns.
+[   47.315418] TIME ktime_to_ns vari test. ns: 1360264694551371200, jiffies: 4294904124, difference from last 0
+[   47.316438] TIME: timekeeping_get_ns() called
+[   47.316440] TIME: clock_read returned 4294904125, cycle_last: 4294904088, cycle_delta: 37
+[   47.316441] TIME: delta to ns using NSEC_PER_JIFFY of 4000250: 148009250
+[   47.316443] TIME: input to cyc2ns: timesource clcok: jiffies, cycle (delta): 37, mult: 0, shift: 1024016187
+[   47.316445] TIME: input to cyc2ns: clocksource: jiffies, clock-mult: 1024064000, clock-shift: 8
+[   47.317849] TIME ktime_to_ns vari test. ns: 1360264694555371263, jiffies: 4294904125, difference from last 4000063
+[   47.320258] TIME ktime_to_ns vari test. ns: 1360264694555371263, jiffies: 4294904125, difference from last 0
+[   47.322688] TIME ktime_to_ns vari test. ns: 1360264694559371327, jiffies: 4294904126, difference from last 4000064
+[   47.325110] TIME ktime_to_ns vari test. ns: 1360264694563371390, jiffies: 4294904127, difference from last 4000063
+[   47.327520] TIME ktime_to_ns vari test. ns: 1360264694563371390, jiffies: 4294904127, difference from last 0
+[   47.329941] TIME ktime_to_ns vari test. ns: 1360264694567371455, jiffies: 4294904128, difference from last 4000065
+[   47.332351] TIME ktime_to_ns vari test. ns: 1360264694567371455, jiffies: 4294904128, difference from last 0
