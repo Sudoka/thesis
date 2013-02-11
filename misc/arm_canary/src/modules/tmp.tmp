@@ -1,0 +1,2081 @@
+start_kernel+0xaa/0xb1
+[72562.411504] JIFFIES_READ: read #101200000 long value: 13842475377921074265
+[72562.411506] JIFFIES_READ: read #101200000 long value with cast: 18064473
+[72562.411508] JIFFIES_READ: read #101200000 long jiffies_64 value: 4313031769
+[72562.411510] JIFFIES_READ unsigned 32bit read #101200000 value: 18064473, 113a459
+[72562.411512] JIFFIES_READ unsigned 32bit 2nd read #101200000 value: 18064473, 113a459
+[72562.411514] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[72634.478883] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[72634.478886] Call Trace:
+[72634.478889]  [<c0179dea>] jiffies_read+0x4a/0x130
+[72634.478893]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[72634.478896]  [<c0177366>] update_wall_time+0x26/0x6b0
+[72634.478905]  [<c01619cb>] do_timer+0x1b/0x30
+[72634.478908]  [<c017c37a>] tick_periodic+0x6a/0x80
+[72634.478911]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[72634.478914]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[72634.478917]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[72634.478920]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[72634.478923]  [<c01a8014>] handle_level_irq+0x74/0x100
+[72634.478926]  [<c010bb6d>] handle_irq+0x1d/0x30
+[72634.478929]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[72634.478933]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[72634.478936]  [<c0109c70>] common_interrupt+0x30/0x40
+[72634.478939]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[72634.478942]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[72634.478945]  [<c01083d4>] cpu_idle+0x94/0xd0
+[72634.478949]  [<c058b952>] rest_init+0x62/0x70
+[72634.478952]  [<c07c68e5>] start_kernel+0x356/0x35c
+[72634.478955]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[72634.478958]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[72634.478961] JIFFIES_READ: read #101300000 long value: 72632210025146
+[72634.478962] JIFFIES_READ: read #101300000 long value with cast: 18082490
+[72634.478964] JIFFIES_READ: read #101300000 long jiffies_64 value: 4313049786
+[72634.478966] JIFFIES_READ unsigned 32bit read #101300000 value: 18082490, 113eaba
+[72634.478969] JIFFIES_READ unsigned 32bit 2nd read #101300000 value: 18082490, 113eaba
+[72634.478971] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[72706.179352] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[72706.179354] Call Trace:
+[72706.179357]  [<c0179dea>] jiffies_read+0x4a/0x130
+[72706.179360]  [<c0177dcb>] ktime_get+0x6b/0x100
+[72706.179360]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[72706.179360]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[72706.179360]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[72706.179360]  [<c015927c>] irq_enter+0x4c/0x70
+[72706.179360]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[72706.179360]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[72706.179360]  [<c0109c70>] common_interrupt+0x30/0x40
+[72706.179360]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[72706.179360]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[72706.179360]  [<c01083d4>] cpu_idle+0x94/0xd0
+[72706.179360]  [<c058b952>] rest_init+0x62/0x70
+[72706.179360]  [<c07c68e5>] start_kernel+0x356/0x35c
+[72706.179360]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[72706.179360]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[72706.179360] JIFFIES_READ: read #101400000 long value: 18100412
+[72706.179360] JIFFIES_READ: read #101400000 long value with cast: 18100412
+[72706.179360] JIFFIES_READ: read #101400000 long jiffies_64 value: 4313067708
+[72706.179360] JIFFIES_READ unsigned 32bit read #101400000 value: 18100412, 11430bc
+[72706.179360] JIFFIES_READ unsigned 32bit 2nd read #101400000 value: 18100412, 11430bc
+[72706.179360] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[72778.075845] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[72778.075847] Call Trace:
+[72778.075851]  [<c0179dea>] jiffies_read+0x4a/0x130
+[72778.075853]  [<c0177dcb>] ktime_get+0x6b/0x100
+[72778.075853]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[72778.075853]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[72778.075853]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[72778.075853]  [<c015927c>] irq_enter+0x4c/0x70
+[72778.075853]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[72778.075853]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[72778.075853]  [<c0109c70>] common_interrupt+0x30/0x40
+[72778.075853]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[72778.075853]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[72778.075853]  [<c01083d4>] cpu_idle+0x94/0xd0
+[72778.075853]  [<c058b952>] rest_init+0x62/0x70
+[72778.075853]  [<c07c68e5>] start_kernel+0x356/0x35c
+[72778.075853]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[72778.075853]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[72778.075853] JIFFIES_READ: read #101500000 long value: 18118385
+[72778.075853] JIFFIES_READ: read #101500000 long value with cast: 18118385
+[72778.075853] JIFFIES_READ: read #101500000 long jiffies_64 value: 4313085681
+[72778.075853] JIFFIES_READ unsigned 32bit read #101500000 value: 18118385, 11476f1
+[72778.075853] JIFFIES_READ unsigned 32bit 2nd read #101500000 value: 18118385, 11476f1
+[72778.075853] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[72850.372376] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[72850.372378] Call Trace:
+[72850.372381]  [<c0179dea>] jiffies_read+0x4a/0x130
+[72850.372385]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[72850.372388]  [<c0177366>] update_wall_time+0x26/0x6b0
+[72850.372392]  [<c01619cb>] do_timer+0x1b/0x30
+[72850.372395]  [<c017c37a>] tick_periodic+0x6a/0x80
+[72850.372398]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[72850.372401]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[72850.372404]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[72850.372407]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[72850.372410]  [<c01a8014>] handle_level_irq+0x74/0x100
+[72850.372413]  [<c010bb6d>] handle_irq+0x1d/0x30
+[72850.372417]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[72850.372420]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[72850.372423]  [<c0109c70>] common_interrupt+0x30/0x40
+[72850.372426]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[72850.372429]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[72850.372433]  [<c01083d4>] cpu_idle+0x94/0xd0
+[72850.372436]  [<c058b952>] rest_init+0x62/0x70
+[72850.372440]  [<c07c68e5>] start_kernel+0x356/0x35c
+[72850.372443]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[72850.372446]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[72850.372448] JIFFIES_READ: read #101600000 long value: 72846958443916
+[72850.372450] JIFFIES_READ: read #101600000 long value with cast: 18136460
+[72850.372452] JIFFIES_READ: read #101600000 long jiffies_64 value: 4313103756
+[72850.372454] JIFFIES_READ unsigned 32bit read #101600000 value: 18136460, 114bd8c
+[72850.372457] JIFFIES_READ unsigned 32bit 2nd read #101600000 value: 18136460, 114bd8c
+[72850.372459] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[72922.464868] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[72922.464870] Call Trace:
+[72922.464874]  [<c0179dea>] jiffies_read+0x4a/0x130
+[72922.464877]  [<c0177dcb>] ktime_get+0x6b/0x100
+[72922.464877]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[72922.464877]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[72922.464877]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[72922.464877]  [<c015927c>] irq_enter+0x4c/0x70
+[72922.464877]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[72922.464877]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[72922.464877]  [<c0109c70>] common_interrupt+0x30/0x40
+[72922.464877]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[72922.464877]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[72922.464877]  [<c01083d4>] cpu_idle+0x94/0xd0
+[72922.464877]  [<c058b952>] rest_init+0x62/0x70
+[72922.464877]  [<c07c68e5>] start_kernel+0x356/0x35c
+[72922.464877]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[72922.464877]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[72922.464877] JIFFIES_READ: read #101700000 long value: 18154480
+[72922.464877] JIFFIES_READ: read #101700000 long value with cast: 18154480
+[72922.464877] JIFFIES_READ: read #101700000 long jiffies_64 value: 4313121776
+[72922.464877] JIFFIES_READ unsigned 32bit read #101700000 value: 18154480, 11503f0
+[72922.464877] JIFFIES_READ unsigned 32bit 2nd read #101700000 value: 18154480, 11503f0
+[72922.464877] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[72994.465368] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[72994.465370] Call Trace:
+[72994.465374]  [<c0179dea>] jiffies_read+0x4a/0x130
+[72994.465376]  [<c0177dcb>] ktime_get+0x6b/0x100
+[72994.465376]  [<c017d73e>] tick_check_idle+0x3e/0xf0
+[72994.465376]  [<c015927c>] irq_enter+0x4c/0x70
+[72994.465376]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[72994.465376]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[72994.465376]  [<c0109c70>] common_interrupt+0x30/0x40
+[72994.465376]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[72994.465376]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[72994.465376]  [<c01083d4>] cpu_idle+0x94/0xd0
+[72994.465376]  [<c058b952>] rest_init+0x62/0x70
+[72994.465376]  [<c07c68e5>] start_kernel+0x356/0x35c
+[72994.465376]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[72994.465376]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[72994.465376] JIFFIES_READ: read #101800000 long value: 18446744069432756799
+[72994.465376] JIFFIES_READ: read #101800000 long value with cast: 18172479
+[72994.465376] JIFFIES_READ: read #101800000 long jiffies_64 value: 4313139775
+[72994.465376] JIFFIES_READ unsigned 32bit read #101800000 value: 18172479, 1154a3f
+[72994.465376] JIFFIES_READ unsigned 32bit 2nd read #101800000 value: 18172479, 1154a3f
+[72994.465376] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[73066.621891] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[73066.621893] Call Trace:
+[73066.621897]  [<c0179dea>] jiffies_read+0x4a/0x130
+[73066.621900]  [<c0177dcb>] ktime_get+0x6b/0x100
+[73066.621903]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[73066.621906]  [<c0149e91>] scheduler_tick+0x31/0x290
+[73066.621910]  [<c01aa289>] ? rcu_check_callbacks+0x69/0xf0
+[73066.621913]  [<c0161a47>] update_process_times+0x47/0x60
+[73066.621916]  [<c017c33a>] tick_periodic+0x2a/0x80
+[73066.621919]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[73066.621922]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[73066.621925]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[73066.621928]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[73066.621931]  [<c01a8014>] handle_level_irq+0x74/0x100
+[73066.621934]  [<c010bb6d>] handle_irq+0x1d/0x30
+[73066.621937]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[73066.621940]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[73066.621943]  [<c0109c70>] common_interrupt+0x30/0x40
+[73066.621946]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[73066.621950]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[73066.621953]  [<c01083d4>] cpu_idle+0x94/0xd0
+[73066.621956]  [<c058b952>] rest_init+0x62/0x70
+[73066.621959]  [<c07c68e5>] start_kernel+0x356/0x35c
+[73066.621962]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[73066.621966]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[73066.621968] JIFFIES_READ: read #101900000 long value: 575543808183
+[73066.621970] JIFFIES_READ: read #101900000 long value with cast: 18190519
+[73066.621972] JIFFIES_READ: read #101900000 long jiffies_64 value: 4313157815
+[73066.621974] JIFFIES_READ unsigned 32bit read #101900000 value: 18190519, 11590b7
+[73066.621976] JIFFIES_READ unsigned 32bit 2nd read #101900000 value: 18190519, 11590b7
+[73066.621978] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[73138.742398] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[73138.742400] Call Trace:
+[73138.742404]  [<c0179dea>] jiffies_read+0x4a/0x130
+[73138.742407]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[73138.742411]  [<c0177366>] update_wall_time+0x26/0x6b0
+[73138.742414]  [<c01619cb>] do_timer+0x1b/0x30
+[73138.742417]  [<c017c37a>] tick_periodic+0x6a/0x80
+[73138.742420]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[73138.742423]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[73138.742426]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[73138.742429]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[73138.742432]  [<c01a8014>] handle_level_irq+0x74/0x100
+[73138.742435]  [<c010bb6d>] handle_irq+0x1d/0x30
+[73138.742439]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[73138.742442]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[73138.742445]  [<c0109c70>] common_interrupt+0x30/0x40
+[73138.742448]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[73138.742451]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[73138.742455]  [<c01083d4>] cpu_idle+0x94/0xd0
+[73138.742458]  [<c058b952>] rest_init+0x62/0x70
+[73138.742461]  [<c07c68e5>] start_kernel+0x356/0x35c
+[73138.742464]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[73138.742468]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[73138.742470] JIFFIES_READ: read #102000000 long value: 73134721324836
+[73138.742472] JIFFIES_READ: read #102000000 long value with cast: 18208548
+[73138.742474] JIFFIES_READ: read #102000000 long jiffies_64 value: 4313175844
+[73138.742476] JIFFIES_READ unsigned 32bit read #102000000 value: 18208548, 115d724
+[73138.742478] JIFFIES_READ unsigned 32bit 2nd read #102000000 value: 18208548, 115d724
+[73138.742480] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[73210.850892] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[73210.850894] Call Trace:
+[73210.850897]  [<c0179dea>] jiffies_read+0x4a/0x130
+[73210.850900]  [<c0177dcb>] ktime_get+0x6b/0x100
+[73210.850900]  [<c017d73e>] tick_check_idle+0x3e/0xf0
+[73210.850900]  [<c015927c>] irq_enter+0x4c/0x70
+[73210.850900]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[73210.850900]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[73210.850900]  [<c0109c70>] common_interrupt+0x30/0x40
+[73210.850900]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[73210.850900]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[73210.850900]  [<c01083d4>] cpu_idle+0x94/0xd0
+[73210.850900]  [<c058b952>] rest_init+0x62/0x70
+[73210.850900]  [<c07c68e5>] start_kernel+0x356/0x35c
+[73210.850900]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[73210.850900]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[73210.850900] JIFFIES_READ: read #102100000 long value: 18446744069432810892
+[73210.850900] JIFFIES_READ: read #102100000 long value with cast: 18226572
+[73210.850900] JIFFIES_READ: read #102100000 long jiffies_64 value: 4313193868
+[73210.850900] JIFFIES_READ unsigned 32bit read #102100000 value: 18226572, 1161d8c
+[73210.850900] JIFFIES_READ unsigned 32bit 2nd read #102100000 value: 18226572, 1161d8c
+[73210.850900] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[73282.895407] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[73282.895409] Call Trace:
+[73282.895412]  [<c0179dea>] jiffies_read+0x4a/0x130
+[73282.895416]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[73282.895419]  [<c0177366>] update_wall_time+0x26/0x6b0
+[73282.895423]  [<c01619cb>] do_timer+0x1b/0x30
+[73282.895426]  [<c017c37a>] tick_periodic+0x6a/0x80
+[73282.895429]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[73282.895432]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[73282.895435]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[73282.895438]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[73282.895441]  [<c01a8014>] handle_level_irq+0x74/0x100
+[73282.895444]  [<c010bb6d>] handle_irq+0x1d/0x30
+[73282.895447]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[73282.895451]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[73282.895454]  [<c0109c70>] common_interrupt+0x30/0x40
+[73282.895457]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[73282.895460]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[73282.895464]  [<c01083d4>] cpu_idle+0x94/0xd0
+[73282.895467]  [<c058b952>] rest_init+0x62/0x70
+[73282.895470]  [<c07c68e5>] start_kernel+0x356/0x35c
+[73282.895473]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[73282.895477]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[73282.895479] JIFFIES_READ: read #102200000 long value: 73280750248936
+[73282.895481] JIFFIES_READ: read #102200000 long value with cast: 18244584
+[73282.895483] JIFFIES_READ: read #102200000 long jiffies_64 value: 4313211880
+[73282.895485] JIFFIES_READ unsigned 32bit read #102200000 value: 18244584, 11663e8
+[73282.895487] JIFFIES_READ unsigned 32bit 2nd read #102200000 value: 18244584, 11663e8
+[73282.895489] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[73354.879893] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[73354.879895] Call Trace:
+[73354.879898]  [<c0179dea>] jiffies_read+0x4a/0x130
+[73354.879901]  [<c0177dcb>] ktime_get+0x6b/0x100
+[73354.879901]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[73354.879901]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[73354.879901]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[73354.879901]  [<c015927c>] irq_enter+0x4c/0x70
+[73354.879901]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[73354.879901]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[73354.879901]  [<c0109c70>] common_interrupt+0x30/0x40
+[73354.879901]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[73354.879901]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[73354.879901]  [<c01083d4>] cpu_idle+0x94/0xd0
+[73354.879901]  [<c058b952>] rest_init+0x62/0x70
+[73354.879901]  [<c07c68e5>] start_kernel+0x356/0x35c
+[73354.879901]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[73354.879901]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[73354.879901] JIFFIES_READ: read #102300000 long value: 18262577
+[73354.879901] JIFFIES_READ: read #102300000 long value with cast: 18262577
+[73354.879901] JIFFIES_READ: read #102300000 long jiffies_64 value: 4313229873
+[73354.879901] JIFFIES_READ unsigned 32bit read #102300000 value: 18262577, 116aa31
+[73354.879901] JIFFIES_READ unsigned 32bit 2nd read #102300000 value: 18262577, 116aa31
+[73354.879901] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[73427.072404] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[73427.072406] Call Trace:
+[73427.072410]  [<c0179dea>] jiffies_read+0x4a/0x130
+[73427.072413]  [<c0177dcb>] ktime_get+0x6b/0x100
+[73427.072413]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[73427.072413]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[73427.072413]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[73427.072413]  [<c015927c>] irq_enter+0x4c/0x70
+[73427.072413]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[73427.072413]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[73427.072413]  [<c0109c70>] common_interrupt+0x30/0x40
+[73427.072413]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[73427.072413]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[73427.072413]  [<c01083d4>] cpu_idle+0x94/0xd0
+[73427.072413]  [<c058b952>] rest_init+0x62/0x70
+[73427.072413]  [<c07c68e5>] start_kernel+0x356/0x35c
+[73427.072413]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[73427.072413]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[73427.072413] JIFFIES_READ: read #102400000 long value: 18280624
+[73427.072413] JIFFIES_READ: read #102400000 long value with cast: 18280624
+[73427.072413] JIFFIES_READ: read #102400000 long jiffies_64 value: 4313247920
+[73427.072413] JIFFIES_READ unsigned 32bit read #102400000 value: 18280624, 116f0b0
+[73427.072413] JIFFIES_READ unsigned 32bit 2nd read #102400000 value: 18280624, 116f0b0
+[73427.072413] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[73499.296918] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[73499.296921] Call Trace:
+[73499.296924]  [<c0179dea>] jiffies_read+0x4a/0x130
+[73499.296926]  [<c0177dcb>] ktime_get+0x6b/0x100
+[73499.296926]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[73499.296926]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[73499.296926]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[73499.296926]  [<c015927c>] irq_enter+0x4c/0x70
+[73499.296926]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[73499.296926]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[73499.296926]  [<c0109c70>] common_interrupt+0x30/0x40
+[73499.296926]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[73499.296926]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[73499.296926]  [<c01083d4>] cpu_idle+0x94/0xd0
+[73499.296926]  [<c058b952>] rest_init+0x62/0x70
+[73499.296926]  [<c07c68e5>] start_kernel+0x356/0x35c
+[73499.296926]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[73499.296926]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[73499.296926] JIFFIES_READ: read #102500000 long value: 18298679
+[73499.296926] JIFFIES_READ: read #102500000 long value with cast: 18298679
+[73499.296926] JIFFIES_READ: read #102500000 long jiffies_64 value: 4313265975
+[73499.296926] JIFFIES_READ unsigned 32bit read #102500000 value: 18298679, 1173737
+[73499.296926] JIFFIES_READ unsigned 32bit 2nd read #102500000 value: 18298679, 1173737
+[73499.296926] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[73571.357422] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[73571.357424] Call Trace:
+[73571.357427]  [<c0179dea>] jiffies_read+0x4a/0x130
+[73571.357430]  [<c0177dcb>] ktime_get+0x6b/0x100
+[73571.357430]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[73571.357430]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[73571.357430]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[73571.357430]  [<c015927c>] irq_enter+0x4c/0x70
+[73571.357430]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[73571.357430]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[73571.357430]  [<c0109c70>] common_interrupt+0x30/0x40
+[73571.357430]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[73571.357430]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[73571.357430]  [<c01083d4>] cpu_idle+0x94/0xd0
+[73571.357430]  [<c058b952>] rest_init+0x62/0x70
+[73571.357430]  [<c07c68e5>] start_kernel+0x356/0x35c
+[73571.357430]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[73571.357430]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[73571.357430] JIFFIES_READ: read #102600000 long value: 18316693
+[73571.357430] JIFFIES_READ: read #102600000 long value with cast: 18316693
+[73571.357430] JIFFIES_READ: read #102600000 long jiffies_64 value: 4313283989
+[73571.357430] JIFFIES_READ unsigned 32bit read #102600000 value: 18316693, 1177d95
+[73571.357430] JIFFIES_READ unsigned 32bit 2nd read #102600000 value: 18316693, 1177d95
+[73571.357430] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[73643.145921] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[73643.145923] Call Trace:
+[73643.145927]  [<c0179dea>] jiffies_read+0x4a/0x130
+[73643.145930]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[73643.145934]  [<c0177366>] update_wall_time+0x26/0x6b0
+[73643.145937]  [<c01619cb>] do_timer+0x1b/0x30
+[73643.145940]  [<c017c37a>] tick_periodic+0x6a/0x80
+[73643.145943]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[73643.145946]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[73643.145949]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[73643.145952]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[73643.145955]  [<c01a8014>] handle_level_irq+0x74/0x100
+[73643.145958]  [<c010bb6d>] handle_irq+0x1d/0x30
+[73643.145962]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[73643.145965]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[73643.145968]  [<c0109c70>] common_interrupt+0x30/0x40
+[73643.145971]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[73643.145974]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[73643.145978]  [<c01083d4>] cpu_idle+0x94/0xd0
+[73643.145981]  [<c058b952>] rest_init+0x62/0x70
+[73643.145984]  [<c07c68e5>] start_kernel+0x356/0x35c
+[73643.145987]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[73643.145991]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[73643.145993] JIFFIES_READ: read #102700000 long value: 73641527591857
+[73643.145995] JIFFIES_READ: read #102700000 long value with cast: 18334641
+[73643.145997] JIFFIES_READ: read #102700000 long jiffies_64 value: 4313301937
+[73643.145999] JIFFIES_READ unsigned 32bit read #102700000 value: 18334641, 117c3b1
+[73643.146001] JIFFIES_READ unsigned 32bit 2nd read #102700000 value: 18334641, 117c3b1
+[73643.146003] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[73715.090404] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[73715.090406] Call Trace:
+[73715.090410]  [<c0179dea>] jiffies_read+0x4a/0x130
+[73715.090413]  [<c0177dcb>] ktime_get+0x6b/0x100
+[73715.090413]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[73715.090413]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[73715.090413]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[73715.090413]  [<c015927c>] irq_enter+0x4c/0x70
+[73715.090413]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[73715.090413]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[73715.090413]  [<c0109c70>] common_interrupt+0x30/0x40
+[73715.090413]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[73715.090413]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[73715.090413]  [<c01083d4>] cpu_idle+0x94/0xd0
+[73715.090413]  [<c058b952>] rest_init+0x62/0x70
+[73715.090413]  [<c07c68e5>] start_kernel+0x356/0x35c
+[73715.090413]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[73715.090413]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[73715.090413] JIFFIES_READ: read #102800000 long value: 18352624
+[73715.090413] JIFFIES_READ: read #102800000 long value with cast: 18352624
+[73715.090413] JIFFIES_READ: read #102800000 long jiffies_64 value: 4313319920
+[73715.090413] JIFFIES_READ unsigned 32bit read #102800000 value: 18352624, 11809f0
+[73715.090413] JIFFIES_READ unsigned 32bit 2nd read #102800000 value: 18352624, 11809f0
+[73715.090413] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[73786.942908] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[73786.942910] Call Trace:
+[73786.942913]  [<c013ff75>] ? __wake_up+0x45/0x60
+[73786.942916]  [<c0179dea>] jiffies_read+0x4a/0x130
+[73786.942920]  [<c016a2b0>] ? insert_work+0x60/0xb0
+[73786.942923]  [<c0177366>] update_wall_time+0x26/0x6b0
+[73786.942926]  [<c05a196f>] ? _spin_lock_irqsave+0x2f/0x50
+[73786.942930]  [<c01619cb>] do_timer+0x1b/0x30
+[73786.942932]  [<c017c37a>] tick_periodic+0x6a/0x80
+[73786.942935]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[73786.942939]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[73786.942942]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[73786.942944]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[73786.942948]  [<c01a8014>] handle_level_irq+0x74/0x100
+[73786.942950]  [<c010bb6d>] handle_irq+0x1d/0x30
+[73786.942953]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[73786.942957]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[73786.942960]  [<c0109c70>] common_interrupt+0x30/0x40
+[73786.942963]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[73786.942966]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[73786.942969]  [<c01083d4>] cpu_idle+0x94/0xd0
+[73786.942972]  [<c058b952>] rest_init+0x62/0x70
+[73786.942975]  [<c07c68e5>] start_kernel+0x356/0x35c
+[73786.942978]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[73786.942982]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[73786.942984] JIFFIES_READ: read #102900000 long value: 13841429381586112540
+[73786.942986] JIFFIES_READ: read #102900000 long value with cast: 18370588
+[73786.942988] JIFFIES_READ: read #102900000 long jiffies_64 value: 4313337884
+[73786.942990] JIFFIES_READ unsigned 32bit read #102900000 value: 18370588, 118501c
+[73786.942992] JIFFIES_READ unsigned 32bit 2nd read #102900000 value: 18370588, 118501c
+[73786.942994] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[73859.091419] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[73859.091421] Call Trace:
+[73859.091425]  [<c0179dea>] jiffies_read+0x4a/0x130
+[73859.091428]  [<c0177dcb>] ktime_get+0x6b/0x100
+[73859.091431]  [<c017d867>] tick_nohz_stop_sched_tick+0x77/0x440
+[73859.091434]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[73859.091438]  [<c01083b4>] cpu_idle+0x74/0xd0
+[73859.091441]  [<c058b952>] rest_init+0x62/0x70
+[73859.091444]  [<c07c68e5>] start_kernel+0x356/0x35c
+[73859.091447]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[73859.091451]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[73859.091453] JIFFIES_READ: read #103000000 long value: 13868623430877222543
+[73859.091455] JIFFIES_READ: read #103000000 long value with cast: 18388623
+[73859.091457] JIFFIES_READ: read #103000000 long jiffies_64 value: 4313355919
+[73859.091459] JIFFIES_READ unsigned 32bit read #103000000 value: 18388623, 118968f
+[73859.091461] JIFFIES_READ unsigned 32bit 2nd read #103000000 value: 18388623, 118968f
+[73859.091463] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[73931.023915] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[73931.023917] Call Trace:
+[73931.023920]  [<c0179dea>] jiffies_read+0x4a/0x130
+[73931.023923]  [<c0177dcb>] ktime_get+0x6b/0x100
+[73931.023926]  [<c017d867>] tick_nohz_stop_sched_tick+0x77/0x440
+[73931.023930]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[73931.023933]  [<c01083b4>] cpu_idle+0x74/0xd0
+[73931.023937]  [<c058b952>] rest_init+0x62/0x70
+[73931.023940]  [<c07c68e5>] start_kernel+0x356/0x35c
+[73931.023943]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[73931.023946]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[73931.023948] JIFFIES_READ: read #103100000 long value: 13868623430877240525
+[73931.023950] JIFFIES_READ: read #103100000 long value with cast: 18406605
+[73931.023952] JIFFIES_READ: read #103100000 long jiffies_64 value: 4313373901
+[73931.023955] JIFFIES_READ unsigned 32bit read #103100000 value: 18406605, 118dccd
+[73931.023957] JIFFIES_READ unsigned 32bit 2nd read #103100000 value: 18406605, 118dccd
+[73931.023959] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[74003.084416] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[74003.084418] Call Trace:
+[74003.084422]  [<c0179dea>] jiffies_read+0x4a/0x130
+[74003.084425]  [<c0177dcb>] ktime_get+0x6b/0x100
+[74003.084428]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[74003.084431]  [<c0149e91>] scheduler_tick+0x31/0x290
+[74003.084434]  [<c01aa289>] ? rcu_check_callbacks+0x69/0xf0
+[74003.084438]  [<c0161a47>] update_process_times+0x47/0x60
+[74003.084441]  [<c017c33a>] tick_periodic+0x2a/0x80
+[74003.084443]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[74003.084447]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[74003.084450]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[74003.084453]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[74003.084456]  [<c01a8014>] handle_level_irq+0x74/0x100
+[74003.084458]  [<c010bb6d>] handle_irq+0x1d/0x30
+[74003.084462]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[74003.084465]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[74003.084468]  [<c0109c70>] common_interrupt+0x30/0x40
+[74003.084471]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[74003.084474]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[74003.084477]  [<c01083d4>] cpu_idle+0x94/0xd0
+[74003.084480]  [<c058b952>] rest_init+0x62/0x70
+[74003.084484]  [<c07c68e5>] start_kernel+0x356/0x35c
+[74003.084487]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[74003.084490]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[74003.084492] JIFFIES_READ: read #103200000 long value: 575544042284
+[74003.084494] JIFFIES_READ: read #103200000 long value with cast: 18424620
+[74003.084496] JIFFIES_READ: read #103200000 long jiffies_64 value: 4313391916
+[74003.084498] JIFFIES_READ unsigned 32bit read #103200000 value: 18424620, 119232c
+[74003.084500] JIFFIES_READ unsigned 32bit 2nd read #103200000 value: 18424620, 119232c
+[74003.084502] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[74075.300916] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[74075.300918] Call Trace:
+[74075.300922]  [<c0179dea>] jiffies_read+0x4a/0x130
+[74075.300924]  [<c0177dcb>] ktime_get+0x6b/0x100
+[74075.300924]  [<c017d73e>] tick_check_idle+0x3e/0xf0
+[74075.300924]  [<c015927c>] irq_enter+0x4c/0x70
+[74075.300924]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[74075.300924]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[74075.300924]  [<c0109c70>] common_interrupt+0x30/0x40
+[74075.300924]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[74075.300924]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[74075.300924]  [<c01083d4>] cpu_idle+0x94/0xd0
+[74075.300924]  [<c058b952>] rest_init+0x62/0x70
+[74075.300924]  [<c07c68e5>] start_kernel+0x356/0x35c
+[74075.300924]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[74075.300924]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[74075.300924] JIFFIES_READ: read #103300000 long value: 18446744069433026991
+[74075.300924] JIFFIES_READ: read #103300000 long value with cast: 18442671
+[74075.300924] JIFFIES_READ: read #103300000 long jiffies_64 value: 4313409967
+[74075.300924] JIFFIES_READ unsigned 32bit read #103300000 value: 18442671, 11969af
+[74075.300924] JIFFIES_READ unsigned 32bit 2nd read #103300000 value: 18442671, 11969af
+[74075.300924] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[74147.421437] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[74147.421440] Call Trace:
+[74147.421446]  [<c013ff75>] ? __wake_up+0x45/0x60
+[74147.421450]  [<c0179dea>] jiffies_read+0x4a/0x130
+[74147.421453]  [<c016a2b0>] ? insert_work+0x60/0xb0
+[74147.421457]  [<c0177366>] update_wall_time+0x26/0x6b0
+[74147.421460]  [<c05a196f>] ? _spin_lock_irqsave+0x2f/0x50
+[74147.421464]  [<c01619cb>] do_timer+0x1b/0x30
+[74147.421467]  [<c017c37a>] tick_periodic+0x6a/0x80
+[74147.421470]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[74147.421473]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[74147.421477]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[74147.421480]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[74147.421483]  [<c01a8014>] handle_level_irq+0x74/0x100
+[74147.421486]  [<c010bb6d>] handle_irq+0x1d/0x30
+[74147.421489]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[74147.421493]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[74147.421496]  [<c0109c70>] common_interrupt+0x30/0x40
+[74147.421499]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[74147.421502]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[74147.421505]  [<c01083d4>] cpu_idle+0x94/0xd0
+[74147.421509]  [<c058b952>] rest_init+0x62/0x70
+[74147.421513]  [<c07c68e5>] start_kernel+0x356/0x35c
+[74147.421516]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[74147.421520]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[74147.421522] JIFFIES_READ: read #103400000 long value: 13841429381586202654
+[74147.421524] JIFFIES_READ: read #103400000 long value with cast: 18460702
+[74147.421526] JIFFIES_READ: read #103400000 long jiffies_64 value: 4313427998
+[74147.421528] JIFFIES_READ unsigned 32bit read #103400000 value: 18460702, 119b01e
+[74147.421530] JIFFIES_READ unsigned 32bit 2nd read #103400000 value: 18460702, 119b01e
+[74147.421532] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[74219.621936] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[74219.621938] Call Trace:
+[74219.621942]  [<c0179dea>] jiffies_read+0x4a/0x130
+[74219.621944]  [<c010f088>] ? sched_clock+0x8/0x10
+[74219.621944]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[74219.621944]  [<c0177dcb>] ktime_get+0x6b/0x100
+[74219.621944]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[74219.621944]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[74219.621944]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[74219.621944]  [<c015927c>] irq_enter+0x4c/0x70
+[74219.621944]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[74219.621944]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[74219.621944]  [<c0109c70>] common_interrupt+0x30/0x40
+[74219.621944]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[74219.621944]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[74219.621944]  [<c01083d4>] cpu_idle+0x94/0xd0
+[74219.621944]  [<c058b952>] rest_init+0x62/0x70
+[74219.621944]  [<c07c68e5>] start_kernel+0x356/0x35c
+[74219.621944]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[74219.621944]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[74219.621944] JIFFIES_READ: read #103500000 long value: 13841598654837290653
+[74219.621944] JIFFIES_READ: read #103500000 long value with cast: 18478749
+[74219.621944] JIFFIES_READ: read #103500000 long jiffies_64 value: 4313446045
+[74219.621944] JIFFIES_READ unsigned 32bit read #103500000 value: 18478749, 119f69d
+[74219.621944] JIFFIES_READ unsigned 32bit 2nd read #103500000 value: 18478749, 119f69d
+[74219.621944] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[74291.838449] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[74291.838451] Call Trace:
+[74291.838455]  [<c0179dea>] jiffies_read+0x4a/0x130
+[74291.838457]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[74291.838457]  [<c0177dcb>] ktime_get+0x6b/0x100
+[74291.838457]  [<c017d73e>] tick_check_idle+0x3e/0xf0
+[74291.838457]  [<c015927c>] irq_enter+0x4c/0x70
+[74291.838457]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[74291.838457]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[74291.838457]  [<c0109c70>] common_interrupt+0x30/0x40
+[74291.838457]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[74291.838457]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[74291.838457]  [<c01083d4>] cpu_idle+0x94/0xd0
+[74291.838457]  [<c058b952>] rest_init+0x62/0x70
+[74291.838457]  [<c07c68e5>] start_kernel+0x356/0x35c
+[74291.838457]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[74291.838457]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[74291.838457] JIFFIES_READ: read #103600000 long value: 13868622606243609890
+[74291.838457] JIFFIES_READ: read #103600000 long value with cast: 18496802
+[74291.838457] JIFFIES_READ: read #103600000 long jiffies_64 value: 4313464098
+[74291.838457] JIFFIES_READ unsigned 32bit read #103600000 value: 18496802, 11a3d22
+[74291.838457] JIFFIES_READ unsigned 32bit 2nd read #103600000 value: 18496802, 11a3d22
+[74291.838457] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[74363.842949] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[74363.842951] Call Trace:
+[74363.842955]  [<c0179dea>] jiffies_read+0x4a/0x130
+[74363.842957]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[74363.842957]  [<c0177dcb>] ktime_get+0x6b/0x100
+[74363.842957]  [<c017d73e>] tick_check_idle+0x3e/0xf0
+[74363.842957]  [<c015927c>] irq_enter+0x4c/0x70
+[74363.842957]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[74363.842957]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[74363.842957]  [<c0109c70>] common_interrupt+0x30/0x40
+[74363.842957]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[74363.842957]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[74363.842957]  [<c01083d4>] cpu_idle+0x94/0xd0
+[74363.842957]  [<c058b952>] rest_init+0x62/0x70
+[74363.842957]  [<c07c68e5>] start_kernel+0x356/0x35c
+[74363.842957]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[74363.842957]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[74363.842957] JIFFIES_READ: read #103700000 long value: 13868622606243627890
+[74363.842957] JIFFIES_READ: read #103700000 long value with cast: 18514802
+[74363.842957] JIFFIES_READ: read #103700000 long jiffies_64 value: 4313482098
+[74363.842957] JIFFIES_READ unsigned 32bit read #103700000 value: 18514802, 11a8372
+[74363.842957] JIFFIES_READ unsigned 32bit 2nd read #103700000 value: 18514802, 11a8372
+[74363.842957] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[74435.983470] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[74435.983473] Call Trace:
+[74435.983488]  [<fa5a5e8b>] ? radeon_combios_get_lvds_info+0x3db/0x4b0 [radeon]
+[74435.983492]  [<c0179dea>] jiffies_read+0x4a/0x130
+[74435.983495]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[74435.983507]  [<fa5a707a>] ? atom_op_xor+0xfa/0x120 [radeon]
+[74435.983510]  [<c0177366>] update_wall_time+0x26/0x6b0
+[74435.983522]  [<fa5a6598>] ? atom_get_src_int+0x2f8/0x6a0 [radeon]
+[74435.983526]  [<c01619cb>] do_timer+0x1b/0x30
+[74435.983528]  [<c017c37a>] tick_periodic+0x6a/0x80
+[74435.983531]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[74435.983535]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[74435.983538]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[74435.983541]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[74435.983544]  [<c01a8014>] handle_level_irq+0x74/0x100
+[74435.983547]  [<c010bb6d>] handle_irq+0x1d/0x30
+[74435.983550]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[74435.983553]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[74435.983556]  [<c0109c70>] common_interrupt+0x30/0x40
+[74435.983559]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[74435.983563]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[74435.983566]  [<c01083d4>] cpu_idle+0x94/0xd0
+[74435.983569]  [<c058b952>] rest_init+0x62/0x70
+[74435.983572]  [<c07c68e5>] start_kernel+0x356/0x35c
+[74435.983575]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[74435.983579]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[74435.983581] JIFFIES_READ: read #103800000 long value: 74431801772518
+[74435.983583] JIFFIES_READ: read #103800000 long value with cast: 18532838
+[74435.983590] JIFFIES_READ: read #103800000 long jiffies_64 value: 4313500134
+[74435.983592] JIFFIES_READ unsigned 32bit read #103800000 value: 18532838, 11ac9e6
+[74435.983593] JIFFIES_READ unsigned 32bit 2nd read #103800000 value: 18532838, 11ac9e6
+[74435.983595] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[74508.011972] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[74508.011974] Call Trace:
+[74508.011978]  [<c0179dea>] jiffies_read+0x4a/0x130
+[74508.011981]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[74508.011985]  [<c0177366>] update_wall_time+0x26/0x6b0
+[74508.011989]  [<c01619cb>] do_timer+0x1b/0x30
+[74508.011991]  [<c017c37a>] tick_periodic+0x6a/0x80
+[74508.011994]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[74508.011997]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[74508.012000]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[74508.012003]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[74508.012007]  [<c01a8014>] handle_level_irq+0x74/0x100
+[74508.012010]  [<c010bb6d>] handle_irq+0x1d/0x30
+[74508.012013]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[74508.012016]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[74508.012019]  [<c0109c70>] common_interrupt+0x30/0x40
+[74508.012022]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[74508.012025]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[74508.012029]  [<c01083d4>] cpu_idle+0x94/0xd0
+[74508.012032]  [<c058b952>] rest_init+0x62/0x70
+[74508.012035]  [<c07c68e5>] start_kernel+0x356/0x35c
+[74508.012038]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[74508.012042]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[74508.012044] JIFFIES_READ: read #103900000 long value: 74504816234556
+[74508.012046] JIFFIES_READ: read #103900000 long value with cast: 18550844
+[74508.012047] JIFFIES_READ: read #103900000 long jiffies_64 value: 4313518140
+[74508.012050] JIFFIES_READ unsigned 32bit read #103900000 value: 18550844, 11b103c
+[74508.012052] JIFFIES_READ unsigned 32bit 2nd read #103900000 value: 18550844, 11b103c
+[74508.012054] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[74580.256487] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[74580.256489] Call Trace:
+[74580.256492]  [<c0179dea>] jiffies_read+0x4a/0x130
+[74580.256496]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[74580.256499]  [<c0177366>] update_wall_time+0x26/0x6b0
+[74580.256503]  [<c01619cb>] do_timer+0x1b/0x30
+[74580.256506]  [<c017c37a>] tick_periodic+0x6a/0x80
+[74580.256509]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[74580.256512]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[74580.256515]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[74580.256518]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[74580.256521]  [<c01a8014>] handle_level_irq+0x74/0x100
+[74580.256524]  [<c010bb6d>] handle_irq+0x1d/0x30
+[74580.256527]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[74580.256530]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[74580.256533]  [<c0109c70>] common_interrupt+0x30/0x40
+[74580.256537]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[74580.256540]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[74580.256543]  [<c01083d4>] cpu_idle+0x94/0xd0
+[74580.256547]  [<c058b952>] rest_init+0x62/0x70
+[74580.256550]  [<c07c68e5>] start_kernel+0x356/0x35c
+[74580.256553]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[74580.256556]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[74580.256558] JIFFIES_READ: read #104000000 long value: 74577830696648
+[74580.256560] JIFFIES_READ: read #104000000 long value with cast: 18568904
+[74580.256562] JIFFIES_READ: read #104000000 long jiffies_64 value: 4313536200
+[74580.256564] JIFFIES_READ unsigned 32bit read #104000000 value: 18568904, 11b56c8
+[74580.256567] JIFFIES_READ unsigned 32bit 2nd read #104000000 value: 18568904, 11b56c8
+[74580.256569] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[74652.528991] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[74652.528993] Call Trace:
+[74652.528996]  [<c0179dea>] jiffies_read+0x4a/0x130
+[74652.528999]  [<c0177dcb>] ktime_get+0x6b/0x100
+[74652.528999]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[74652.528999]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[74652.528999]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[74652.528999]  [<c015927c>] irq_enter+0x4c/0x70
+[74652.528999]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[74652.528999]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[74652.528999]  [<c0109c70>] common_interrupt+0x30/0x40
+[74652.528999]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[74652.528999]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[74652.528999]  [<c01083d4>] cpu_idle+0x94/0xd0
+[74652.528999]  [<c058b952>] rest_init+0x62/0x70
+[74652.528999]  [<c07c68e5>] start_kernel+0x356/0x35c
+[74652.528999]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[74652.528999]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[74652.528999] JIFFIES_READ: read #104100000 long value: 18586969
+[74652.528999] JIFFIES_READ: read #104100000 long value with cast: 18586969
+[74652.528999] JIFFIES_READ: read #104100000 long jiffies_64 value: 4313554265
+[74652.528999] JIFFIES_READ unsigned 32bit read #104100000 value: 18586969, 11b9d59
+[74652.528999] JIFFIES_READ unsigned 32bit 2nd read #104100000 value: 18586969, 11b9d59
+[74652.528999] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[74724.537504] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[74724.537506] Call Trace:
+[74724.537509]  [<c013ff75>] ? __wake_up+0x45/0x60
+[74724.537512]  [<c0179dea>] jiffies_read+0x4a/0x130
+[74724.537515]  [<c016a2b0>] ? insert_work+0x60/0xb0
+[74724.537519]  [<c0177366>] update_wall_time+0x26/0x6b0
+[74724.537522]  [<c05a196f>] ? _spin_lock_irqsave+0x2f/0x50
+[74724.537525]  [<c01619cb>] do_timer+0x1b/0x30
+[74724.537528]  [<c017c37a>] tick_periodic+0x6a/0x80
+[74724.537531]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[74724.537534]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[74724.537536]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[74724.537539]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[74724.537543]  [<c01a8014>] handle_level_irq+0x74/0x100
+[74724.537545]  [<c010bb6d>] handle_irq+0x1d/0x30
+[74724.537548]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[74724.537552]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[74724.537554]  [<c0109c70>] common_interrupt+0x30/0x40
+[74724.537558]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[74724.537561]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[74724.537564]  [<c01083d4>] cpu_idle+0x94/0xd0
+[74724.537567]  [<c058b952>] rest_init+0x62/0x70
+[74724.537571]  [<c07c68e5>] start_kernel+0x356/0x35c
+[74724.537574]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[74724.537577]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[74724.537579] JIFFIES_READ: read #104200000 long value: 13841429381586346924
+[74724.537581] JIFFIES_READ: read #104200000 long value with cast: 18604972
+[74724.537583] JIFFIES_READ: read #104200000 long jiffies_64 value: 4313572268
+[74724.537585] JIFFIES_READ unsigned 32bit read #104200000 value: 18604972, 11be3ac
+[74724.537587] JIFFIES_READ unsigned 32bit 2nd read #104200000 value: 18604972, 11be3ac
+[74724.537589] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[74796.589994] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[74796.589996] Call Trace:
+[74796.590000]  [<c0179dea>] jiffies_read+0x4a/0x130
+[74796.590002]  [<c0177dcb>] ktime_get+0x6b/0x100
+[74796.590002]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[74796.590002]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[74796.590002]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[74796.590002]  [<c015927c>] irq_enter+0x4c/0x70
+[74796.590002]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[74796.590002]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[74796.590002]  [<c0109c70>] common_interrupt+0x30/0x40
+[74796.590002]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[74796.590002]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[74796.590002]  [<c01083d4>] cpu_idle+0x94/0xd0
+[74796.590002]  [<c058b952>] rest_init+0x62/0x70
+[74796.590002]  [<c07c68e5>] start_kernel+0x356/0x35c
+[74796.590002]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[74796.590002]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[74796.590002] JIFFIES_READ: read #104300000 long value: 18622982
+[74796.590002] JIFFIES_READ: read #104300000 long value with cast: 18622982
+[74796.590002] JIFFIES_READ: read #104300000 long jiffies_64 value: 4313590278
+[74796.590002] JIFFIES_READ unsigned 32bit read #104300000 value: 18622982, 11c2a06
+[74796.590002] JIFFIES_READ unsigned 32bit 2nd read #104300000 value: 18622982, 11c2a06
+[74796.590002] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[74868.834509] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[74868.834511] Call Trace:
+[74868.834515]  [<c0179dea>] jiffies_read+0x4a/0x130
+[74868.834517]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[74868.834517]  [<c0177dcb>] ktime_get+0x6b/0x100
+[74868.834517]  [<c017d73e>] tick_check_idle+0x3e/0xf0
+[74868.834517]  [<c015927c>] irq_enter+0x4c/0x70
+[74868.834517]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[74868.834517]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[74868.834517]  [<c0109c70>] common_interrupt+0x30/0x40
+[74868.834517]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[74868.834517]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[74868.834517]  [<c01083d4>] cpu_idle+0x94/0xd0
+[74868.834517]  [<c058b952>] rest_init+0x62/0x70
+[74868.834517]  [<c07c68e5>] start_kernel+0x356/0x35c
+[74868.834517]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[74868.834517]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[74868.834517] JIFFIES_READ: read #104400000 long value: 13868622606243754130
+[74868.834517] JIFFIES_READ: read #104400000 long value with cast: 18641042
+[74868.834517] JIFFIES_READ: read #104400000 long jiffies_64 value: 4313608338
+[74868.834517] JIFFIES_READ unsigned 32bit read #104400000 value: 18641042, 11c7092
+[74868.834517] JIFFIES_READ unsigned 32bit 2nd read #104400000 value: 18641042, 11c7092
+[74868.834517] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[74941.091038] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[74941.091040] Call Trace:
+[74941.091044]  [<c0179dea>] jiffies_read+0x4a/0x130
+[74941.091046]  [<c0177dcb>] ktime_get+0x6b/0x100
+[74941.091050]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[74941.091053]  [<c0149e91>] scheduler_tick+0x31/0x290
+[74941.091057]  [<c01aa289>] ? rcu_check_callbacks+0x69/0xf0
+[74941.091060]  [<c0161a47>] update_process_times+0x47/0x60
+[74941.091063]  [<c017c33a>] tick_periodic+0x2a/0x80
+[74941.091066]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[74941.091069]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[74941.091072]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[74941.091075]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[74941.091078]  [<c01a8014>] handle_level_irq+0x74/0x100
+[74941.091081]  [<c010bb6d>] handle_irq+0x1d/0x30
+[74941.091084]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[74941.091087]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[74941.091090]  [<c0109c70>] common_interrupt+0x30/0x40
+[74941.091094]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[74941.091097]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[74941.091100]  [<c01083d4>] cpu_idle+0x94/0xd0
+[74941.091103]  [<c058b952>] rest_init+0x62/0x70
+[74941.091107]  [<c07c68e5>] start_kernel+0x356/0x35c
+[74941.091110]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[74941.091113]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[74941.091115] JIFFIES_READ: read #104500000 long value: 575544276771
+[74941.091117] JIFFIES_READ: read #104500000 long value with cast: 18659107
+[74941.091119] JIFFIES_READ: read #104500000 long jiffies_64 value: 4313626403
+[74941.091121] JIFFIES_READ unsigned 32bit read #104500000 value: 18659107, 11cb723
+[74941.091123] JIFFIES_READ unsigned 32bit 2nd read #104500000 value: 18659107, 11cb723
+[74941.091125] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[75013.363553] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[75013.363555] Call Trace:
+[75013.363559]  [<c0179dea>] jiffies_read+0x4a/0x130
+[75013.363561]  [<c0177dcb>] ktime_get+0x6b/0x100
+[75013.363565]  [<c017d867>] tick_nohz_stop_sched_tick+0x77/0x440
+[75013.363568]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[75013.363571]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[75013.363574]  [<c05a196f>] ? _spin_lock_irqsave+0x2f/0x50
+[75013.363578]  [<c010ce07>] ? enable_8259A_irq+0x47/0x70
+[75013.363581]  [<c01595da>] irq_exit+0x5a/0x70
+[75013.363584]  [<c05a5bb5>] do_IRQ+0x55/0xc0
+[75013.363587]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[75013.363590]  [<c0109c70>] common_interrupt+0x30/0x40
+[75013.363593]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[75013.363597]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[75013.363600]  [<c01083d4>] cpu_idle+0x94/0xd0
+[75013.363603]  [<c058b952>] rest_init+0x62/0x70
+[75013.363606]  [<c07c68e5>] start_kernel+0x356/0x35c
+[75013.363609]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[75013.363613]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[75013.363615] JIFFIES_READ: read #104600000 long value: 38673382837
+[75013.363617] JIFFIES_READ: read #104600000 long value with cast: 18677173
+[75013.363619] JIFFIES_READ: read #104600000 long jiffies_64 value: 4313644469
+[75013.363621] JIFFIES_READ unsigned 32bit read #104600000 value: 18677173, 11cfdb5
+[75013.363623] JIFFIES_READ unsigned 32bit 2nd read #104600000 value: 18677173, 11cfdb5
+[75013.363625] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[75085.372055] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[75085.372057] Call Trace:
+[75085.372060]  [<c0179dea>] jiffies_read+0x4a/0x130
+[75085.372063]  [<c0177dcb>] ktime_get+0x6b/0x100
+[75085.372067]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[75085.372070]  [<c0149e91>] scheduler_tick+0x31/0x290
+[75085.372073]  [<c01aa289>] ? rcu_check_callbacks+0x69/0xf0
+[75085.372076]  [<c0161a47>] update_process_times+0x47/0x60
+[75085.372079]  [<c017c33a>] tick_periodic+0x2a/0x80
+[75085.372082]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[75085.372085]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[75085.372088]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[75085.372091]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[75085.372094]  [<c01a8014>] handle_level_irq+0x74/0x100
+[75085.372097]  [<c010bb6d>] handle_irq+0x1d/0x30
+[75085.372100]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[75085.372103]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[75085.372106]  [<c0109c70>] common_interrupt+0x30/0x40
+[75085.372110]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[75085.372113]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[75085.372116]  [<c01083d4>] cpu_idle+0x94/0xd0
+[75085.372119]  [<c058b952>] rest_init+0x62/0x70
+[75085.372122]  [<c07c68e5>] start_kernel+0x356/0x35c
+[75085.372125]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[75085.372129]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[75085.372131] JIFFIES_READ: read #104700000 long value: 575544312839
+[75085.372133] JIFFIES_READ: read #104700000 long value with cast: 18695175
+[75085.372135] JIFFIES_READ: read #104700000 long jiffies_64 value: 4313662471
+[75085.372137] JIFFIES_READ unsigned 32bit read #104700000 value: 18695175, 11d4407
+[75085.372139] JIFFIES_READ unsigned 32bit 2nd read #104700000 value: 18695175, 11d4407
+[75085.372141] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[75157.424545] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[75157.424547] Call Trace:
+[75157.424550]  [<c0179dea>] jiffies_read+0x4a/0x130
+[75157.424553]  [<c0177dcb>] ktime_get+0x6b/0x100
+[75157.424553]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[75157.424553]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[75157.424553]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[75157.424553]  [<c015927c>] irq_enter+0x4c/0x70
+[75157.424553]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[75157.424553]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[75157.424553]  [<c0109c70>] common_interrupt+0x30/0x40
+[75157.424553]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[75157.424553]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[75157.424553]  [<c01083d4>] cpu_idle+0x94/0xd0
+[75157.424553]  [<c058b952>] rest_init+0x62/0x70
+[75157.424553]  [<c07c68e5>] start_kernel+0x356/0x35c
+[75157.424553]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[75157.424553]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[75157.424553] JIFFIES_READ: read #104800000 long value: 18713185
+[75157.424553] JIFFIES_READ: read #104800000 long value with cast: 18713185
+[75157.424553] JIFFIES_READ: read #104800000 long jiffies_64 value: 4313680481
+[75157.424553] JIFFIES_READ unsigned 32bit read #104800000 value: 18713185, 11d8a61
+[75157.424553] JIFFIES_READ unsigned 32bit 2nd read #104800000 value: 18713185, 11d8a61
+[75157.424553] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[75229.565068] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[75229.565070] Call Trace:
+[75229.565074]  [<c0179dea>] jiffies_read+0x4a/0x130
+[75229.565077]  [<c0177dcb>] ktime_get+0x6b/0x100
+[75229.565080]  [<c017d867>] tick_nohz_stop_sched_tick+0x77/0x440
+[75229.565084]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[75229.565087]  [<c01083b4>] cpu_idle+0x74/0xd0
+[75229.565090]  [<c058b952>] rest_init+0x62/0x70
+[75229.565094]  [<c07c68e5>] start_kernel+0x356/0x35c
+[75229.565097]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[75229.565100]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[75229.565102] JIFFIES_READ: read #104900000 long value: 13868623430877565140
+[75229.565104] JIFFIES_READ: read #104900000 long value with cast: 18731220
+[75229.565106] JIFFIES_READ: read #104900000 long jiffies_64 value: 4313698516
+[75229.565108] JIFFIES_READ unsigned 32bit read #104900000 value: 18731220, 11dd0d4
+[75229.565111] JIFFIES_READ unsigned 32bit 2nd read #104900000 value: 18731220, 11dd0d4
+[75229.565113] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[75300.861522] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[75300.861524] Call Trace:
+[75300.861527]  [<c013ff75>] ? __wake_up+0x45/0x60
+[75300.861530]  [<c0179dea>] jiffies_read+0x4a/0x130
+[75300.861533]  [<c016a2b0>] ? insert_work+0x60/0xb0
+[75300.861537]  [<c0177366>] update_wall_time+0x26/0x6b0
+[75300.861540]  [<c05a196f>] ? _spin_lock_irqsave+0x2f/0x50
+[75300.861543]  [<c01619cb>] do_timer+0x1b/0x30
+[75300.861546]  [<c017c37a>] tick_periodic+0x6a/0x80
+[75300.861549]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[75300.861552]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[75300.861555]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[75300.861558]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[75300.861561]  [<c01a8014>] handle_level_irq+0x74/0x100
+[75300.861564]  [<c010bb6d>] handle_irq+0x1d/0x30
+[75300.861567]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[75300.861570]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[75300.861573]  [<c0109c70>] common_interrupt+0x30/0x40
+[75300.861576]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[75300.861579]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[75300.861582]  [<c01083d4>] cpu_idle+0x94/0xd0
+[75300.861586]  [<c058b952>] rest_init+0x62/0x70
+[75300.861589]  [<c07c68e5>] start_kernel+0x356/0x35c
+[75300.861592]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[75300.861595]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[75300.861597] JIFFIES_READ: read #105000000 long value: 13841429381586490996
+[75300.861599] JIFFIES_READ: read #105000000 long value with cast: 18749044
+[75300.861601] JIFFIES_READ: read #105000000 long jiffies_64 value: 4313716340
+[75300.861603] JIFFIES_READ unsigned 32bit read #105000000 value: 18749044, 11e1674
+[75300.861606] JIFFIES_READ unsigned 32bit 2nd read #105000000 value: 18749044, 11e1674
+[75300.861608] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[75372.958028] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[75372.958030] Call Trace:
+[75372.958033]  [<c0179dea>] jiffies_read+0x4a/0x130
+[75372.958036]  [<c0177dcb>] ktime_get+0x6b/0x100
+[75372.958040]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[75372.958043]  [<c0149e91>] scheduler_tick+0x31/0x290
+[75372.958046]  [<c01aa289>] ? rcu_check_callbacks+0x69/0xf0
+[75372.958049]  [<c0161a47>] update_process_times+0x47/0x60
+[75372.958052]  [<c017c33a>] tick_periodic+0x2a/0x80
+[75372.958055]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[75372.958058]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[75372.958061]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[75372.958064]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[75372.958067]  [<c01a8014>] handle_level_irq+0x74/0x100
+[75372.958070]  [<c010bb6d>] handle_irq+0x1d/0x30
+[75372.958073]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[75372.958076]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[75372.958079]  [<c0109c70>] common_interrupt+0x30/0x40
+[75372.958082]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[75372.958085]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[75372.958089]  [<c01083d4>] cpu_idle+0x94/0xd0
+[75372.958092]  [<c058b952>] rest_init+0x62/0x70
+[75372.958095]  [<c07c68e5>] start_kernel+0x356/0x35c
+[75372.958098]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[75372.958102]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[75372.958104] JIFFIES_READ: read #105100000 long value: 575544384731
+[75372.958106] JIFFIES_READ: read #105100000 long value with cast: 18767067
+[75372.958108] JIFFIES_READ: read #105100000 long jiffies_64 value: 4313734363
+[75372.958110] JIFFIES_READ unsigned 32bit read #105100000 value: 18767067, 11e5cdb
+[75372.958112] JIFFIES_READ unsigned 32bit 2nd read #105100000 value: 18767067, 11e5cdb
+[75372.958114] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[75445.030532] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[75445.030534] Call Trace:
+[75445.030537]  [<c0179dea>] jiffies_read+0x4a/0x130
+[75445.030541]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[75445.030544]  [<c0177366>] update_wall_time+0x26/0x6b0
+[75445.030548]  [<c01619cb>] do_timer+0x1b/0x30
+[75445.030551]  [<c017c37a>] tick_periodic+0x6a/0x80
+[75445.030554]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[75445.030557]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[75445.030560]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[75445.030563]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[75445.030566]  [<c01a8014>] handle_level_irq+0x74/0x100
+[75445.030569]  [<c010bb6d>] handle_irq+0x1d/0x30
+[75445.030572]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[75445.030576]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[75445.030579]  [<c0109c70>] common_interrupt+0x30/0x40
+[75445.030582]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[75445.030585]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[75445.030589]  [<c01083d4>] cpu_idle+0x94/0xd0
+[75445.030592]  [<c058b952>] rest_init+0x62/0x70
+[75445.030595]  [<c07c68e5>] start_kernel+0x356/0x35c
+[75445.030598]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[75445.030601]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[75445.030604] JIFFIES_READ: read #105200000 long value: 75441119339324
+[75445.030606] JIFFIES_READ: read #105200000 long value with cast: 18785084
+[75445.030607] JIFFIES_READ: read #105200000 long jiffies_64 value: 4313752380
+[75445.030610] JIFFIES_READ unsigned 32bit read #105200000 value: 18785084, 11ea33c
+[75445.030612] JIFFIES_READ unsigned 32bit 2nd read #105200000 value: 18785084, 11ea33c
+[75445.030614] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[75469.500067] TCP_SEQ BYTE ORDER TEST
+[75469.500069] saddr normal: e45fef84
+[75469.500070] saddr htonl: 84ef5fe4
+[75469.500072] saddr ntohl: 84ef5fe4
+[75469.500073] net_secret[15]: cf7fdc24
+[75469.500075] Sequence num: 32c38a83
+[75469.500076] Sequence num ntohl: 838ac332
+[75469.500079] TIME ktime_to_ns vari test. ns: 1360381151499451445, jiffies: 18791200, difference from last 1360381151499451445
+[75469.506221] TIME ktime_to_ns vari test. ns: 1360381151503451695, jiffies: 18791201, difference from last 4000250
+[75469.508643] TIME ktime_to_ns vari test. ns: 1360381151507451945, jiffies: 18791202, difference from last 4000250
+[75469.511052] TIME ktime_to_ns vari test. ns: 1360381151507451945, jiffies: 18791202, difference from last 0
+[75469.513474] TIME ktime_to_ns vari test. ns: 1360381151511452195, jiffies: 18791203, difference from last 4000250
+[75469.515884] TIME ktime_to_ns vari test. ns: 1360381151511452195, jiffies: 18791203, difference from last 0
+[75469.518301] TIME ktime_to_ns vari test. ns: 1360381151515452445, jiffies: 18791204, difference from last 4000250
+[75469.520722] TIME ktime_to_ns vari test. ns: 1360381151519452695, jiffies: 18791205, difference from last 4000250
+[75469.523132] TIME ktime_to_ns vari test. ns: 1360381151519452695, jiffies: 18791205, difference from last 0
+[75469.525554] TIME ktime_to_ns vari test. ns: 1360381151523452945, jiffies: 18791206, difference from last 4000250
+[75469.527974] TCP_SEQ BYTE ORDER TEST
+[75469.527975] saddr normal: e45fef84
+[75469.527976] saddr htonl: 84ef5fe4
+[75469.527977] saddr ntohl: 84ef5fe4
+[75469.527978] net_secret[15]: cf7fdc24
+[75469.527980] Sequence num: ac451cda
+[75469.527981] Sequence num ntohl: da1c45ac
+[75469.527983] TIME ktime_to_ns vari test. ns: 1360381151523452945, jiffies: 18791206, difference from last 1360381151523452945
+[75469.530405] TIME ktime_to_ns vari test. ns: 1360381151527453195, jiffies: 18791207, difference from last 4000250
+[75469.532827] TIME ktime_to_ns vari test. ns: 1360381151531453445, jiffies: 18791208, difference from last 4000250
+[75469.535236] TIME ktime_to_ns vari test. ns: 1360381151531453445, jiffies: 18791208, difference from last 0
+[75469.537658] TIME ktime_to_ns vari test. ns: 1360381151535453695, jiffies: 18791209, difference from last 4000250
+[75469.540080] TIME ktime_to_ns vari test. ns: 1360381151539453945, jiffies: 18791210, difference from last 4000250
+[75469.542490] TIME ktime_to_ns vari test. ns: 1360381151539453945, jiffies: 18791210, difference from last 0
+[75469.544911] TIME ktime_to_ns vari test. ns: 1360381151543454195, jiffies: 18791211, difference from last 4000250
+[75469.547321] TIME ktime_to_ns vari test. ns: 1360381151543454195, jiffies: 18791211, difference from last 0
+[75469.549743] TIME ktime_to_ns vari test. ns: 1360381151547454445, jiffies: 18791212, difference from last 4000250
+[75517.023020] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[75517.023022] Call Trace:
+[75517.023026]  [<c0179dea>] jiffies_read+0x4a/0x130
+[75517.023026]  [<c010f088>] ? sched_clock+0x8/0x10
+[75517.023026]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[75517.023026]  [<c0177dcb>] ktime_get+0x6b/0x100
+[75517.023026]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[75517.023026]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[75517.023026]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[75517.023026]  [<c015927c>] irq_enter+0x4c/0x70
+[75517.023026]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[75517.023026]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[75517.023026]  [<c0109c70>] common_interrupt+0x30/0x40
+[75517.023026]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[75517.023026]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[75517.023026]  [<c01083d4>] cpu_idle+0x94/0xd0
+[75517.023026]  [<c058b952>] rest_init+0x62/0x70
+[75517.023026]  [<c07c68e5>] start_kernel+0x356/0x35c
+[75517.023026]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[75517.023026]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[75517.023026] JIFFIES_READ: read #105300000 long value: 13841598654837614983
+[75517.023026] JIFFIES_READ: read #105300000 long value with cast: 18803079
+[75517.023026] JIFFIES_READ: read #105300000 long jiffies_64 value: 4313770375
+[75517.023026] JIFFIES_READ unsigned 32bit read #105300000 value: 18803079, 11ee987
+[75517.023026] JIFFIES_READ unsigned 32bit 2nd read #105300000 value: 18803079, 11ee987
+[75517.023026] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[75588.643494] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[75588.643497] Call Trace:
+[75588.643500]  [<c0179dea>] jiffies_read+0x4a/0x130
+[75588.643502]  [<c0177dcb>] ktime_get+0x6b/0x100
+[75588.643502]  [<c017d73e>] tick_check_idle+0x3e/0xf0
+[75588.643502]  [<c015927c>] irq_enter+0x4c/0x70
+[75588.643502]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[75588.643502]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[75588.643502]  [<c0109c70>] common_interrupt+0x30/0x40
+[75588.643502]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[75588.643502]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[75588.643502]  [<c01083d4>] cpu_idle+0x94/0xd0
+[75588.643502]  [<c058b952>] rest_init+0x62/0x70
+[75588.643502]  [<c07c68e5>] start_kernel+0x356/0x35c
+[75588.643502]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[75588.643502]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[75588.643502] JIFFIES_READ: read #105400000 long value: 18446744069433405303
+[75588.643502] JIFFIES_READ: read #105400000 long value with cast: 18820983
+[75588.643502] JIFFIES_READ: read #105400000 long jiffies_64 value: 4313788279
+[75588.643502] JIFFIES_READ unsigned 32bit read #105400000 value: 18820983, 11f2f77
+[75588.643502] JIFFIES_READ unsigned 32bit 2nd read #105400000 value: 18820983, 11f2f77
+[75588.643502] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[75660.283985] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[75660.283987] Call Trace:
+[75660.283990]  [<c013ff75>] ? __wake_up+0x45/0x60
+[75660.283994]  [<c0179dea>] jiffies_read+0x4a/0x130
+[75660.283997]  [<c016a2b0>] ? insert_work+0x60/0xb0
+[75660.284001]  [<c0177366>] update_wall_time+0x26/0x6b0
+[75660.284004]  [<c05a196f>] ? _spin_lock_irqsave+0x2f/0x50
+[75660.284007]  [<c01619cb>] do_timer+0x1b/0x30
+[75660.284010]  [<c017c37a>] tick_periodic+0x6a/0x80
+[75660.284013]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[75660.284016]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[75660.284019]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[75660.284022]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[75660.284025]  [<c01a8014>] handle_level_irq+0x74/0x100
+[75660.284028]  [<c010bb6d>] handle_irq+0x1d/0x30
+[75660.284031]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[75660.284034]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[75660.284037]  [<c0109c70>] common_interrupt+0x30/0x40
+[75660.284040]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[75660.284044]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[75660.284047]  [<c01083d4>] cpu_idle+0x94/0xd0
+[75660.284050]  [<c058b952>] rest_init+0x62/0x70
+[75660.284054]  [<c07c68e5>] start_kernel+0x356/0x35c
+[75660.284057]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[75660.284060]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[75660.284062] JIFFIES_READ: read #105500000 long value: 13841429381586580846
+[75660.284064] JIFFIES_READ: read #105500000 long value with cast: 18838894
+[75660.284066] JIFFIES_READ: read #105500000 long jiffies_64 value: 4313806190
+[75660.284068] JIFFIES_READ unsigned 32bit read #105500000 value: 18838894, 11f756e
+[75660.284071] JIFFIES_READ unsigned 32bit 2nd read #105500000 value: 18838894, 11f756e
+[75660.284073] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[75732.240469] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[75732.240471] Call Trace:
+[75732.240474]  [<c0179dea>] jiffies_read+0x4a/0x130
+[75732.240477]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[75732.240477]  [<c0177dcb>] ktime_get+0x6b/0x100
+[75732.240477]  [<c017d73e>] tick_check_idle+0x3e/0xf0
+[75732.240477]  [<c015927c>] irq_enter+0x4c/0x70
+[75732.240477]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[75732.240477]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[75732.240477]  [<c0109c70>] common_interrupt+0x30/0x40
+[75732.240477]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[75732.240477]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[75732.240477]  [<c01083d4>] cpu_idle+0x94/0xd0
+[75732.240477]  [<c058b952>] rest_init+0x62/0x70
+[75732.240477]  [<c07c68e5>] start_kernel+0x356/0x35c
+[75732.240477]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[75732.240477]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[75732.240477] JIFFIES_READ: read #105600000 long value: 13868622606243969968
+[75732.240477] JIFFIES_READ: read #105600000 long value with cast: 18856880
+[75732.240477] JIFFIES_READ: read #105600000 long jiffies_64 value: 4313824176
+[75732.240477] JIFFIES_READ unsigned 32bit read #105600000 value: 18856880, 11fbbb0
+[75732.240477] JIFFIES_READ unsigned 32bit 2nd read #105600000 value: 18856880, 11fbbb0
+[75732.240477] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[75804.376977] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[75804.376979] Call Trace:
+[75804.376982]  [<c0179dea>] jiffies_read+0x4a/0x130
+[75804.376985]  [<c0177dcb>] ktime_get+0x6b/0x100
+[75804.376985]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[75804.376985]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[75804.376985]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[75804.376985]  [<c015927c>] irq_enter+0x4c/0x70
+[75804.376985]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[75804.376985]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[75804.376985]  [<c0109c70>] common_interrupt+0x30/0x40
+[75804.376985]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[75804.376985]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[75804.376985]  [<c01083d4>] cpu_idle+0x94/0xd0
+[75804.376985]  [<c058b952>] rest_init+0x62/0x70
+[75804.376985]  [<c07c68e5>] start_kernel+0x356/0x35c
+[75804.376985]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[75804.376985]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[75804.376985] JIFFIES_READ: read #105700000 long value: 18874913
+[75804.376985] JIFFIES_READ: read #105700000 long value with cast: 18874913
+[75804.376985] JIFFIES_READ: read #105700000 long jiffies_64 value: 4313842209
+[75804.376985] JIFFIES_READ unsigned 32bit read #105700000 value: 18874913, 1200221
+[75804.376985] JIFFIES_READ unsigned 32bit 2nd read #105700000 value: 18874913, 1200221
+[75804.376985] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[75876.449481] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[75876.449483] Call Trace:
+[75876.449487]  [<c0179dea>] jiffies_read+0x4a/0x130
+[75876.449489]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[75876.449489]  [<c0177dcb>] ktime_get+0x6b/0x100
+[75876.449489]  [<c017d73e>] tick_check_idle+0x3e/0xf0
+[75876.449489]  [<c015927c>] irq_enter+0x4c/0x70
+[75876.449489]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[75876.449489]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[75876.449489]  [<c0109c70>] common_interrupt+0x30/0x40
+[75876.449489]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[75876.449489]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[75876.449489]  [<c01083d4>] cpu_idle+0x94/0xd0
+[75876.449489]  [<c058b952>] rest_init+0x62/0x70
+[75876.449489]  [<c07c68e5>] start_kernel+0x356/0x35c
+[75876.449489]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[75876.449489]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[75876.449489] JIFFIES_READ: read #105800000 long value: 13868622606244006018
+[75876.449489] JIFFIES_READ: read #105800000 long value with cast: 18892930
+[75876.449489] JIFFIES_READ: read #105800000 long jiffies_64 value: 4313860226
+[75876.449489] JIFFIES_READ unsigned 32bit read #105800000 value: 18892930, 1204882
+[75876.449489] JIFFIES_READ unsigned 32bit 2nd read #105800000 value: 18892930, 1204882
+[75876.449489] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[75948.413991] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[75948.413994] Call Trace:
+[75948.413997]  [<c0179dea>] jiffies_read+0x4a/0x130
+[75948.414001]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[75948.414004]  [<c0177366>] update_wall_time+0x26/0x6b0
+[75948.414008]  [<c01619cb>] do_timer+0x1b/0x30
+[75948.414011]  [<c017c37a>] tick_periodic+0x6a/0x80
+[75948.414013]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[75948.414017]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[75948.414019]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[75948.414022]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[75948.414025]  [<c01a8014>] handle_level_irq+0x74/0x100
+[75948.414028]  [<c010bb6d>] handle_irq+0x1d/0x30
+[75948.414031]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[75948.414035]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[75948.414038]  [<c0109c70>] common_interrupt+0x30/0x40
+[75948.414041]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[75948.414044]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[75948.414047]  [<c01083d4>] cpu_idle+0x94/0xd0
+[75948.414050]  [<c058b952>] rest_init+0x62/0x70
+[75948.414054]  [<c07c68e5>] start_kernel+0x356/0x35c
+[75948.414057]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[75948.414060]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[75948.414062] JIFFIES_READ: read #105900000 long value: 75947925606090
+[75948.414064] JIFFIES_READ: read #105900000 long value with cast: 18910922
+[75948.414066] JIFFIES_READ: read #105900000 long jiffies_64 value: 4313878218
+[75948.414069] JIFFIES_READ unsigned 32bit read #105900000 value: 18910922, 1208eca
+[75948.414071] JIFFIES_READ unsigned 32bit 2nd read #105900000 value: 18910922, 1208eca
+[75948.414073] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[76020.468355] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[76020.468357] Call Trace:
+[76020.468360]  [<c0179dea>] jiffies_read+0x4a/0x130
+[76020.468363]  [<c0177dcb>] ktime_get+0x6b/0x100
+[76020.468366]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[76020.468370]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[76020.468373]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[76020.468376]  [<c015927c>] irq_enter+0x4c/0x70
+[76020.468379]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[76020.468383]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[76020.468386]  [<c0109c70>] common_interrupt+0x30/0x40
+[76020.468389]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[76020.468392]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[76020.468395]  [<c01083d4>] cpu_idle+0x94/0xd0
+[76020.468399]  [<c058b952>] rest_init+0x62/0x70
+[76020.468402]  [<c07c68e5>] start_kernel+0x356/0x35c
+[76020.468405]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[76020.468408]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[76020.468410] JIFFIES_READ: read #106000000 long value: 18928933
+[76020.468412] JIFFIES_READ: read #106000000 long value with cast: 18928933
+[76020.468414] JIFFIES_READ: read #106000000 long jiffies_64 value: 4313896229
+[76020.468417] JIFFIES_READ unsigned 32bit read #106000000 value: 18928933, 120d525
+[76020.468419] JIFFIES_READ unsigned 32bit 2nd read #106000000 value: 18928933, 120d525
+[76020.468421] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[76092.614991] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[76092.614993] Call Trace:
+[76092.614996]  [<c0179dea>] jiffies_read+0x4a/0x130
+[76092.614999]  [<c0177dcb>] ktime_get+0x6b/0x100
+[76092.614999]  [<c017d73e>] tick_check_idle+0x3e/0xf0
+[76092.614999]  [<c015927c>] irq_enter+0x4c/0x70
+[76092.614999]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[76092.614999]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[76092.614999]  [<c0109c70>] common_interrupt+0x30/0x40
+[76092.614999]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[76092.614999]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[76092.614999]  [<c01083d4>] cpu_idle+0x94/0xd0
+[76092.614999]  [<c058b952>] rest_init+0x62/0x70
+[76092.614999]  [<c07c68e5>] start_kernel+0x356/0x35c
+[76092.614999]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[76092.614999]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[76092.614999] JIFFIES_READ: read #106100000 long value: 18446744069433531288
+[76092.614999] JIFFIES_READ: read #106100000 long value with cast: 18946968
+[76092.614999] JIFFIES_READ: read #106100000 long jiffies_64 value: 4313914264
+[76092.614999] JIFFIES_READ unsigned 32bit read #106100000 value: 18946968, 1211b98
+[76092.614999] JIFFIES_READ unsigned 32bit 2nd read #106100000 value: 18946968, 1211b98
+[76092.614999] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[76164.531498] Pid: 41, comm: kondemand/0 Tainted: P        W  2.6.32.57 #73
+[76164.531500] Call Trace:
+[76164.531504]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[76164.531507]  [<c0179dea>] jiffies_read+0x4a/0x130
+[76164.531510]  [<c0107e3a>] ? __switch_to+0xba/0x170
+[76164.531513]  [<c0177dcb>] ktime_get+0x6b/0x100
+[76164.531516]  [<c017dc75>] get_cpu_idle_time_us+0x45/0xb0
+[76164.531520]  [<c016ac1e>] ? queue_delayed_work_on+0xae/0xe0
+[76164.531524]  [<c04b242c>] do_dbs_timer+0x10c/0x310
+[76164.531528]  [<c016e26e>] ? prepare_to_wait+0x3e/0x70
+[76164.531531]  [<c016a062>] worker_thread+0x112/0x220
+[76164.531534]  [<c04b2320>] ? do_dbs_timer+0x0/0x310
+[76164.531537]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[76164.531540]  [<c0169f50>] ? worker_thread+0x0/0x220
+[76164.531543]  [<c016dda4>] kthread+0x74/0x80
+[76164.531547]  [<c016dd30>] ? kthread+0x0/0x80
+[76164.531549]  [<c010a2c7>] kernel_thread_helper+0x7/0x10
+[76164.531552] JIFFIES_READ: read #106200000 long value: 14159480505948529107
+[76164.531554] JIFFIES_READ: read #106200000 long value with cast: 18964947
+[76164.531556] JIFFIES_READ: read #106200000 long jiffies_64 value: 4313932243
+[76164.531558] JIFFIES_READ unsigned 32bit read #106200000 value: 18964947, 12161d3
+[76164.531560] JIFFIES_READ unsigned 32bit 2nd read #106200000 value: 18964947, 12161d3
+[76164.531562] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[76236.704008] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[76236.704010] Call Trace:
+[76236.704014]  [<c013ff75>] ? __wake_up+0x45/0x60
+[76236.704017]  [<c0179dea>] jiffies_read+0x4a/0x130
+[76236.704020]  [<c016a2b0>] ? insert_work+0x60/0xb0
+[76236.704023]  [<c0177366>] update_wall_time+0x26/0x6b0
+[76236.704026]  [<c05a196f>] ? _spin_lock_irqsave+0x2f/0x50
+[76236.704029]  [<c01619cb>] do_timer+0x1b/0x30
+[76236.704032]  [<c017c37a>] tick_periodic+0x6a/0x80
+[76236.704035]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[76236.704038]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[76236.704040]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[76236.704043]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[76236.704047]  [<c01a8014>] handle_level_irq+0x74/0x100
+[76236.704049]  [<c010bb6d>] handle_irq+0x1d/0x30
+[76236.704052]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[76236.704056]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[76236.704059]  [<c0109c70>] common_interrupt+0x30/0x40
+[76236.704062]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[76236.704065]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[76236.704068]  [<c01083d4>] cpu_idle+0x94/0xd0
+[76236.704071]  [<c058b952>] rest_init+0x62/0x70
+[76236.704075]  [<c07c68e5>] start_kernel+0x356/0x35c
+[76236.704078]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[76236.704081]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[76236.704083] JIFFIES_READ: read #106300000 long value: 13841429381586724942
+[76236.704085] JIFFIES_READ: read #106300000 long value with cast: 18982990
+[76236.704087] JIFFIES_READ: read #106300000 long jiffies_64 value: 4313950286
+[76236.704089] JIFFIES_READ unsigned 32bit read #106300000 value: 18982990, 121a84e
+[76236.704092] JIFFIES_READ unsigned 32bit 2nd read #106300000 value: 18982990, 121a84e
+[76236.704094] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[76308.252480] Pid: 41, comm: kondemand/0 Tainted: P        W  2.6.32.57 #73
+[76308.252482] Call Trace:
+[76308.252486]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[76308.252489]  [<c0179dea>] jiffies_read+0x4a/0x130
+[76308.252493]  [<c0107e3a>] ? __switch_to+0xba/0x170
+[76308.252495]  [<c0177dcb>] ktime_get+0x6b/0x100
+[76308.252499]  [<c017dc75>] get_cpu_idle_time_us+0x45/0xb0
+[76308.252502]  [<c016ac1e>] ? queue_delayed_work_on+0xae/0xe0
+[76308.252506]  [<c04b242c>] do_dbs_timer+0x10c/0x310
+[76308.252509]  [<c016e26e>] ? prepare_to_wait+0x3e/0x70
+[76308.252513]  [<c016a062>] worker_thread+0x112/0x220
+[76308.252516]  [<c04b2320>] ? do_dbs_timer+0x0/0x310
+[76308.252519]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[76308.252522]  [<c0169f50>] ? worker_thread+0x0/0x220
+[76308.252525]  [<c016dda4>] kthread+0x74/0x80
+[76308.252528]  [<c016dd30>] ? kthread+0x0/0x80
+[76308.252531]  [<c010a2c7>] kernel_thread_helper+0x7/0x10
+[76308.252534] JIFFIES_READ: read #106400000 long value: 14159480505948565035
+[76308.252535] JIFFIES_READ: read #106400000 long value with cast: 19000875
+[76308.252537] JIFFIES_READ: read #106400000 long jiffies_64 value: 4313968171
+[76308.252540] JIFFIES_READ unsigned 32bit read #106400000 value: 19000875, 121ee2b
+[76308.252542] JIFFIES_READ unsigned 32bit 2nd read #106400000 value: 19000875, 121ee2b
+[76308.252544] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[76329.445808] TCP_SEQ BYTE ORDER TEST
+[76329.445810] saddr normal: e45fef84
+[76329.445812] saddr htonl: 84ef5fe4
+[76329.445813] saddr ntohl: 84ef5fe4
+[76329.445815] net_secret[15]: cf7fdc24
+[76329.445816] Sequence num: 19a99ebb
+[76329.445818] Sequence num ntohl: bb9ea919
+[76329.445820] TIME ktime_to_ns vari test. ns: 1360382011445194695, jiffies: 19006173, difference from last 1360382011445194695
+[76329.448255] TIME ktime_to_ns vari test. ns: 1360382011445194695, jiffies: 19006173, difference from last 0
+[76329.451003] TIME ktime_to_ns vari test. ns: 1360382011449194945, jiffies: 19006174, difference from last 4000250
+[76329.453412] TIME ktime_to_ns vari test. ns: 1360382011449194945, jiffies: 19006174, difference from last 0
+[76329.455834] TIME ktime_to_ns vari test. ns: 1360382011453195195, jiffies: 19006175, difference from last 4000250
+[76329.458256] TIME ktime_to_ns vari test. ns: 1360382011457195445, jiffies: 19006176, difference from last 4000250
+[76329.460666] TIME ktime_to_ns vari test. ns: 1360382011457195445, jiffies: 19006176, difference from last 0
+[76329.463088] TIME ktime_to_ns vari test. ns: 1360382011461195695, jiffies: 19006177, difference from last 4000250
+[76329.465497] TIME ktime_to_ns vari test. ns: 1360382011461195695, jiffies: 19006177, difference from last 0
+[76329.467919] TIME ktime_to_ns vari test. ns: 1360382011465195945, jiffies: 19006178, difference from last 4000250
+[76380.116960] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[76380.116963] Call Trace:
+[76380.116966]  [<c0179dea>] jiffies_read+0x4a/0x130
+[76380.116966]  [<c010f088>] ? sched_clock+0x8/0x10
+[76380.116966]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[76380.116966]  [<c0177dcb>] ktime_get+0x6b/0x100
+[76380.116966]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[76380.116966]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[76380.116966]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[76380.116966]  [<c015927c>] irq_enter+0x4c/0x70
+[76380.116966]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[76380.116966]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[76380.116966]  [<c0109c70>] common_interrupt+0x30/0x40
+[76380.116966]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[76380.116966]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[76380.116966]  [<c01083d4>] cpu_idle+0x94/0xd0
+[76380.116966]  [<c058b952>] rest_init+0x62/0x70
+[76380.116966]  [<c07c68e5>] start_kernel+0x356/0x35c
+[76380.116966]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[76380.116966]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[76380.116966] JIFFIES_READ: read #106500000 long value: 13841598654837830743
+[76380.116966] JIFFIES_READ: read #106500000 long value with cast: 19018839
+[76380.116966] JIFFIES_READ: read #106500000 long jiffies_64 value: 4313986135
+[76380.116966] JIFFIES_READ unsigned 32bit read #106500000 value: 19018839, 1223457
+[76380.116966] JIFFIES_READ unsigned 32bit 2nd read #106500000 value: 19018839, 1223457
+[76380.116966] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[76450.185354] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[76450.185356] Call Trace:
+[76450.185363]  [<c0179dea>] jiffies_read+0x4a/0x130
+[76450.185366]  [<c0177dcb>] ktime_get+0x6b/0x100
+[76450.185370]  [<c017d867>] tick_nohz_stop_sched_tick+0x77/0x440
+[76450.185374]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[76450.185378]  [<c01083b4>] cpu_idle+0x74/0xd0
+[76450.185382]  [<c058b952>] rest_init+0x62/0x70
+[76450.185387]  [<c07c68e5>] start_kernel+0x356/0x35c
+[76450.185390]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[76450.185393]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[76450.185396] JIFFIES_READ: read #106600000 long value: 13868623430877870276
+[76450.185398] JIFFIES_READ: read #106600000 long value with cast: 19036356
+[76450.185400] JIFFIES_READ: read #106600000 long jiffies_64 value: 4314003652
+[76450.185402] JIFFIES_READ unsigned 32bit read #106600000 value: 19036356, 12278c4
+[76450.185404] JIFFIES_READ unsigned 32bit 2nd read #106600000 value: 19036356, 12278c4
+[76450.185406] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[76521.465807] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[76521.465810] Call Trace:
+[76521.465817]  [<c0179dea>] jiffies_read+0x4a/0x130
+[76521.465820]  [<c0177dcb>] ktime_get+0x6b/0x100
+[76521.465824]  [<c017d867>] tick_nohz_stop_sched_tick+0x77/0x440
+[76521.465828]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[76521.465832]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[76521.465835]  [<c05a196f>] ? _spin_lock_irqsave+0x2f/0x50
+[76521.465839]  [<c010ce07>] ? enable_8259A_irq+0x47/0x70
+[76521.465842]  [<c01595da>] irq_exit+0x5a/0x70
+[76521.465845]  [<c05a5bb5>] do_IRQ+0x55/0xc0
+[76521.465849]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[76521.465852]  [<c0109c70>] common_interrupt+0x30/0x40
+[76521.465856]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[76521.465859]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[76521.465863]  [<c01083d4>] cpu_idle+0x94/0xd0
+[76521.465867]  [<c058b952>] rest_init+0x62/0x70
+[76521.465871]  [<c07c68e5>] start_kernel+0x356/0x35c
+[76521.465874]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[76521.465878]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[76521.465880] JIFFIES_READ: read #106700000 long value: 38673759839
+[76521.465882] JIFFIES_READ: read #106700000 long value with cast: 19054175
+[76521.465884] JIFFIES_READ: read #106700000 long jiffies_64 value: 4314021471
+[76521.465886] JIFFIES_READ unsigned 32bit read #106700000 value: 19054175, 122be5f
+[76521.465888] JIFFIES_READ unsigned 32bit 2nd read #106700000 value: 19054175, 122be5f
+[76521.465890] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[76591.446182] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[76591.446185] Call Trace:
+[76591.446193]  [<c0179dea>] jiffies_read+0x4a/0x130
+[76591.446196]  [<c0177dcb>] ktime_get+0x6b/0x100
+[76591.446199]  [<c017d867>] tick_nohz_stop_sched_tick+0x77/0x440
+[76591.446203]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[76591.446207]  [<c01083b4>] cpu_idle+0x74/0xd0
+[76591.446211]  [<c058b952>] rest_init+0x62/0x70
+[76591.446215]  [<c07c68e5>] start_kernel+0x356/0x35c
+[76591.446219]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[76591.446222]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[76591.446224] JIFFIES_READ: read #106800000 long value: 13868623430877905589
+[76591.446226] JIFFIES_READ: read #106800000 long value with cast: 19071669
+[76591.446228] JIFFIES_READ: read #106800000 long jiffies_64 value: 4314038965
+[76591.446231] JIFFIES_READ unsigned 32bit read #106800000 value: 19071669, 12302b5
+[76591.446233] JIFFIES_READ unsigned 32bit 2nd read #106800000 value: 19071669, 12302b5
+[76591.446235] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[76662.214590] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[76662.214593] Call Trace:
+[76662.214596]  [<c0179dea>] jiffies_read+0x4a/0x130
+[76662.214596]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[76662.214596]  [<c0177dcb>] ktime_get+0x6b/0x100
+[76662.214596]  [<c017d73e>] tick_check_idle+0x3e/0xf0
+[76662.214596]  [<c015927c>] irq_enter+0x4c/0x70
+[76662.214596]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[76662.214596]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[76662.214596]  [<c0109c70>] common_interrupt+0x30/0x40
+[76662.214596]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[76662.214596]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[76662.214596]  [<c01083d4>] cpu_idle+0x94/0xd0
+[76662.214596]  [<c058b952>] rest_init+0x62/0x70
+[76662.214596]  [<c07c68e5>] start_kernel+0x356/0x35c
+[76662.214596]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[76662.214596]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[76662.214596] JIFFIES_READ: read #106900000 long value: 13868622606244202447
+[76662.214596] JIFFIES_READ: read #106900000 long value with cast: 19089359
+[76662.214596] JIFFIES_READ: read #106900000 long jiffies_64 value: 4314056655
+[76662.214596] JIFFIES_READ unsigned 32bit read #106900000 value: 19089359, 12347cf
+[76662.214596] JIFFIES_READ unsigned 32bit 2nd read #106900000 value: 19089359, 12347cf
+[76662.214596] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[76731.930960] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[76731.930963] Call Trace:
+[76731.930970]  [<c0179dea>] jiffies_read+0x4a/0x130
+[76731.930973]  [<c0177dcb>] ktime_get+0x6b/0x100
+[76731.930977]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[76731.930981]  [<c0149e91>] scheduler_tick+0x31/0x290
+[76731.930985]  [<c01aa289>] ? rcu_check_callbacks+0x69/0xf0
+[76731.930989]  [<c0161a47>] update_process_times+0x47/0x60
+[76731.930992]  [<c017c33a>] tick_periodic+0x2a/0x80
+[76731.930995]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[76731.930998]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[76731.931001]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[76731.931004]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[76731.931007]  [<c01a8014>] handle_level_irq+0x74/0x100
+[76731.931010]  [<c010bb6d>] handle_irq+0x1d/0x30
+[76731.931014]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[76731.931017]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[76731.931020]  [<c0109c70>] common_interrupt+0x30/0x40
+[76731.931024]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[76731.931027]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[76731.931031]  [<c01083d4>] cpu_idle+0x94/0xd0
+[76731.931035]  [<c058b952>] rest_init+0x62/0x70
+[76731.931039]  [<c07c68e5>] start_kernel+0x356/0x35c
+[76731.931042]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[76731.931045]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[76731.931048] JIFFIES_READ: read #107000000 long value: 575544724453
+[76731.931050] JIFFIES_READ: read #107000000 long value with cast: 19106789
+[76731.931052] JIFFIES_READ: read #107000000 long jiffies_64 value: 4314074085
+[76731.931054] JIFFIES_READ unsigned 32bit read #107000000 value: 19106789, 1238be5
+[76731.931056] JIFFIES_READ unsigned 32bit 2nd read #107000000 value: 19106789, 1238be5
+[76731.931058] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[76801.559310] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[76801.559314] Call Trace:
+[76801.559321]  [<c0179dea>] jiffies_read+0x4a/0x130
+[76801.559324]  [<c0177dcb>] ktime_get+0x6b/0x100
+[76801.559327]  [<c017d867>] tick_nohz_stop_sched_tick+0x77/0x440
+[76801.559331]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[76801.559335]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[76801.559339]  [<c05a196f>] ? _spin_lock_irqsave+0x2f/0x50
+[76801.559342]  [<c010ce07>] ? enable_8259A_irq+0x47/0x70
+[76801.559345]  [<c01595da>] irq_exit+0x5a/0x70
+[76801.559349]  [<c05a5bb5>] do_IRQ+0x55/0xc0
+[76801.559353]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[76801.559356]  [<c0109c70>] common_interrupt+0x30/0x40
+[76801.559359]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[76801.559362]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[76801.559366]  [<c01083d4>] cpu_idle+0x94/0xd0
+[76801.559370]  [<c058b952>] rest_init+0x62/0x70
+[76801.559374]  [<c07c68e5>] start_kernel+0x356/0x35c
+[76801.559377]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[76801.559380]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[76801.559383] JIFFIES_READ: read #107100000 long value: 38673829858
+[76801.559385] JIFFIES_READ: read #107100000 long value with cast: 19124194
+[76801.559387] JIFFIES_READ: read #107100000 long jiffies_64 value: 4314091490
+[76801.559389] JIFFIES_READ unsigned 32bit read #107100000 value: 19124194, 123cfe2
+[76801.559391] JIFFIES_READ unsigned 32bit 2nd read #107100000 value: 19124194, 123cfe2
+[76801.559393] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[76872.747759] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[76872.747762] Call Trace:
+[76872.747766]  [<c0179dea>] jiffies_read+0x4a/0x130
+[76872.747770]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[76872.747773]  [<c0177366>] update_wall_time+0x26/0x6b0
+[76872.747777]  [<c01619cb>] do_timer+0x1b/0x30
+[76872.747780]  [<c017c37a>] tick_periodic+0x6a/0x80
+[76872.747783]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[76872.747786]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[76872.747790]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[76872.747793]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[76872.747796]  [<c01a8014>] handle_level_irq+0x74/0x100
+[76872.747799]  [<c010bb6d>] handle_irq+0x1d/0x30
+[76872.747802]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[76872.747806]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[76872.747809]  [<c0109c70>] common_interrupt+0x30/0x40
+[76872.747812]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[76872.747815]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[76872.747819]  [<c01083d4>] cpu_idle+0x94/0xd0
+[76872.747822]  [<c058b952>] rest_init+0x62/0x70
+[76872.747825]  [<c07c68e5>] start_kernel+0x356/0x35c
+[76872.747828]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[76872.747832]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[76872.747834] JIFFIES_READ: read #107200000 long value: 76871343805799
+[76872.747836] JIFFIES_READ: read #107200000 long value with cast: 19141991
+[76872.747838] JIFFIES_READ: read #107200000 long jiffies_64 value: 4314109287
+[76872.747840] JIFFIES_READ unsigned 32bit read #107200000 value: 19141991, 1241567
+[76872.747842] JIFFIES_READ unsigned 32bit 2nd read #107200000 value: 19141991, 1241567
+[76872.747844] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[76944.916269] Pid: 41, comm: kondemand/0 Tainted: P        W  2.6.32.57 #73
+[76944.916271] Call Trace:
+[76944.916276]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[76944.916279]  [<c0179dea>] jiffies_read+0x4a/0x130
+[76944.916282]  [<c0107e3a>] ? __switch_to+0xba/0x170
+[76944.916285]  [<c0177dcb>] ktime_get+0x6b/0x100
+[76944.916288]  [<c017dc75>] get_cpu_idle_time_us+0x45/0xb0
+[76944.916292]  [<c016ac1e>] ? queue_delayed_work_on+0xae/0xe0
+[76944.916296]  [<c04b242c>] do_dbs_timer+0x10c/0x310
+[76944.916300]  [<c016e26e>] ? prepare_to_wait+0x3e/0x70
+[76944.916303]  [<c016a062>] worker_thread+0x112/0x220
+[76944.916306]  [<c04b2320>] ? do_dbs_timer+0x0/0x310
+[76944.916309]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[76944.916312]  [<c0169f50>] ? worker_thread+0x0/0x220
+[76944.916315]  [<c016dda4>] kthread+0x74/0x80
+[76944.916318]  [<c016dd30>] ? kthread+0x0/0x80
+[76944.916321]  [<c010a2c7>] kernel_thread_helper+0x7/0x10
+[76944.916324] JIFFIES_READ: read #107300000 long value: 14159480505948724191
+[76944.916326] JIFFIES_READ: read #107300000 long value with cast: 19160031
+[76944.916328] JIFFIES_READ: read #107300000 long jiffies_64 value: 4314127327
+[76944.916330] JIFFIES_READ unsigned 32bit read #107300000 value: 19160031, 1245bdf
+[76944.916332] JIFFIES_READ unsigned 32bit 2nd read #107300000 value: 19160031, 1245bdf
+[76944.916334] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[77015.829046] Hello, world 5
+[77015.829047] ========
+[77015.829049] myshort is a short integer: 1
+[77015.829050] myint is an integer: 420
+[77015.829051] mylong is a long integer: 9999
+[77015.829052] mystring is a string: blah
+[77015.829054] myintArray[0] = -1
+[77015.829055] myintArray[1] = -1
+[77015.829056] got 0 arguments for myintArray.
+[77016.968760] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[77016.968763] Call Trace:
+[77016.968767]  [<c0179dea>] jiffies_read+0x4a/0x130
+[77016.968767]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[77016.968767]  [<c0177dcb>] ktime_get+0x6b/0x100
+[77016.968767]  [<c017d73e>] tick_check_idle+0x3e/0xf0
+[77016.968767]  [<c015927c>] irq_enter+0x4c/0x70
+[77016.968767]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[77016.968767]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[77016.968767]  [<c0109c70>] common_interrupt+0x30/0x40
+[77016.968767]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[77016.968767]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[77016.968767]  [<c01083d4>] cpu_idle+0x94/0xd0
+[77016.968767]  [<c058b952>] rest_init+0x62/0x70
+[77016.968767]  [<c07c68e5>] start_kernel+0x356/0x35c
+[77016.968767]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[77016.968767]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[77016.968767] JIFFIES_READ: read #107400000 long value: 13868622606244291130
+[77016.968767] JIFFIES_READ: read #107400000 long value with cast: 19178042
+[77016.968767] JIFFIES_READ: read #107400000 long jiffies_64 value: 4314145338
+[77016.968767] JIFFIES_READ unsigned 32bit read #107400000 value: 19178042, 124a23a
+[77016.968767] JIFFIES_READ unsigned 32bit 2nd read #107400000 value: 19178042, 124a23a
+[77016.968767] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[77088.104177] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[77088.104180] Call Trace:
+[77088.104187]  [<c0179dea>] jiffies_read+0x4a/0x130
+[77088.104190]  [<c0177dcb>] ktime_get+0x6b/0x100
+[77088.104194]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[77088.104197]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[77088.104200]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[77088.104204]  [<c015927c>] irq_enter+0x4c/0x70
+[77088.104208]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[77088.104212]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[77088.104215]  [<c0109c70>] common_interrupt+0x30/0x40
+[77088.104219]  [<c01700e0>] ? posix_cpu_timer_set+0x50/0x440
+[77088.104222]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[77088.104226]  [<c01083d4>] cpu_idle+0x94/0xd0
+[77088.104230]  [<c058b952>] rest_init+0x62/0x70
+[77088.104234]  [<c07c68e5>] start_kernel+0x356/0x35c
+[77088.104237]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[77088.104240]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[77088.104243] JIFFIES_READ: read #107500000 long value: 19195825
+[77088.104245] JIFFIES_READ: read #107500000 long value with cast: 19195825
+[77088.104247] JIFFIES_READ: read #107500000 long jiffies_64 value: 4314163121
+[77088.104249] JIFFIES_READ unsigned 32bit read #107500000 value: 19195825, 124e7b1
+[77088.104251] JIFFIES_READ unsigned 32bit 2nd read #107500000 value: 19195825, 124e7b1
+[77088.104253] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[77112.434824] Goodbye, world 5 
+[77116.735177] hello_5: Unknown parameter `4'
+[77149.505319] hello_5: Unknown parameter `4'
+[77159.893704] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[77159.893706] Call Trace:
+[77159.893713]  [<c0179dea>] jiffies_read+0x4a/0x130
+[77159.893716]  [<c0177dcb>] ktime_get+0x6b/0x100
+[77159.893720]  [<c017d867>] tick_nohz_stop_sched_tick+0x77/0x440
+[77159.893723]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[77159.893727]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[77159.893731]  [<c05a196f>] ? _spin_lock_irqsave+0x2f/0x50
+[77159.893734]  [<c010ce07>] ? enable_8259A_irq+0x47/0x70
+[77159.893738]  [<c01595da>] irq_exit+0x5a/0x70
+[77159.893741]  [<c05a5bb5>] do_IRQ+0x55/0xc0
+[77159.893745]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[77159.893748]  [<c0109c70>] common_interrupt+0x30/0x40
+[77159.893751]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[77159.893755]  [<c01083d4>] cpu_idle+0x94/0xd0
+[77159.893759]  [<c058b952>] rest_init+0x62/0x70
+[77159.893764]  [<c07c68e5>] start_kernel+0x356/0x35c
+[77159.893767]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[77159.893770]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[77159.893773] JIFFIES_READ: read #107600000 long value: 38673919436
+[77159.893775] JIFFIES_READ: read #107600000 long value with cast: 19213772
+[77159.893777] JIFFIES_READ: read #107600000 long jiffies_64 value: 4314181068
+[77159.893779] JIFFIES_READ unsigned 32bit read #107600000 value: 19213772, 1252dcc
+[77159.893781] JIFFIES_READ unsigned 32bit 2nd read #107600000 value: 19213772, 1252dcc
+[77159.893783] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[77231.202149] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[77231.202152] Call Trace:
+[77231.202156]  [<c0179dea>] jiffies_read+0x4a/0x130
+[77231.202156]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[77231.202156]  [<c0177dcb>] ktime_get+0x6b/0x100
+[77231.202156]  [<c017d73e>] tick_check_idle+0x3e/0xf0
+[77231.202156]  [<c015927c>] irq_enter+0x4c/0x70
+[77231.202156]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[77231.202156]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[77231.202156]  [<c0109c70>] common_interrupt+0x30/0x40
+[77231.202156]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[77231.202156]  [<c01083d4>] cpu_idle+0x94/0xd0
+[77231.202156]  [<c058b952>] rest_init+0x62/0x70
+[77231.202156]  [<c07c68e5>] start_kernel+0x356/0x35c
+[77231.202156]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[77231.202156]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[77231.202156] JIFFIES_READ: read #107700000 long value: 13868622606244344685
+[77231.202156] JIFFIES_READ: read #107700000 long value with cast: 19231597
+[77231.202156] JIFFIES_READ: read #107700000 long jiffies_64 value: 4314198893
+[77231.202156] JIFFIES_READ unsigned 32bit read #107700000 value: 19231597, 125736d
+[77231.202156] JIFFIES_READ unsigned 32bit 2nd read #107700000 value: 19231597, 125736d
+[77231.202156] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[77254.000285] Hello, world 5
+[77254.000286] ========
+[77254.000288] myshort is a short integer: 4
+[77254.000289] myint is an integer: 5
+[77254.000290] mylong is a long integer: 6
+[77254.000291] mystring is a string: Boosh!
+[77254.000292] myintArray[0] = -1
+[77254.000294] myintArray[1] = -1
+[77254.000295] got 0 arguments for myintArray.
+[77302.110581] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[77302.110584] Call Trace:
+[77302.110587]  [<c0179dea>] jiffies_read+0x4a/0x130
+[77302.110587]  [<c0177dcb>] ktime_get+0x6b/0x100
+[77302.110587]  [<c017d73e>] tick_check_idle+0x3e/0xf0
+[77302.110587]  [<c015927c>] irq_enter+0x4c/0x70
+[77302.110587]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[77302.110587]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[77302.110587]  [<c0109c70>] common_interrupt+0x30/0x40
+[77302.110587]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[77302.110587]  [<c01083d4>] cpu_idle+0x94/0xd0
+[77302.110587]  [<c058b952>] rest_init+0x62/0x70
+[77302.110587]  [<c07c68e5>] start_kernel+0x356/0x35c
+[77302.110587]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[77302.110587]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[77302.110587] JIFFIES_READ: read #107800000 long value: 18446744069433833643
+[77302.110587] JIFFIES_READ: read #107800000 long value with cast: 19249323
+[77302.110587] JIFFIES_READ: read #107800000 long jiffies_64 value: 4314216619
+[77302.110587] JIFFIES_READ unsigned 32bit read #107800000 value: 19249323, 125b8ab
+[77302.110587] JIFFIES_READ unsigned 32bit 2nd read #107800000 value: 19249323, 125b8ab
+[77302.110587] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[77370.714884] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[77370.714887] Call Trace:
+[77370.714894]  [<c0179dea>] jiffies_read+0x4a/0x130
+[77370.714897]  [<c0177dcb>] ktime_get+0x6b/0x100
+[77370.714901]  [<c017d867>] tick_nohz_stop_sched_tick+0x77/0x440
+[77370.714905]  [<c01083b4>] cpu_idle+0x74/0xd0
+[77370.714909]  [<c058b952>] rest_init+0x62/0x70
+[77370.714913]  [<c07c68e5>] start_kernel+0x356/0x35c
+[77370.714917]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[77370.714920]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[77370.714922] JIFFIES_READ: read #107900000 long value: 13868623430878100394
+[77370.714924] JIFFIES_READ: read #107900000 long value with cast: 19266474
+[77370.714926] JIFFIES_READ: read #107900000 long jiffies_64 value: 4314233770
+[77370.714929] JIFFIES_READ unsigned 32bit read #107900000 value: 19266474, 125fbaa
+[77370.714931] JIFFIES_READ unsigned 32bit 2nd read #107900000 value: 19266474, 125fbaa
+[77370.714933] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[77439.243164] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[77439.243167] Call Trace:
+[77439.243175]  [<c0179dea>] jiffies_read+0x4a/0x130
+[77439.243178]  [<c0177dcb>] ktime_get+0x6b/0x100
+[77439.243181]  [<c017d867>] tick_nohz_stop_sched_tick+0x77/0x440
+[77439.243185]  [<c0159390>] ? __do_softirq+0xf0/0x1b0
+[77439.243189]  [<c012f2a8>] ? default_spin_lock_flags+0x8/0x10
+[77439.243193]  [<c05a196f>] ? _spin_lock_irqsave+0x2f/0x50
+[77439.243196]  [<c010ce07>] ? enable_8259A_irq+0x47/0x70
+[77439.243199]  [<c01595da>] irq_exit+0x5a/0x70
+[77439.243203]  [<c05a5bb5>] do_IRQ+0x55/0xc0
+[77439.243207]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[77439.243210]  [<c0109c70>] common_interrupt+0x30/0x40
+[77439.243213]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[77439.243217]  [<c01083d4>] cpu_idle+0x94/0xd0
+[77439.243221]  [<c058b952>] rest_init+0x62/0x70
+[77439.243225]  [<c07c68e5>] start_kernel+0x356/0x35c
+[77439.243228]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[77439.243232]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[77439.243234] JIFFIES_READ: read #108000000 long value: 38673989269
+[77439.243236] JIFFIES_READ: read #108000000 long value with cast: 19283605
+[77439.243238] JIFFIES_READ: read #108000000 long jiffies_64 value: 4314250901
+[77439.243240] JIFFIES_READ unsigned 32bit read #108000000 value: 19283605, 1263e95
+[77439.243242] JIFFIES_READ unsigned 32bit 2nd read #108000000 value: 19283605, 1263e95
+[77439.243244] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[77507.863454] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[77507.863457] Call Trace:
+[77507.863464]  [<c0179dea>] jiffies_read+0x4a/0x130
+[77507.863467]  [<c0177dcb>] ktime_get+0x6b/0x100
+[77507.863471]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[77507.863475]  [<c0149e91>] scheduler_tick+0x31/0x290
+[77507.863479]  [<c01aa289>] ? rcu_check_callbacks+0x69/0xf0
+[77507.863483]  [<c0161a47>] update_process_times+0x47/0x60
+[77507.863485]  [<c017c33a>] tick_periodic+0x2a/0x80
+[77507.863488]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[77507.863492]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[77507.863495]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[77507.863498]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[77507.863501]  [<c01a8014>] handle_level_irq+0x74/0x100
+[77507.863504]  [<c010bb6d>] handle_irq+0x1d/0x30
+[77507.863508]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[77507.863511]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[77507.863514]  [<c0109c70>] common_interrupt+0x30/0x40
+[77507.863518]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[77507.863521]  [<c01083d4>] cpu_idle+0x94/0xd0
+[77507.863525]  [<c058b952>] rest_init+0x62/0x70
+[77507.863529]  [<c07c68e5>] start_kernel+0x356/0x35c
+[77507.863532]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[77507.863535]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[77507.863538] JIFFIES_READ: read #108100000 long value: 575544918424
+[77507.863540] JIFFIES_READ: read #108100000 long value with cast: 19300760
+[77507.863542] JIFFIES_READ: read #108100000 long jiffies_64 value: 4314268056
+[77507.863544] JIFFIES_READ unsigned 32bit read #108100000 value: 19300760, 1268198
+[77507.863546] JIFFIES_READ unsigned 32bit 2nd read #108100000 value: 19300760, 1268198
+[77507.863548] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[77574.887642] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[77574.887645] Call Trace:
+[77574.887652]  [<c0179dea>] jiffies_read+0x4a/0x130
+[77574.887655]  [<c0177dcb>] ktime_get+0x6b/0x100
+[77574.887659]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[77574.887663]  [<c0149e91>] scheduler_tick+0x31/0x290
+[77574.887667]  [<c01aa289>] ? rcu_check_callbacks+0x69/0xf0
+[77574.887670]  [<c0161a47>] update_process_times+0x47/0x60
+[77574.887673]  [<c017c33a>] tick_periodic+0x2a/0x80
+[77574.887676]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[77574.887679]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[77574.887682]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[77574.887685]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[77574.887689]  [<c01a8014>] handle_level_irq+0x74/0x100
+[77574.887692]  [<c010bb6d>] handle_irq+0x1d/0x30
+[77574.887695]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[77574.887699]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[77574.887702]  [<c0109c70>] common_interrupt+0x30/0x40
+[77574.887705]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[77574.887709]  [<c01083d4>] cpu_idle+0x94/0xd0
+[77574.887713]  [<c058b952>] rest_init+0x62/0x70
+[77574.887717]  [<c07c68e5>] start_kernel+0x356/0x35c
+[77574.887720]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[77574.887723]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[77574.887726] JIFFIES_READ: read #108200000 long value: 575544935179
+[77574.887728] JIFFIES_READ: read #108200000 long value with cast: 19317515
+[77574.887730] JIFFIES_READ: read #108200000 long jiffies_64 value: 4314284811
+[77574.887732] JIFFIES_READ unsigned 32bit read #108200000 value: 19317515, 126c30b
+[77574.887734] JIFFIES_READ unsigned 32bit 2nd read #108200000 value: 19317515, 126c30b
+[77574.887737] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[77646.412112] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[77646.412115] Call Trace:
+[77646.412122]  [<c0179dea>] jiffies_read+0x4a/0x130
+[77646.412126]  [<c0173ca4>] ? sched_clock_local+0xa4/0x180
+[77646.412130]  [<c0177366>] update_wall_time+0x26/0x6b0
+[77646.412134]  [<c01619cb>] do_timer+0x1b/0x30
+[77646.412137]  [<c017c37a>] tick_periodic+0x6a/0x80
+[77646.412139]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[77646.412143]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[77646.412147]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[77646.412150]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[77646.412153]  [<c01a8014>] handle_level_irq+0x74/0x100
+[77646.412156]  [<c010bb6d>] handle_irq+0x1d/0x30
+[77646.412160]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[77646.412163]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[77646.412167]  [<c0109c70>] common_interrupt+0x30/0x40
+[77646.412170]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[77646.412174]  [<c01083d4>] cpu_idle+0x94/0xd0
+[77646.412178]  [<c058b952>] rest_init+0x62/0x70
+[77646.412182]  [<c07c68e5>] start_kernel+0x356/0x35c
+[77646.412186]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[77646.412189]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[77646.412191] JIFFIES_READ: read #108300000 long value: 77644438112483
+[77646.412193] JIFFIES_READ: read #108300000 long value with cast: 19335395
+[77646.412195] JIFFIES_READ: read #108300000 long jiffies_64 value: 4314302691
+[77646.412197] JIFFIES_READ unsigned 32bit read #108300000 value: 19335395, 12708e3
+[77646.412200] JIFFIES_READ unsigned 32bit 2nd read #108300000 value: 19335395, 12708e3
+[77646.412202] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[77716.912505] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[77716.912509] Call Trace:
+[77716.912511]  [<c0179dea>] jiffies_read+0x4a/0x130
+[77716.912511]  [<c0177dcb>] ktime_get+0x6b/0x100
+[77716.912511]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[77716.912511]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[77716.912511]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[77716.912511]  [<c015927c>] irq_enter+0x4c/0x70
+[77716.912511]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[77716.912511]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[77716.912511]  [<c0109c70>] common_interrupt+0x30/0x40
+[77716.912511]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[77716.912511]  [<c01083d4>] cpu_idle+0x94/0xd0
+[77716.912511]  [<c058b952>] rest_init+0x62/0x70
+[77716.912511]  [<c07c68e5>] start_kernel+0x356/0x35c
+[77716.912511]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[77716.912511]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[77716.912511] JIFFIES_READ: read #108400000 long value: 19353017
+[77716.912511] JIFFIES_READ: read #108400000 long value with cast: 19353017
+[77716.912511] JIFFIES_READ: read #108400000 long jiffies_64 value: 4314320313
+[77716.912511] JIFFIES_READ unsigned 32bit read #108400000 value: 19353017, 1274db9
+[77716.912511] JIFFIES_READ unsigned 32bit 2nd read #108400000 value: 19353017, 1274db9
+[77716.912511] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[77787.644951] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[77787.644951] Call Trace:
+[77787.644951]  [<c013ff75>] ? __wake_up+0x45/0x60
+[77787.644952]  [<c0179dea>] jiffies_read+0x4a/0x130
+[77787.644956]  [<c016a2b0>] ? insert_work+0x60/0xb0
+[77787.644959]  [<c0177366>] update_wall_time+0x26/0x6b0
+[77787.644963]  [<c05a196f>] ? _spin_lock_irqsave+0x2f/0x50
+[77787.644967]  [<c01619cb>] do_timer+0x1b/0x30
+[77787.644970]  [<c017c37a>] tick_periodic+0x6a/0x80
+[77787.644972]  [<c017c3ae>] tick_handle_periodic+0x1e/0x90
+[77787.644976]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[77787.644980]  [<c01a5a04>] handle_IRQ_event+0x54/0x150
+[77787.644983]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[77787.644986]  [<c01a8014>] handle_level_irq+0x74/0x100
+[77787.644989]  [<c010bb6d>] handle_irq+0x1d/0x30
+[77787.644992]  [<c05a5bac>] do_IRQ+0x4c/0xc0
+[77787.644995]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[77787.644999]  [<c0109c70>] common_interrupt+0x30/0x40
+[77787.645002]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[77787.645006]  [<c01083d4>] cpu_idle+0x94/0xd0
+[77787.645009]  [<c058b952>] rest_init+0x62/0x70
+[77787.645014]  [<c07c68e5>] start_kernel+0x356/0x35c
+[77787.645017]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[77787.645020]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[77787.645023] JIFFIES_READ: read #108500000 long value: 13841429381587112653
+[77787.645025] JIFFIES_READ: read #108500000 long value with cast: 19370701
+[77787.645027] JIFFIES_READ: read #108500000 long jiffies_64 value: 4314337997
+[77787.645029] JIFFIES_READ unsigned 32bit read #108500000 value: 19370701, 12792cd
+[77787.645031] JIFFIES_READ unsigned 32bit 2nd read #108500000 value: 19370701, 12792cd
+[77787.645033] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[77856.273215] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[77856.273218] Call Trace:
+[77856.273220]  [<c0179dea>] jiffies_read+0x4a/0x130
+[77856.273220]  [<c0177dcb>] ktime_get+0x6b/0x100
+[77856.273220]  [<c0173fa3>] sched_clock_tick+0x43/0xa0
+[77856.273220]  [<c0174015>] sched_clock_idle_wakeup_event+0x15/0x30
+[77856.273220]  [<c017d7e9>] tick_check_idle+0xe9/0xf0
+[77856.273220]  [<c015927c>] irq_enter+0x4c/0x70
+[77856.273220]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[77856.273220]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[77856.273220]  [<c0109c70>] common_interrupt+0x30/0x40
+[77856.273220]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[77856.273220]  [<c01083d4>] cpu_idle+0x94/0xd0
+[77856.273220]  [<c058b952>] rest_init+0x62/0x70
+[77856.273220]  [<c07c68e5>] start_kernel+0x356/0x35c
+[77856.273220]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[77856.273220]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[77856.273220] JIFFIES_READ: read #108600000 long value: 19387855
+[77856.273220] JIFFIES_READ: read #108600000 long value with cast: 19387855
+[77856.273220] JIFFIES_READ: read #108600000 long jiffies_64 value: 4314355151
+[77856.273220] JIFFIES_READ unsigned 32bit read #108600000 value: 19387855, 127d5cf
+[77856.273220] JIFFIES_READ unsigned 32bit 2nd read #108600000 value: 19387855, 127d5cf
+[77856.273220] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[77925.881579] Pid: 41, comm: kondemand/0 Tainted: P        W  2.6.32.57 #73
+[77925.881582] Call Trace:
+[77925.881589]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[77925.881593]  [<c0179dea>] jiffies_read+0x4a/0x130
+[77925.881597]  [<c0107e3a>] ? __switch_to+0xba/0x170
+[77925.881600]  [<c0177dcb>] ktime_get+0x6b/0x100
+[77925.881603]  [<c017dc75>] get_cpu_idle_time_us+0x45/0xb0
+[77925.881607]  [<c016ac1e>] ? queue_delayed_work_on+0xae/0xe0
+[77925.881612]  [<c04b242c>] do_dbs_timer+0x10c/0x310
+[77925.881615]  [<c016e26e>] ? prepare_to_wait+0x3e/0x70
+[77925.881619]  [<c016a062>] worker_thread+0x112/0x220
+[77925.881622]  [<c04b2320>] ? do_dbs_timer+0x0/0x310
+[77925.881626]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[77925.881629]  [<c0169f50>] ? worker_thread+0x0/0x220
+[77925.881632]  [<c016dda4>] kthread+0x74/0x80
+[77925.881635]  [<c016dd30>] ? kthread+0x0/0x80
+[77925.881638]  [<c010a2c7>] kernel_thread_helper+0x7/0x10
+[77925.881640] JIFFIES_READ: read #108700000 long value: 14159480505948969417
+[77925.881642] JIFFIES_READ: read #108700000 long value with cast: 19405257
+[77925.881644] JIFFIES_READ: read #108700000 long jiffies_64 value: 4314372553
+[77925.881646] JIFFIES_READ unsigned 32bit read #108700000 value: 19405257, 12819c9
+[77925.881649] JIFFIES_READ unsigned 32bit 2nd read #108700000 value: 19405257, 12819c9
+[77925.881651] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[77994.129846] Pid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[77994.129849] Call Trace:
+[77994.129856]  [<c0179dea>] jiffies_read+0x4a/0x130
+[77994.129859]  [<c0177dcb>] ktime_get+0x6b/0x100
+[77994.129863]  [<c017d867>] tick_nohz_stop_sched_tick+0x77/0x440
+[77994.129867]  [<c01083b4>] cpu_idle+0x74/0xd0
+[77994.129872]  [<c058b952>] rest_init+0x62/0x70
+[77994.129876]  [<c07c68e5>] start_kernel+0x356/0x35c
+[77994.129879]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[77994.129883]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[77994.129885] JIFFIES_READ: read #108800000 long value: 13868623430878256238
+[77994.129887] JIFFIES_READ: read #108800000 long value with cast: 19422318
+[77994.129889] JIFFIES_READ: read #108800000 long jiffies_64 value: 4314389614
+[77994.129891] JIFFIES_READ unsigned 32bit read #108800000 value: 19422318, 1285c6e
+[77994.129893] JIFFIES_READ unsigned 32bit 2nd read #108800000 value: 19422318, 1285c6e
+[77994.129895] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[78065.894328] Pid: 41, comm: kondemand/0 Tainted: P        W  2.6.32.57 #73
+[78065.894331] Call Trace:
+[78065.894338]  [<c014e6e8>] ? dequeue_task_fair+0x68/0x70
+[78065.894342]  [<c0179dea>] jiffies_read+0x4a/0x130
+[78065.894347]  [<c0107e3a>] ? __switch_to+0xba/0x170
+[78065.894349]  [<c0177dcb>] ktime_get+0x6b/0x100
+[78065.894353]  [<c017dc75>] get_cpu_idle_time_us+0x45/0xb0
+[78065.894356]  [<c016ac1e>] ? queue_delayed_work_on+0xae/0xe0
+[78065.894361]  [<c04b242c>] do_dbs_timer+0x10c/0x310
+[78065.894365]  [<c016e26e>] ? prepare_to_wait+0x3e/0x70
+[78065.894368]  [<c016a062>] worker_thread+0x112/0x220
+[78065.894371]  [<c04b2320>] ? do_dbs_timer+0x0/0x310
+[78065.894374]  [<c016e030>] ? autoremove_wake_function+0x0/0x50
+[78065.894377]  [<c0169f50>] ? worker_thread+0x0/0x220
+[78065.894380]  [<c016dda4>] kthread+0x74/0x80
+[78065.894383]  [<c016dd30>] ? kthread+0x0/0x80
+[78065.894386]  [<c010a2c7>] kernel_thread_helper+0x7/0x10
+[78065.894389] JIFFIES_READ: read #108900000 long value: 14159480505949004418
+[78065.894391] JIFFIES_READ: read #108900000 long value with cast: 19440258
+[78065.894393] JIFFIES_READ: read #108900000 long jiffies_64 value: 4314407554
+[78065.894395] JIFFIES_READ unsigned 32bit read #108900000 value: 19440258, 128a282
+[78065.894397] JIFFIES_READ unsigned 32bit 2nd read #108900000 value: 19440258, 128a282
+[78065.894400] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[78081.323794] char 0: B
+[78081.323796] char 1: o
+[78081.323797] char 2: o
+[78081.323798] char 3: s
+[78081.323799] char 4: h
+[78081.323799] char 5: !
+[78081.323800] char 6: 
+[78081.323801] char 7: 
+[78081.323802] char 8: ê
+[78081.323803] char 9: ±
+[78081.323804] char 10: x
+[78081.323805] char 11: ¿
+[78081.323806] char 12: 
+[78081.323807] char 13: 
+[78081.323808] char 14: 
+[78081.323809] char 15: 
+[78081.323809] char 16: 
+[78081.323810] char 17: ÅPid: 0, comm: swapper Tainted: P        W  2.6.32.57 #73
+[78135.826688] Call Trace:
+[78135.826691]  [<c0179dea>] jiffies_read+0x4a/0x130
+[78135.826691]  [<c0177dcb>] ktime_get+0x6b/0x100
+[78135.826691]  [<c017d73e>] tick_check_idle+0x3e/0xf0
+[78135.826691]  [<c015927c>] irq_enter+0x4c/0x70
+[78135.826691]  [<c05a5b8e>] do_IRQ+0x2e/0xc0
+[78135.826691]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[78135.826691]  [<c0109c70>] common_interrupt+0x30/0x40
+[78135.826691]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[78135.826691]  [<c01083d4>] cpu_idle+0x94/0xd0
+[78135.826691]  [<c058b952>] rest_init+0x62/0x70
+[78135.826691]  [<c07c68e5>] start_kernel+0x356/0x35c
+[78135.826691]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[78135.826691]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[78135.826691] JIFFIES_READ: read #109000000 long value: 18446744069434042059
+[78135.826691] JIFFIES_READ: read #109000000 long value with cast: 19457739
+[78135.826691] JIFFIES_READ: read #109000000 long jiffies_64 value: 4314425035
+[78135.826691] JIFFIES_READ unsigned 32bit read #109000000 value: 19457739, 128e6cb
+[78135.826691] JIFFIES_READ unsigned 32bit 2nd read #109000000 value: 19457739, 128e6cb
+[78135.826691] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[78178.753458] Goodbye, world BUFF OVERFLOW 
+[78181.149996] BUFF_OVRFLW!
+[78181.149999] char 0: B
+[78181.150000] char 1: o
+[78181.150001] char 2: o
+[78181.150002] char 3: s
+[78181.150003] char 4: h
+[78181.150004] char 5: !
+[78181.150005] char 6: 
+[78181.150005] char 7: 
+[78181.150006] char 8: ê
+[78181.150007] char 9: ±
+[78181.150008] char 10: x
+[78181.150009] char 11: ¿
+[78181.150010] char 12: 
+[78181.150011] char 13: 
+[78181.150012] char 14: 
+[78181.150013] char 15: 
