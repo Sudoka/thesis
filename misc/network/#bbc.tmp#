@@ -1,0 +1,316 @@
+01:52:27.001382 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:27.025384 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3143536536, ack 1, win 5792, options [mss 1460,nop,nop,TS val 320226 ecr 0], length 0
+01:52:27.029384 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:27.077387 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:27.101388 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3144724110, ack 1, win 5792, options [mss 1460,nop,nop,TS val 320245 ecr 0], length 0
+01:52:27.101388 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:27.153392 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:27.177393 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3145911684, ack 1, win 5792, options [mss 1460,nop,nop,TS val 320264 ecr 0], length 0
+01:52:27.177393 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:27.229396 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:27.253398 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3147099258, ack 1, win 5792, options [mss 1460,nop,nop,TS val 320283 ecr 0], length 0
+01:52:27.253398 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:27.305401 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:27.329403 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3148286832, ack 1, win 5792, options [mss 1460,nop,nop,TS val 320302 ecr 0], length 0
+01:52:27.329403 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:27.381406 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:27.405407 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3149474406, ack 1, win 5792, options [mss 1460,nop,nop,TS val 320321 ecr 0], length 0
+01:52:27.405407 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:27.457411 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:27.481412 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3150661980, ack 1, win 5792, options [mss 1460,nop,nop,TS val 320340 ecr 0], length 0
+01:52:27.481412 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:27.533415 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:27.557417 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3151849554, ack 1, win 5792, options [mss 1460,nop,nop,TS val 320359 ecr 0], length 0
+01:52:27.557417 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:27.609420 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:27.633422 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3153037128, ack 1, win 5792, options [mss 1460,nop,nop,TS val 320378 ecr 0], length 0
+01:52:27.633422 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:27.689425 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:27.713427 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3154287206, ack 1, win 5792, options [mss 1460,nop,nop,TS val 320398 ecr 0], length 0
+01:52:27.713427 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:27.765430 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:27.789431 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3155474780, ack 1, win 5792, options [mss 1460,nop,nop,TS val 320417 ecr 0], length 0
+01:52:27.789431 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:27.841435 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:27.865436 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [S.], seq 220322488, ack 1, win 5792, options [mss 1460,nop,nop,TS val 320436 ecr 0], length 0
+01:52:31.065636 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [S.], seq 220322488, ack 1, win 5792, options [mss 1460,nop,nop,TS val 321236 ecr 0], length 0
+01:52:37.466035 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [S.], seq 220322488, ack 1, win 5792, options [mss 1460,nop,nop,TS val 322836 ecr 0], length 0
+01:52:46.442595 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0nnnn
+01:52:46.466596 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3447305478, ack 1, win 5792, options [mss 1460,nop,nop,TS val 325086 ecr 0], length 0
+01:52:46.466596 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:46.522599 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:46.546601 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3448555556, ack 1, win 5792, options [mss 1460,nop,nop,TS val 325106 ecr 0], length 0
+01:52:46.546601 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:46.598604 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:46.622606 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3449743130, ack 1, win 5792, options [mss 1460,nop,nop,TS val 325125 ecr 0], length 0
+01:52:46.622606 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:46.674609 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:46.698610 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3450930704, ack 1, win 5792, options [mss 1460,nop,nop,TS val 325144 ecr 0], length 0
+01:52:46.698610 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:46.750614 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:46.774615 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3452118278, ack 1, win 5792, options [mss 1460,nop,nop,TS val 325163 ecr 0], length 0
+01:52:46.774615 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:46.826618 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:46.850620 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3453305852, ack 1, win 5792, options [mss 1460,nop,nop,TS val 325182 ecr 0], length 0
+01:52:46.850620 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:46.906623 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:46.930625 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3454555930, ack 1, win 5792, options [mss 1460,nop,nop,TS val 325202 ecr 0], length 0
+01:52:46.930625 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:46.982628 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:47.006630 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3455743504, ack 1, win 5792, options [mss 1460,nop,nop,TS val 325221 ecr 0], length 0
+01:52:47.006630 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:47.058633 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:47.082634 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3456931078, ack 1, win 5792, options [mss 1460,nop,nop,TS val 325240 ecr 0], length 0
+01:52:47.082634 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:47.134638 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:47.158639 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3458118652, ack 1, win 5792, options [mss 1460,nop,nop,TS val 325259 ecr 0], length 0
+01:52:47.158639 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:47.214643 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:47.238644 IP dcashman-01.ucsd.edu.4446 > dcashman-02.ucsd.edu.55555: Flags [S.], seq 3459368730, ack 1, win 5792, options [mss 1460,nop,nop,TS val 325279 ecr 0], length 0
+01:52:47.238644 IP dcashman-02.ucsd.edu.55555 > dcashman-01.ucsd.edu.4446: Flags [R], seq 1, win 0, length 0
+01:52:47.290647 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [S], seq 0, win 8192, options [TS val 0 ecr 0,eol], length 0
+01:52:47.290647 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [S.], seq 220322488, ack 1, win 5792, options [mss 1460,nop,nop,TS val 325292 ecr 0], length 0
+01:52:47.342651 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523591337, win 8192, length 6
+01:52:47.342651 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523591337, win 0, length 0
+01:52:47.390654 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523591346, win 8192, length 6
+01:52:47.390654 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523591346, win 0, length 0
+01:52:47.438657 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523591355, win 8192, length 6
+01:52:47.438657 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523591355, win 0, length 0
+01:52:47.486660 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523591364, win 8192, length 6
+01:52:47.486660 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523591364, win 0, length 0
+01:52:47.534663 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523591373, win 8192, length 6
+01:52:47.534663 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523591373, win 0, length 0
+01:52:47.582666 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523591382, win 8192, length 6
+01:52:47.582666 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523591382, win 0, length 0
+01:52:47.630669 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523653834, win 8192, length 6
+01:52:47.630669 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523653834, win 0, length 0
+01:52:47.678672 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523653844, win 8192, length 6
+01:52:47.678672 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523653844, win 0, length 0
+01:52:47.726675 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523653854, win 8192, length 6
+01:52:47.726675 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523653854, win 0, length 0
+01:52:47.774678 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523653864, win 8192, length 6
+01:52:47.774678 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523653864, win 0, length 0
+01:52:47.830681 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523653874, win 8192, length 6
+01:52:47.830681 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523653874, win 0, length 0
+01:52:47.878684 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523653884, win 8192, length 6
+01:52:47.878684 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523653884, win 0, length 0
+01:52:47.926687 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523716331, win 8192, length 6
+01:52:47.926687 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523716331, win 0, length 0
+01:52:47.974690 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523716342, win 8192, length 6
+01:52:47.974690 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523716342, win 0, length 0
+01:52:48.026693 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523716353, win 8192, length 6
+01:52:48.026693 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523716353, win 0, length 0
+01:52:48.078697 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523716364, win 8192, length 6
+01:52:48.078697 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523716364, win 0, length 0
+01:52:48.126700 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523716375, win 8192, length 6
+01:52:48.126700 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523716375, win 0, length 0
+01:52:48.174703 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523716386, win 8192, length 6
+01:52:48.174703 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523716386, win 0, length 0
+01:52:48.222706 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523778828, win 8192, length 6
+01:52:48.222706 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523778828, win 0, length 0
+01:52:48.270709 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523778840, win 8192, length 6
+01:52:48.270709 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523778840, win 0, length 0
+01:52:48.326712 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523778852, win 8192, length 6
+01:52:48.326712 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523778852, win 0, length 0
+01:52:48.374715 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523778864, win 8192, length 6
+01:52:48.374715 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523778864, win 0, length 0
+01:52:48.422718 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523778876, win 8192, length 6
+01:52:48.422718 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523778876, win 0, length 0
+01:52:48.470721 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523778888, win 8192, length 6
+01:52:48.470721 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523778888, win 0, length 0
+01:52:48.518724 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523841325, win 8192, length 6
+01:52:48.518724 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523841325, win 0, length 0
+01:52:48.574727 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523841338, win 8192, length 6
+01:52:48.574727 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523841338, win 0, length 0
+01:52:48.622730 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523841351, win 8192, length 6
+01:52:48.622730 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523841351, win 0, length 0
+01:52:48.670733 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523841364, win 8192, length 6
+01:52:48.670733 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523841364, win 0, length 0
+01:52:48.718736 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523841377, win 8192, length 6
+01:52:48.718736 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523841377, win 0, length 0
+01:52:48.766739 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523841390, win 8192, length 6
+01:52:48.766739 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523841390, win 0, length 0
+01:52:48.822743 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523903822, win 8192, length 6
+01:52:48.822743 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523903822, win 0, length 0
+01:52:48.870746 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523903836, win 8192, length 6
+01:52:48.870746 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523903836, win 0, length 0
+01:52:48.918749 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523903850, win 8192, length 6
+01:52:48.918749 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523903850, win 0, length 0
+01:52:48.966752 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523903864, win 8192, length 6
+01:52:48.966752 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523903864, win 0, length 0
+01:52:49.014755 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523903878, win 8192, length 6
+01:52:49.014755 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523903878, win 0, length 0
+01:52:49.070758 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523903892, win 8192, length 6
+01:52:49.070758 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523903892, win 0, length 0
+01:52:49.118761 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523966319, win 8192, length 6
+01:52:49.118761 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523966319, win 0, length 0
+01:52:49.166764 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523966334, win 8192, length 6
+01:52:49.166764 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523966334, win 0, length 0
+01:52:49.214767 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523966349, win 8192, length 6
+01:52:49.214767 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523966349, win 0, length 0
+01:52:49.262770 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523966364, win 8192, length 6
+01:52:49.262770 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523966364, win 0, length 0
+01:52:49.318774 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523966379, win 8192, length 6
+01:52:49.318774 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523966379, win 0, length 0
+01:52:49.366777 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 523966394, win 8192, length 6
+01:52:49.366777 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 523966394, win 0, length 0
+01:52:49.414780 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524028816, win 8192, length 6
+01:52:49.414780 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524028816, win 0, length 0
+01:52:49.462783 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524028832, win 8192, length 6
+01:52:49.462783 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524028832, win 0, length 0
+01:52:49.510786 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524028848, win 8192, length 6
+01:52:49.510786 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524028848, win 0, length 0
+01:52:49.566789 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524028864, win 8192, length 6
+01:52:49.566789 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524028864, win 0, length 0
+01:52:49.614792 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524028880, win 8192, length 6
+01:52:49.614792 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524028880, win 0, length 0
+01:52:49.662795 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524028896, win 8192, length 6
+01:52:49.662795 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524028896, win 0, length 0
+01:52:49.710798 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524091313, win 8192, length 6
+01:52:49.710798 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524091313, win 0, length 0
+01:52:49.758801 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524091330, win 8192, length 6
+01:52:49.758801 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524091330, win 0, length 0
+01:52:49.814805 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524091347, win 8192, length 6
+01:52:49.814805 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524091347, win 0, length 0
+01:52:49.862808 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524091364, win 8192, length 6
+01:52:49.862808 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524091364, win 0, length 0
+01:52:49.910811 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524091381, win 8192, length 6
+01:52:49.910811 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524091381, win 0, length 0
+01:52:49.958814 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524091398, win 8192, length 6
+01:52:49.958814 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524091398, win 0, length 0
+01:52:50.006817 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524153810, win 8192, length 6
+01:52:50.006817 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524153810, win 0, length 0
+01:52:50.062820 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524153828, win 8192, length 6
+01:52:50.062820 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524153828, win 0, length 0
+01:52:50.110823 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524153846, win 8192, length 6
+01:52:50.110823 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524153846, win 0, length 0
+01:52:50.158826 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524153864, win 8192, length 6
+01:52:50.158826 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524153864, win 0, length 0
+01:52:50.206829 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524153882, win 8192, length 6
+01:52:50.206829 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524153882, win 0, length 0
+01:52:50.254832 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524153900, win 8192, length 6
+01:52:50.254832 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524153900, win 0, length 0
+01:52:50.282834 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [S.], seq 220322488, ack 1, win 5792, options [mss 1460,nop,nop,TS val 326040 ecr 0], length 0
+01:52:50.310836 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524216307, win 8192, length 6
+01:52:50.310836 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524216307, win 0, length 0
+01:52:50.358839 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524216326, win 8192, length 6
+01:52:50.358839 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524216326, win 0, length 0
+01:52:50.406842 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524216345, win 8192, length 6
+01:52:50.406842 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524216345, win 0, length 0
+01:52:50.454845 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524216364, win 8192, length 6
+01:52:50.454845 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524216364, win 0, length 0
+01:52:50.502848 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524216383, win 8192, length 6
+01:52:50.502848 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524216383, win 0, length 0
+01:52:50.558851 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524216402, win 8192, length 6
+01:52:50.558851 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524216402, win 0, length 0
+01:52:50.606854 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524278804, win 8192, length 6
+01:52:50.606854 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524278804, win 0, length 0
+01:52:50.654857 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524278824, win 8192, length 6
+01:52:50.654857 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524278824, win 0, length 0
+01:52:50.702860 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524278844, win 8192, length 6
+01:52:50.702860 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524278844, win 0, length 0
+01:52:50.750863 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524278864, win 8192, length 6
+01:52:50.750863 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524278864, win 0, length 0
+01:52:50.806867 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524278884, win 8192, length 6
+01:52:50.806867 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524278884, win 0, length 0
+01:52:50.854870 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524278904, win 8192, length 6
+01:52:50.854870 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524278904, win 0, length 0
+01:52:50.902873 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524341301, win 8192, length 6
+01:52:50.902873 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524341301, win 0, length 0
+01:52:50.950876 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524341322, win 8192, length 6
+01:52:50.950876 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524341322, win 0, length 0
+01:52:50.998879 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524341343, win 8192, length 6
+01:52:50.998879 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524341343, win 0, length 0
+01:52:51.054882 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524341364, win 8192, length 6
+01:52:51.054882 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524341364, win 0, length 0
+01:52:51.102885 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524341385, win 8192, length 6
+01:52:51.102885 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524341385, win 0, length 0
+01:52:51.150888 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524341406, win 8192, length 6
+01:52:51.150888 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524341406, win 0, length 0
+01:52:51.198891 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524403798, win 8192, length 6
+01:52:51.198891 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524403798, win 0, length 0
+01:52:51.246894 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524403820, win 8192, length 6
+01:52:51.246894 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524403820, win 0, length 0
+01:52:51.302898 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524403842, win 8192, length 6
+01:52:51.302898 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524403842, win 0, length 0
+01:52:51.350901 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524403864, win 8192, length 6
+01:52:51.350901 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524403864, win 0, length 0
+01:52:51.398904 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524403886, win 8192, length 6
+01:52:51.398904 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524403886, win 0, length 0
+01:52:51.446907 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524403908, win 8192, length 6
+01:52:51.446907 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524403908, win 0, length 0
+01:52:51.494910 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524466295, win 8192, length 6
+01:52:51.494910 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524466295, win 0, length 0
+01:52:51.550913 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524466318, win 8192, length 6
+01:52:51.550913 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524466318, win 0, length 0
+01:52:51.598916 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524466341, win 8192, length 6
+01:52:51.598916 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524466341, win 0, length 0
+01:52:51.646919 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524466364, win 8192, length 6
+01:52:51.646919 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524466364, win 0, length 0
+01:52:51.694922 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524466387, win 8192, length 6
+01:52:51.694922 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524466387, win 0, length 0
+01:52:51.742925 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524466410, win 8192, length 6
+01:52:51.742925 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524466410, win 0, length 0
+01:52:51.798929 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524528792, win 8192, length 6
+01:52:51.798929 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524528792, win 0, length 0
+01:52:51.846932 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524528816, win 8192, length 6
+01:52:51.846932 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524528816, win 0, length 0
+01:52:51.894935 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524528840, win 8192, length 6
+01:52:51.894935 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524528840, win 0, length 0
+01:52:51.942938 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524528864, win 8192, length 6
+01:52:51.942938 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524528864, win 0, length 0
+01:52:51.990941 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524528888, win 8192, length 6
+01:52:51.990941 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524528888, win 0, length 0
+01:52:52.046944 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524528912, win 8192, length 6
+01:52:52.046944 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524528912, win 0, length 0
+01:52:52.094947 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524591289, win 8192, length 6
+01:52:52.094947 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524591289, win 0, length 0
+01:52:52.142950 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524591314, win 8192, length 6
+01:52:52.142950 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524591314, win 0, length 0
+01:52:52.190953 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524591339, win 8192, length 6
+01:52:52.190953 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524591339, win 0, length 0
+01:52:52.238956 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524591364, win 8192, length 6
+01:52:52.238956 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524591364, win 0, length 0
+01:52:52.294959 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524591389, win 8192, length 6
+01:52:52.294959 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524591389, win 0, length 0
+01:52:52.342962 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524591414, win 8192, length 6
+01:52:52.342962 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524591414, win 0, length 0
+01:52:52.390965 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524653786, win 8192, length 6
+01:52:52.390965 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524653786, win 0, length 0
+01:52:52.438968 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524653812, win 8192, length 6
+01:52:52.438968 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524653812, win 0, length 0
+01:52:52.486971 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524653838, win 8192, length 6
+01:52:52.486971 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524653838, win 0, length 0
+01:52:52.542975 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524653864, win 8192, length 6
+01:52:52.542975 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524653864, win 0, length 0
+01:52:52.590978 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524653890, win 8192, length 6
+01:52:52.590978 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524653890, win 0, length 0
+01:52:52.638981 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524653916, win 8192, length 6
+01:52:52.638981 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524653916, win 0, length 0
+01:52:52.686984 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524716283, win 8192, length 6
+01:52:52.686984 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524716283, win 0, length 0
+01:52:52.734987 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524716310, win 8192, length 6
+01:52:52.734987 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524716310, win 0, length 0
+01:52:52.790990 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524716337, win 8192, length 6
+01:52:52.790990 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524716337, win 0, length 0
+01:52:52.838993 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524716364, win 8192, length 6
+01:52:52.838993 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524716364, win 0, length 0
+01:52:52.886996 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524716391, win 8192, length 6
+01:52:52.886996 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524716391, win 0, length 0
+01:52:52.934999 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524716418, win 8192, length 6
+01:52:52.934999 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524716418, win 0, length 0
+01:52:52.983002 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524778780, win 8192, length 6
+01:52:52.983002 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524778780, win 0, length 0
+01:52:53.039006 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524778808, win 8192, length 6
+01:52:53.039006 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524778808, win 0, length 0
+01:52:53.087009 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524778836, win 8192, length 6
+01:52:53.087009 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524778836, win 0, length 0
+01:52:53.135012 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524778864, win 8192, length 6
+01:52:53.135012 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524778864, win 0, length 0
+01:52:53.183015 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524778892, win 8192, length 6
+01:52:53.183015 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524778892, win 0, length 0
+01:52:53.231018 IP 1.2.3.4.1111 > dcashman-01.ucsd.edu.4446: Flags [.], seq 1:7, ack 524778920, win 8192, length 6
+01:52:53.231018 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [R], seq 524778920, win 0, length 0
+01:53:14.284331 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [S.], seq 220322488, ack 1, win 5792, options [mss 1460,nop,nop,TS val 332040 ecr 0], length 0
+01:54:02.287326 IP dcashman-01.ucsd.edu.4446 > 1.2.3.4.1111: Flags [S.], seq 220322488, ack 1, win 5792, options [mss 1460,nop,nop,TS val 344040 ecr 0], length 0
+

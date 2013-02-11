@@ -1,0 +1,1 @@
+cmd_/home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.ko := ld -r -m elf_i386 -T /home/dcashman/thesis/linux-2.6.32.57/scripts/module-common.lds --build-id -o /home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.ko /home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.o /home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o

@@ -1,0 +1,22 @@
+/*
+ * THe following license idents are currently accepted as indicating free
+ * software modules
+ *
+ *    "GPL"                        [GNU Public license v2 or later]
+ *    "GPL v2"                     [GNU Public License v2]
+ *    "GPL and additional rights"  [GNU Public license v2 rights and more]
+ *    "Dual BSD/GPL"               [GNU Public LIcense v2 or BSD license choice]
+ *    "Dual MIT/GPL"               [GNU Public Licence v2 or MIT license choice]
+ *    "Dual MPL/GPL"               [GNU Public LIcense v2 or Mozilla license choice]
+ *    
+ *
+ * The following other idetns are available
+ *
+ *    "Proprietary"                [non free products]
+ *
+ * There are dual licensed components, but when runnign with Linux it is the
+ * GPL that is relevant so this is a non issue.  Similarly, LGPL linked with GPL
+ * is a GPL combined work.
+ *
+ * This exists for several reasons
+ * 1.   So modinfo can show license info for users wanting to vet their setupth

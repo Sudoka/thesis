@@ -1,0 +1,2224 @@
+19e
+[  226.477071]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.481009] TIME: timekeeper mult being adjusted from 1024034349 to 1024034348!
+[  226.481011] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.481013] Call Trace:
+[  226.481016]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.481019]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.481023]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.481025]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.481028]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.481031]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.481034]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.481037]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.481040]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.481043]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.481046]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.481049]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.481052]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.481055]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.481058]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.481062]  [<c058bac2>] rest_init+0x62/0x70
+[  226.481065]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.481068]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.481071]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.485009] TIME: timekeeper mult being adjusted from 1024034348 to 1024034349!
+[  226.485011] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.485013] Call Trace:
+[  226.485016]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.485019]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.485023]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.485025]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.485028]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.485031]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.485034]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.485037]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.485040]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.485043]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.485046]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.485049]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.485052]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.485055]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.485059]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.485062]  [<c058bac2>] rest_init+0x62/0x70
+[  226.485065]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.485068]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.485071]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.489011] TIME: timekeeper mult being adjusted from 1024034349 to 1024034348!
+[  226.489012] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.489013] Call Trace:
+[  226.489016]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.489020]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.489023]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.489026]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.489029]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.489032]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.489035]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.489038]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.489041]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.489044]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.489046]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.489050]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.489052]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.489056]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.489059]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.489062]  [<c058bac2>] rest_init+0x62/0x70
+[  226.489066]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.489069]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.489072]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.493009] TIME: timekeeper mult being adjusted from 1024034348 to 1024034349!
+[  226.493012] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.493013] Call Trace:
+[  226.493016]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.493020]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.493023]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.493026]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.493028]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.493032]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.493034]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.493037]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.493040]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.493043]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.493046]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.493050]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.493052]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.493056]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.493059]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.493062]  [<c058bac2>] rest_init+0x62/0x70
+[  226.493065]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.493068]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.493071]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.497010] TIME: timekeeper mult being adjusted from 1024034349 to 1024034381!
+[  226.497012] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.497014] Call Trace:
+[  226.497017]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.497020]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.497024]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.497026]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.497029]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.497032]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.497035]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.497038]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.497041]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.497044]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.497046]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.497050]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.497052]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.497056]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.497059]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.497062]  [<c058bac2>] rest_init+0x62/0x70
+[  226.497065]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.497068]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.497071]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.501011] TIME: timekeeper mult being adjusted from 1024034381 to 1024034397!
+[  226.501012] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.501014] Call Trace:
+[  226.501017]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.501021]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.501024]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.501027]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.501029]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.501032]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.501035]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.501038]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.501041]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.501044]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.501047]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.501050]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.501053]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.501057]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.501060]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.501063]  [<c058bac2>] rest_init+0x62/0x70
+[  226.501066]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.501069]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.501072]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.505010] TIME: timekeeper mult being adjusted from 1024034397 to 1024034405!
+[  226.505012] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.505014] Call Trace:
+[  226.505017]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.505020]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.505024]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.505027]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.505029]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.505032]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.505035]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.505038]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.505041]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.505044]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.505047]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.505050]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.505053]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.505056]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.505059]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.505063]  [<c058bac2>] rest_init+0x62/0x70
+[  226.505066]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.505069]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.505072]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.509010] TIME: timekeeper mult being adjusted from 1024034405 to 1024034406!
+[  226.509012] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.509014] Call Trace:
+[  226.509017]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.509020]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.509024]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.509026]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.509029]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.509032]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.509035]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.509038]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.509041]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.509044]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.509047]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.509050]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.509053]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.509056]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.509060]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.509063]  [<c058bac2>] rest_init+0x62/0x70
+[  226.509066]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.509069]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.509072]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.513011] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.513013] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.513014] Call Trace:
+[  226.513017]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.513021]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.513024]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.513027]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.513030]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.513033]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.513036]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.513039]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.513042]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.513045]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.513047]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.513051]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.513054]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.513057]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.513060]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.513063]  [<c058bac2>] rest_init+0x62/0x70
+[  226.513066]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.513070]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.513073]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.517011] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.517013] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.517014] Call Trace:
+[  226.517017]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.517021]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.517025]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.517027]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.517030]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.517033]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.517036]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.517039]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.517042]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.517045]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.517048]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.517051]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.517054]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.517057]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.517060]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.517064]  [<c058bac2>] rest_init+0x62/0x70
+[  226.517067]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.517070]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.517073]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.521010] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.521013] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.521014] Call Trace:
+[  226.521017]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.521021]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.521024]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.521027]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.521029]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.521032]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.521035]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.521038]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.521041]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.521044]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.521047]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.521050]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.521053]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.521056]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.521059]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.521063]  [<c058bac2>] rest_init+0x62/0x70
+[  226.521066]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.521069]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.521072]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.525012] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.525013] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.525015] Call Trace:
+[  226.525018]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.525021]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.525025]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.525027]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.525030]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.525033]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.525036]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.525039]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.525042]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.525045]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.525048]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.525051]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.525054]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.525057]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.525061]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.525064]  [<c058bac2>] rest_init+0x62/0x70
+[  226.525067]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.525070]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.525073]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.529011] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.529013] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.529015] Call Trace:
+[  226.529018]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.529021]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.529025]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.529027]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.529030]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.529033]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.529036]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.529039]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.529042]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.529045]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.529048]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.529051]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.529054]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.529057]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.529060]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.529064]  [<c058bac2>] rest_init+0x62/0x70
+[  226.529067]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.529070]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.529073]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.533014] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.533014] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.533015] Call Trace:
+[  226.533018]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.533021]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.533025]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.533028]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.533030]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.533033]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.533036]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.533039]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.533042]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.533045]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.533048]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.533051]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.533054]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.533057]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.533061]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.533064]  [<c058bac2>] rest_init+0x62/0x70
+[  226.533067]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.533070]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.533073]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.537013] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.537013] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.537015] Call Trace:
+[  226.537018]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.537021]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.537025]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.537028]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.537030]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.537033]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.537036]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.537039]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.537042]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.537045]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.537048]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.537051]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.537054]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.537058]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.537061]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.537064]  [<c058bac2>] rest_init+0x62/0x70
+[  226.537067]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.537070]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.537073]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.541011] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.541013] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.541015] Call Trace:
+[  226.541018]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.541021]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.541025]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.541028]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.541030]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.541033]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.541036]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.541039]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.541042]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.541045]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.541048]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.541051]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.541054]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.541057]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.541061]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.541064]  [<c058bac2>] rest_init+0x62/0x70
+[  226.541067]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.541070]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.541073]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.545011] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.545013] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.545015] Call Trace:
+[  226.545018]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.545021]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.545025]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.545027]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.545030]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.545033]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.545036]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.545039]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.545042]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.545045]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.545048]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.545051]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.545054]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.545057]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.545061]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.545064]  [<c058bac2>] rest_init+0x62/0x70
+[  226.545067]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.545070]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.545073]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.549012] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.549014] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.549016] Call Trace:
+[  226.549019]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.549022]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.549026]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.549028]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.549031]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.549034]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.549037]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.549040]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.549043]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.549046]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.549049]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.549052]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.549055]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.549058]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.549062]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.549065]  [<c058bac2>] rest_init+0x62/0x70
+[  226.549068]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.549071]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.549074]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.553011] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.553014] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.553015] Call Trace:
+[  226.553018]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.553022]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.553025]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.553028]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.553030]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.553034]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.553036]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.553039]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.553043]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.553045]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.553048]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.553051]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.553054]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.553058]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.553061]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.553064]  [<c058bac2>] rest_init+0x62/0x70
+[  226.553067]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.553070]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.553073]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.557011] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.557014] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.557016] Call Trace:
+[  226.557019]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.557022]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.557026]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.557028]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.557031]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.557034]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.557037]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.557040]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.557043]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.557046]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.557048]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.557052]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.557055]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.557058]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.557061]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.557064]  [<c058bac2>] rest_init+0x62/0x70
+[  226.557067]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.557070]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.557074]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.561013] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.561014] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.561016] Call Trace:
+[  226.561019]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.561022]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.561026]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.561028]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.561031]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.561034]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.561037]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.561040]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.561043]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.561046]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.561049]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.561052]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.561055]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.561058]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.561061]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.561065]  [<c058bac2>] rest_init+0x62/0x70
+[  226.561068]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.561071]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.561074]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.565012] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.565014] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.565016] Call Trace:
+[  226.565019]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.565022]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.565026]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.565028]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.565031]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.565034]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.565037]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.565040]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.565043]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.565046]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.565049]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.565052]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.565055]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.565058]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.565062]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.565065]  [<c058bac2>] rest_init+0x62/0x70
+[  226.565068]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.565071]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.565074]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.569012] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.569014] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.569016] Call Trace:
+[  226.569019]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.569022]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.569026]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.569028]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.569031]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.569034]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.569037]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.569040]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.569043]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.569046]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.569048]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.569052]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.569054]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.569058]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.569061]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.569064]  [<c058bac2>] rest_init+0x62/0x70
+[  226.569067]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.569070]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.569073]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.573013] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.573015] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.573016] Call Trace:
+[  226.573019]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.573023]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.573026]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.573029]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.573032]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.573035]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.573037]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.573040]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.573044]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.573046]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.573049]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.573053]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.573055]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.573059]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.573062]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.573065]  [<c058bac2>] rest_init+0x62/0x70
+[  226.573068]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.573071]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.573074]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.577012] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.577014] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.577016] Call Trace:
+[  226.577019]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.577023]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.577026]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.577029]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.577032]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.577035]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.577038]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.577041]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.577044]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.577047]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.577049]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.577053]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.577056]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.577059]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.577062]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.577065]  [<c058bac2>] rest_init+0x62/0x70
+[  226.577068]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.577071]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.577075]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.581012] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.581014] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.581016] Call Trace:
+[  226.581019]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.581022]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.581026]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.581029]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.581031]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.581035]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.581037]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.581040]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.581044]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.581046]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.581049]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.581053]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.581056]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.581059]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.581062]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.581065]  [<c058bac2>] rest_init+0x62/0x70
+[  226.581068]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.581071]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.581074]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.585014] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.585015] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.585017] Call Trace:
+[  226.585020]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.585023]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.585027]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.585030]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.585032]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.585035]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.585038]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.585041]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.585044]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.585047]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.585050]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.585053]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.585056]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.585059]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.585063]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.585066]  [<c058bac2>] rest_init+0x62/0x70
+[  226.585069]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.585072]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.585075]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.589012] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.589015] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.589017] Call Trace:
+[  226.589019]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.589023]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.589026]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.589029]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.589032]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.589035]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.589038]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.589041]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.589044]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.589047]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.589050]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.589053]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.589056]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.589059]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.589063]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.589066]  [<c058bac2>] rest_init+0x62/0x70
+[  226.589069]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.589072]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.589075]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.593013] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.593015] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.593017] Call Trace:
+[  226.593020]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.593023]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.593027]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.593029]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.593032]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.593035]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.593038]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.593041]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.593044]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.593047]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.593050]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.593053]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.593056]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.593059]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.593063]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.593066]  [<c058bac2>] rest_init+0x62/0x70
+[  226.593069]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.593072]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.593075]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.597014] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.597015] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.597017] Call Trace:
+[  226.597020]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.597023]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.597027]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.597030]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.597032]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.597036]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.597038]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.597041]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.597044]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.597047]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.597050]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.597053]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.597056]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.597060]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.597063]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.597066]  [<c058bac2>] rest_init+0x62/0x70
+[  226.597069]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.597072]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.597076]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.601013] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.601015] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.601017] Call Trace:
+[  226.601020]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.601023]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.601027]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.601029]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.601032]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.601035]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.601038]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.601041]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.601044]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.601047]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.601050]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.601053]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.601056]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.601060]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.601063]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.601066]  [<c058bac2>] rest_init+0x62/0x70
+[  226.601069]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.601072]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.601075]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.605013] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.605015] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.605017] Call Trace:
+[  226.605020]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.605023]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.605027]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.605030]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.605032]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.605035]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.605038]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.605041]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.605044]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.605047]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.605050]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.605053]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.605056]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.605059]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.605063]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.605066]  [<c058bac2>] rest_init+0x62/0x70
+[  226.605069]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.605072]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.605075]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.609015] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.609016] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.609017] Call Trace:
+[  226.609020]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.609024]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.609027]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.609030]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.609033]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.609036]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.609039]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.609042]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.609045]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.609048]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.609051]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.609054]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.609057]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.609060]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.609063]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.609066]  [<c058bac2>] rest_init+0x62/0x70
+[  226.609069]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.609072]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.609076]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.613013] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.613016] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.613017] Call Trace:
+[  226.613020]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.613024]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.613027]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.613030]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.613033]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.613036]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.613039]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.613042]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.613045]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.613048]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.613051]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.613054]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.613057]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.613060]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.613063]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.613067]  [<c058bac2>] rest_init+0x62/0x70
+[  226.613070]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.613073]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.613076]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.617013] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.617016] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.617018] Call Trace:
+[  226.617020]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.617024]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.617027]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.617030]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.617033]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.617036]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.617038]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.617041]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.617044]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.617047]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.617050]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.617053]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.617056]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.617060]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.617063]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.617066]  [<c058bac2>] rest_init+0x62/0x70
+[  226.617069]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.617072]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.617075]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.621015] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.621016] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.621018] Call Trace:
+[  226.621021]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.621024]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.621028]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.621031]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.621033]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.621036]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.621039]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.621042]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.621045]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.621048]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.621051]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.621054]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.621057]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.621060]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.621063]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.621066]  [<c058bac2>] rest_init+0x62/0x70
+[  226.621070]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.621072]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.621076]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.625014] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.625016] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.625018] Call Trace:
+[  226.625021]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.625024]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.625027]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.625030]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.625033]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.625036]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.625039]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.625042]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.625045]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.625048]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.625050]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.625054]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.625057]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.625060]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.625063]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.625066]  [<c058bac2>] rest_init+0x62/0x70
+[  226.625070]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.625073]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.625076]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.629014] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.629016] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.629018] Call Trace:
+[  226.629021]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.629024]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.629028]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.629030]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.629033]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.629036]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.629039]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.629042]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.629045]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.629048]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.629051]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.629054]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.629057]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.629060]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.629063]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.629066]  [<c058bac2>] rest_init+0x62/0x70
+[  226.629069]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.629073]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.629076]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.633015] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.633017] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.633018] Call Trace:
+[  226.633021]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.633025]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.633028]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.633031]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.633033]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.633037]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.633039]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.633042]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.633045]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.633048]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.633051]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.633054]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.633057]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.633061]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.633064]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.633067]  [<c058bac2>] rest_init+0x62/0x70
+[  226.633070]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.633073]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.633076]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.637014] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.637017] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.637018] Call Trace:
+[  226.637021]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.637024]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.637028]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.637031]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.637033]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.637036]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.637039]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.637042]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.637045]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.637048]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.637051]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.637054]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.637057]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.637060]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.637063]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.637067]  [<c058bac2>] rest_init+0x62/0x70
+[  226.637070]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.637073]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.637076]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.641014] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.641017] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.641018] Call Trace:
+[  226.641021]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.641025]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.641028]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.641031]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.641033]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.641037]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.641039]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.641042]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.641045]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.641048]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.641051]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.641054]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.641057]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.641061]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.641064]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.641067]  [<c058bac2>] rest_init+0x62/0x70
+[  226.641070]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.641073]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.641076]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.645016] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.645017] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.645019] Call Trace:
+[  226.645022]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.645025]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.645029]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.645032]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.645034]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.645037]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.645040]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.645043]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.645046]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.645049]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.645052]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.645055]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.645058]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.645061]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.645065]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.645068]  [<c058bac2>] rest_init+0x62/0x70
+[  226.645071]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.645074]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.645077]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.649014] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.649017] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.649018] Call Trace:
+[  226.649021]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.649025]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.649028]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.649031]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.649034]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.649037]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.649040]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.649043]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.649046]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.649049]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.649051]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.649055]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.649058]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.649061]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.649064]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.649067]  [<c058bac2>] rest_init+0x62/0x70
+[  226.649070]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.649073]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.649077]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.653015] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.653017] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.653019] Call Trace:
+[  226.653022]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.653025]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.653029]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.653032]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.653034]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.653037]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.653040]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.653043]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.653046]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.653049]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.653052]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.653055]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.653058]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.653061]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.653064]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.653067]  [<c058bac2>] rest_init+0x62/0x70
+[  226.653071]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.653074]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.653077]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.657016] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.657018] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.657019] Call Trace:
+[  226.657023]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.657026]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.657029]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.657032]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.657035]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.657038]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.657041]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.657044]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.657047]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.657050]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.657053]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.657056]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.657059]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.657062]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.657065]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.657068]  [<c058bac2>] rest_init+0x62/0x70
+[  226.657072]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.657075]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.657078]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.661015] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.661017] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.661019] Call Trace:
+[  226.661022]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.661025]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.661029]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.661032]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.661034]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.661038]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.661040]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.661043]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.661046]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.661049]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.661052]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.661055]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.661058]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.661062]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.661065]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.661068]  [<c058bac2>] rest_init+0x62/0x70
+[  226.661071]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.661074]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.661077]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.665015] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.665017] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.665019] Call Trace:
+[  226.665022]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.665025]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.665029]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.665032]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.665034]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.665037]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.665040]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.665043]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.665047]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.665050]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.665052]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.665056]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.665059]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.665062]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.665065]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.665068]  [<c058bac2>] rest_init+0x62/0x70
+[  226.665071]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.665074]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.665077]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.669017] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.669018] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.669019] Call Trace:
+[  226.669023]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.669026]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.669030]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.669032]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.669035]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.669038]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.669041]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.669044]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.669047]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.669050]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.669053]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.669056]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.669059]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.669062]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.669066]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.669069]  [<c058bac2>] rest_init+0x62/0x70
+[  226.669072]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.669075]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.669078]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.673015] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.673018] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.673019] Call Trace:
+[  226.673022]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.673026]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.673029]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.673032]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.673035]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.673038]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.673040]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.673043]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.673047]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.673050]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.673052]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.673056]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.673059]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.673062]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.673065]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.673068]  [<c058bac2>] rest_init+0x62/0x70
+[  226.673071]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.673074]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.673077]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.677015] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.677018] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.677019] Call Trace:
+[  226.677022]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.677026]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.677029]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.677032]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.677035]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.677038]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.677041]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.677044]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.677047]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.677050]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.677053]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.677056]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.677059]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.677062]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.677065]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.677069]  [<c058bac2>] rest_init+0x62/0x70
+[  226.677072]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.677075]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.677078]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.681017] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.681018] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.681020] Call Trace:
+[  226.681023]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.681026]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.681030]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.681032]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.681035]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.681038]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.681041]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.681044]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.681047]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.681050]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.681053]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.681056]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.681059]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.681062]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.681066]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.681069]  [<c058bac2>] rest_init+0x62/0x70
+[  226.681072]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.681075]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.681078]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.685016] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.685018] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.685020] Call Trace:
+[  226.685023]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.685026]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.685030]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.685032]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.685035]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.685038]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.685041]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.685044]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.685047]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.685050]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.685053]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.685056]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.685059]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.685062]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.685065]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.685068]  [<c058bac2>] rest_init+0x62/0x70
+[  226.685071]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.685074]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.685078]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.689016] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.689018] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.689020] Call Trace:
+[  226.689023]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.689026]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.689030]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.689032]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.689035]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.689038]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.689041]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.689044]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.689047]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.689050]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.689053]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.689056]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.689059]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.689062]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.689066]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.689069]  [<c058bac2>] rest_init+0x62/0x70
+[  226.689072]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.689075]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.689078]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.693017] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.693019] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.693020] Call Trace:
+[  226.693024]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.693027]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.693031]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.693033]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.693036]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.693039]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.693042]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.693045]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.693048]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.693051]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.693054]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.693057]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.693060]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.693063]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.693067]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.693070]  [<c058bac2>] rest_init+0x62/0x70
+[  226.693073]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.693076]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.693079]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.697016] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.697019] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.697020] Call Trace:
+[  226.697023]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.697027]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.697030]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.697033]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.697035]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.697039]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.697041]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.697044]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.697048]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.697051]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.697053]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.697056]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.697059]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.697063]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.697066]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.697069]  [<c058bac2>] rest_init+0x62/0x70
+[  226.697072]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.697075]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.697078]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.701016] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.701019] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.701020] Call Trace:
+[  226.701023]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.701027]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.701030]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.701033]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.701035]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.701038]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.701041]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.701044]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.701047]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.701050]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.701053]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.701056]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.701059]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.701062]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.701066]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.701069]  [<c058bac2>] rest_init+0x62/0x70
+[  226.701072]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.701075]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.701078]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.705018] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.705019] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.705021] Call Trace:
+[  226.705024]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.705027]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.705031]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.705033]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.705036]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.705039]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.705042]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.705045]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.705048]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.705051]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.705054]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.705057]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.705060]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.705063]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.705067]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.705070]  [<c058bac2>] rest_init+0x62/0x70
+[  226.705073]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.705076]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.705079]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.709017] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.709019] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.709021] Call Trace:
+[  226.709024]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.709027]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.709031]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.709033]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.709036]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.709039]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.709042]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.709045]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.709048]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.709051]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.709054]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.709057]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.709060]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.709063]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.709066]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.709069]  [<c058bac2>] rest_init+0x62/0x70
+[  226.709072]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.709075]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.709079]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.713017] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.713019] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.713021] Call Trace:
+[  226.713024]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.713027]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.713030]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.713033]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.713036]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.713039]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.713042]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.713045]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.713048]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.713051]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.713054]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.713057]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.713060]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.713063]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.713067]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.713070]  [<c058bac2>] rest_init+0x62/0x70
+[  226.713073]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.713076]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.713079]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.717018] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.717019] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.717021] Call Trace:
+[  226.717024]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.717028]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.717031]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.717034]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.717037]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.717040]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.717043]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.717046]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.717049]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.717052]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.717055]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.717058]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.717061]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.717064]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.717067]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.717071]  [<c058bac2>] rest_init+0x62/0x70
+[  226.717074]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.717077]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.717080]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.721017] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.721019] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.721021] Call Trace:
+[  226.721024]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.721027]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.721031]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.721034]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.721036]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.721039]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.721042]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.721045]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.721048]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.721051]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.721054]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.721057]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.721060]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.721063]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.721067]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.721070]  [<c058bac2>] rest_init+0x62/0x70
+[  226.721073]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.721076]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.721079]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.725017] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.725020] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.725021] Call Trace:
+[  226.725024]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.725028]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.725031]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.725034]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.725036]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.725039]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.725042]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.725045]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.725048]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.725051]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.725054]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.725057]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.725060]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.725063]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.725067]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.725070]  [<c058bac2>] rest_init+0x62/0x70
+[  226.725073]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.725076]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.725079]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.729019] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.729020] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.729021] Call Trace:
+[  226.729025]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.729028]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.729031]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.729034]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.729037]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.729040]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.729043]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.729046]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.729049]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.729052]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.729055]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.729058]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.729061]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.729064]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.729067]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.729071]  [<c058bac2>] rest_init+0x62/0x70
+[  226.729074]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.729077]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.729080]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.733017] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.733020] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.733021] Call Trace:
+[  226.733024]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.733028]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.733031]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.733034]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.733037]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.733040]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.733043]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.733046]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.733049]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.733052]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.733055]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.733058]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.733061]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.733064]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.733067]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.733070]  [<c058bac2>] rest_init+0x62/0x70
+[  226.733074]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.733077]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.733080]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.737017] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.737020] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.737021] Call Trace:
+[  226.737024]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.737028]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.737031]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.737034]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.737037]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.737040]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.737043]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.737046]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.737049]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.737052]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.737054]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.737058]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.737061]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.737064]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.737067]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.737070]  [<c058bac2>] rest_init+0x62/0x70
+[  226.737073]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.737076]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.737080]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.741019] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.741020] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.741022] Call Trace:
+[  226.741025]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.741028]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.741032]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.741035]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.741037]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.741040]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.741043]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.741046]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.741049]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.741052]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.741055]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.741059]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.741061]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.741065]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.741068]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.741071]  [<c058bac2>] rest_init+0x62/0x70
+[  226.741074]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.741077]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.741081]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.745018] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.745020] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.745022] Call Trace:
+[  226.745025]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.745028]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.745032]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.745034]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.745037]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.745040]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.745043]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.745046]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.745049]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.745052]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.745055]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.745058]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.745061]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.745064]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.745067]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.745071]  [<c058bac2>] rest_init+0x62/0x70
+[  226.745074]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.745077]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.745080]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.749018] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.749020] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.749022] Call Trace:
+[  226.749025]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.749028]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.749032]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.749034]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.749037]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.749040]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.749043]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.749046]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.749049]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.749052]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.749055]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.749058]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.749061]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.749064]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.749068]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.749071]  [<c058bac2>] rest_init+0x62/0x70
+[  226.749074]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.749077]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.749080]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.753020] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.753021] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.753022] Call Trace:
+[  226.753025]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.753029]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.753032]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.753035]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.753038]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.753041]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.753044]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.753047]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.753050]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.753053]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.753055]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.753058]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.753061]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.753065]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.753068]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.753071]  [<c058bac2>] rest_init+0x62/0x70
+[  226.753074]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.753077]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.753081]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.757018] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.757020] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.757022] Call Trace:
+[  226.757025]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.757028]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.757032]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.757035]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.757037]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.757040]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.757043]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.757046]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.757049]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.757052]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.757055]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.757058]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.757061]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.757064]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.757068]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.757071]  [<c058bac2>] rest_init+0x62/0x70
+[  226.757074]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.757077]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.757080]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.761020] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.761021] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.761022] Call Trace:
+[  226.761026]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.761029]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.761032]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.761035]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.761038]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.761041]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.761044]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.761047]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.761050]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.761053]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.761055]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.761059]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.761062]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.761065]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.761068]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.761071]  [<c058bac2>] rest_init+0x62/0x70
+[  226.761074]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.761077]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.761081]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.765021] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.765021] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.765023] Call Trace:
+[  226.765026]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.765030]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.765033]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.765036]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.765039]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.765042]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.765045]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.765048]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.765051]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.765054]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.765056]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.765060]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.765063]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.765066]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.765069]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.765072]  [<c058bac2>] rest_init+0x62/0x70
+[  226.765075]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.765079]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.765082]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.769018] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.769021] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.769023] Call Trace:
+[  226.769026]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.769029]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.769033]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.769035]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.769038]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.769041]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.769044]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.769047]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.769050]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.769053]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.769056]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.769059]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.769062]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.769065]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.769068]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.769071]  [<c058bac2>] rest_init+0x62/0x70
+[  226.769075]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.769078]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.769081]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.773019] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.773021] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.773023] Call Trace:
+[  226.773026]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.773029]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.773033]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.773035]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.773038]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.773041]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.773044]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.773047]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.773050]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.773053]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.773056]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.773059]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.773062]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.773065]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.773068]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.773071]  [<c058bac2>] rest_init+0x62/0x70
+[  226.773074]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.773077]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.773081]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.777021] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.777022] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.777024] Call Trace:
+[  226.777027]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.777030]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.777034]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.777037]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.777040]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.777043]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.777046]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.777049]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.777052]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.777055]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.777058]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.777061]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.777064]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.777067]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.777070]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.777073]  [<c058bac2>] rest_init+0x62/0x70
+[  226.777077]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.777080]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.777083]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.781019] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.781021] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.781023] Call Trace:
+[  226.781026]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.781030]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.781033]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.781036]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.781039]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.781042]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.781045]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.781048]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.781051]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.781054]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.781057]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.781060]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.781063]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.781066]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.781069]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.781072]  [<c058bac2>] rest_init+0x62/0x70
+[  226.781075]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.781078]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.781082]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.785020] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.785022] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.785023] Call Trace:
+[  226.785026]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.785030]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.785033]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.785036]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.785038]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.785042]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.785044]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.785047]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.785051]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.785053]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.785056]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.785059]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.785062]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.785066]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.785069]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.785072]  [<c058bac2>] rest_init+0x62/0x70
+[  226.785075]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.785078]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.785082]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.789021] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.789022] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.789024] Call Trace:
+[  226.789027]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.789030]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.789034]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.789036]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.789039]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.789042]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.789045]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.789048]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.789051]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.789054]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.789057]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.789060]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.789063]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.789066]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.789070]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.789073]  [<c058bac2>] rest_init+0x62/0x70
+[  226.789076]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.789079]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.789082]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.793019] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.793022] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.793023] Call Trace:
+[  226.793026]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.793030]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.793033]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.793036]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.793039]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.793042]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.793045]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.793048]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.793051]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.793054]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.793057]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.793060]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.793063]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.793066]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.793069]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.793072]  [<c058bac2>] rest_init+0x62/0x70
+[  226.793075]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.793079]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.793082]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.797019] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.797022] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.797024] Call Trace:
+[  226.797027]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.797030]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.797033]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.797036]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.797039]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.797042]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.797045]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.797048]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.797051]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.797054]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.797057]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.797060]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.797063]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.797066]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.797069]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.797072]  [<c058bac2>] rest_init+0x62/0x70
+[  226.797075]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.797078]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.797082]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.801021] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.801022] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.801024] Call Trace:
+[  226.801027]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.801031]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.801034]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.801037]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.801039]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.801043]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.801045]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.801048]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.801051]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.801054]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.801057]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.801060]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.801063]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.801067]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.801070]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.801073]  [<c058bac2>] rest_init+0x62/0x70
+[  226.801076]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.801079]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.801082]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.805020] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.805022] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.805024] Call Trace:
+[  226.805027]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.805030]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.805034]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.805036]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.805039]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.805042]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.805045]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.805048]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.805051]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.805054]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.805057]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.805060]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.805063]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.805067]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.805070]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.805073]  [<c058bac2>] rest_init+0x62/0x70
+[  226.805076]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.805079]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.805082]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.809020] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.809022] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.809024] Call Trace:
+[  226.809027]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.809030]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.809034]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.809037]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.809039]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.809042]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.809045]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.809048]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.809051]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.809054]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.809057]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.809060]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.809063]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.809066]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.809070]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.809073]  [<c058bac2>] rest_init+0x62/0x70
+[  226.809076]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.809079]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.809082]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.813021] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.813023] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.813024] Call Trace:
+[  226.813027]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.813031]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.813035]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.813037]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.813040]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.813043]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.813046]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.813049]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.813052]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.813055]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.813058]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.813061]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.813064]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.813067]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.813070]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.813073]  [<c058bac2>] rest_init+0x62/0x70
+[  226.813076]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.813079]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.813083]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.817020] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.817023] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.817024] Call Trace:
+[  226.817027]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.817031]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.817034]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.817037]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.817040]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.817043]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.817046]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.817049]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.817051]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.817054]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.817057]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.817060]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.817063]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.817067]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.817070]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.817073]  [<c058bac2>] rest_init+0x62/0x70
+[  226.817076]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.817079]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.817083]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.821022] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.821023] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.821025] Call Trace:
+[  226.821028]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.821031]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.821035]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.821037]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.821040]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.821043]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.821046]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.821049]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.821052]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.821055]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.821058]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.821061]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.821064]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.821067]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.821071]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.821074]  [<c058bac2>] rest_init+0x62/0x70
+[  226.821077]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.821080]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.821083]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.825022] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.825023] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.825025] Call Trace:
+[  226.825028]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.825031]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.825035]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.825037]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.825040]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.825043]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.825046]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.825049]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.825052]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.825055]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.825058]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.825061]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.825064]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.825067]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.825070]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.825074]  [<c058bac2>] rest_init+0x62/0x70
+[  226.825077]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.825080]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.825083]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.829020] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.829023] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.829025] Call Trace:
+[  226.829027]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.829031]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.829034]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.829037]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.829040]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.829043]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.829046]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.829049]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.829052]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.829055]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.829058]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.829061]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.829064]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.829067]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.829070]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.829073]  [<c058bac2>] rest_init+0x62/0x70
+[  226.829077]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.829080]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.829083]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.833021] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.833023] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.833025] Call Trace:
+[  226.833028]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.833031]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.833035]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.833037]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.833040]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.833043]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.833046]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.833049]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.833052]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.833055]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.833058]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.833061]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.833064]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.833067]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.833071]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.833074]  [<c058bac2>] rest_init+0x62/0x70
+[  226.833077]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.833080]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.833083]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.837022] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.837023] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.837025] Call Trace:
+[  226.837028]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.837032]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.837035]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.837038]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.837041]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.837044]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.837047]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.837050]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.837053]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.837056]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.837058]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.837062]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.837065]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.837068]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.837071]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.837074]  [<c058bac2>] rest_init+0x62/0x70
+[  226.837077]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.837081]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.837084]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.841021] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.841024] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.841025] Call Trace:
+[  226.841028]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.841031]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.841035]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.841037]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.841040]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.841043]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.841046]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.841049]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.841052]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.841055]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.841058]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.841061]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.841064]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.841067]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.841070]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.841073]  [<c058bac2>] rest_init+0x62/0x70
+[  226.841076]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.841079]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.841083]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.845021] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.845024] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.845025] Call Trace:
+[  226.845028]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.845032]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.845035]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.845038]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.845041]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.845044]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.845047]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.845050]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.845053]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.845056]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.845058]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.845062]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.845065]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.845068]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.845071]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.845074]  [<c058bac2>] rest_init+0x62/0x70
+[  226.845077]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.845080]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.845084]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.849023] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.849024] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.849026] Call Trace:
+[  226.849029]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.849032]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.849036]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.849038]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.849041]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.849044]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.849047]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.849050]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.849053]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.849056]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.849059]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.849062]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.849065]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.849068]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.849072]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.849075]  [<c058bac2>] rest_init+0x62/0x70
+[  226.849078]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.849081]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.849084]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.853021] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.853024] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.853025] Call Trace:
+[  226.853028]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.853032]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.853035]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.853038]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.853041]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.853044]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.853047]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.853050]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.853053]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.853056]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.853058]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.853062]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.853065]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.853068]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.853071]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.853074]  [<c058bac2>] rest_init+0x62/0x70
+[  226.853077]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.853081]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.853084]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.857021] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.857024] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.857026] Call Trace:
+[  226.857029]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.857032]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.857036]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.857038]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.857041]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.857044]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.857047]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.857050]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.857053]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.857056]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.857059]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.857062]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.857065]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.857068]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.857071]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.857074]  [<c058bac2>] rest_init+0x62/0x70
+[  226.857078]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.857081]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.857084]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.861023] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.861024] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.861026] Call Trace:
+[  226.861029]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.861032]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.861036]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.861039]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.861041]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.861045]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.861047]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.861050]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.861053]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.861056]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.861059]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.861063]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.861065]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.861069]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.861072]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.861075]  [<c058bac2>] rest_init+0x62/0x70
+[  226.861078]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.861081]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.861084]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.865022] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.865024] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.865026] Call Trace:
+[  226.865029]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.865032]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.865036]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.865038]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.865041]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.865044]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.865047]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.865050]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.865053]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.865056]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.865059]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.865062]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.865065]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.865068]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.865072]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.865075]  [<c058bac2>] rest_init+0x62/0x70
+[  226.865078]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.865081]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.865084]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.869022] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.869024] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.869026] Call Trace:
+[  226.869029]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.869032]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.869036]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.869039]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.869041]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.869045]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.869048]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.869051]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.869054]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.869057]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.869060]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.869063]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.869066]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.869069]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.869072]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.869075]  [<c058bac2>] rest_init+0x62/0x70
+[  226.869078]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.869082]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.869085]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.873023] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.873025] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.873026] Call Trace:
+[  226.873029]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.873033]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.873036]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.873039]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.873042]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.873045]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.873048]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.873051]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.873054]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.873057]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.873060]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.873063]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.873066]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.873069]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.873073]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.873076]  [<c058bac2>] rest_init+0x62/0x70
+[  226.873079]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.873082]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.873085]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.877022] TIME: timekeeper mult being adjusted from 1024034407 to 1024034406!
+[  226.877025] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.877026] Call Trace:
+[  226.877029]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.877033]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.877036]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.877039]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.877042]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.877045]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.877047]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.877050]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.877053]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.877056]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.877059]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.877062]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.877065]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.877069]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.877072]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.877075]  [<c058bac2>] rest_init+0x62/0x70
+[  226.877078]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.877081]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.877084]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[  226.881046] TIME: timekeeper mult being adjusted from 1024034406 to 1024034407!
+[  226.881046] Pid: 0, comm: swapper Tainted: G        W  2.6.32.57 #67
+[  226.881046] Call Trace:
+[  226.881046]  [<c059ef54>] ? printk+0x1d/0x21
+[  226.881046]  [<c0177585>] update_wall_time+0x245/0x6b0
+[  226.881046]  [<c01619cb>] do_timer+0x1b/0x30
+[  226.881046]  [<c017c4ea>] tick_periodic+0x6a/0x80
+[  226.881046]  [<c017c51e>] tick_handle_periodic+0x1e/0x90
+[  226.881047]  [<c010bfc6>] timer_interrupt+0x26/0x70
+[  226.881049]  [<c01a5b74>] handle_IRQ_event+0x54/0x150
+[  226.881052]  [<c010cef7>] ? mask_and_ack_8259A+0x57/0xf0
+[  226.881055]  [<c01a8184>] handle_level_irq+0x74/0x100
+[  226.881058]  [<c010bb6d>] handle_irq+0x1d/0x30
+[  226.881061]  [<c05a5d1c>] do_IRQ+0x4c/0xc0
+[  226.881064]  [<c0173f5e>] ? sched_clock_idle_sleep_event+0xe/0x10
+[  226.881067]  [<c0109c70>] common_interrupt+0x30/0x40
+[  226.881071]  [<c0110b95>] ? mwait_idle+0x55/0xa0
+[  226.881074]  [<c01083d4>] cpu_idle+0x94/0xd0
+[  226.881077]  [<c058bac2>] rest_init+0x62/0x70
+[  226.881080]  [<c07c68e5>] start_kernel+0x356/0x35c
+[  226.881083]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[  226.881087]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
