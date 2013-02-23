@@ -88,7 +88,9 @@ static int device_open(struct inode *inode, struct file *filp){
     return -EBUSY; //what is this?
 
   Device_Open++;
-  sprintf(msg, "I already told you %d times: Hello World!\n", counter++);
+  if(counter == 0){
+    sprintf(msg, "I already told you %d times: Hello World!\n", counter++);
+  }
   msg_Ptr = msg;
   try_module_get(THIS_MODULE);
 
@@ -158,6 +160,36 @@ static ssize_t device_read(struct file *filep,   /* include/linux/fs.h */
 
 static ssize_t
 device_write(struct file *filp, const char *buff, size_t len, loff_t * off){
-  printk(KERN_INFO "Sorry, this operation isn't supported.\n");
-  return -EINVAL;
+  int i;
+  int marker = 1;
+  char vuln_buff[16] = "aaaabbbbccccddd";
+  char *vuln_ptr = vuln_buff;
+  vuln_ptr = vuln_ptr + 47;
+  printk(KERN_INFO "CANARY print values from vuln_buff and above:\n");
+  for(i = 0; i < 12; i++){
+    printk(KERN_INFO "CANARY word %d: \%02hhx\%02hhx\%02hhx\%02hhx\n",
+	   i, *vuln_ptr, *(vuln_ptr-1), *(vuln_ptr-2), *(vuln_ptr-3));
+    vuln_ptr-=4;
+  }
+
+  printk(KERN_INFO "CANARY dump stack to get addresses to compare to ret-val\n");
+  dump_stack();
+
+  printk(KERN_INFO "device_write(%p, %s, %d)", filp, buff, len);
+
+  for(i = 0; i < len && i < BUF_LEN; i++)
+    get_user(msg[i], buff + i);
+
+  msg_Ptr = msg;
+  
+  for(i = 0; i < BUF_LEN; i++)
+    printk(KERN_INFO "Byte %d of msg buffer in kernel-space: %c\n",
+	   i, msg[i]);
+  
+  /* 
+   * Again, return the number of input characters used 
+   */
+  return i;
+
+
 }
