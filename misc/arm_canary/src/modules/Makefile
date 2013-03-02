@@ -5,9 +5,10 @@ obj-m += hello-4.o
 obj-m += hello-5.o
 #obj-m += buff_ovrflw.o
 obj-m += chardev.o
+obj-m += sploitable.o
 
 all:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
+	make -C /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y M=$(PWD) modules ARCH=arm CROSS_COMPILE=/usr/bin/arm-linux-gnueabi- -k
 
 clean:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+	make -C /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y M=$(PWD)/build M=$(PWD) clean

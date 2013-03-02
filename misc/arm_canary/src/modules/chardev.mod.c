@@ -6,29 +6,31 @@ MODULE_INFO(vermagic, VERMAGIC_STRING);
 
 struct module __this_module
 __attribute__((section(".gnu.linkonce.this_module"))) = {
- .name = KBUILD_MODNAME,
- .init = init_module,
+	.name = KBUILD_MODNAME,
+	.init = init_module,
 #ifdef CONFIG_MODULE_UNLOAD
- .exit = cleanup_module,
+	.exit = cleanup_module,
 #endif
- .arch = MODULE_ARCH_INIT,
+	.arch = MODULE_ARCH_INIT,
 };
 
 static const struct modversion_info ____versions[]
 __used
 __attribute__((section("__versions"))) = {
-	{ 0xa505de1e, "module_layout" },
+	{ 0xda9e78e9, "module_layout" },
 	{ 0x6bc3fbc0, "__unregister_chrdev" },
-	{ 0xfecaf68a, "__register_chrdev" },
-	{ 0x3c2c5af5, "sprintf" },
-	{ 0x9629486a, "per_cpu__cpu_number" },
-	{ 0xb72397d5, "printk" },
-	{ 0xacdeb154, "__tracepoint_module_get" },
-	{ 0xa1c76e0a, "_cond_resched" },
-	{ 0xb4390f9a, "mcount" },
-	{ 0xc3aaf0a9, "__put_user_1" },
-	{ 0x81e0074e, "module_put" },
-	{ 0x7ecb001b, "__per_cpu_offset" },
+	{ 0xa15ad803, "__register_chrdev" },
+	{ 0xbb72d4fe, "__put_user_1" },
+	{ 0x8f678b07, "__stack_chk_guard" },
+	{ 0xf0fdf6cb, "__stack_chk_fail" },
+	{ 0x28118cb6, "__get_user_1" },
+	{ 0x6b2dc060, "dump_stack" },
+	{ 0x27e1a049, "printk" },
+	{ 0xefd6cf06, "__aeabi_unwind_cpp_pr0" },
+	{ 0x91715312, "sprintf" },
+	{ 0x38c22802, "try_module_get" },
+	{ 0x2e5810c6, "__aeabi_unwind_cpp_pr1" },
+	{ 0xc765a737, "module_put" },
 };
 
 static const char __module_depends[]
@@ -37,4 +39,4 @@ __attribute__((section(".modinfo"))) =
 "depends=";
 
 
-MODULE_INFO(srcversion, "6C3D71D530476072085C4A0");
+MODULE_INFO(srcversion, "1047DB5F714DE24E0ABF3F0");

@@ -1,27 +1,21 @@
-cmd_/home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o := /usr/bin/arm-linux-gnueabi-gcc -Wp,-MD,/home/dcashman/thesis/misc/arm_canary/src/modules/.hello-2.mod.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.6/include -I/home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-bcm2708/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -marm -fno-dwarf2-cfi-asm -fstack-protector -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=6 -march=armv6 -mtune=arm1136j-s -msoft-float -Uarm -Wframe-larger-than=1024 -Wno-unused-but-set-variable -fomit-frame-pointer -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(hello_2.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(hello_2)" -DMODULE  -c -o /home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o /home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.c
+cmd_/home/dcashman/thesis/misc/arm_canary/src/modules/sploitable.o := /usr/bin/arm-linux-gnueabi-gcc -Wp,-MD,/home/dcashman/thesis/misc/arm_canary/src/modules/.sploitable.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.6/include -I/home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-bcm2708/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -marm -fno-dwarf2-cfi-asm -fstack-protector -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=6 -march=armv6 -mtune=arm1136j-s -msoft-float -Uarm -Wframe-larger-than=1024 -Wno-unused-but-set-variable -fomit-frame-pointer -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(sploitable)"  -D"KBUILD_MODNAME=KBUILD_STR(sploitable)" -c -o /home/dcashman/thesis/misc/arm_canary/src/modules/.tmp_sploitable.o /home/dcashman/thesis/misc/arm_canary/src/modules/sploitable.c
 
-source_/home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o := /home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.c
+source_/home/dcashman/thesis/misc/arm_canary/src/modules/sploitable.o := /home/dcashman/thesis/misc/arm_canary/src/modules/sploitable.c
 
-deps_/home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o := \
-    $(wildcard include/config/module/unload.h) \
-  include/linux/module.h \
-    $(wildcard include/config/sysfs.h) \
-    $(wildcard include/config/modules.h) \
-    $(wildcard include/config/unused/symbols.h) \
-    $(wildcard include/config/generic/bug.h) \
-    $(wildcard include/config/kallsyms.h) \
-    $(wildcard include/config/smp.h) \
-    $(wildcard include/config/tracepoints.h) \
+deps_/home/dcashman/thesis/misc/arm_canary/src/modules/sploitable.o := \
+  include/linux/kernel.h \
+    $(wildcard include/config/lbdaf.h) \
+    $(wildcard include/config/preempt/voluntary.h) \
+    $(wildcard include/config/debug/atomic/sleep.h) \
+    $(wildcard include/config/prove/locking.h) \
+    $(wildcard include/config/ring/buffer.h) \
     $(wildcard include/config/tracing.h) \
-    $(wildcard include/config/event/tracing.h) \
+    $(wildcard include/config/numa.h) \
+    $(wildcard include/config/compaction.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-    $(wildcard include/config/constructors.h) \
-    $(wildcard include/config/debug/set/module/ronx.h) \
-  include/linux/list.h \
-    $(wildcard include/config/debug/list.h) \
+  include/linux/sysinfo.h \
   include/linux/types.h \
     $(wildcard include/config/uid16.h) \
-    $(wildcard include/config/lbdaf.h) \
     $(wildcard include/config/arch/dma/addr/t/64bit.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
@@ -43,28 +37,12 @@ deps_/home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o := \
   include/linux/compiler-gcc4.h \
   /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include/asm/posix_types.h \
   include/asm-generic/posix_types.h \
-  include/linux/poison.h \
-    $(wildcard include/config/illegal/pointer/value.h) \
-  include/linux/const.h \
-  include/linux/stat.h \
-  /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include/asm/stat.h \
-  include/linux/time.h \
-    $(wildcard include/config/arch/uses/gettimeoffset.h) \
-  include/linux/cache.h \
-    $(wildcard include/config/arch/has/cache/line/size.h) \
-  include/linux/kernel.h \
-    $(wildcard include/config/preempt/voluntary.h) \
-    $(wildcard include/config/debug/atomic/sleep.h) \
-    $(wildcard include/config/prove/locking.h) \
-    $(wildcard include/config/ring/buffer.h) \
-    $(wildcard include/config/numa.h) \
-    $(wildcard include/config/compaction.h) \
-  include/linux/sysinfo.h \
   /usr/lib/gcc/arm-linux-gnueabi/4.6/include/stdarg.h \
   include/linux/linkage.h \
   /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include/asm/linkage.h \
   include/linux/bitops.h \
   /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include/asm/bitops.h \
+    $(wildcard include/config/smp.h) \
   include/linux/irqflags.h \
     $(wildcard include/config/trace/irqflags.h) \
     $(wildcard include/config/irqsoff/tracer.h) \
@@ -97,6 +75,7 @@ deps_/home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o := \
     $(wildcard include/config/printk.h) \
     $(wildcard include/config/dynamic/debug.h) \
   include/linux/init.h \
+    $(wildcard include/config/modules.h) \
     $(wildcard include/config/hotplug.h) \
   include/linux/kern_levels.h \
   include/linux/dynamic_debug.h \
@@ -115,7 +94,28 @@ deps_/home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o := \
     $(wildcard include/config/debug/bugverbose.h) \
     $(wildcard include/config/arm/lpae.h) \
   include/asm-generic/bug.h \
+    $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/generic/bug/relative/pointers.h) \
+  include/linux/module.h \
+    $(wildcard include/config/sysfs.h) \
+    $(wildcard include/config/unused/symbols.h) \
+    $(wildcard include/config/kallsyms.h) \
+    $(wildcard include/config/tracepoints.h) \
+    $(wildcard include/config/event/tracing.h) \
+    $(wildcard include/config/module/unload.h) \
+    $(wildcard include/config/constructors.h) \
+    $(wildcard include/config/debug/set/module/ronx.h) \
+  include/linux/list.h \
+    $(wildcard include/config/debug/list.h) \
+  include/linux/poison.h \
+    $(wildcard include/config/illegal/pointer/value.h) \
+  include/linux/const.h \
+  include/linux/stat.h \
+  /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include/asm/stat.h \
+  include/linux/time.h \
+    $(wildcard include/config/arch/uses/gettimeoffset.h) \
+  include/linux/cache.h \
+    $(wildcard include/config/arch/has/cache/line/size.h) \
   /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include/asm/cache.h \
     $(wildcard include/config/arm/l1/cache/shift.h) \
     $(wildcard include/config/aeabi.h) \
@@ -342,9 +342,162 @@ deps_/home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o := \
     $(wildcard include/config/modversions.h) \
   /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include/asm/module.h \
     $(wildcard include/config/arm/unwind.h) \
-  include/linux/vermagic.h \
-  include/generated/utsrelease.h \
+  include/linux/fs.h \
+    $(wildcard include/config/fs/posix/acl.h) \
+    $(wildcard include/config/security.h) \
+    $(wildcard include/config/quota.h) \
+    $(wildcard include/config/fsnotify.h) \
+    $(wildcard include/config/ima.h) \
+    $(wildcard include/config/epoll.h) \
+    $(wildcard include/config/debug/writecount.h) \
+    $(wildcard include/config/file/locking.h) \
+    $(wildcard include/config/auditsyscall.h) \
+    $(wildcard include/config/block.h) \
+    $(wildcard include/config/fs/xip.h) \
+    $(wildcard include/config/migration.h) \
+  include/linux/limits.h \
+  include/linux/ioctl.h \
+  arch/arm/include/generated/asm/ioctl.h \
+  include/asm-generic/ioctl.h \
+  include/linux/blk_types.h \
+    $(wildcard include/config/blk/cgroup.h) \
+    $(wildcard include/config/blk/dev/integrity.h) \
+  include/linux/kdev_t.h \
+  include/linux/dcache.h \
+  include/linux/rculist.h \
+  include/linux/rculist_bl.h \
+  include/linux/list_bl.h \
+  include/linux/bit_spinlock.h \
+  include/linux/path.h \
+  include/linux/radix-tree.h \
+  include/linux/prio_tree.h \
+  include/linux/pid.h \
+  include/linux/capability.h \
+  include/linux/semaphore.h \
+  include/linux/fiemap.h \
+  include/linux/shrinker.h \
+  include/linux/migrate_mode.h \
+  include/linux/quota.h \
+    $(wildcard include/config/quota/netlink/interface.h) \
+  include/linux/percpu_counter.h \
+  include/linux/dqblk_xfs.h \
+  include/linux/dqblk_v1.h \
+  include/linux/dqblk_v2.h \
+  include/linux/dqblk_qtree.h \
+  include/linux/nfs_fs_i.h \
+  include/linux/fcntl.h \
+  /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include/asm/fcntl.h \
+  include/asm-generic/fcntl.h \
+  include/linux/err.h \
+  include/linux/sched.h \
+    $(wildcard include/config/sched/debug.h) \
+    $(wildcard include/config/no/hz.h) \
+    $(wildcard include/config/lockup/detector.h) \
+    $(wildcard include/config/detect/hung/task.h) \
+    $(wildcard include/config/core/dump/default/elf/headers.h) \
+    $(wildcard include/config/sched/autogroup.h) \
+    $(wildcard include/config/virt/cpu/accounting.h) \
+    $(wildcard include/config/bsd/process/acct.h) \
+    $(wildcard include/config/taskstats.h) \
+    $(wildcard include/config/audit.h) \
+    $(wildcard include/config/cgroups.h) \
+    $(wildcard include/config/inotify/user.h) \
+    $(wildcard include/config/fanotify.h) \
+    $(wildcard include/config/posix/mqueue.h) \
+    $(wildcard include/config/keys.h) \
+    $(wildcard include/config/perf/events.h) \
+    $(wildcard include/config/schedstats.h) \
+    $(wildcard include/config/task/delay/acct.h) \
+    $(wildcard include/config/fair/group/sched.h) \
+    $(wildcard include/config/rt/group/sched.h) \
+    $(wildcard include/config/cgroup/sched.h) \
+    $(wildcard include/config/blk/dev/io/trace.h) \
+    $(wildcard include/config/rcu/boost.h) \
+    $(wildcard include/config/compat/brk.h) \
+    $(wildcard include/config/cc/stackprotector.h) \
+    $(wildcard include/config/sysvipc.h) \
+    $(wildcard include/config/rt/mutexes.h) \
+    $(wildcard include/config/task/xacct.h) \
+    $(wildcard include/config/cpusets.h) \
+    $(wildcard include/config/futex.h) \
+    $(wildcard include/config/fault/injection.h) \
+    $(wildcard include/config/latencytop.h) \
+    $(wildcard include/config/function/graph/tracer.h) \
+    $(wildcard include/config/uprobes.h) \
+    $(wildcard include/config/have/unstable/sched/clock.h) \
+    $(wildcard include/config/irq/time/accounting.h) \
+    $(wildcard include/config/proc/fs.h) \
+    $(wildcard include/config/cfs/bandwidth.h) \
+    $(wildcard include/config/stack/growsup.h) \
+    $(wildcard include/config/mm/owner.h) \
+  include/linux/mm_types.h \
+    $(wildcard include/config/split/ptlock/cpus.h) \
+    $(wildcard include/config/have/cmpxchg/double.h) \
+    $(wildcard include/config/have/aligned/struct/page.h) \
+    $(wildcard include/config/want/page/debug/flags.h) \
+    $(wildcard include/config/aio.h) \
+    $(wildcard include/config/mmu/notifier.h) \
+    $(wildcard include/config/transparent/hugepage.h) \
+  include/linux/auxvec.h \
+  arch/arm/include/generated/asm/auxvec.h \
+  include/asm-generic/auxvec.h \
+  include/linux/page-debug-flags.h \
+    $(wildcard include/config/page/poisoning.h) \
+    $(wildcard include/config/page/guard.h) \
+    $(wildcard include/config/page/debug/something/else.h) \
+  include/linux/uprobes.h \
+    $(wildcard include/config/arch/supports/uprobes.h) \
+  /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include/asm/mmu.h \
+    $(wildcard include/config/cpu/has/asid.h) \
+  arch/arm/include/generated/asm/cputime.h \
+  include/asm-generic/cputime.h \
+  include/linux/sem.h \
+  include/linux/ipc.h \
+  /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include/asm/ipcbuf.h \
+  include/asm-generic/ipcbuf.h \
+  /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include/asm/sembuf.h \
+  include/linux/signal.h \
+  /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include/asm/signal.h \
+  include/asm-generic/signal-defs.h \
+  /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include/asm/sigcontext.h \
+  arch/arm/include/generated/asm/siginfo.h \
+  include/asm-generic/siginfo.h \
+  include/linux/proportions.h \
+  include/linux/seccomp.h \
+    $(wildcard include/config/seccomp.h) \
+    $(wildcard include/config/seccomp/filter.h) \
+  /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include/asm/seccomp.h \
+  include/linux/unistd.h \
+  /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include/asm/unistd.h \
+    $(wildcard include/config/oabi/compat.h) \
+  include/linux/rtmutex.h \
+    $(wildcard include/config/debug/rt/mutexes.h) \
+  include/linux/plist.h \
+    $(wildcard include/config/debug/pi/list.h) \
+  include/linux/resource.h \
+  arch/arm/include/generated/asm/resource.h \
+  include/asm-generic/resource.h \
+  include/linux/hrtimer.h \
+    $(wildcard include/config/high/res/timers.h) \
+    $(wildcard include/config/timerfd.h) \
+  include/linux/timerqueue.h \
+  include/linux/task_io_accounting.h \
+    $(wildcard include/config/task/io/accounting.h) \
+  include/linux/latencytop.h \
+  include/linux/cred.h \
+    $(wildcard include/config/debug/credentials.h) \
+  include/linux/key.h \
+  include/linux/selinux.h \
+    $(wildcard include/config/security/selinux.h) \
+  include/linux/llist.h \
+    $(wildcard include/config/arch/have/nmi/safe/cmpxchg.h) \
+  include/linux/aio.h \
+  include/linux/aio_abi.h \
+  include/linux/uio.h \
+  /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include/asm/uaccess.h \
+  /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include/asm/unified.h \
+    $(wildcard include/config/arm/asm/unified.h) \
 
-/home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o: $(deps_/home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o)
+/home/dcashman/thesis/misc/arm_canary/src/modules/sploitable.o: $(deps_/home/dcashman/thesis/misc/arm_canary/src/modules/sploitable.o)
 
-$(deps_/home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o):
+$(deps_/home/dcashman/thesis/misc/arm_canary/src/modules/sploitable.o):

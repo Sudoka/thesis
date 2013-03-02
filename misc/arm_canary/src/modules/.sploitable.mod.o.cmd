@@ -1,8 +1,8 @@
-cmd_/home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o := /usr/bin/arm-linux-gnueabi-gcc -Wp,-MD,/home/dcashman/thesis/misc/arm_canary/src/modules/.hello-2.mod.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.6/include -I/home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-bcm2708/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -marm -fno-dwarf2-cfi-asm -fstack-protector -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=6 -march=armv6 -mtune=arm1136j-s -msoft-float -Uarm -Wframe-larger-than=1024 -Wno-unused-but-set-variable -fomit-frame-pointer -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(hello_2.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(hello_2)" -DMODULE  -c -o /home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o /home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.c
+cmd_/home/dcashman/thesis/misc/arm_canary/src/modules/sploitable.mod.o := /usr/bin/arm-linux-gnueabi-gcc -Wp,-MD,/home/dcashman/thesis/misc/arm_canary/src/modules/.sploitable.mod.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabi/4.6/include -I/home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /home/dcashman/thesis/misc/arm_canary/RPi/linux-rpi-3.6.y/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-bcm2708/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -marm -fno-dwarf2-cfi-asm -fstack-protector -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=6 -march=armv6 -mtune=arm1136j-s -msoft-float -Uarm -Wframe-larger-than=1024 -Wno-unused-but-set-variable -fomit-frame-pointer -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(sploitable.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(sploitable)" -DMODULE  -c -o /home/dcashman/thesis/misc/arm_canary/src/modules/sploitable.mod.o /home/dcashman/thesis/misc/arm_canary/src/modules/sploitable.mod.c
 
-source_/home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o := /home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.c
+source_/home/dcashman/thesis/misc/arm_canary/src/modules/sploitable.mod.o := /home/dcashman/thesis/misc/arm_canary/src/modules/sploitable.mod.c
 
-deps_/home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o := \
+deps_/home/dcashman/thesis/misc/arm_canary/src/modules/sploitable.mod.o := \
     $(wildcard include/config/module/unload.h) \
   include/linux/module.h \
     $(wildcard include/config/sysfs.h) \
@@ -345,6 +345,6 @@ deps_/home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o := \
   include/linux/vermagic.h \
   include/generated/utsrelease.h \
 
-/home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o: $(deps_/home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o)
+/home/dcashman/thesis/misc/arm_canary/src/modules/sploitable.mod.o: $(deps_/home/dcashman/thesis/misc/arm_canary/src/modules/sploitable.mod.o)
 
-$(deps_/home/dcashman/thesis/misc/arm_canary/src/modules/hello-2.mod.o):
+$(deps_/home/dcashman/thesis/misc/arm_canary/src/modules/sploitable.mod.o):
