@@ -21,6 +21,9 @@ static int device_release(struct inode *, struct file *);
 static ssize_t device_read(struct file *, char *, size_t, loff_t *);
 static ssize_t device_write(struct file *, const char *, size_t, loff_t *);
 
+/* dacashman added */
+static int exploit_loc();
+
 #define SUCCESS 0
 #define DEVICE_NAME "sploitable"  /* Dev name as it appears in /proc/devices */
 #define BUF_LEN 80             /* Max length of the message from the device */
@@ -59,6 +62,10 @@ int init_module(void){
   printk(KERN_INFO "Try various minor numbers. Try to cat and echo to\n");
   printk(KERN_INFO "the device file.\n");
   printk(KERN_INFO "Remove the device file and module when done.\n");
+
+  /* read location of exploit_loc() function */
+  void *expl_func = (void *) exploit_loc;
+  printk(KERN_INFO "CANARY: BOOSH exploit_loc() address: %x\n", expl_func);
 
   return SUCCESS;
 }
@@ -122,6 +129,8 @@ static ssize_t device_read(struct file *filep,   /* include/linux/fs.h */
 			   char *buffer,         /* buffer to fill w/data*/
 			   size_t length,        /* length of buffer */
 			   loff_t * offset){
+
+  
   /*
    * Number of bytes actually written to the buffer
    */
@@ -156,15 +165,17 @@ static ssize_t device_read(struct file *filep,   /* include/linux/fs.h */
   return bytes_read;
 }
 
-
+static int
+exploit_loc(){
+  printk(KERN_EMERG "CANARY: exploit_loc() CALLED!\n");
+  return 0;
+}
 
 /*
  * foo - implements function to try to find return address.
+ *   also: foo has many args to make sure some are saved on stack.  They
+ *   should help with canary location 
  */
-/*
- * Called when a process writes to a dev file: echo "hi" > /dev/hello
- */
-
 static ssize_t
 /* foo has many args to make sure some are saved on stack.  They
  *  should help with canary location 
@@ -185,7 +196,7 @@ foo(char *buff, int buff_len, int a, int b, int c, int d, int e, int f, int g, i
   char *vuln_ptr = vuln_buff;
 
   /* attempting buffer overflow here */
-  for(i = 0; i < buff_len && i < 20; i++)
+  for(i = 0; i < buff_len/* && i < 20*/; i++)
     get_user(vuln_buff[i], buff + i);
 
   /*print out stack */

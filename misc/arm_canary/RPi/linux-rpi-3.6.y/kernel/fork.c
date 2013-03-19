@@ -319,8 +319,19 @@ static struct task_struct *dup_task_struct(struct task_struct *orig)
 
 #ifdef CONFIG_CC_STACKPROTECTOR
 	/* dacashman - see if this gets called */
-	tsk->stack_canary = get_random_int();
-	printk(KERN_DEBUG "CANARY do_fork canary called with new value: %x\n", tsk->stack_canary);
+	char name[256];
+	char name2[256];
+	char name3[256];
+        struct task_struct *dan_task;
+	dan_task = current;
+	get_task_comm(name, dan_task);
+	//tsk->stack_canary = get_random_int();
+	printk(KERN_DEBUG "CANARY current process id: %d, current process name: %s, "
+	       "current process canary: %lx, new process canary: %lx\n", dan_task->pid, name, dan_task->stack_canary, tsk->stack_canary);
+	get_task_comm(name2, tsk);
+	get_task_comm(name3, tsk->real_parent);
+	printk(KERN_DEBUG "CANARY new process id:%d, new process name: %s, "
+	       "new process parent id: %d, new process name: %s\n", tsk->pid, name2, (tsk->real_parent)->pid, name3);
 #endif
 
 	/*

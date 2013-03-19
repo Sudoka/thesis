@@ -25,13 +25,13 @@ __attribute__((section("__versions"))) = {
 	{ 0x6b2dc060, "dump_stack" },
 	{ 0x5f754e5a, "memset" },
 	{ 0x28118cb6, "__get_user_1" },
-	{ 0x27e1a049, "printk" },
 	{ 0xbb72d4fe, "__put_user_1" },
 	{ 0xefd6cf06, "__aeabi_unwind_cpp_pr0" },
 	{ 0x91715312, "sprintf" },
 	{ 0x38c22802, "try_module_get" },
-	{ 0x2e5810c6, "__aeabi_unwind_cpp_pr1" },
 	{ 0xc765a737, "module_put" },
+	{ 0x2e5810c6, "__aeabi_unwind_cpp_pr1" },
+	{ 0x27e1a049, "printk" },
 };
 
 static const char __module_depends[]
@@ -40,4 +40,4 @@ __attribute__((section(".modinfo"))) =
 "depends=";
 
 
-MODULE_INFO(srcversion, "FBDBE5428097BE77715E34F");
+MODULE_INFO(srcversion, "7F272776BFC668EC5524362");
