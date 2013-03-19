@@ -1020,11 +1020,9 @@ static void init_std_data(struct entropy_store *r)
 	spin_unlock_irqrestore(&r->lock, flags);
 
 	now = ktime_get_real();
-
 // jhalderm: save initial now value
 r->init_now = now;
 // ewust: testing removing time from entropy seeding:
-
 //mix_pool_bytes(r, &now, sizeof(now));
 // jhalderm: easier to compare boots if we don't keep this:
 //mix_pool_bytes(r, utsname(), sizeof(*(utsname())));
@@ -1043,37 +1041,6 @@ static int rand_initialize(void)
 memset(input_pool_data, 0, INPUT_POOL_WORDS * sizeof(__u32)); 
 memset(blocking_pool_data, 0, OUTPUT_POOL_WORDS * sizeof(__u32)); 
 memset(nonblocking_pool_data, 0, OUTPUT_POOL_WORDS * sizeof(__u32)); 
-
-/* dacashman change - adding timing seed back after 0's */
-/*  code from init_std_data */
-	ktime_t now;
-	unsigned long flags;
-
-	spin_lock_irqsave(&nonblocking_pool.lock, flags);
-	nonblocking_pool.entropy_count = 0;
-	spin_unlock_irqrestore(&nonblocking_pool.lock, flags);
-
-	now = ktime_get_real();
-	/*dacashman change - printing ktime_get_real val at boot */
-	s64 temp_jiffy_ns = jiffies_to_ns();
-	s64 temp_ktime_ns = ktime_to_ns(now);
-	s64 temp_jiffy_ns2 = jiffies_to_ns();
-	printk(KERN_DEBUG "TIME Value of jiffies_to_ns at rand_initialize %lld, %llx\n", temp_jiffy_ns, temp_jiffy_ns); 
-	printk(KERN_DEBUG "TIME Value of ktime_to_ns at rand_initialize %lld, %llx\n", temp_ktime_ns, temp_ktime_ns);
-	printk(KERN_DEBUG "TIME Value of jiffies_to_ns 2 at rand_initialize %lld, %llx\n", temp_jiffy_ns2, temp_jiffy_ns2); 
-	//	printk(KERN_DEBUG "TIME Value of jiffies_to_ns w/out adjustment at rand_initialize %lld, %llx\n", temp_jiffy_ns , temp_jiffy_ns); 
-        
-
-
-        struct tm thyme;
-        struct timeval tv;
-        tv = ns_to_timeval(ktime_to_ns(now));
-	time_to_tm(tv.tv_sec, 0, &thyme);
-	printk(KERN_DEBUG "KTIME ENTROPY TIME: %d:%02d:%02d\n", thyme.tm_hour, thyme.tm_min, 
-	       thyme.tm_sec);
-	mix_pool_bytes(&nonblocking_pool, &now, sizeof(now));
-        
-        
 	return 0;
 }
 module_init(rand_initialize);
