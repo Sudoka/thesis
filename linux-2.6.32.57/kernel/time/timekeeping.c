@@ -21,11 +21,6 @@
 #include <linux/tick.h>
 #include <linux/stop_machine.h>
 
-/* dacashman - added from jiffies.c */
-#define NSEC_PER_JIFFY	((u32)((((u64)NSEC_PER_SEC)<<8)/ACTHZ))
-#define JIFFIES_SHIFT	8
-/* end dacashman change */
-
 /* Structure holding internal timekeeping values. */
 struct timekeeper {
 	/* Current clocksource used for timekeeping. */
@@ -68,12 +63,6 @@ struct timekeeper timekeeper;
  */
 static void timekeeper_setup_internals(struct clocksource *clock)
 {
-
-  /*    dacashman - still trying to force a lack of real-time clock */
-        printk(KERN_DEBUG "TIMEKEEPING TIMEKEEPER_SETUP\n");
-        dump_stack();
-        printk(KERN_DEBUG "clocksource: %s with init reading: %x\n", clock->name, (u32) clock->read(clock));
-        /* ********* dacashman end **********/
 	cycle_t interval;
 	u64 tmp, ntpinterval;
 
@@ -168,7 +157,7 @@ __cacheline_aligned_in_smp DEFINE_SEQLOCK(xtime_lock);
  * - wall_to_monotonic is no longer the boot time, getboottime must be
  * used instead.
  */
-struct timespec xtime __attribute__ ((aligned (16)));                  /* dcashman - found xtime! */
+struct timespec xtime __attribute__ ((aligned (16)));
 struct timespec wall_to_monotonic __attribute__ ((aligned (16)));
 static struct timespec total_sleep_time;
 
@@ -342,14 +331,6 @@ EXPORT_SYMBOL(do_gettimeofday);
  */
 int do_settimeofday(struct timespec *tv)
 {
-  /* dacashman - checking to see if this is called and by whom */
-  printk(KERN_CRIT "TIME XTIME do_settimeofday() called, with %d seconds input.\n", tv->tv_sec);
-  printk(KERN_CRIT "TIME XTIME do_settimeofday() called, with %d nanosecs input.\n", tv->tv_nsec);
-  dump_stack();
-
-  /* dacashman end */
-
-
 	struct timespec ts_delta;
 	unsigned long flags;
 
@@ -364,13 +345,9 @@ int do_settimeofday(struct timespec *tv)
 	ts_delta.tv_nsec = tv->tv_nsec - xtime.tv_nsec;
 	wall_to_monotonic = timespec_sub(wall_to_monotonic, ts_delta);
 
-
-
 	xtime = *tv;
 
-	update_xtime_cache(0); 
-
-
+	update_xtime_cache(0);
 
 	timekeeper.ntp_error = 0;
 	ntp_clear();
@@ -480,31 +457,9 @@ ktime_t ktime_get_real(void)
 
 	getnstimeofday(&now);
 
-	/* dacashman change - seeing if this breaks the kernel. Assume 0 secs */
-	/* now.tv_sec = 0;
-	   now.tv_nsec = 0; */
-	return timespec_to_ktime(now); 
+	return timespec_to_ktime(now);
 }
 EXPORT_SYMBOL_GPL(ktime_get_real);
-
-/* dacashman - CREATING function to replicate ns from jiffies!
- *    This function is designed to go straight from jiffies to
- *    the would-be nanoseconds.  It should replicate a call of
- *    ktime_to_ns(ktime_get_real)
- */
-s64 jiffies_to_ns(void)
-{
-  cycle_t num_cycles;
-  s64 num_ns;
-
-  /* probably need to acquire a lock before this */
-  num_cycles = (cycle_t) (jiffies - INITIAL_JIFFIES);
-  num_ns = clocksource_cyc2ns(num_cycles, (NSEC_PER_JIFFY << JIFFIES_SHIFT), JIFFIES_SHIFT); 
-
-  return num_ns;
-}
-EXPORT_SYMBOL_GPL(jiffies_to_ns);
-
 
 /**
  * getrawmonotonic - Returns the raw monotonic time in a timespec
@@ -599,40 +554,12 @@ void __init timekeeping_init(void)
 
 	read_persistent_clock(&now);
 	read_boot_clock(&boot);
-	
-	/* dacashman - viewing initial timekeeping values */
-	/* dacashman - print now from read_persistent */
-        struct tm thyme;
-        struct timeval tv;
-        tv = ns_to_timeval(ktime_to_ns(timespec_to_ktime(now)));
-	time_to_tm(tv.tv_sec, 0, &thyme);
-	printk(KERN_DEBUG "TIMEKEEPING init value of now (persistent): %d:%02d:%02d\n", thyme.tm_hour, thyme.tm_min, 
-	       thyme.tm_sec);
-
-	/* dacashman - print boot from read_boot */
-        tv = ns_to_timeval(ktime_to_ns(timespec_to_ktime(boot)));
-	time_to_tm(tv.tv_sec, 0, &thyme);
-	printk(KERN_DEBUG "TIMEKEEPING init value of boot: %d:%02d:%02d\n", thyme.tm_hour, thyme.tm_min, 
-	       thyme.tm_sec);
-
-	/* dacashman - now modifying now to be 0's */
-	printk(KERN_DEBUG "TIMEKEEPING init: modifying now (persistent) to be 0\n");
-	now.tv_sec = 0;
-	now.tv_nsec = 0;
-
-
-        /********************************/
 
 	write_seqlock_irqsave(&xtime_lock, flags);
-	/* dacashman change */
-	printk(KERN_DEBUG "Number of jiffies at timekeeping init - unsigned 32bit: %d, hex %x\n", jiffies, jiffies);
-	printk(KERN_DEBUG "Number of jiffies in INITIAL_JIFFIES, unsigned 32bit: %d, hex %x\n", INITIAL_JIFFIES, INITIAL_JIFFIES);
-	printk(KERN_DEBUG "Part of INITIAL_JIFFIES HZ %d, Part of NSEC_PER_JIFFY %d\n", HZ, ACTHZ);
-	/* dacashman change end */
 
 	ntp_init();
 
-	clock = clocksource_default_clock();  /* dcashman - first clock setup */
+	clock = clocksource_default_clock();
 	if (clock->enable)
 		clock->enable(clock);
 	timekeeper_setup_internals(clock);
@@ -650,15 +577,6 @@ void __init timekeeping_init(void)
 	update_xtime_cache(0);
 	total_sleep_time.tv_sec = 0;
 	total_sleep_time.tv_nsec = 0;
-	/* dacashman change */
-	/*printk(KERN_DEBUG "Number of jiffies at timekeeping init - signed 32bit: %d, hex %x\n", jiffies);
-        u64 temp_addition = ktime_to_ns(ktime_get_real()) ;
-	u64 temp_addition2 = jiffies_to_ns();
-	printk(KERN_DEBUG "TIME Value of ktime_to_ns at timekeeping_init %llu\n", temp_addition);
-	printk(KERN_DEBUG "TIME Value of jiffies_to_ns at timekeeping_init %llu\n", temp_addition2); */
-
-
-	/* dacashman change end */
 	write_sequnlock_irqrestore(&xtime_lock, flags);
 }
 
@@ -675,18 +593,12 @@ static struct timespec timekeeping_suspend_time;
  */
 static int timekeeping_resume(struct sys_device *dev)
 {
-
 	unsigned long flags;
 	struct timespec ts;
 
 	read_persistent_clock(&ts);
 
 	clocksource_resume();
-
-  /* dacashman - checking to see if this is called and by whom */
-  printk(KERN_DEBUG "TIME XTIME timekeeping_resume() called, awith %d seconds input.\n", ts.tv_sec);
-  /* dacashman end */  
-
 
 	write_seqlock_irqsave(&xtime_lock, flags);
 

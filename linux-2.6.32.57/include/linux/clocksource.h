@@ -91,7 +91,6 @@ static inline u64 cyclecounter_cyc2ns(const struct cyclecounter *cc,
  * the initial time stamp. Every call to timecounter_read() increments
  * the time stamp counter by the number of elapsed nanoseconds.
  */
-/* dcashman - this init might impact the timer initialization */
 extern void timecounter_init(struct timecounter *tc,
 			     const struct cyclecounter *cc,
 			     u64 start_tstamp);
@@ -161,7 +160,6 @@ struct clocksource {
 	/*
 	 * First part of structure is read mostly
 	 */
-        /* dcashman - print out name to see what we're using */
 	char *name;
 	struct list_head list;
 	int rating;
@@ -275,7 +273,7 @@ static inline s64 clocksource_cyc2ns(cycle_t cycles, u32 mult, u32 shift)
 
 
 /* used to install a new clocksource */
-extern int clocksource_register(struct clocksource*);  /* dcashman - perhaps this is what we want */
+extern int clocksource_register(struct clocksource*);
 extern void clocksource_unregister(struct clocksource*);
 extern void clocksource_touch_watchdog(void);
 extern struct clocksource* clocksource_get_next(void);

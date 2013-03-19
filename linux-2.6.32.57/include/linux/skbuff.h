@@ -1857,11 +1857,6 @@ static inline void skb_get_timestampns(const struct sk_buff *skb,
 static inline void __net_timestamp(struct sk_buff *skb)
 {
 	skb->tstamp = ktime_get_real();
-		/* dacashman - tsval debug cont'd
-		   hoping this translates to tsval */
-		printk(KERN_DEBUG "TIMESTAMP software!\n");
-		printk(KERN_DEBUG "TIME ktime_ns value long: %llu\t%llx\n", ktime_to_ns(skb->tstamp), ktime_to_ns(skb->tstamp));
-		//printk(KERN_DEBUG "TIME ktime_ns value: %d\t%x\n", ktime_to_ns(skb->tstamp), ktime_to_ns(skb->tstamp));
 }
 
 static inline ktime_t net_timedelta(ktime_t t)

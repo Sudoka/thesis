@@ -50,33 +50,14 @@
  */
 #define JIFFIES_SHIFT	8
 
-/* dacashman - evaluating the variation of jiffies */
-static jiffies_read_count = 0;
-
 static cycle_t jiffies_read(struct clocksource *cs)
 {
-  /* dacashman - print out jiffies value at each read to see difference and frequency. Might need to acquire lock here */
-        jiffies_read_count++;
-	if(jiffies_read_count < 10 || jiffies_read_count % 100000 == 0){
-	  dump_stack();
-	  printk(KERN_DEBUG "JIFFIES_READ: read #%d long value: %llu\n", jiffies_read_count, jiffies);
-	  printk(KERN_DEBUG "JIFFIES_READ: read #%d long jiffies_64 value: %llu\n", jiffies_read_count, jiffies_64);
-	  //printk(KERN_DEBUG "JIFFIES_READ: read #%d long jiffies_64 proper read: %llu\n", jiffies_read_count, get_jiffies_64());
-	  printk(KERN_DEBUG "JIFFIES_READ unsigned 32bit read #%d value: %u, %x\n", jiffies_read_count, jiffies, jiffies);
-	  printk(KERN_DEBUG "JIFFIES_READ unsigned 32bit 2nd read #%d value: %u, %x\n", jiffies_read_count, jiffies, ((__u32)(jiffies)));
-
-	  printk(KERN_DEBUG "JIFFIES NSEC_PER_JIFFY value: %d, ACTHZ: %d\n", NSEC_PER_JIFFY, ACTHZ);
-
-
-	  
-	}
-	/***********************************/
 	return (cycle_t) jiffies;
 }
 
 struct clocksource clocksource_jiffies = {
 	.name		= "jiffies",
-	.rating		= 301, /* lowest valid rating = 1 !dacashman change to 301 -now higest!*/
+	.rating		= 1, /* lowest valid rating*/
 	.read		= jiffies_read,
 	.mask		= 0xffffffff, /*32bits*/
 	.mult		= NSEC_PER_JIFFY << JIFFIES_SHIFT, /* details above */

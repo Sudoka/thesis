@@ -19,12 +19,12 @@ static int __init net_secret_init(void)
         /* dcashman change - print out net_secret */
         printk(KERN_DEBUG "BEGIN NET_SECRET:\n");
 	int i=0;
-	unsigned char *byte_ptr;
-	for(i=0; i < sizeof(net_secret)/4; i++){
-	  byte_ptr = (unsigned char *) &net_secret[i];
+	char *byte_ptr;
+	for(i=0; i < sizeof(net_secret); i++){
+	  byte_ptr = (char *) &net_secret[i];
 	  int j=0;
 	  for(j=0; j < sizeof(net_secret[i]); j++){
-	    printk(KERN_DEBUG "\\x%x", *(byte_ptr+j));
+	    printk(KERN_DEBUG "\x%x", *(byte_ptr+j));
 	  }
 	}
 	printk(KERN_DEBUG "\nEND NET_SECRET\n");
@@ -46,21 +46,6 @@ static u32 seq_scale(u32 seq)
 	 *	Choosing a clock of 64 ns period is OK. (period of 274 s)
 	 */
         /* dcashman change - got rid of time component */
-        u64 temp_addition = ktime_to_ns(ktime_get_real());
-        u64 temp_addition2 = jiffies_to_ns();
-	printk(KERN_DEBUG "TIME Value of ktime_to_ns at seq_scale %llu\n", temp_addition);
-	printk(KERN_DEBUG "TIME Value of jiffies_to_ns at seq_scale %llu\n", temp_addition2);
-	printk(KERN_DEBUG "Value of seq+ns reading 64-bit: %llu\n", seq+temp_addition);
-	printk(KERN_DEBUG "Value of seq+ns reading 32-bit: %u\n", seq+temp_addition);
-	int i;
-	for(i = 0; i < 10000000; i++){
-	  if( i % 100000 == 0){
-	    printk(KERN_DEBUG "TIME ktime_to_ns variability test. ns: %llu, jiffies: %lu\n", 
-		   ktime_to_ns(ktime_get_real()), jiffies);
-	  }
-	}
-					  
-
         return seq /* + (ktime_to_ns(ktime_get_real()) >> 6) */;
 }
 
@@ -134,15 +119,6 @@ __u32 secure_ipv6_id(const __be32 daddr[4])
 __u32 secure_tcp_sequence_number(__be32 saddr, __be32 daddr,
 				 __be16 sport, __be16 dport)
 {
-
-	/* dcashman change - determing byte order */
-	printk(KERN_DEBUG "TCP_SEQ BYTE ORDER TEST\n");
-        printk(KERN_DEBUG "saddr normal: %x\n", saddr);
-        printk(KERN_DEBUG "saddr htonl: %x\n", htonl(saddr));
-	printk(KERN_DEBUG "saddr ntohl: %x\n", ntohl(saddr));
-	printk(KERN_DEBUG "net_secret[15]: %x\n", net_secret[15]);
-        /* dcashman end change */
-
 	u32 hash[MD5_DIGEST_WORDS];
 
 	hash[0] = (__force u32)saddr;
@@ -151,11 +127,7 @@ __u32 secure_tcp_sequence_number(__be32 saddr, __be32 daddr,
 	hash[3] = net_secret[15];
 
 	md5_transform(hash, net_secret);
-        
-	/*dcashman change - print seq num? */
-	printk(KERN_DEBUG "Sequence num: %x\n", hash[0]);
-	printk(KERN_DEBUG "Sequence num ntohl: %x\n", htonl(hash[0]));
-	/*dcashman change end */
+
 	return seq_scale(hash[0]);
 }
 
