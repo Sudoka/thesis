@@ -1,0 +1,16 @@
+15:15:17.230526 IP ubuntu.local.54453 > 192.168.1.1.http: Flags [S], seq 3729218320, win 14600, options [mss 1460,sackOK,TS val 93689629 ecr 0,nop,wscale 6], length 0
+15:15:17.232580 IP 192.168.1.1.http > ubuntu.local.54453: Flags [S.], seq 638797230, ack 3729218321, win 64240, options [mss 1460], length 0
+15:15:17.232658 IP ubuntu.local.54453 > 192.168.1.1.http: Flags [.], ack 1, win 14600, length 0
+15:15:17.233004 IP ubuntu.local.54453 > 192.168.1.1.http: Flags [P.], seq 1:112, ack 1, win 14600, length 111
+15:15:17.233217 IP 192.168.1.1.http > ubuntu.local.54453: Flags [.], ack 112, win 64240, length 0
+15:15:17.243957 IP 192.168.1.1.http > ubuntu.local.54453: Flags [P.], seq 1:224, ack 112, win 64240, length 223
+15:15:17.243981 IP ubuntu.local.54453 > 192.168.1.1.http: Flags [.], ack 224, win 15544, length 0
+15:15:17.244960 IP 192.168.1.1.http > ubuntu.local.54453: Flags [P.], seq 224:294, ack 112, win 64240, length 70
+15:15:17.244970 IP ubuntu.local.54453 > 192.168.1.1.http: Flags [.], ack 294, win 15544, length 0
+15:15:17.245814 IP ubuntu.local.54453 > 192.168.1.1.http: Flags [F.], seq 112, ack 294, win 15544, length 0
+15:15:17.245938 IP 192.168.1.1.http > ubuntu.local.54453: Flags [P.], seq 294:391, ack 112, win 64240, length 97
+15:15:17.246046 IP 192.168.1.1.http > ubuntu.local.54453: Flags [.], ack 113, win 64239, length 0
+15:15:17.246177 IP ubuntu.local.54453 > 192.168.1.1.http: Flags [R], seq 3729218432, win 0, length 0
+15:15:17.246220 IP 192.168.1.1.http > ubuntu.local.54453: Flags [FP.], seq 391, ack 113, win 64239, length 0
+15:15:17.246305 IP ubuntu.local.54453 > 192.168.1.1.http: Flags [R], seq 3729218433, win 0, length 0
+
