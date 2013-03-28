@@ -1,0 +1,15 @@
+#! /bin/sh
+#
+# Created by configure
+
+"/home/dcashman/thesis/misc/ASLR/httpd-2.2.24/srclib/apr-util/configure" \
+"--disable-option-checking" \
+"--cache-file=/dev/null" \
+"--srcdir=/home/dcashman/thesis/misc/ASLR/httpd-2.2.24/srclib/apr-util" \
+"--with-apr=../apr" \
+"--prefix=/home/dcashman/thesis/misc/ASLR/apache" \
+"--exec-prefix=/home/dcashman/thesis/misc/ASLR/apache" \
+"--libdir=/home/dcashman/thesis/misc/ASLR/apache/lib" \
+"--includedir=/home/dcashman/thesis/misc/ASLR/apache/include" \
+"--bindir=/home/dcashman/thesis/misc/ASLR/apache/bin" \
+"$@"

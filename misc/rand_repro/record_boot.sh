@@ -1,0 +1,28 @@
+#!/bin/bash
+#
+# rec_rand_boot.sh - a script to record information from dmesg about random.c values
+# Dan Cashman - dcashman@cs.ucsd.edu
+#
+
+working_dir="/home/dcashman/thesis/misc/rand_repro"
+boot_num=`cat ${working_dir}/boot_num.txt`
+ver="aqua"
+
+#print out dmesg
+dmesg > ${working_dir}/dmesg/dmesg_${boot_num}.tmp
+
+#get only rand_reads and get rid of boot timings 
+grep rand_read ${working_dir}/dmesg/dmesg_${boot_num}.tmp > ${working_dir}/tmp.tmp
+${working_dir}/clip_rand_read_dmesg.pl ${working_dir}/tmp.tmp ${working_dir}/clipped_dmesg/clipped_${boot_num}.tmp
+
+#run diff to determine where boots differ
+for((i=0; i < boot_num; i++))
+do
+    diff ${working_dir}/clipped_dmesg/clipped_${i}.tmp ${working_dir}/clipped_dmesg/clipped_${boot_num}.tmp > ${working_dir}/diffs/rr_diff_${i}_${boot_num}.txt
+    ${working_dir}/diffs/extract_diff_num.pl ${working_dir}/diffs/rr_diff_${i}_${boot_num}.txt ${working_dir}/diffs/results.txt
+done
+
+#clean-up and prepare for next boot
+echo $(($boot_num + 1)) > ${working_dir}/boot_num.txt
+
+exit

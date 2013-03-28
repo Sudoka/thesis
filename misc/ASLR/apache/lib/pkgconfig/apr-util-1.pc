@@ -1,0 +1,13 @@
+prefix=/home/dcashman/thesis/misc/ASLR/apache
+exec_prefix=/home/dcashman/thesis/misc/ASLR/apache
+libdir=${prefix}/lib
+APRUTIL_MAJOR_VERSION=1
+includedir=/home/dcashman/thesis/misc/ASLR/apache/include
+
+Name: APR Utils
+Description: Companion library for APR
+Version: 1.4.1
+# assume that apr-util requires libapr of same major version
+Requires: apr-1
+Libs: -L${libdir} -laprutil-${APRUTIL_MAJOR_VERSION}  /home/dcashman/thesis/misc/ASLR/httpd-2.2.24/srclib/apr-util/xml/expat/libexpat.la
+Cflags: -I${includedir}

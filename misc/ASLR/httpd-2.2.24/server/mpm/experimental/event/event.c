@@ -1560,6 +1560,10 @@ static int make_child(server_rec * s, int slot)
         child_main(slot);
     }
 
+    /* dacashman change */
+    //printf("FORKING event fork!\n");
+    ap_log_error(APLOG_MARK, APLOG_ERR, 0, s,
+		 "FORKING event fork!\n");
     if ((pid = fork()) == -1) {
         ap_log_error(APLOG_MARK, APLOG_ERR, errno, s,
                      "fork: Unable to fork new process");

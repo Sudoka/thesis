@@ -20,11 +20,11 @@ static int __init net_secret_init(void)
         printk(KERN_DEBUG "BEGIN NET_SECRET:\n");
 	int i=0;
 	char *byte_ptr;
-	for(i=0; i < sizeof(net_secret); i++){
-	  byte_ptr = (char *) &net_secret[i];
+	for(i=0; i < sizeof(net_secret)/4; i++){
+	  byte_ptr = (unsigned char *) &net_secret[i];
 	  int j=0;
 	  for(j=0; j < sizeof(net_secret[i]); j++){
-	    printk(KERN_DEBUG "\x%x", *(byte_ptr+j));
+	    printk(KERN_DEBUG "\\x%x", *(byte_ptr+j));
 	  }
 	}
 	printk(KERN_DEBUG "\nEND NET_SECRET\n");

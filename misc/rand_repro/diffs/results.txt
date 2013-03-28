@@ -1,0 +1,16 @@
+53
+217		/home/dcashman/thesis/misc/rand_repro/diffs/rr_diff_0_2.txt
+53		/home/dcashman/thesis/misc/rand_repro/diffs/rr_diff_1_2.txt
+217		/home/dcashman/thesis/misc/rand_repro/diffs/rr_diff_0_3.txt
+53		/home/dcashman/thesis/misc/rand_repro/diffs/rr_diff_1_3.txt
+223		/home/dcashman/thesis/misc/rand_repro/diffs/rr_diff_2_3.txt
+217		/home/dcashman/thesis/misc/rand_repro/diffs/rr_diff_0_4.txt
+53		/home/dcashman/thesis/misc/rand_repro/diffs/rr_diff_1_4.txt
+218		/home/dcashman/thesis/misc/rand_repro/diffs/rr_diff_2_4.txt
+218		/home/dcashman/thesis/misc/rand_repro/diffs/rr_diff_3_4.txt
+217		/home/dcashman/thesis/misc/rand_repro/diffs/rr_diff_0_5.txt
+53		/home/dcashman/thesis/misc/rand_repro/diffs/rr_diff_1_5.txt
+218		/home/dcashman/thesis/misc/rand_repro/diffs/rr_diff_2_5.txt
+218		/home/dcashman/thesis/misc/rand_repro/diffs/rr_diff_3_5.txt
+218		/home/dcashman/thesis/misc/rand_repro/diffs/rr_diff_4_5.txt
+53		/home/dcashman/thesis/misc/rand_repro/diffs/rr_diff_0_1.txt

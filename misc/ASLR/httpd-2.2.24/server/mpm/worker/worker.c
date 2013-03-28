@@ -1306,7 +1306,10 @@ static int make_child(server_rec *s, int slot)
         ap_scoreboard_image->parent[slot].pid = getpid();
         child_main(slot);
     }
-
+    /* dacashman */
+    //printf("FORKING: worker fork!\n");
+    ap_log_error(APLOG_MARK, APLOG_ERR, 0, s,
+                     "FORKING: worker fork!\n");
     if ((pid = fork()) == -1) {
         ap_log_error(APLOG_MARK, APLOG_ERR, errno, s,
                      "fork: Unable to fork new process");

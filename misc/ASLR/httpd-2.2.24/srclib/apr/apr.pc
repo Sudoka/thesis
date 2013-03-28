@@ -1,0 +1,11 @@
+prefix=/home/dcashman/thesis/misc/ASLR/apache
+exec_prefix=/home/dcashman/thesis/misc/ASLR/apache
+libdir=${prefix}/lib
+APR_MAJOR_VERSION=1
+includedir=/home/dcashman/thesis/misc/ASLR/apache/include
+
+Name: APR
+Description: The Apache Portable Runtime library
+Version: 1.4.6
+Libs: -L${libdir} -lapr-${APR_MAJOR_VERSION} -lrt -lcrypt  -lpthread -ldl
+Cflags: -DLINUX=2 -D_REENTRANT -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -g -O2 -pthread -I${includedir}

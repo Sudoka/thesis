@@ -330,8 +330,13 @@ static struct poolinfo {
 #define POOLBITS	poolwords*32
 #define POOLBYTES	poolwords*4
 
+// dacashman: change here
+static int rand_read_count = 0;
+
+
+
+
 // jhalderm: /////////////////////////////
-// dcashman: change here
 static int nb_stir_count = 0;
 static int nb_reentry_count = 0;
 static int nb_input_bytes = 0;
@@ -390,7 +395,7 @@ static DECLARE_WAIT_QUEUE_HEAD(random_read_wait);
 static DECLARE_WAIT_QUEUE_HEAD(random_write_wait);
 static struct fasync_struct *fasync;
 
-#if 0  /* dcashman change - temporarily disabling random debugging */
+#if 1  /* dcashman change - temporarily disabling random debugging */
 static int debug;
 module_param(debug, bool, 0644);
 #define DEBUG_ENT(fmt, arg...) do { \
@@ -461,6 +466,30 @@ static struct entropy_store nonblocking_pool = {
 	.lock = __SPIN_LOCK_UNLOCKED(&nonblocking_pool.lock),
 	.pool = nonblocking_pool_data
 };
+
+
+/* dacashman func:
+ * function that somehow combines all elements in pool and
+ * outputs a signature.  
+ *
+ * Ideally, this would be a hash of the pool elements, but 
+ * for speed we are currently just adding them.  XOR would 
+ * be even faster, but would tell us less.
+ */
+static inline int get_pool_signature(struct entropy_store *r){
+  int i, num_bytes, pool_sig;
+  char *pool_data;
+
+  num_bytes = r->poolinfo->POOLBYTES;
+  pool_sig = 0;
+  pool_data = (char *) r->pool;
+  //just add all bytes
+  for(i = 0; i < num_bytes; i ++){
+    pool_sig += pool_data[i];
+  }
+  return pool_sig;
+}
+
 
 /*
  * This function adds bytes into the entropy "pool".  It does not
@@ -655,7 +684,7 @@ static void add_timer_randomness(struct timer_rand_state *state, unsigned num)
 	} sample;
 	long delta, delta2, delta3;
 
-	DEBUG_ENT("add_timer_randomness(.. %u)", num);
+	DEBUG_ENT("add_timer_randomness(.. %u)\n", num);
 
 	preempt_disable();
 	/* if over the trickle threshold, use only 1 in 4096 samples */
@@ -716,7 +745,7 @@ void add_input_randomness(unsigned int type, unsigned int code,
 	if (value == last_value)
 		return;
 
-	DEBUG_ENT("add_input_randomness(%d, %d, %d)", type, code, value);
+	DEBUG_ENT("add_input_randomness(%d, %d, %d)\n", type, code, value);
 	last_value = value;
 	add_timer_randomness(&input_timer_state,
 			     (type << 4) ^ code ^ (code >> 4) ^ value);
@@ -732,7 +761,7 @@ void add_interrupt_randomness(int irq)
 	if (state == NULL)
 		return;
 
-	DEBUG_ENT("add_interrupt_randomness(%d)", irq);
+	DEBUG_ENT("add_interrupt_randomness(%d)\n", irq);
 	add_timer_randomness(state, 0x100 + irq);
 }
 
@@ -743,7 +772,7 @@ void add_disk_randomness(struct gendisk *disk)
 		return;
 
 	/* first major is 1, so we get >= 0x200 here */
-	DEBUG_ENT("add_disk_randomness(%d:%d) %08x %08x", 
+	DEBUG_ENT("add_disk_randomness(%d:%d) %08x %08x\n", 
 		MAJOR(disk_devt(disk)), MINOR(disk_devt(disk)), 
 		nonblocking_pool_data[0], nonblocking_pool_data[1]);
 
@@ -995,8 +1024,14 @@ static ssize_t extract_entropy_user(struct entropy_store *r, void __user *buf,
  */
 void get_random_bytes(void *buf, int nbytes)
 {
-  DEBUG_ENT("get_random_bytes(%d) %08x %08x", nbytes,
-	    nonblocking_pool_data[0], nonblocking_pool_data[1]); //ewust
+  int pool_sig;
+  pool_sig = get_pool_signature(&nonblocking_pool);
+  //printk("rand_read_num %d get_random_bytes(%d): urandom sig - %d\n", ++rand_read_count, nbytes, pool_sig);
+  DEBUG_ENT("rand_read_num %d get_random_bytes(%d): sig %08x %08x %08x", ++rand_read_count, nbytes, pool_sig,
+    nonblocking_pool_data[0], nonblocking_pool_data[1]); //ewust
+  if(rand_read_count > 150 && nbytes != 16){
+    dump_stack();
+  }
 	extract_entropy(&nonblocking_pool, buf, nbytes, 0, 0);
 }
 EXPORT_SYMBOL(get_random_bytes);
@@ -1081,7 +1116,11 @@ void rand_initialize_disk(struct gendisk *disk)
 static ssize_t
 random_read(struct file *file, char __user *buf, size_t nbytes, loff_t *ppos)
 {
+        int pool_sig;
 	ssize_t n, retval = 0, count = 0;
+	pool_sig = get_pool_signature(&nonblocking_pool);	
+	//printk("rand_read_num %d random_read(%d): urandom sig - %d\n", ++rand_read_count, nbytes, pool_sig);
+	DEBUG_ENT("rand_read_num %d random_read(%d): sig %08x  %08x %08x pid=%u\n", ++rand_read_count, nbytes, pool_sig,  nonblocking_pool_data[0], nonblocking_pool_data[1], current->pid); // ewust
 
 	if (nbytes == 0)
 		return 0;
@@ -1137,7 +1176,10 @@ random_read(struct file *file, char __user *buf, size_t nbytes, loff_t *ppos)
 static ssize_t
 urandom_read(struct file *file, char __user *buf, size_t nbytes, loff_t *ppos)
 {
-  DEBUG_ENT("urandom_read(%d): %08x %08x pid=%u\n", nbytes,  nonblocking_pool_data[0], nonblocking_pool_data[1], current->pid); // ewust
+  int pool_sig;
+  pool_sig = get_pool_signature(&nonblocking_pool);
+  //printk("rand_read_num %d urandom_read(%d): urandom sig - %d\n", ++rand_read_count, nbytes, pool_sig);
+  DEBUG_ENT("rand_read_num %d urandom_read(%d): sig %08x %08x %08x pid=%u\n", ++rand_read_count, nbytes, pool_sig, nonblocking_pool_data[0], nonblocking_pool_data[1], current->pid); // ewust
   return extract_entropy_user(&nonblocking_pool, buf, nbytes);
 }
 

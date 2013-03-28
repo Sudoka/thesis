@@ -1,0 +1,1323 @@
+[    0.000000] CANARY: x86 boot_init with canary of 6979583899388421676 and tsc of 13190188042
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 2.6.32.57 (dcashman@dcashman-01) (gcc version 4.4.3 (Ubuntu 4.4.3-4ubuntu5.1) ) #77 SMP Tue Feb 19 13:24:23 PST 2013
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   NSC Geode by NSC
+[    0.000000]   Cyrix CyrixInstead
+[    0.000000]   Centaur CentaurHauls
+[    0.000000]   Transmeta GenuineTMx86
+[    0.000000]   Transmeta TransmetaCPU
+[    0.000000]   UMC UMC UMC UMC
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000]  BIOS-e820: 0000000000000000 - 000000000009fc00 (usable)
+[    0.000000]  BIOS-e820: 000000000009fc00 - 00000000000a0000 (reserved)
+[    0.000000]  BIOS-e820: 00000000000e4000 - 0000000000100000 (reserved)
+[    0.000000]  BIOS-e820: 0000000000100000 - 00000000cff90000 (usable)
+[    0.000000]  BIOS-e820: 00000000cff90000 - 00000000cff9e000 (ACPI data)
+[    0.000000]  BIOS-e820: 00000000cff9e000 - 00000000cffe0000 (ACPI NVS)
+[    0.000000]  BIOS-e820: 00000000cffe0000 - 00000000d0000000 (reserved)
+[    0.000000]  BIOS-e820: 00000000fee00000 - 00000000fee01000 (reserved)
+[    0.000000]  BIOS-e820: 00000000fff00000 - 0000000100000000 (reserved)
+[    0.000000]  BIOS-e820: 0000000100000000 - 00000001b0000000 (usable)
+[    0.000000] DMI present.
+[    0.000000] AMI BIOS detected: BIOS may corrupt low RAM, working around it.
+[    0.000000] e820 update range: 0000000000000000 - 0000000000010000 (usable) ==> (reserved)
+[    0.000000] last_pfn = 0x1b0000 max_arch_pfn = 0x1000000
+[    0.000000] MTRR default type: uncachable
+[    0.000000] MTRR fixed ranges enabled:
+[    0.000000]   00000-9FFFF write-back
+[    0.000000]   A0000-BFFFF uncachable
+[    0.000000]   C0000-CFFFF write-protect
+[    0.000000]   D0000-DFFFF uncachable
+[    0.000000]   E0000-EFFFF write-through
+[    0.000000]   F0000-FFFFF write-protect
+[    0.000000] MTRR variable ranges enabled:
+[    0.000000]   0 base 1B0000000 mask FF0000000 uncachable
+[    0.000000]   1 base 1C0000000 mask FC0000000 uncachable
+[    0.000000]   2 base 000000000 mask E00000000 write-back
+[    0.000000]   3 base 0D0000000 mask FF0000000 uncachable
+[    0.000000]   4 base 0E0000000 mask FE0000000 uncachable
+[    0.000000]   5 disabled
+[    0.000000]   6 disabled
+[    0.000000]   7 disabled
+[    0.000000] x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106
+[    0.000000] e820 update range: 00000000d0000000 - 0000000100000000 (usable) ==> (reserved)
+[    0.000000] Scanning 0 areas for low memory corruption
+[    0.000000] modified physical RAM map:
+[    0.000000]  modified: 0000000000000000 - 0000000000010000 (reserved)
+[    0.000000]  modified: 0000000000010000 - 000000000009fc00 (usable)
+[    0.000000]  modified: 000000000009fc00 - 00000000000a0000 (reserved)
+[    0.000000]  modified: 00000000000e4000 - 0000000000100000 (reserved)
+[    0.000000]  modified: 0000000000100000 - 00000000cff90000 (usable)
+[    0.000000]  modified: 00000000cff90000 - 00000000cff9e000 (ACPI data)
+[    0.000000]  modified: 00000000cff9e000 - 00000000cffe0000 (ACPI NVS)
+[    0.000000]  modified: 00000000cffe0000 - 00000000d0000000 (reserved)
+[    0.000000]  modified: 00000000fee00000 - 00000000fee01000 (reserved)
+[    0.000000]  modified: 00000000fff00000 - 0000000100000000 (reserved)
+[    0.000000]  modified: 0000000100000000 - 00000001b0000000 (usable)
+[    0.000000] initial memory mapped : 0 - 00e00000
+[    0.000000] init_memory_mapping: 0000000000000000-00000000379fe000
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000]  0000000000 - 0000200000 page 4k
+[    0.000000]  0000200000 - 0037800000 page 2M
+[    0.000000]  0037800000 - 00379fe000 page 4k
+[    0.000000] kernel direct mapping tables up to 379fe000 @ 10000-16000
+[    0.000000] ACPI: RSDP 000f91f0 00014 (v00 HPQOEM)
+[    0.000000] ACPI: RSDT cff90000 00044 (v01 HPQOEM SLIC-CPC 20090819 MSFT 00000097)
+[    0.000000] ACPI: FACP cff90200 00084 (v01 HPQOEM SLIC-CPC 20090819 MSFT 00000097)
+[    0.000000] ACPI: DSDT cff90440 05753 (v01 HPQOEM SLIC-CPC 00000050 INTL 20051117)
+[    0.000000] ACPI: FACS cff9e000 00040
+[    0.000000] ACPI: APIC cff90390 0006C (v01 HPQOEM SLIC-CPC 20090819 MSFT 00000097)
+[    0.000000] ACPI: MCFG cff90400 0003C (v01 HPQOEM SLIC-CPC 20090819 MSFT 00000097)
+[    0.000000] ACPI: OEMB cff9e040 00076 (v01 HPQOEM SLIC-CPC 20090819 MSFT 00000097)
+[    0.000000] ACPI: HPET cff95ba0 00038 (v01 HPQOEM SLIC-CPC 20090819 MSFT 00000097)
+[    0.000000] ACPI: GSCI cff9e0c0 02024 (v01 HPQOEM SLIC-CPC 20090819 MSFT 00000097)
+[    0.000000] ACPI: SLIC cffa00f0 00176 (v01 HPQOEM SLIC-CPC 00000001 MSFT 00000001)
+[    0.000000] ACPI: SSDT cffa0b30 00A7C (v01 HPQOEM SLIC-CPC 00000012 INTL 20051117)
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] 6022MB HIGHMEM available.
+[    0.000000] 889MB LOWMEM available.
+[    0.000000]   mapped low ram: 0 - 379fe000
+[    0.000000]   low ram: 0 - 379fe000
+[    0.000000]   node 0 low ram: 00000000 - 379fe000
+[    0.000000]   node 0 bootmap 00012000 - 00018f40
+[    0.000000] (8 early reservations) ==> bootmem [0000000000 - 00379fe000]
+[    0.000000]   #0 [0000000000 - 0000001000]   BIOS data page ==> [0000000000 - 0000001000]
+[    0.000000]   #1 [0000001000 - 0000002000]    EX TRAMPOLINE ==> [0000001000 - 0000002000]
+[    0.000000]   #2 [0000006000 - 0000007000]       TRAMPOLINE ==> [0000006000 - 0000007000]
+[    0.000000]   #3 [0000100000 - 0000918778]    TEXT DATA BSS ==> [0000100000 - 0000918778]
+[    0.000000]   #4 [000009fc00 - 0000100000]    BIOS reserved ==> [000009fc00 - 0000100000]
+[    0.000000]   #5 [0000919000 - 0000920640]              BRK ==> [0000919000 - 0000920640]
+[    0.000000]   #6 [0000010000 - 0000012000]          PGTABLE ==> [0000010000 - 0000012000]
+[    0.000000]   #7 [0000012000 - 0000019000]          BOOTMAP ==> [0000012000 - 0000019000]
+[    0.000000] found SMP MP-table at [c00ff780] ff780
+[    0.000000] Zone PFN ranges:
+[    0.000000]   DMA      0x00000010 -> 0x00001000
+[    0.000000]   Normal   0x00001000 -> 0x000379fe
+[    0.000000]   HighMem  0x000379fe -> 0x001b0000
+[    0.000000] Movable zone start PFN for each node
+[    0.000000] early_node_map[3] active PFN ranges
+[    0.000000]     0: 0x00000010 -> 0x0000009f
+[    0.000000]     0: 0x00000100 -> 0x000cff90
+[    0.000000]     0: 0x00100000 -> 0x001b0000
+[    0.000000] On node 0 totalpages: 1572639
+[    0.000000] free_area_init_node: node 0, pgdat c07ba8a0, node_mem_map c1001200
+[    0.000000]   DMA zone: 32 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 3951 pages, LIFO batch:0
+[    0.000000]   Normal zone: 1748 pages used for memmap
+[    0.000000]   Normal zone: 221994 pages, LIFO batch:31
+[    0.000000]   HighMem zone: 12045 pages used for memmap
+[    0.000000]   HighMem zone: 1332869 pages, LIFO batch:31
+[    0.000000] Using APIC driver default
+[    0.000000] ACPI: PM-Timer IO Port: 0x808
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] ACPI: LAPIC (acpi_id[0x01] lapic_id[0x00] enabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x02] lapic_id[0x01] enabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x03] lapic_id[0x02] enabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x04] lapic_id[0x03] enabled)
+[    0.000000] ACPI: Skipping IOAPIC probe due to 'noapic' option.
+[    0.000000] Using ACPI for processor (LAPIC) configuration information
+[    0.000000] ACPI: HPET id: 0xffffffff base: 0xfed00000
+[    0.000000] Intel MultiProcessor Specification v1.4
+[    0.000000]     Virtual Wire compatibility mode.
+[    0.000000] MPTABLE: OEM ID: Intel   
+[    0.000000] MPTABLE: Product ID: Eaglelake   
+[    0.000000] MPTABLE: APIC at: 0xFEE00000
+[    0.000000] I/O APIC #4 Version 32 at 0xFEC00000.
+[    0.000000] Processors: 4
+[    0.000000] SMP: Allowing 4 CPUs, 0 hotplug CPUs
+[    0.000000] nr_irqs_gsi: 24
+[    0.000000] PM: Registered nosave memory: 000000000009f000 - 00000000000a0000
+[    0.000000] PM: Registered nosave memory: 00000000000a0000 - 00000000000e4000
+[    0.000000] PM: Registered nosave memory: 00000000000e4000 - 0000000000100000
+[    0.000000] Allocating PCI resources starting at d0000000 (gap: d0000000:2ee00000)
+[    0.000000] Booting paravirtualized kernel on bare hardware
+[    0.000000] NR_CPUS:8 nr_cpumask_bits:8 nr_cpu_ids:4 nr_node_ids:1
+[    0.000000] PERCPU: Embedded 15 pages/cpu @c4800000 s39416 r0 d22024 u524288
+[    0.000000] pcpu-alloc: s39416 r0 d22024 u524288 alloc=1*2097152
+[    0.000000] pcpu-alloc: [0] 0 1 2 3 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 1558814
+[    0.000000] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-2.6.32.57 root=/dev/sda1 ro quiet maxcpus=0
+[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Enabling fast FPU save and restore... done.
+[    0.000000] Enabling unmasked SIMD FPU exception support... done.
+[    0.000000] Initializing CPU#0
+[    0.000000] allocated 35389120 bytes of page_cgroup
+[    0.000000] please try 'cgroup_disable=memory' option if you don't want memory cgroups
+[    0.000000] Initializing HighMem for node 0 (000379fe:001b0000)
+[    0.000000] Memory: 6190164k/7077888k available (4762k kernel code, 99308k reserved, 2170k data, 676k init, 5379656k highmem)
+[    0.000000] virtual kernel memory layout:
+[    0.000000]     fixmap  : 0xfff1d000 - 0xfffff000   ( 904 kB)
+[    0.000000]     pkmap   : 0xffa00000 - 0xffc00000   (2048 kB)
+[    0.000000]     vmalloc : 0xf81fe000 - 0xff9fe000   ( 120 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xf79fe000   ( 889 MB)
+[    0.000000]       .init : 0xc07c6000 - 0xc086f000   ( 676 kB)
+[    0.000000]       .data : 0xc05a68ab - 0xc07c50c8   (2170 kB)
+[    0.000000]       .text : 0xc0100000 - 0xc05a68ab   (4762 kB)
+[    0.000000] Checking if this processor honours the WP bit even in supervisor mode...Ok.
+[    0.000000] SLUB: Genslabs=13, HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] NR_IRQS:2304 nr_irqs:440
+[    0.000000] TIMEKEEPING init value of now (persistent): 21:30:39
+[    0.000000] TIMEKEEPING init value of boot: 0:00:00
+[    0.000000] TIMEKEEPING init: modifying now (persistent) to be 0
+[    0.000000] Number of jiffies at timekeeping init - unsigned 32bit: -75004, hex fffedb04
+[    0.000000] Number of jiffies in INITIAL_JIFFIES, unsigned 32bit: -75000, hex fffedb08
+[    0.000000] Part of INITIAL_JIFFIES HZ 250, Part of NSEC_PER_JIFFY 63996
+[    0.000000] TIMEKEEPING TIMEKEEPER_SETUP
+[    0.000000] Pid: 0, comm: swapper Not tainted 2.6.32.57 #77
+[    0.000000] Call Trace:
+[    0.000000]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.000000]  [<c0177a31>] timekeeper_setup_internals+0x21/0x1a0
+[    0.000000]  [<c017b8d7>] ? time_to_tm+0x187/0x1f0
+[    0.000000]  [<c0178344>] ? ntp_update_frequency+0x14/0xc0
+[    0.000000]  [<c0171004>] ? hrtimer_init+0x14/0xb0
+[    0.000000]  [<c07df883>] timekeeping_init+0x159/0x21a
+[    0.000000]  [<c01a6996>] ? setup_irq+0x26/0x40
+[    0.000000]  [<c07c67d0>] start_kernel+0x241/0x384
+[    0.000000]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[    0.000000]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[    0.000000] Pid: 0, comm: swapper Not tainted 2.6.32.57 #77
+[    0.000000] Call Trace:
+[    0.000000]  [<c0179e0a>] jiffies_read+0x4a/0x130
+[    0.000000]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.000000]  [<c0177a36>] timekeeper_setup_internals+0x26/0x1a0
+[    0.000000]  [<c017b8d7>] ? time_to_tm+0x187/0x1f0
+[    0.000000]  [<c0178344>] ? ntp_update_frequency+0x14/0xc0
+[    0.000000]  [<c0171004>] ? hrtimer_init+0x14/0xb0
+[    0.000000]  [<c07df883>] timekeeping_init+0x159/0x21a
+[    0.000000]  [<c01a6996>] ? setup_irq+0x26/0x40
+[    0.000000]  [<c07c67d0>] start_kernel+0x241/0x384
+[    0.000000]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[    0.000000]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[    0.000000] JIFFIES_READ: read #1 long value: 13869027883634055940
+[    0.000000] JIFFIES_READ: read #1 long value with cast: 4294892292
+[    0.000000] JIFFIES_READ: read #1 long jiffies_64 value: 4294892292
+[    0.000000] JIFFIES_READ unsigned 32bit read #1 value: 4294892292, fffedb04
+[    0.000000] JIFFIES_READ unsigned 32bit 2nd read #1 value: 4294892292, fffedb04
+[    0.000000] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[    0.000000] clocksource: jiffies with init reading: fffedb04
+[    0.000000] Pid: 0, comm: swapper Not tainted 2.6.32.57 #77
+[    0.000000] Call Trace:
+[    0.000000]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.000000]  [<c0179e0a>] jiffies_read+0x4a/0x130
+[    0.000000]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.000000]  [<c0177a57>] timekeeper_setup_internals+0x47/0x1a0
+[    0.000000]  [<c0178344>] ? ntp_update_frequency+0x14/0xc0
+[    0.000000]  [<c0171004>] ? hrtimer_init+0x14/0xb0
+[    0.000000]  [<c07df883>] timekeeping_init+0x159/0x21a
+[    0.000000]  [<c01a6996>] ? setup_irq+0x26/0x40
+[    0.000000]  [<c07c67d0>] start_kernel+0x241/0x384
+[    0.000000]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[    0.000000]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[    0.000000] JIFFIES_READ: read #2 long value: 13868622954117389060
+[    0.000000] JIFFIES_READ: read #2 long value with cast: 4294892292
+[    0.000000] JIFFIES_READ: read #2 long jiffies_64 value: 4294892292
+[    0.000000] JIFFIES_READ unsigned 32bit read #2 value: 4294892292, fffedb04
+[    0.000000] JIFFIES_READ unsigned 32bit 2nd read #2 value: 4294892292, fffedb04
+[    0.000000] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[    0.000000] Initial timekeeper.mult value: 1024064000
+[    0.000000] Console: colour VGA+ 80x25
+[    0.000000] console [tty0] enabled
+[    0.000000] CLOCKSOURCE_REGISTER_BACKTRACE: hpet
+[    0.000000] Pid: 0, comm: swapper Not tainted 2.6.32.57 #77
+[    0.000000] Call Trace:
+[    0.000000]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.000000]  [<c0179857>] clocksource_register+0x27/0x240
+[    0.000000]  [<c013104f>] ? ioremap_nocache+0x1f/0x30
+[    0.000000]  [<c07da73e>] hpet_enable+0x189/0x290
+[    0.000000]  [<c07cab0d>] hpet_time_init+0x8/0x18
+[    0.000000]  [<c07caaed>] x86_late_time_init+0x9/0x10
+[    0.000000]  [<c07c6878>] start_kernel+0x2e9/0x384
+[    0.000000]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[    0.000000]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[    0.000000] CLOCKSOURCE_REGISTER_BACKTRACE_END
+[    0.000000] CLOCKSOURCE SELECTION
+[    0.000000] Clocksource: hpet with rating: 250
+[    0.000000] BACKTRACE
+[    0.000000] Pid: 0, comm: swapper Not tainted 2.6.32.57 #77
+[    0.000000] Call Trace:
+[    0.000000]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.000000]  [<c01791c4>] clocksource_select+0x44/0x120
+[    0.000000]  [<c01799f4>] clocksource_register+0x1c4/0x240
+[    0.000000]  [<c013104f>] ? ioremap_nocache+0x1f/0x30
+[    0.000000]  [<c07da73e>] hpet_enable+0x189/0x290
+[    0.000000]  [<c07cab0d>] hpet_time_init+0x8/0x18
+[    0.000000]  [<c07caaed>] x86_late_time_init+0x9/0x10
+[    0.000000]  [<c07c6878>] start_kernel+0x2e9/0x384
+[    0.000000]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[    0.000000]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[    0.000000] BACKTRACE_END
+[    0.000000] Pid: 0, comm: swapper Not tainted 2.6.32.57 #77
+[    0.000000] Call Trace:
+[    0.000000]  [<c0179e0a>] jiffies_read+0x4a/0x130
+[    0.000000]  [<c012c82f>] ? hpet_legacy_set_mode+0xf/0x20
+[    0.000000]  [<c017bce2>] ? clockevents_set_mode+0x22/0x60
+[    0.000000]  [<c0177deb>] ktime_get+0x6b/0x100
+[    0.000000]  [<c017c303>] tick_notify+0x393/0x3c0
+[    0.000000]  [<c05a4093>] notifier_call_chain+0x43/0x60
+[    0.000000]  [<c0172f4f>] raw_notifier_call_chain+0x1f/0x30
+[    0.000000]  [<c017b9e0>] clockevents_register_device+0x90/0xc0
+[    0.000000]  [<c07da7fc>] hpet_enable+0x247/0x290
+[    0.000000]  [<c07cab0d>] hpet_time_init+0x8/0x18
+[    0.000000]  [<c07caaed>] x86_late_time_init+0x9/0x10
+[    0.000000]  [<c07c6878>] start_kernel+0x2e9/0x384
+[    0.000000]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[    0.000000]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[    0.000000] JIFFIES_READ: read #3 long value: 13868962875009063684
+[    0.000000] JIFFIES_READ: read #3 long value with cast: 4294892292
+[    0.000000] JIFFIES_READ: read #3 long jiffies_64 value: 4294892292
+[    0.000000] JIFFIES_READ unsigned 32bit read #3 value: 4294892292, fffedb04
+[    0.000000] JIFFIES_READ unsigned 32bit 2nd read #3 value: 4294892292, fffedb04
+[    0.000000] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[    0.000000] hpet clockevent registered
+[    0.000000] Fast TSC calibration using PIT
+[    0.000000] Pid: 0, comm: swapper Not tainted 2.6.32.57 #77
+[    0.000000] Call Trace:
+[    0.000000]  [<c0179e0a>] jiffies_read+0x4a/0x130
+[    0.000000]  [<c0177386>] update_wall_time+0x26/0x6b0
+[    0.000000]  [<c0152d5a>] ? release_console_sem+0x1ba/0x200
+[    0.000000]  [<c034ef58>] ? vsnprintf+0xc8/0x410
+[    0.000000]  [<c01619eb>] do_timer+0x1b/0x30
+[    0.000000]  [<c017c39a>] tick_periodic+0x6a/0x80
+[    0.000000]  [<c017c3ce>] tick_handle_periodic+0x1e/0x90
+[    0.000000]  [<c010bfe6>] timer_interrupt+0x26/0x70
+[    0.000000]  [<c01a5a24>] handle_IRQ_event+0x54/0x150
+[    0.000000]  [<c05a1ac9>] ? _spin_unlock_irqrestore+0x19/0x20
+[    0.000000]  [<c010cf17>] ? mask_and_ack_8259A+0x57/0xf0
+[    0.000000]  [<c01a8034>] handle_level_irq+0x74/0x100
+[    0.000000]  [<c010bb8d>] handle_irq+0x1d/0x30
+[    0.000000]  [<c05a5bcc>] do_IRQ+0x4c/0xc0
+[    0.000000]  [<c0109c90>] common_interrupt+0x30/0x40
+[    0.000000]  [<c012e5fa>] ? native_restore_fl+0xa/0x10
+[    0.000000]  [<c010f70d>] native_calibrate_tsc+0x13d/0x740
+[    0.000000]  [<c012f2c9>] ? default_spin_lock_flags+0x9/0x10
+[    0.000000]  [<c05a1ac9>] ? _spin_unlock_irqrestore+0x19/0x20
+[    0.000000]  [<c01a5928>] ? irq_to_desc+0x8/0x30
+[    0.000000]  [<c01a622d>] ? irq_can_set_affinity+0xd/0x30
+[    0.000000]  [<c07ce6ef>] tsc_init+0x22/0x1c1
+[    0.000000]  [<c01a6996>] ? setup_irq+0x26/0x40
+[    0.000000]  [<c07caaf2>] x86_late_time_init+0xe/0x10
+[    0.000000]  [<c07c6878>] start_kernel+0x2e9/0x384
+[    0.000000]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[    0.000000]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[    0.000000] JIFFIES_READ: read #4 long value: 13868622468786084613
+[    0.000000] JIFFIES_READ: read #4 long value with cast: 4294892293
+[    0.000000] JIFFIES_READ: read #4 long jiffies_64 value: 4294892293
+[    0.000000] JIFFIES_READ unsigned 32bit read #4 value: 4294892293, fffedb05
+[    0.000000] JIFFIES_READ unsigned 32bit 2nd read #4 value: 4294892293, fffedb05
+[    0.000000] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[    0.000000] Detected 2493.798 MHz processor.
+[    0.000000] CLOCKSOURCE_REGISTER_BACKTRACE: tsc
+[    0.000000] Pid: 0, comm: swapper Not tainted 2.6.32.57 #77
+[    0.000000] Call Trace:
+[    0.000000]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.000000]  [<c0179857>] clocksource_register+0x27/0x240
+[    0.000000]  [<c07ce886>] tsc_init+0x1b9/0x1c1
+[    0.000000]  [<c07caaf2>] x86_late_time_init+0xe/0x10
+[    0.000000]  [<c07c6878>] start_kernel+0x2e9/0x384
+[    0.000000]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[    0.000000]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[    0.000000] CLOCKSOURCE_REGISTER_BACKTRACE_END
+[    0.000000] CLOCKSOURCE SELECTION
+[    0.000000] Clocksource: tsc with rating: 300
+[    0.000000] Clocksource: hpet with rating: 250
+[    0.000000] BACKTRACE
+[    0.000000] Pid: 0, comm: swapper Not tainted 2.6.32.57 #77
+[    0.000000] Call Trace:
+[    0.000000]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.000000]  [<c01791c4>] clocksource_select+0x44/0x120
+[    0.000000]  [<c01799f4>] clocksource_register+0x1c4/0x240
+[    0.000000]  [<c07ce886>] tsc_init+0x1b9/0x1c1
+[    0.000000]  [<c07caaf2>] x86_late_time_init+0xe/0x10
+[    0.000000]  [<c07c6878>] start_kernel+0x2e9/0x384
+[    0.000000]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[    0.000000]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[    0.000000] BACKTRACE_END
+[    0.000000] Pid: 0, comm: swapper Not tainted 2.6.32.57 #77
+[    0.000000] Call Trace:
+[    0.000000]  [<c05a0458>] ? mutex_unlock+0x8/0x20
+[    0.000000]  [<c0179e0a>] jiffies_read+0x4a/0x130
+[    0.000000]  [<c0177deb>] ktime_get+0x6b/0x100
+[    0.000000]  [<c0174060>] sched_clock_init+0x10/0x70
+[    0.000000]  [<c07c687d>] start_kernel+0x2ee/0x384
+[    0.000000]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[    0.000000]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[    0.000000] JIFFIES_READ: read #5 long value: 10710785147722501
+[    0.000000] JIFFIES_READ: read #5 long value with cast: 4294892293
+[    0.000000] JIFFIES_READ: read #5 long jiffies_64 value: 4294892293
+[    0.000000] JIFFIES_READ unsigned 32bit read #5 value: 4294892293, fffedb05
+[    0.000000] JIFFIES_READ unsigned 32bit 2nd read #5 value: 4294892293, fffedb05
+[    0.000000] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[    0.004093] Calibrating delay loop (skipped), value calculated using timer frequency.. 4987.59 BogoMIPS (lpj=9975192)
+[    0.004105] Security Framework initialized
+[    0.004111] SELinux:  Disabled at boot.
+[    0.004117] Mount-cache hash table entries: 512
+[    0.004223] Initializing cgroup subsys ns
+[    0.004226] Initializing cgroup subsys cpuacct
+[    0.004229] Initializing cgroup subsys memory
+[    0.004235] Initializing cgroup subsys devices
+[    0.004237] Initializing cgroup subsys freezer
+[    0.004238] Initializing cgroup subsys net_cls
+[    0.004258] CPU: L1 I cache: 32K, L1 D cache: 32K
+[    0.004260] CPU: L2 cache: 3072K
+[    0.004262] CPU: Physical Processor ID: 0
+[    0.004264] CPU: Processor Core ID: 0
+[    0.004267] mce: CPU supports 6 MCE banks
+[    0.004274] CPU0: Thermal monitoring enabled (TM2)
+[    0.004277] using mwait in idle threads.
+[    0.004282] Performance Events: Core2 events, Intel PMU driver.
+[    0.004286] ... version:                2
+[    0.004287] ... bit width:              40
+[    0.004289] ... generic registers:      2
+[    0.004290] ... value mask:             000000ffffffffff
+[    0.004292] ... max period:             000000007fffffff
+[    0.004293] ... fixed-purpose events:   3
+[    0.004294] ... event mask:             0000000700000003
+[    0.004298] Checking 'hlt' instruction... Pid: 0, comm: swapper Not tainted 2.6.32.57 #77
+[    0.006007] Call Trace:
+[    0.006011]  [<c0179e0a>] jiffies_read+0x4a/0x130
+[    0.006015]  [<c0177386>] update_wall_time+0x26/0x6b0
+[    0.006019]  [<c010f0a9>] ? sched_clock+0x9/0x10
+[    0.006023]  [<c0173cc4>] ? sched_clock_local+0xa4/0x180
+[    0.006026]  [<c01619eb>] do_timer+0x1b/0x30
+[    0.006029]  [<c017c39a>] tick_periodic+0x6a/0x80
+[    0.006033]  [<c017c3ce>] tick_handle_periodic+0x1e/0x90
+[    0.006036]  [<c010bfe6>] timer_interrupt+0x26/0x70
+[    0.006040]  [<c01a5a24>] handle_IRQ_event+0x54/0x150
+[    0.006043]  [<c05a1ac9>] ? _spin_unlock_irqrestore+0x19/0x20
+[    0.006047]  [<c010cf17>] ? mask_and_ack_8259A+0x57/0xf0
+[    0.006051]  [<c01a8034>] handle_level_irq+0x74/0x100
+[    0.006054]  [<c010bb8d>] handle_irq+0x1d/0x30
+[    0.006057]  [<c05a5bcc>] do_IRQ+0x4c/0xc0
+[    0.006061]  [<c0109c90>] common_interrupt+0x30/0x40
+[    0.006065]  [<c012e62a>] ? native_safe_halt+0xa/0x10
+[    0.006068]  [<c07ceeda>] check_bugs+0xaf/0xe9
+[    0.006072]  [<c07c68f9>] start_kernel+0x36a/0x384
+[    0.006075]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[    0.006079]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[    0.006082] JIFFIES_READ: read #6 long value: 13868623207520459526
+[    0.006084] JIFFIES_READ: read #6 long value with cast: 4294892294
+[    0.006086] JIFFIES_READ: read #6 long jiffies_64 value: 4294892294
+[    0.006089] JIFFIES_READ unsigned 32bit read #6 value: 4294892294, fffedb06
+[    0.006091] JIFFIES_READ unsigned 32bit 2nd read #6 value: 4294892294, fffedb06
+[    0.006093] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[    0.006097] Pid: 0, comm: swapper Not tainted 2.6.32.57 #77
+[    0.006099] Call Trace:
+[    0.006102]  [<c0179e0a>] jiffies_read+0x4a/0x130
+[    0.006105]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.006108]  [<c0177deb>] ktime_get+0x6b/0x100
+[    0.006112]  [<c0173fc3>] sched_clock_tick+0x43/0xa0
+[    0.006117]  [<c0149eb1>] scheduler_tick+0x31/0x290
+[    0.006126]  [<c0159964>] ? raise_softirq+0x44/0x50
+[    0.006129]  [<c01aa2a9>] ? rcu_check_callbacks+0x69/0xf0
+[    0.006132]  [<c0161a67>] update_process_times+0x47/0x60
+[    0.006135]  [<c017c35a>] tick_periodic+0x2a/0x80
+[    0.006138]  [<c017c3ce>] tick_handle_periodic+0x1e/0x90
+[    0.006140]  [<c010bfe6>] timer_interrupt+0x26/0x70
+[    0.006143]  [<c01a5a24>] handle_IRQ_event+0x54/0x150
+[    0.006146]  [<c05a1ac9>] ? _spin_unlock_irqrestore+0x19/0x20
+[    0.006148]  [<c010cf17>] ? mask_and_ack_8259A+0x57/0xf0
+[    0.006151]  [<c01a8034>] handle_level_irq+0x74/0x100
+[    0.006154]  [<c010bb8d>] handle_irq+0x1d/0x30
+[    0.006157]  [<c05a5bcc>] do_IRQ+0x4c/0xc0
+[    0.006159]  [<c0109c90>] common_interrupt+0x30/0x40
+[    0.006163]  [<c012e62a>] ? native_safe_halt+0xa/0x10
+[    0.006165]  [<c07ceeda>] check_bugs+0xaf/0xe9
+[    0.006168]  [<c07c68f9>] start_kernel+0x36a/0x384
+[    0.006171]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[    0.006174]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[    0.006176] JIFFIES_READ: read #7 long value: 13865878693353544454
+[    0.006178] JIFFIES_READ: read #7 long value with cast: 4294892294
+[    0.006179] JIFFIES_READ: read #7 long jiffies_64 value: 4294892294
+[    0.006181] JIFFIES_READ unsigned 32bit read #7 value: 4294892294, fffedb06
+[    0.006183] JIFFIES_READ unsigned 32bit 2nd read #7 value: 4294892294, fffedb06
+[    0.006185] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[    0.011813] Pid: 0, comm: swapper Not tainted 2.6.32.57 #77
+[    0.011815] Call Trace:
+[    0.011819]  [<c016f45f>] ? run_posix_cpu_timers+0x1f/0x930
+[    0.011822]  [<c0179e0a>] jiffies_read+0x4a/0x130
+[    0.011826]  [<c0177386>] update_wall_time+0x26/0x6b0
+[    0.011831]  [<c01cd394>] ? perf_event_task_tick+0x14/0xb0
+[    0.011835]  [<c01718b9>] ? hrtimer_run_pending+0x49/0xe0
+[    0.011838]  [<c012e608>] ? native_irq_disable+0x8/0x10
+[    0.011842]  [<c05a19c9>] ? _spin_lock_irq+0x19/0x20
+[    0.011845]  [<c012e618>] ? native_irq_enable+0x8/0x10
+[    0.011849]  [<c01619eb>] do_timer+0x1b/0x30
+[    0.011853]  [<c017c39a>] tick_periodic+0x6a/0x80
+[    0.011856]  [<c017c3ce>] tick_handle_periodic+0x1e/0x90
+[    0.011859]  [<c010bfe6>] timer_interrupt+0x26/0x70
+[    0.011862]  [<c01a5a24>] handle_IRQ_event+0x54/0x150
+[    0.011866]  [<c05a1ac9>] ? _spin_unlock_irqrestore+0x19/0x20
+[    0.011869]  [<c010cf17>] ? mask_and_ack_8259A+0x57/0xf0
+[    0.011873]  [<c01a8034>] handle_level_irq+0x74/0x100
+[    0.011877]  [<c010bb8d>] handle_irq+0x1d/0x30
+[    0.011880]  [<c05a5bcc>] do_IRQ+0x4c/0xc0
+[    0.011883]  [<c0109c90>] common_interrupt+0x30/0x40
+[    0.011887]  [<c012e62a>] ? native_safe_halt+0xa/0x10
+[    0.011891]  [<c07ceee0>] check_bugs+0xb5/0xe9
+[    0.011894]  [<c07c68f9>] start_kernel+0x36a/0x384
+[    0.011898]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[    0.011902]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[    0.011904] JIFFIES_READ: read #8 long value: 13868622181023275783
+[    0.011906] JIFFIES_READ: read #8 long value with cast: 4294892295
+[    0.011908] JIFFIES_READ: read #8 long jiffies_64 value: 4294892295
+[    0.011911] JIFFIES_READ unsigned 32bit read #8 value: 4294892295, fffedb07
+[    0.011913] JIFFIES_READ unsigned 32bit 2nd read #8 value: 4294892295, fffedb07
+[    0.011915] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[    0.011919] Pid: 0, comm: swapper Not tainted 2.6.32.57 #77
+[    0.011920] Call Trace:
+[    0.011923]  [<c0179e0a>] jiffies_read+0x4a/0x130
+[    0.011927]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.011935]  [<c0177deb>] ktime_get+0x6b/0x100
+[    0.011938]  [<c0173fc3>] sched_clock_tick+0x43/0xa0
+[    0.011941]  [<c0149eb1>] scheduler_tick+0x31/0x290
+[    0.011944]  [<c0159964>] ? raise_softirq+0x44/0x50
+[    0.011946]  [<c01aa2a9>] ? rcu_check_callbacks+0x69/0xf0
+[    0.011949]  [<c0161a67>] update_process_times+0x47/0x60
+[    0.011952]  [<c017c35a>] tick_periodic+0x2a/0x80
+[    0.011955]  [<c017c3ce>] tick_handle_periodic+0x1e/0x90
+[    0.011957]  [<c010bfe6>] timer_interrupt+0x26/0x70
+[    0.011960]  [<c01a5a24>] handle_IRQ_event+0x54/0x150
+[    0.011963]  [<c05a1ac9>] ? _spin_unlock_irqrestore+0x19/0x20
+[    0.011965]  [<c010cf17>] ? mask_and_ack_8259A+0x57/0xf0
+[    0.011968]  [<c01a8034>] handle_level_irq+0x74/0x100
+[    0.011971]  [<c010bb8d>] handle_irq+0x1d/0x30
+[    0.011974]  [<c05a5bcc>] do_IRQ+0x4c/0xc0
+[    0.011976]  [<c0109c90>] common_interrupt+0x30/0x40
+[    0.011980]  [<c012e62a>] ? native_safe_halt+0xa/0x10
+[    0.011982]  [<c07ceee0>] check_bugs+0xb5/0xe9
+[    0.011985]  [<c07c68f9>] start_kernel+0x36a/0x384
+[    0.011988]  [<c07c63bb>] ? unknown_bootoption+0x0/0x19e
+[    0.011991]  [<c07c60bb>] i386_start_kernel+0xaa/0xb1
+[    0.011993] JIFFIES_READ: read #9 long value: 13865878693353544455
+[    0.011995] JIFFIES_READ: read #9 long value with cast: 4294892295
+[    0.011996] JIFFIES_READ: read #9 long jiffies_64 value: 4294892295
+[    0.011998] JIFFIES_READ unsigned 32bit read #9 value: 4294892295, fffedb07
+[    0.012000] JIFFIES_READ unsigned 32bit 2nd read #9 value: 4294892295, fffedb07
+[    0.012000] JIFFIES NSEC_PER_JIFFY value: 4000250, ACTHZ: 63996
+[    0.020003] OK.
+[    0.021393] SMP alternatives: switching to UP code
+[    0.028093] ACPI: Core revision 20090903
+[    0.034870] ACPI: setting ELCR to 0200 (from 0cb8)
+[    0.036006] ftrace: converting mcount calls to 0f 1f 44 00 00
+[    0.036010] ftrace: allocating 20940 entries in 41 pages
+[    0.040042] Enabling APIC mode:  Flat.  Using 1 I/O APICs
+[    0.040044] SMP mode deactivated.
+[    0.040047] SMP disabled
+[    0.040116] Brought up 1 CPUs
+[    0.040118] Total of 1 processors activated (4987.59 BogoMIPS).
+[    0.040123] CPU0 attaching NULL sched-domain.
+[    0.040186] devtmpfs: initialized
+[    0.040315] sysctl table check failed: /kernel/random/now_input .1.40.7 Unknown sysctl binary path
+[    0.040532] Pid: 1, comm: swapper Not tainted 2.6.32.57 #77
+[    0.040533] Call Trace:
+[    0.040539]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.040543]  [<c01766cf>] set_fail+0x4f/0x60
+[    0.040545]  [<c0176a2e>] sysctl_check_table+0x34e/0x690
+[    0.040548]  [<c0176670>] ? sysctl_check_lookup+0x120/0x130
+[    0.040551]  [<c0176a47>] sysctl_check_table+0x367/0x690
+[    0.040553]  [<c0176670>] ? sysctl_check_lookup+0x120/0x130
+[    0.040556]  [<c0176a47>] sysctl_check_table+0x367/0x690
+[    0.040559]  [<c07ded84>] sysctl_init+0x25/0x29
+[    0.040562]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.040564]  [<c07ded5f>] ? sysctl_init+0x0/0x29
+[    0.040568]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.040570]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.040572]  [<c010a2e7>] kernel_thread_helper+0x7/0x10
+[    0.040574] sysctl table check failed: /kernel/random/now_blocking .1.40.8 Unknown sysctl binary path
+[    0.040788] Pid: 1, comm: swapper Not tainted 2.6.32.57 #77
+[    0.040789] Call Trace:
+[    0.040791]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.040794]  [<c01766cf>] set_fail+0x4f/0x60
+[    0.040796]  [<c0176a2e>] sysctl_check_table+0x34e/0x690
+[    0.040799]  [<c0176670>] ? sysctl_check_lookup+0x120/0x130
+[    0.040801]  [<c0176a47>] sysctl_check_table+0x367/0x690
+[    0.040804]  [<c0176670>] ? sysctl_check_lookup+0x120/0x130
+[    0.040806]  [<c0176a47>] sysctl_check_table+0x367/0x690
+[    0.040809]  [<c07ded84>] sysctl_init+0x25/0x29
+[    0.040811]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.040813]  [<c07ded5f>] ? sysctl_init+0x0/0x29
+[    0.040816]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.040818]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.040820]  [<c010a2e7>] kernel_thread_helper+0x7/0x10
+[    0.040822] sysctl table check failed: /kernel/random/now_nonblocking .1.40.9 Unknown sysctl binary path
+[    0.041036] Pid: 1, comm: swapper Not tainted 2.6.32.57 #77
+[    0.041037] Call Trace:
+[    0.041039]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.041041]  [<c01766cf>] set_fail+0x4f/0x60
+[    0.041044]  [<c0176a2e>] sysctl_check_table+0x34e/0x690
+[    0.041046]  [<c0176670>] ? sysctl_check_lookup+0x120/0x130
+[    0.041049]  [<c0176a47>] sysctl_check_table+0x367/0x690
+[    0.041051]  [<c0176670>] ? sysctl_check_lookup+0x120/0x130
+[    0.041054]  [<c0176a47>] sysctl_check_table+0x367/0x690
+[    0.041057]  [<c07ded84>] sysctl_init+0x25/0x29
+[    0.041059]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.041061]  [<c07ded5f>] ? sysctl_init+0x0/0x29
+[    0.041063]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.041066]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.041068]  [<c010a2e7>] kernel_thread_helper+0x7/0x10
+[    0.041070] sysctl table check failed: /kernel/random/nb_input_bytes .1.40.10 Unknown sysctl binary path
+[    0.041283] Pid: 1, comm: swapper Not tainted 2.6.32.57 #77
+[    0.041284] Call Trace:
+[    0.041287]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.041289]  [<c01766cf>] set_fail+0x4f/0x60
+[    0.041291]  [<c0176a2e>] sysctl_check_table+0x34e/0x690
+[    0.041294]  [<c0176670>] ? sysctl_check_lookup+0x120/0x130
+[    0.041297]  [<c0176a47>] sysctl_check_table+0x367/0x690
+[    0.041299]  [<c0176670>] ? sysctl_check_lookup+0x120/0x130
+[    0.041302]  [<c0176a47>] sysctl_check_table+0x367/0x690
+[    0.041304]  [<c07ded84>] sysctl_init+0x25/0x29
+[    0.041306]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.041308]  [<c07ded5f>] ? sysctl_init+0x0/0x29
+[    0.041311]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.041313]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.041315]  [<c010a2e7>] kernel_thread_helper+0x7/0x10
+[    0.041317] sysctl table check failed: /kernel/random/nb_stir_count .1.40.11 Unknown sysctl binary path
+[    0.041531] Pid: 1, comm: swapper Not tainted 2.6.32.57 #77
+[    0.041532] Call Trace:
+[    0.041534]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.041536]  [<c01766cf>] set_fail+0x4f/0x60
+[    0.041539]  [<c0176a2e>] sysctl_check_table+0x34e/0x690
+[    0.041542]  [<c0176670>] ? sysctl_check_lookup+0x120/0x130
+[    0.041544]  [<c0176a47>] sysctl_check_table+0x367/0x690
+[    0.041547]  [<c0176670>] ? sysctl_check_lookup+0x120/0x130
+[    0.041549]  [<c0176a47>] sysctl_check_table+0x367/0x690
+[    0.041552]  [<c07ded84>] sysctl_init+0x25/0x29
+[    0.041554]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.041556]  [<c07ded5f>] ? sysctl_init+0x0/0x29
+[    0.041558]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.041561]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.041563]  [<c010a2e7>] kernel_thread_helper+0x7/0x10
+[    0.041565] sysctl table check failed: /kernel/random/nb_reentry_count .1.40.12 Unknown sysctl binary path
+[    0.041779] Pid: 1, comm: swapper Not tainted 2.6.32.57 #77
+[    0.041780] Call Trace:
+[    0.041782]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.041784]  [<c01766cf>] set_fail+0x4f/0x60
+[    0.041787]  [<c0176a2e>] sysctl_check_table+0x34e/0x690
+[    0.041789]  [<c0176670>] ? sysctl_check_lookup+0x120/0x130
+[    0.041792]  [<c0176a47>] sysctl_check_table+0x367/0x690
+[    0.041794]  [<c0176670>] ? sysctl_check_lookup+0x120/0x130
+[    0.041797]  [<c0176a47>] sysctl_check_table+0x367/0x690
+[    0.041800]  [<c07ded84>] sysctl_init+0x25/0x29
+[    0.041802]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.041804]  [<c07ded5f>] ? sysctl_init+0x0/0x29
+[    0.041806]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.041809]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.041811]  [<c010a2e7>] kernel_thread_helper+0x7/0x10
+[    0.041922] CLOCKSOURCE_REGISTER_BACKTRACE: jiffies
+[    0.041924] Pid: 1, comm: swapper Not tainted 2.6.32.57 #77
+[    0.041925] Call Trace:
+[    0.041928]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.041930]  [<c0179857>] clocksource_register+0x27/0x240
+[    0.041933]  [<c014b654>] ? wake_up_process+0x14/0x20
+[    0.041936]  [<c07dfaae>] init_jiffies_clocksource+0xd/0xf
+[    0.041938]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.041941]  [<c07dfaa1>] ? init_jiffies_clocksource+0x0/0xf
+[    0.041943]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.041946]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.041948]  [<c010a2e7>] kernel_thread_helper+0x7/0x10
+[    0.041949] CLOCKSOURCE_REGISTER_BACKTRACE_END
+[    0.041951] CLOCKSOURCE SELECTION
+[    0.041952] Clocksource: jiffies with rating: 301
+[    0.041953] Clocksource: tsc with rating: 300
+[    0.041955] Clocksource: hpet with rating: 250
+[    0.041956] BACKTRACE
+[    0.041957] Pid: 1, comm: swapper Not tainted 2.6.32.57 #77
+[    0.041958] Call Trace:
+[    0.041960]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.041963]  [<c01791c4>] clocksource_select+0x44/0x120
+[    0.041965]  [<c01799f4>] clocksource_register+0x1c4/0x240
+[    0.041968]  [<c07dfaae>] init_jiffies_clocksource+0xd/0xf
+[    0.041970]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.041972]  [<c07dfaa1>] ? init_jiffies_clocksource+0x0/0xf
+[    0.041975]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.041977]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.041979]  [<c010a2e7>] kernel_thread_helper+0x7/0x10
+[    0.041981] BACKTRACE_END
+[    0.042007] regulator: core version 0.5
+[    0.042027] Time: 21:30:39  Date: 02/19/13
+[    0.042058] NET: Registered protocol family 16
+[    0.042131] EISA bus registered
+[    0.042137] ACPI: bus type pci registered
+[    0.042186] PCI: MCFG configuration 0: base f0000000 segment 0 buses 0 - 63
+[    0.042188] PCI: Not using MMCONFIG.
+[    0.042314] PCI: Using configuration type 1 for base access
+[    0.042909] bio: create slab <bio-0> at 0
+[    0.044061] ACPI: EC: Look up EC in DSDT
+[    0.045553] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.049426] ACPI: Interpreter enabled
+[    0.049429] ACPI: (supports S0 S1 S3 S4 S5)
+[    0.049447] ACPI: Using PIC for interrupt routing
+[    0.049486] PCI: MCFG configuration 0: base f0000000 segment 0 buses 0 - 63
+[    0.050873] PCI: MCFG area at f0000000 reserved in ACPI motherboard resources
+[    0.050875] PCI: Using MMCONFIG for extended config space
+[    0.056912] ACPI: No dock devices found.
+[    0.057162] ACPI: PCI Root Bridge [PCI0] (0000:00)
+[    0.057245] pci 0000:00:01.0: PME# supported from D0 D3hot D3cold
+[    0.057247] pci 0000:00:01.0: PME# disabled
+[    0.057304] pci 0000:00:1a.0: reg 20 io port: [0xc000-0xc01f]
+[    0.057367] pci 0000:00:1a.1: reg 20 io port: [0xc080-0xc09f]
+[    0.057429] pci 0000:00:1a.2: reg 20 io port: [0xc400-0xc41f]
+[    0.057495] pci 0000:00:1a.7: reg 10 32bit mmio: [0xfe9ff400-0xfe9ff7ff]
+[    0.057556] pci 0000:00:1a.7: PME# supported from D0 D3hot D3cold
+[    0.057559] pci 0000:00:1a.7: PME# disabled
+[    0.057592] pci 0000:00:1b.0: reg 10 64bit mmio: [0xfe9f8000-0xfe9fbfff]
+[    0.057637] pci 0000:00:1b.0: PME# supported from D0 D3hot D3cold
+[    0.057640] pci 0000:00:1b.0: PME# disabled
+[    0.057702] pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+[    0.057705] pci 0000:00:1c.0: PME# disabled
+[    0.057772] pci 0000:00:1c.5: PME# supported from D0 D3hot D3cold
+[    0.057775] pci 0000:00:1c.5: PME# disabled
+[    0.057818] pci 0000:00:1d.0: reg 20 io port: [0xc480-0xc49f]
+[    0.057881] pci 0000:00:1d.1: reg 20 io port: [0xc800-0xc81f]
+[    0.057944] pci 0000:00:1d.2: reg 20 io port: [0xc880-0xc89f]
+[    0.058011] pci 0000:00:1d.7: reg 10 32bit mmio: [0xfe9ff800-0xfe9ffbff]
+[    0.058072] pci 0000:00:1d.7: PME# supported from D0 D3hot D3cold
+[    0.058075] pci 0000:00:1d.7: PME# disabled
+[    0.058228] pci 0000:00:1f.2: reg 10 io port: [0x00-0x07]
+[    0.058233] pci 0000:00:1f.2: reg 14 io port: [0x00-0x03]
+[    0.058238] pci 0000:00:1f.2: reg 18 io port: [0x00-0x07]
+[    0.058242] pci 0000:00:1f.2: reg 1c io port: [0x00-0x03]
+[    0.058247] pci 0000:00:1f.2: reg 20 io port: [0xff90-0xff9f]
+[    0.058251] pci 0000:00:1f.2: reg 24 io port: [0xffa0-0xffaf]
+[    0.058296] pci 0000:00:1f.3: reg 10 64bit mmio: [0xfe9ffc00-0xfe9ffcff]
+[    0.058307] pci 0000:00:1f.3: reg 20 io port: [0x400-0x41f]
+[    0.058347] pci 0000:04:00.0: reg 10 64bit mmio pref: [0xe0000000-0xefffffff]
+[    0.058354] pci 0000:04:00.0: reg 18 64bit mmio: [0xfebe0000-0xfebeffff]
+[    0.058358] pci 0000:04:00.0: reg 20 io port: [0xe000-0xe0ff]
+[    0.058366] pci 0000:04:00.0: reg 30 32bit mmio pref: [0xfebc0000-0xfebdffff]
+[    0.058392] pci 0000:04:00.0: supports D1 D2
+[    0.058419] pci 0000:04:00.1: reg 10 64bit mmio: [0xfebfc000-0xfebfffff]
+[    0.058459] pci 0000:04:00.1: supports D1 D2
+[    0.058494] pci 0000:00:01.0: bridge io port: [0xe000-0xefff]
+[    0.058496] pci 0000:00:01.0: bridge 32bit mmio: [0xfeb00000-0xfebfffff]
+[    0.058500] pci 0000:00:01.0: bridge 64bit mmio pref: [0xe0000000-0xefffffff]
+[    0.058574] pci 0000:02:00.0: reg 10 io port: [0xd800-0xd8ff]
+[    0.058591] pci 0000:02:00.0: reg 18 64bit mmio: [0xfeaff000-0xfeafffff]
+[    0.058604] pci 0000:02:00.0: reg 20 64bit mmio pref: [0xdfffc000-0xdfffffff]
+[    0.058611] pci 0000:02:00.0: reg 30 32bit mmio pref: [0xfeac0000-0xfeadffff]
+[    0.058669] pci 0000:02:00.0: supports D1 D2
+[    0.058671] pci 0000:02:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.058675] pci 0000:02:00.0: PME# disabled
+[    0.058722] pci 0000:00:1c.5: bridge io port: [0xd000-0xdfff]
+[    0.058725] pci 0000:00:1c.5: bridge 32bit mmio: [0xfea00000-0xfeafffff]
+[    0.058729] pci 0000:00:1c.5: bridge 64bit mmio pref: [0xdff00000-0xdfffffff]
+[    0.058768] pci 0000:00:1e.0: transparent bridge
+[    0.058787] pci_bus 0000:00: on NUMA node 0
+[    0.058790] ACPI: PCI Interrupt Routing Table [\_SB_.PCI0._PRT]
+[    0.058947] ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.P0P2._PRT]
+[    0.059029] ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.P0P4._PRT]
+[    0.059088] ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.P0P9._PRT]
+[    0.071153] ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 6 7 *10 11 12 14 15)
+[    0.071244] ACPI: PCI Interrupt Link [LNKB] (IRQs *5)
+[    0.071329] ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 6 7 10 *11 12 14 15)
+[    0.071417] ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 6 7 10 11 12 14 15) *0, disabled.
+[    0.071504] ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 6 *7 10 11 12 14 15)
+[    0.071592] ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 6 7 *10 11 12 14 15)
+[    0.071679] ACPI: PCI Interrupt Link [LNKG] (IRQs 3 *4 6 7 10 11 12 14 15)
+[    0.071765] ACPI: PCI Interrupt Link [LNKH] (IRQs *3 4 6 7 10 11 12 14 15)
+[    0.071841] vgaarb: device added: PCI:0000:04:00.0,decodes=io+mem,owns=io+mem,locks=none
+[    0.071843] vgaarb: loaded
+[    0.071918] SCSI subsystem initialized
+[    0.071944] libata version 3.00 loaded.
+[    0.072005] usbcore: registered new interface driver usbfs
+[    0.072013] usbcore: registered new interface driver hub
+[    0.072031] usbcore: registered new device driver usb
+[    0.072111] ACPI: WMI: Mapper loaded
+[    0.072113] PCI: Using ACPI for IRQ routing
+[    0.072210] NetLabel: Initializing
+[    0.072212] NetLabel:  domain hash size = 128
+[    0.072213] NetLabel:  protocols = UNLABELED CIPSOv4
+[    0.072221] NetLabel:  unlabeled traffic allowed by default
+[    0.072242] HPET: 4 timers in total, 0 timers will be used for per-cpu timer
+[    0.072246] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0, 0
+[    0.072250] hpet0: 4 comparators, 64-bit 14.318180 MHz counter
+[    0.074259] CANARY: x86 boot_init with canary of 17508307018415933723 and tsc of 14150033910
+[    0.076015] CLOCKSOURCE SELECTION
+[    0.076018] Clocksource: jiffies with rating: 301
+[    0.076019] Clocksource: tsc with rating: 300
+[    0.076021] Clocksource: hpet with rating: 250
+[    0.076022] BACKTRACE
+[    0.076024] Pid: 1, comm: swapper Not tainted 2.6.32.57 #77
+[    0.076026] Call Trace:
+[    0.076030]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.076033]  [<c01791c4>] clocksource_select+0x44/0x120
+[    0.076037]  [<c07df9c9>] clocksource_done_booting+0x41/0x4f
+[    0.076040]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.076043]  [<c07df988>] ? clocksource_done_booting+0x0/0x4f
+[    0.076047]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.076050]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.076053]  [<c010a2e7>] kernel_thread_helper+0x7/0x10
+[    0.076054] BACKTRACE_END
+[    0.077375] pnp: PnP ACPI init
+[    0.077382] ACPI: bus type pnp registered
+[    0.079019] pnp: PnP ACPI: found 14 devices
+[    0.079021] ACPI: ACPI bus type pnp unregistered
+[    0.079024] PnPBIOS: Disabled by ACPI PNP
+[    0.079031] system 00:01: iomem range 0xfed14000-0xfed19fff has been reserved
+[    0.079033] system 00:01: iomem range 0xfed90000-0xfed93fff has been reserved
+[    0.079039] system 00:06: ioport range 0x4d0-0x4d1 has been reserved
+[    0.079041] system 00:06: ioport range 0x800-0x87f has been reserved
+[    0.079043] system 00:06: ioport range 0x500-0x57f has been reserved
+[    0.079046] system 00:06: iomem range 0xfed1c000-0xfed1ffff has been reserved
+[    0.079048] system 00:06: iomem range 0xfed20000-0xfed3ffff has been reserved
+[    0.079050] system 00:06: iomem range 0xfed40000-0xfed8ffff has been reserved
+[    0.079054] system 00:09: iomem range 0xffc00000-0xffefffff has been reserved
+[    0.079058] system 00:0a: iomem range 0xfec00000-0xfec00fff has been reserved
+[    0.079060] system 00:0a: iomem range 0xfee00000-0xfee00fff has been reserved
+[    0.079065] system 00:0b: ioport range 0xa00-0xadf has been reserved
+[    0.079068] system 00:0c: iomem range 0xf0000000-0xf3ffffff has been reserved
+[    0.079073] system 00:0d: iomem range 0x0-0x9ffff could not be reserved
+[    0.079075] system 00:0d: iomem range 0xc0000-0xcffff could not be reserved
+[    0.079077] system 00:0d: iomem range 0xe0000-0xfffff could not be reserved
+[    0.079079] system 00:0d: iomem range 0x100000-0xcfffffff could not be reserved
+[    0.079081] system 00:0d: iomem range 0xfed90000-0xffffffff could not be reserved
+[    0.113684] CLOCKSOURCE_REGISTER_BACKTRACE: acpi_pm
+[    0.113687] Pid: 1, comm: swapper Not tainted 2.6.32.57 #77
+[    0.113688] Call Trace:
+[    0.113691]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.113694]  [<c0179857>] clocksource_register+0x27/0x240
+[    0.113697]  [<c07f9af5>] init_acpi_pm_clocksource+0x1c0/0x1c8
+[    0.113700]  [<c05a06c9>] ? mutex_lock+0x19/0x40
+[    0.113702]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.113705]  [<c07f9935>] ? init_acpi_pm_clocksource+0x0/0x1c8
+[    0.113708]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.113710]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.113713]  [<c010a2e7>] kernel_thread_helper+0x7/0x10
+[    0.113714] CLOCKSOURCE_REGISTER_BACKTRACE_END
+[    0.113715] CLOCKSOURCE SELECTION
+[    0.113717] Clocksource: jiffies with rating: 301
+[    0.113718] Clocksource: tsc with rating: 300
+[    0.113719] Clocksource: hpet with rating: 250
+[    0.113720] Clocksource: acpi_pm with rating: 200
+[    0.113721] BACKTRACE
+[    0.113723] Pid: 1, comm: swapper Not tainted 2.6.32.57 #77
+[    0.113724] Call Trace:
+[    0.113726]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.113728]  [<c01791c4>] clocksource_select+0x44/0x120
+[    0.113731]  [<c01799f4>] clocksource_register+0x1c4/0x240
+[    0.113733]  [<c07f9af5>] init_acpi_pm_clocksource+0x1c0/0x1c8
+[    0.113736]  [<c05a06c9>] ? mutex_lock+0x19/0x40
+[    0.113738]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.113741]  [<c07f9935>] ? init_acpi_pm_clocksource+0x0/0x1c8
+[    0.113743]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.113745]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.113748]  [<c010a2e7>] kernel_thread_helper+0x7/0x10
+[    0.113749] BACKTRACE_END
+[    0.113778] pci 0000:00:01.0: PCI bridge, secondary bus 0000:04
+[    0.113780] pci 0000:00:01.0:   IO window: 0xe000-0xefff
+[    0.113783] pci 0000:00:01.0:   MEM window: 0xfeb00000-0xfebfffff
+[    0.113786] pci 0000:00:01.0:   PREFETCH window: 0x000000e0000000-0x000000efffffff
+[    0.113790] pci 0000:00:1c.0: PCI bridge, secondary bus 0000:03
+[    0.113792] pci 0000:00:1c.0:   IO window: 0x1000-0x1fff
+[    0.113796] pci 0000:00:1c.0:   MEM window: 0xd0000000-0xd01fffff
+[    0.113799] pci 0000:00:1c.0:   PREFETCH window: 0x000000d0200000-0x000000d03fffff
+[    0.113804] pci 0000:00:1c.5: PCI bridge, secondary bus 0000:02
+[    0.113806] pci 0000:00:1c.5:   IO window: 0xd000-0xdfff
+[    0.113810] pci 0000:00:1c.5:   MEM window: 0xfea00000-0xfeafffff
+[    0.113813] pci 0000:00:1c.5:   PREFETCH window: 0x000000dff00000-0x000000dfffffff
+[    0.113818] pci 0000:00:1e.0: PCI bridge, secondary bus 0000:01
+[    0.113819] pci 0000:00:1e.0:   IO window: disabled
+[    0.113823] pci 0000:00:1e.0:   MEM window: disabled
+[    0.113826] pci 0000:00:1e.0:   PREFETCH window: disabled
+[    0.113934] ACPI: PCI Interrupt Link [LNKA] enabled at IRQ 10
+[    0.113936] PCI: setting IRQ 10 as level-triggered
+[    0.113940] pci 0000:00:01.0: PCI INT A -> Link[LNKA] -> GSI 10 (level, low) -> IRQ 10
+[    0.113943] pci 0000:00:01.0: setting latency timer to 64
+[    0.113949] pci 0000:00:1c.0: enabling device (0104 -> 0107)
+[    0.114048] ACPI: PCI Interrupt Link [LNKB] enabled at IRQ 5
+[    0.114050] PCI: setting IRQ 5 as level-triggered
+[    0.114054] pci 0000:00:1c.0: PCI INT A -> Link[LNKB] -> GSI 5 (level, low) -> IRQ 5
+[    0.114057] pci 0000:00:1c.0: setting latency timer to 64
+[    0.114064] pci 0000:00:1c.5: PCI INT B -> Link[LNKA] -> GSI 10 (level, low) -> IRQ 10
+[    0.114067] pci 0000:00:1c.5: setting latency timer to 64
+[    0.114072] pci 0000:00:1e.0: setting latency timer to 64
+[    0.114075] pci_bus 0000:00: resource 0 io:  [0x00-0xffff]
+[    0.114077] pci_bus 0000:00: resource 1 mem: [0x000000-0xffffffffffffffff]
+[    0.114079] pci_bus 0000:04: resource 0 io:  [0xe000-0xefff]
+[    0.114081] pci_bus 0000:04: resource 1 mem: [0xfeb00000-0xfebfffff]
+[    0.114083] pci_bus 0000:04: resource 2 pref mem [0xe0000000-0xefffffff]
+[    0.114085] pci_bus 0000:03: resource 0 io:  [0x1000-0x1fff]
+[    0.114086] pci_bus 0000:03: resource 1 mem: [0xd0000000-0xd01fffff]
+[    0.114088] pci_bus 0000:03: resource 2 pref mem [0xd0200000-0xd03fffff]
+[    0.114090] pci_bus 0000:02: resource 0 io:  [0xd000-0xdfff]
+[    0.114092] pci_bus 0000:02: resource 1 mem: [0xfea00000-0xfeafffff]
+[    0.114094] pci_bus 0000:02: resource 2 pref mem [0xdff00000-0xdfffffff]
+[    0.114096] pci_bus 0000:01: resource 3 io:  [0x00-0xffff]
+[    0.114097] pci_bus 0000:01: resource 4 mem: [0x000000-0xffffffffffffffff]
+[    0.114117] NET: Registered protocol family 2
+[    0.114174] IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.114381] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.114702] TCP bind hash table entries: 65536 (order: 7, 524288 bytes)
+[    0.114877] TCP: Hash tables configured (established 131072 bind 65536)
+[    0.114879] TCP reno registered
+[    0.114923] NET: Registered protocol family 1
+[    0.115029] pci 0000:04:00.0: Boot video device
+[    0.115141] cpufreq-nforce2: No nForce2 chipset.
+[    0.115155] Scanning for low memory corruption every 60 seconds
+[    0.115225] audit: initializing netlink socket (disabled)
+[    0.115231] type=2000 audit(0.112:1): initialized
+[    0.123483] highmem bounce pool size: 64 pages
+[    0.123487] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+[    0.124491] VFS: Disk quotas dquot_6.5.2
+[    0.124528] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.124931] fuse init (API version 7.13)
+[    0.124993] msgmni has been set to 1585
+[    0.125127] alg: No test for stdrng (krng)
+[    0.125167] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+[    0.125170] io scheduler noop registered
+[    0.125171] io scheduler anticipatory registered
+[    0.125172] io scheduler deadline registered
+[    0.125199] io scheduler cfq registered (default)
+[    0.125283]   alloc irq_desc for 24 on node -1
+[    0.125285]   alloc kstat_irqs on node -1
+[    0.125292] pcieport 0000:00:01.0: irq 24 for MSI/MSI-X
+[    0.125296] pcieport 0000:00:01.0: setting latency timer to 64
+[    0.125366]   alloc irq_desc for 25 on node -1
+[    0.125368]   alloc kstat_irqs on node -1
+[    0.125373] pcieport 0000:00:1c.0: irq 25 for MSI/MSI-X
+[    0.125379] pcieport 0000:00:1c.0: setting latency timer to 64
+[    0.125464]   alloc irq_desc for 26 on node -1
+[    0.125466]   alloc kstat_irqs on node -1
+[    0.125471] pcieport 0000:00:1c.5: irq 26 for MSI/MSI-X
+[    0.125477] pcieport 0000:00:1c.5: setting latency timer to 64
+[    0.125538] pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+[    0.125551] Firmware did not grant requested _OSC control
+[    0.125565] Firmware did not grant requested _OSC control
+[    0.125585] Firmware did not grant requested _OSC control
+[    0.125594] Firmware did not grant requested _OSC control
+[    0.125604] pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+[    0.125710] input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0
+[    0.125713] ACPI: Power Button [PWRB]
+[    0.125745] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input1
+[    0.125746] ACPI: Power Button [PWRF]
+[    0.126269] ACPI: SSDT cffa0270 0022C (v01 HPQOEM SLIC-CPC 00000011 INTL 20051117)
+[    0.126457] processor LNXCPU:00: registered as cooling_device0
+[    0.128055] isapnp: Scanning for PnP cards...
+[    0.480895] isapnp: No Plug & Play device found
+[    0.480906] TIME: ktime_get_real called for the 13840391545670336513th time
+[    0.480908] TIME: ktime_get_real called for the 13840391545670336514th time
+[    0.480909] TIME: ktime_get_real called for the 13840391545670336515th time
+[    0.480911] TIME: ktime_get_real called for the 13840391545670336516th time
+[    0.480913] TIME Value of jiffies_to_ns at rand_initialize 464029000, 1ba88548
+[    0.480915] TIME Value of ktime_to_ns at rand_initialize 480001714, 1c9c3eb2
+[    0.480916] TIME Value of jiffies_to_ns 2 at rand_initialize 464029000, 1ba88548
+[    0.480918] KTIME ENTROPY TIME: 0:00:00
+[    0.481837] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.482786] brd: module loaded
+[    0.483099] loop: module loaded
+[    0.483153] input: Macintosh mouse button emulation as /devices/virtual/input/input2
+[    0.483221] ata_piix 0000:00:1f.2: version 2.13
+[    0.483334] ACPI: PCI Interrupt Link [LNKD] enabled at IRQ 11
+[    0.483336] PCI: setting IRQ 11 as level-triggered
+[    0.483340] ata_piix 0000:00:1f.2: PCI INT B -> Link[LNKD] -> GSI 11 (level, low) -> IRQ 11
+[    0.483344] ata_piix 0000:00:1f.2: MAP [ P0 P2 P1 P3 ]
+[    0.483376] ata_piix 0000:00:1f.2: setting latency timer to 64
+[    0.483412] scsi0 : ata_piix
+[    0.483459] scsi1 : ata_piix
+[    0.484561] ata1: SATA max UDMA/133 cmd 0x1f0 ctl 0x3f6 bmdma 0xff90 irq 14
+[    0.484566] ata2: SATA max UDMA/133 cmd 0x170 ctl 0x376 bmdma 0xff98 irq 15
+[    0.484817] Fixed MDIO Bus: probed
+[    0.484842] PPP generic driver version 2.4.2
+[    0.484869] tun: Universal TUN/TAP device driver, 1.6
+[    0.484871] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    0.484928] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.485042] ACPI: PCI Interrupt Link [LNKC] enabled at IRQ 11
+[    0.485045] ehci_hcd 0000:00:1a.7: PCI INT C -> Link[LNKC] -> GSI 11 (level, low) -> IRQ 11
+[    0.485053] ehci_hcd 0000:00:1a.7: setting latency timer to 64
+[    0.485055] ehci_hcd 0000:00:1a.7: EHCI Host Controller
+[    0.485077] ehci_hcd 0000:00:1a.7: new USB bus registered, assigned bus number 1
+[    0.485099] ehci_hcd 0000:00:1a.7: debug port 1
+[    0.488984] ehci_hcd 0000:00:1a.7: cache line size of 32 is not supported
+[    0.489010] ehci_hcd 0000:00:1a.7: irq 11, io mem 0xfe9ff400
+[    0.504006] TIME: ktime_get_real called for the 5th time
+[    0.504009] ehci_hcd 0000:00:1a.7: USB 2.0 started, EHCI 1.00
+[    0.504090] usb usb1: configuration #1 chosen from 1 choice
+[    0.504114] hub 1-0:1.0: USB hub found
+[    0.504125] hub 1-0:1.0: 6 ports detected
+[    0.504264] ACPI: PCI Interrupt Link [LNKH] enabled at IRQ 3
+[    0.504266] PCI: setting IRQ 3 as level-triggered
+[    0.504270] ehci_hcd 0000:00:1d.7: PCI INT A -> Link[LNKH] -> GSI 3 (level, low) -> IRQ 3
+[    0.504277] ehci_hcd 0000:00:1d.7: setting latency timer to 64
+[    0.504280] ehci_hcd 0000:00:1d.7: EHCI Host Controller
+[    0.504301] ehci_hcd 0000:00:1d.7: new USB bus registered, assigned bus number 2
+[    0.504321] ehci_hcd 0000:00:1d.7: debug port 1
+[    0.508211] ehci_hcd 0000:00:1d.7: cache line size of 32 is not supported
+[    0.508216] ehci_hcd 0000:00:1d.7: irq 3, io mem 0xfe9ff800
+[    0.524006] TIME: ktime_get_real called for the 6th time
+[    0.524009] ehci_hcd 0000:00:1d.7: USB 2.0 started, EHCI 1.00
+[    0.524067] usb usb2: configuration #1 chosen from 1 choice
+[    0.524090] hub 2-0:1.0: USB hub found
+[    0.524095] hub 2-0:1.0: 6 ports detected
+[    0.524140] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    0.524149] uhci_hcd: USB Universal Host Controller Interface driver
+[    0.524163] uhci_hcd 0000:00:1a.0: PCI INT A -> Link[LNKA] -> GSI 10 (level, low) -> IRQ 10
+[    0.524167] uhci_hcd 0000:00:1a.0: setting latency timer to 64
+[    0.524169] uhci_hcd 0000:00:1a.0: UHCI Host Controller
+[    0.524191] uhci_hcd 0000:00:1a.0: new USB bus registered, assigned bus number 3
+[    0.524212] uhci_hcd 0000:00:1a.0: irq 10, io base 0x0000c000
+[    0.524270] usb usb3: configuration #1 chosen from 1 choice
+[    0.524291] hub 3-0:1.0: USB hub found
+[    0.524295] hub 3-0:1.0: 2 ports detected
+[    0.524427] ACPI: PCI Interrupt Link [LNKF] enabled at IRQ 10
+[    0.524429] uhci_hcd 0000:00:1a.1: PCI INT B -> Link[LNKF] -> GSI 10 (level, low) -> IRQ 10
+[    0.524434] uhci_hcd 0000:00:1a.1: setting latency timer to 64
+[    0.524436] uhci_hcd 0000:00:1a.1: UHCI Host Controller
+[    0.524462] uhci_hcd 0000:00:1a.1: new USB bus registered, assigned bus number 4
+[    0.524481] uhci_hcd 0000:00:1a.1: irq 10, io base 0x0000c080
+[    0.524540] usb usb4: configuration #1 chosen from 1 choice
+[    0.524558] hub 4-0:1.0: USB hub found
+[    0.524562] hub 4-0:1.0: 2 ports detected
+[    0.524691] ACPI: PCI Interrupt Link [LNKE] enabled at IRQ 7
+[    0.524693] PCI: setting IRQ 7 as level-triggered
+[    0.524697] uhci_hcd 0000:00:1a.2: PCI INT D -> Link[LNKE] -> GSI 7 (level, low) -> IRQ 7
+[    0.524701] uhci_hcd 0000:00:1a.2: setting latency timer to 64
+[    0.524704] uhci_hcd 0000:00:1a.2: UHCI Host Controller
+[    0.524726] uhci_hcd 0000:00:1a.2: new USB bus registered, assigned bus number 5
+[    0.524746] uhci_hcd 0000:00:1a.2: irq 7, io base 0x0000c400
+[    0.524803] usb usb5: configuration #1 chosen from 1 choice
+[    0.524821] hub 5-0:1.0: USB hub found
+[    0.524825] hub 5-0:1.0: 2 ports detected
+[    0.524855] uhci_hcd 0000:00:1d.0: PCI INT A -> Link[LNKH] -> GSI 3 (level, low) -> IRQ 3
+[    0.524859] uhci_hcd 0000:00:1d.0: setting latency timer to 64
+[    0.524862] uhci_hcd 0000:00:1d.0: UHCI Host Controller
+[    0.524882] uhci_hcd 0000:00:1d.0: new USB bus registered, assigned bus number 6
+[    0.524900] uhci_hcd 0000:00:1d.0: irq 3, io base 0x0000c480
+[    0.524957] usb usb6: configuration #1 chosen from 1 choice
+[    0.524974] hub 6-0:1.0: USB hub found
+[    0.524979] hub 6-0:1.0: 2 ports detected
+[    0.525012] uhci_hcd 0000:00:1d.1: PCI INT B -> Link[LNKE] -> GSI 7 (level, low) -> IRQ 7
+[    0.525016] uhci_hcd 0000:00:1d.1: setting latency timer to 64
+[    0.525018] uhci_hcd 0000:00:1d.1: UHCI Host Controller
+[    0.525038] uhci_hcd 0000:00:1d.1: new USB bus registered, assigned bus number 7
+[    0.525057] uhci_hcd 0000:00:1d.1: irq 7, io base 0x0000c800
+[    0.525115] usb usb7: configuration #1 chosen from 1 choice
+[    0.525134] hub 7-0:1.0: USB hub found
+[    0.525139] hub 7-0:1.0: 2 ports detected
+[    0.525166] uhci_hcd 0000:00:1d.2: PCI INT C -> Link[LNKC] -> GSI 11 (level, low) -> IRQ 11
+[    0.525170] uhci_hcd 0000:00:1d.2: setting latency timer to 64
+[    0.525173] uhci_hcd 0000:00:1d.2: UHCI Host Controller
+[    0.525193] uhci_hcd 0000:00:1d.2: new USB bus registered, assigned bus number 8
+[    0.525211] uhci_hcd 0000:00:1d.2: irq 11, io base 0x0000c880
+[    0.525268] usb usb8: configuration #1 chosen from 1 choice
+[    0.525287] hub 8-0:1.0: USB hub found
+[    0.525291] hub 8-0:1.0: 2 ports detected
+[    0.525357] PNP: No PS/2 controller found. Probing ports directly.
+[    0.526827] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    0.526827] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    0.526827] mice: PS/2 mouse device common for all mice
+[    0.526827] rtc_cmos 00:03: RTC can wake from S4
+[    0.526827] rtc_cmos 00:03: rtc core: registered rtc_cmos as rtc0
+[    0.528021] rtc0: alarms up to one month, y3k, 114 bytes nvram, hpet irqs
+[    0.528089] device-mapper: uevent: version 1.0.3
+[    0.528148] device-mapper: ioctl: 4.15.0-ioctl (2009-04-01) initialised: dm-devel@redhat.com
+[    0.528179] device-mapper: multipath: version 1.1.0 loaded
+[    0.528181] device-mapper: multipath round-robin: version 1.0.0 loaded
+[    0.528251] EISA: Probing bus 0 at eisa.0
+[    0.528255] Cannot allocate resource for EISA slot 1
+[    0.528272] EISA: Detected 0 cards.
+[    0.528299] cpuidle: using governor ladder
+[    0.528300] cpuidle: using governor menu
+[    0.528558] TCP cubic registered
+[    0.528666] NET: Registered protocol family 10
+[    0.529153] NET: Registered protocol family 17
+[    0.529425] Using IPI No-Shortcut mode
+[    0.529472] PM: Resume from disk failed.
+[    0.529481] registered taskstats version 1
+[    0.529741]   Magic number: 1:110:551
+[    0.529759] pci_link PNP0C0F:02: hash matches
+[    0.529786] TIME XTIME do_settimeofday() called, with 1361309440 seconds input.
+[    0.529815] TIME XTIME do_settimeofday() called, with 500000000 nanosecs input.
+[    0.529844] Pid: 1, comm: swapper Not tainted 2.6.32.57 #77
+[    0.529845] Call Trace:
+[    0.529851]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.529854]  [<c0177c6a>] do_settimeofday+0x3a/0x150
+[    0.529857]  [<c07f6fb6>] rtc_hctosys+0x7a/0x146
+[    0.529860]  [<c03c21ae>] ? extract_entropy+0x6e/0x120
+[    0.529863]  [<c059ee04>] ? printk+0x1d/0x21
+[    0.529865]  [<c0103041>] do_one_initcall+0x31/0x190
+[    0.529868]  [<c07f6f3c>] ? rtc_hctosys+0x0/0x146
+[    0.529871]  [<c07c6365>] kernel_init+0x12d/0x183
+[    0.529874]  [<c07c6238>] ? kernel_init+0x0/0x183
+[    0.529876]  [<c010a2e7>] kernel_thread_helper+0x7/0x10
+[    0.529879] rtc_cmos 00:03: setting system clock to 2013-02-19 21:30:40 UTC (1361309440)
+[    0.529881] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+[    0.529883] EDD information not available.
+[    0.529918] BEGIN NET_SECRET:
+[    0.529919] \x8
+[    0.529920] \x50
+[    0.529920] \x43
+[    0.529921] \xa4
+[    0.529922] \xc
+[    0.529923] \x87
+[    0.529924] \xc6
+[    0.529925] \xc3
+[    0.529925] \x70
+[    0.529926] \xf6
+[    0.529927] \xcd
+[    0.529928] \xf8
+[    0.529929] \x38
+[    0.529929] \x8f
+[    0.529930] \xea
+[    0.529931] \xc2
+[    0.529932] \xe5
+[    0.529932] \x9a
+[    0.529933] \x78
+[    0.529934] \xa1
+[    0.529935] \xb8
+[    0.529936] \x9e
+[    0.529936] \x6f
+[    0.529937] \x4
+[    0.529938] \xf0
+[    0.529939] \x55
+[    0.529940] \xc4
+[    0.529940] \x30
+[    0.529941] \xf7
+[    0.529942] \x3e
+[    0.529943] \x74
+[    0.529944] \x73
+[    0.529944] \xe2
+[    0.529945] \xdc
+[    0.529946] \xab
+[    0.529947] \xf2
+[    0.529948] \xa9
+[    0.529948] \xb5
+[    0.529949] \x5e
+[    0.529950] \xdd
+[    0.529951] \x1
+[    0.529952] \x89
+[    0.529952] \x92
+[    0.529953] \x4d
+[    0.529954] \xed
+[    0.529955] \xe8
+[    0.529956] \xdc
+[    0.529956] \x4
+[    0.529957] \x3e
+[    0.529958] \xd5
+[    0.529959] \x0
+[    0.529960] \xf9
+[    0.529960] \x43
+[    0.529961] \xab
+[    0.529962] \x80
+[    0.529963] \x7
+[    0.529964] \xd9
+[    0.529964] \xba
+[    0.529965] \xb8
+[    0.529966] \x93
+[    0.529967] \x24
+[    0.529968] \xdc
+[    0.529968] \x7f
+[    0.529969] \xcf
+[    0.529970] 
+[    0.529970] END NET_SECRET
+[    0.816013] usb 1-6: new high speed USB device using ehci_hcd and address 2
+[    1.028057] usb 1-6: configuration #1 chosen from 1 choice
+[    1.280054] ata1.00: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[    1.280065] ata1.01: SATA link down (SStatus 0 SControl 300)
+[    1.284052] ata2.00: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+[    1.284064] ata2.01: SATA link down (SStatus 0 SControl 300)
+[    1.284073] ata2.01: link offline, clearing class 3 to NONE
+[    1.288342] ata2.00: ATAPI: TSSTcorp CDDVDW TS-H653R, 0301, max UDMA/33
+[    1.288428] ata1.00: ATA-8: WDC WD6400AAKS-65A7B2, 01.03B01, max UDMA/133
+[    1.288431] ata1.00: 1250263728 sectors, multi 16: LBA48 NCQ (depth 0/32)
+[    1.304356] ata2.00: configured for UDMA/33
+[    1.304428] ata1.00: configured for UDMA/133
+[    1.304513] scsi 0:0:0:0: Direct-Access     ATA      WDC WD6400AAKS-6 01.0 PQ: 0 ANSI: 5
+[    1.304588] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    1.304634] sd 0:0:0:0: [sda] 1250263728 512-byte logical blocks: (640 GB/596 GiB)
+[    1.304667] sd 0:0:0:0: [sda] Write Protect is off
+[    1.304670] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    1.304687] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    1.304773]  sda:
+[    1.304850] scsi 1:0:0:0: CD-ROM            TSSTcorp CDDVDW TS-H653R  0301 PQ: 0 ANSI: 5
+[    1.304850]  sda1 sda2 <sr0: scsi3-mmc drive: 40x/40x writer dvd-ram cd/rw xa/form2 cdda tray
+[    1.308022] Uniform CD-ROM driver Revision: 3.20
+[    1.308087] sr 1:0:0:0: Attached scsi CD-ROM sr0
+[    1.308127] sr 1:0:0:0: Attached scsi generic sg1 type 5
+[    1.336020]  sda5 >
+[    1.336210] sd 0:0:0:0: [sda] Attached SCSI disk
+[    1.336219] md: Waiting for all devices to be available before autodetect
+[    1.336221] md: If you don't use raid, use raid=noautodetect
+[    1.336281] md: Autodetecting RAID arrays.
+[    1.336283] md: Scanned 0 and added 0 devices.
+[    1.336284] md: autorun ...
+[    1.336285] md: ... autorun DONE.
+[    1.364021] EXT3-fs: sda1: couldn't mount because of unsupported optional features (240).
+[    1.364121] EXT2-fs: sda1: couldn't mount because of unsupported optional features (240).
+[    1.458924] EXT4-fs (sda1): mounted filesystem with ordered data mode
+[    1.458932] VFS: Mounted root (ext4 filesystem) readonly on device 8:1.
+[    1.492022] devtmpfs: mounted
+[    1.492039] Freeing unused kernel memory: 676k freed
+[    1.492260] Write protecting the kernel text: 4764k
+[    1.492299] Write protecting the kernel read-only data: 1836k
+[    2.104400] TIME XTIME do_settimeofday() called, with 1361309442 seconds input.
+[    2.104400] TIME XTIME do_settimeofday() called, with 76003000 nanosecs input.
+[    2.104400] Pid: 47, comm: hwclock Not tainted 2.6.32.57 #77
+[    2.104400] Call Trace:
+[    2.104400]  [<c059ee04>] ? printk+0x1d/0x21
+[    2.104400]  [<c0177c6a>] do_settimeofday+0x3a/0x150
+[    2.104400]  [<c01577df>] do_sys_settimeofday+0x5f/0x120
+[    2.104400]  [<c01578d5>] sys_settimeofday+0x35/0xa0
+[    2.104400]  [<c0109563>] sysenter_do_call+0x12/0x28
+[    2.992261] udev: starting version 151
+[    3.926644] usbcore: registered new interface driver hiddev
+[    4.111676] Initializing USB Mass Storage driver...
+[    4.511786] Linux agpgart interface v0.103
+[    4.716534] r8169 Gigabit Ethernet driver 2.3LK-NAPI loaded
+[    4.716553] r8169 0000:02:00.0: PCI INT A -> Link[LNKB] -> GSI 5 (level, low) -> IRQ 5
+[    4.716584] r8169 0000:02:00.0: setting latency timer to 64
+[    4.716621]   alloc irq_desc for 27 on node -1
+[    4.716623]   alloc kstat_irqs on node -1
+[    4.716634] r8169 0000:02:00.0: irq 27 for MSI/MSI-X
+[    4.717094] eth0: RTL8168d/8111d at 0xf9292000, 00:26:18:a5:38:24, XID 081000c0 IRQ 27
+[    4.905038] [drm] Initialized drm 1.1.0 20060810
+[    4.944999] Adding 9828344k swap on /dev/sda5.  Priority:-1 extents:1 across:9828344k 
+[    5.083431] r8169: eth0: link down
+[    5.083440] r8169: eth0: link down
+[    5.083992] ADDRCONF(NETDEV_UP): eth0: link is not ready
+[    5.293592] ACPI: PCI Interrupt Link [LNKG] enabled at IRQ 4
+[    5.293595] PCI: setting IRQ 4 as level-triggered
+[    5.293599] HDA Intel 0000:00:1b.0: PCI INT A -> Link[LNKG] -> GSI 4 (level, low) -> IRQ 4
+[    5.293619] HDA Intel 0000:00:1b.0: setting latency timer to 64
+[    5.507963] [drm] radeon defaulting to kernel modesetting.
+[    5.507966] [drm] radeon kernel modesetting enabled.
+[    5.508004] radeon 0000:04:00.0: PCI INT A -> Link[LNKA] -> GSI 10 (level, low) -> IRQ 10
+[    5.508023] radeon 0000:04:00.0: setting latency timer to 64
+[    5.508956] [drm] radeon: Initializing kernel modesetting.
+[    5.508974] [drm] register mmio base: 0xFEBE0000
+[    5.508975] [drm] register mmio size: 65536
+[    5.509035] ATOM BIOS: 113
+[    5.509040] [drm] Clocks initialized !
+[    5.509056] mtrr: type mismatch for e0000000,10000000 old: write-back new: write-combining
+[    5.509058] [drm] Detected VRAM RAM=256M, BAR=256M
+[    5.509060] [drm] RAM width 128bits DDR
+[    5.509104] [TTM] Zone  kernel: Available graphics memory: 406134 kiB.
+[    5.509106] [TTM] Zone highmem: Available graphics memory: 3095962 kiB.
+[    5.509119] [drm] radeon: 256M of VRAM memory ready
+[    5.509121] [drm] radeon: 512M of GTT memory ready.
+[    5.509167] [drm] Loading RV730 CP Microcode
+[    5.509324] platform radeon_cp.0: firmware: requesting radeon/RV730_pfp.bin
+[    5.524123] lp: driver loaded but no devices found
+[    5.598493] hda_codec: ALC888: BIOS auto-probing.
+[    5.599870] input: HDA Digital PCBeep as /devices/pci0000:00/0000:00:1b.0/input/input3
+[    5.788241] platform radeon_cp.0: firmware: requesting radeon/RV730_me.bin
+[    5.964203] [drm] GART: num cpu pages 131072, num gpu pages 131072
+[    6.002215] [drm] ring test succeeded in 1 usecs
+[    6.002321] [drm] radeon: ib pool ready.
+[    6.002364] [drm] ib test succeeded in 0 usecs
+[    6.003317] [drm] Radeon Display Connectors
+[    6.003319] [drm] Connector 0:
+[    6.003320] [drm]   HDMI-A
+[    6.003322] [drm]   DDC: 0x7f10 0x7f10 0x7f14 0x7f14 0x7f18 0x7f18 0x7f1c 0x7f1c
+[    6.003323] [drm]   Encoders:
+[    6.003324] [drm]     DFP2: INTERNAL_UNIPHY1
+[    6.003326] [drm] Connector 1:
+[    6.003327] [drm]   VGA
+[    6.003328] [drm]   DDC: 0x7e50 0x7e50 0x7e54 0x7e54 0x7e58 0x7e58 0x7e5c 0x7e5c
+[    6.003329] [drm]   Encoders:
+[    6.003330] [drm]     CRT2: INTERNAL_KLDSCP_DAC2
+[    6.003332] [drm] Connector 2:
+[    6.003333] [drm]   DVI-I
+[    6.003334] [drm]   DDC: 0x7e20 0x7e20 0x7e24 0x7e24 0x7e28 0x7e28 0x7e2c 0x7e2c
+[    6.003335] [drm]   Encoders:
+[    6.003336] [drm]     CRT1: INTERNAL_KLDSCP_DAC1
+[    6.003338] [drm]     DFP1: INTERNAL_UNIPHY
+[    6.044332] ------------[ cut here ]------------
+[    6.044338] WARNING: at drivers/gpu/drm/drm_crtc_helper.c:1036 drm_helper_initial_config+0x67/0x70 [drm_kms_helper]()
+[    6.044341] Hardware name: NY809AV-ABA e9110t
+[    6.044342] No connectors reported connected with modes
+[    6.044343] Modules linked in: snd_hda_codec_realtek radeon(+) ttm drm_kms_helper snd_hda_intel(+) lp snd_hda_codec intel_agp drm r8169 snd_hwdep parport i2c_algo_bit agpgart mii psmouse snd_pcm usb_storage(+) usbhid(+) serio_raw hid snd_timer snd soundcore snd_page_alloc
+[    6.044358] Pid: 119, comm: modprobe Not tainted 2.6.32.57 #77
+[    6.044360] Call Trace:
+[    6.044366]  [<c01526e2>] warn_slowpath_common+0x72/0xa0
+[    6.044369]  [<f9b012a7>] ? drm_helper_initial_config+0x67/0x70 [drm_kms_helper]
+[    6.044372]  [<f9b012a7>] ? drm_helper_initial_config+0x67/0x70 [drm_kms_helper]
+[    6.044375]  [<c015275b>] warn_slowpath_fmt+0x2b/0x30
+[    6.044378]  [<f9b012a7>] drm_helper_initial_config+0x67/0x70 [drm_kms_helper]
+[    6.044398]  [<fa557f5e>] radeon_modeset_init+0x26e/0x510 [radeon]
+[    6.044414]  [<fa5411f5>] radeon_driver_load_kms+0x85/0x140 [radeon]
+[    6.044423]  [<f929e040>] drm_get_dev+0x2b0/0x470 [drm]
+[    6.044427]  [<c0264990>] ? sysfs_addrm_start+0x60/0xa0
+[    6.044441]  [<fa584516>] radeon_pci_probe+0x12/0x101 [radeon]
+[    6.044445]  [<c0360773>] local_pci_probe+0x13/0x20
+[    6.044447]  [<c0361578>] pci_device_probe+0x68/0x90
+[    6.044451]  [<c03eb19f>] driver_probe_device+0x7f/0x170
+[    6.044454]  [<c03eb311>] __driver_attach+0x81/0x90
+[    6.044456]  [<c03ea783>] bus_for_each_dev+0x53/0x80
+[    6.044458]  [<c03eb03e>] driver_attach+0x1e/0x20
+[    6.044461]  [<c03eb290>] ? __driver_attach+0x0/0x90
+[    6.044463]  [<c03eaa05>] bus_add_driver+0xd5/0x280
+[    6.044466]  [<c03614b0>] ? pci_device_remove+0x0/0x40
+[    6.044468]  [<c03eb60a>] driver_register+0x6a/0x130
+[    6.044471]  [<c03617b5>] __pci_register_driver+0x45/0xb0
+[    6.044478]  [<f92993f3>] drm_init+0xf3/0x100 [drm]
+[    6.044489]  [<fa5ae0b2>] radeon_init+0xb2/0xb4 [radeon]
+[    6.044492]  [<c0103041>] do_one_initcall+0x31/0x190
+[    6.044502]  [<fa5ae000>] ? radeon_init+0x0/0xb4 [radeon]
+[    6.044505]  [<c0188751>] sys_init_module+0xb1/0x220
+[    6.044508]  [<c0109563>] sysenter_do_call+0x12/0x28
+[    6.044511] ---[ end trace 3228a74115b82631 ]---
+[    6.044515] [drm] Initialized radeon 2.0.0 20080528 for 0000:04:00.0 on minor 0
+[    6.044549] HDA Intel 0000:04:00.1: PCI INT B -> Link[LNKB] -> GSI 5 (level, low) -> IRQ 5
+[    6.044570] HDA Intel 0000:04:00.1: setting latency timer to 64
+[    8.052207] r8169: eth0: link up
+[    8.052217] ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   11.568075] TIME XTIME do_settimeofday() called, with 1361309451 seconds input.
+[   11.568107] TIME XTIME do_settimeofday() called, with 184948000 nanosecs input.
+[   11.568138] Pid: 432, comm: ntpdate Tainted: G        W  2.6.32.57 #77
+[   11.568140] Call Trace:
+[   11.568147]  [<c059ee04>] ? printk+0x1d/0x21
+[   11.568150]  [<c0177c6a>] do_settimeofday+0x3a/0x150
+[   11.568154]  [<c015780b>] do_sys_settimeofday+0x8b/0x120
+[   11.568158]  [<c01578d5>] sys_settimeofday+0x35/0xa0
+[   11.568162]  [<c0109563>] sysenter_do_call+0x12/0x28
+[   13.932080] generic-usb 0003:0BDA:0152.0001: timeout initializing reports
+[   13.932169] generic-usb 0003:0BDA:0152.0001: hiddev96,hidraw0: USB HID v1.11 Device [Generic USB2.0-CRW] on usb-0000:00:1a.7-6/input1
+[   13.932190] usbcore: registered new interface driver usbhid
+[   13.932192] usbhid: v2.6:USB HID core driver
+[   13.934125] scsi2 : SCSI emulation for USB Mass Storage devices
+[   13.934256] usbcore: registered new interface driver usb-storage
+[   13.934258] USB Mass Storage support registered.
+[   13.935313] usb-storage: device found at 2
+[   13.935315] usb-storage: waiting for device to settle before scanning
+[   18.932136] usb-storage: device scan complete
+[   18.936129] scsi 2:0:0:0: Direct-Access     Generic- Compact Flash    1.00 PQ: 0 ANSI: 0 CCS
+[   18.940122] scsi 2:0:0:1: Direct-Access     Generic- SM/xD-Picture    1.00 PQ: 0 ANSI: 0 CCS
+[   18.944122] scsi 2:0:0:2: Direct-Access     Generic- SD/MMC           1.00 PQ: 0 ANSI: 0 CCS
+[   18.948122] scsi 2:0:0:3: Direct-Access     Generic- MS/MS-Pro        1.00 PQ: 0 ANSI: 0 CCS
+[   18.952861] sd 2:0:0:0: Attached scsi generic sg2 type 0
+[   18.953282] sd 2:0:0:1: Attached scsi generic sg3 type 0
+[   18.953577] sd 2:0:0:2: Attached scsi generic sg4 type 0
+[   18.953858] sd 2:0:0:3: Attached scsi generic sg5 type 0
+[   18.961783] sd 2:0:0:0: [sdb] Attached SCSI removable disk
+[   18.964755] sd 2:0:0:1: [sdc] Attached SCSI removable disk
+[   18.967411] sd 2:0:0:2: [sdd] Attached SCSI removable disk
+[   18.968268] sd 2:0:0:3: [sde] Attached SCSI removable disk
+[   19.044099] eth0: no IPv6 routers present
+[   43.476384] TCP_SEQ BYTE ORDER TEST
+[   43.476387] saddr normal: e45fef84
+[   43.476388] saddr htonl: 84ef5fe4
+[   43.476390] saddr ntohl: 84ef5fe4
+[   43.476391] net_secret[15]: cf7fdc24
+[   43.476393] Sequence num: 2dd32022
+[   43.476394] Sequence num ntohl: 2220d32d
+[   43.476396] TIME: ktime_get_real called for the 2331720582309085191th time
+[   43.476399] TIME ktime_to_ns vari test. ns: 1361309483093262584, jiffies: 4294903161, difference from last 1361309483093262584
+[   43.482497] TIME: ktime_get_real called for the 2964776457974317064th time
+[   43.482499] TIME ktime_to_ns vari test. ns: 1361309483097262636, jiffies: 4294903162, difference from last 4000052
+[   43.484919] TIME: ktime_get_real called for the 2981946431553667081th time
+[   43.484921] TIME ktime_to_ns vari test. ns: 1361309483101262688, jiffies: 4294903163, difference from last 4000052
+[   43.487331] TIME ktime_to_ns vari test. ns: 1361309483101262688, jiffies: 4294903163, difference from last 0
+[   43.489752] TIME ktime_to_ns vari test. ns: 1361309483105262741, jiffies: 4294903164, difference from last 4000053
+[   43.492162] TIME ktime_to_ns vari test. ns: 1361309483105262741, jiffies: 4294903164, difference from last 0
+[   43.494583] TIME ktime_to_ns vari test. ns: 1361309483109262793, jiffies: 4294903165, difference from last 4000052
+[   43.497004] TIME ktime_to_ns vari test. ns: 1361309483113262846, jiffies: 4294903166, difference from last 4000053
+[   43.499413] TIME ktime_to_ns vari test. ns: 1361309483113262846, jiffies: 4294903166, difference from last 0
+[   43.501835] TIME ktime_to_ns vari test. ns: 1361309483117262898, jiffies: 4294903167, difference from last 4000052

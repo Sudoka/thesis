@@ -178,8 +178,8 @@ void dump_stack(void)
 	if (!bp)
 		get_bp(bp);
 #endif
-
-	printk("Pid: %d, comm: %.20s %s %s %.*s\n",
+	/* dacashman change */
+	printk("\n dacashman Pid: %d, comm: %.20s %s %s %.*s\n",
 		current->pid, current->comm, print_tainted(),
 		init_utsname()->release,
 		(int)strcspn(init_utsname()->version, " "),

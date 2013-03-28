@@ -1,0 +1,58 @@
+08048000-080ca000 r-xp 00000000 08:01 922230     /home/dcashman/thesis/misc/ASLR/apache/bin/httpd
+080ca000-080cb000 r--p 00081000 08:01 922230     /home/dcashman/thesis/misc/ASLR/apache/bin/httpd
+080cb000-080ce000 rw-p 00082000 08:01 922230     /home/dcashman/thesis/misc/ASLR/apache/bin/httpd
+080ce000-080d1000 rw-p 00000000 00:00 0 
+0866e000-0877e000 rw-p 00000000 00:00 0          [heap]
+b74f5000-b7505000 rw-s 00000000 00:04 2648       /dev/zero (deleted)
+b7505000-b750f000 r-xp 00000000 08:01 36438045   /lib/tls/i686/cmov/libnss_files-2.11.1.so
+b750f000-b7510000 r--p 00009000 08:01 36438045   /lib/tls/i686/cmov/libnss_files-2.11.1.so
+b7510000-b7511000 rw-p 0000a000 08:01 36438045   /lib/tls/i686/cmov/libnss_files-2.11.1.so
+b7511000-b7519000 r-xp 00000000 08:01 36438028   /lib/tls/i686/cmov/libnss_nis-2.11.1.so
+b7519000-b751a000 r--p 00007000 08:01 36438028   /lib/tls/i686/cmov/libnss_nis-2.11.1.so
+b751a000-b751b000 rw-p 00008000 08:01 36438028   /lib/tls/i686/cmov/libnss_nis-2.11.1.so
+b751b000-b752e000 r-xp 00000000 08:01 36438033   /lib/tls/i686/cmov/libnsl-2.11.1.so
+b752e000-b752f000 r--p 00012000 08:01 36438033   /lib/tls/i686/cmov/libnsl-2.11.1.so
+b752f000-b7530000 rw-p 00013000 08:01 36438033   /lib/tls/i686/cmov/libnsl-2.11.1.so
+b7530000-b7532000 rw-p 00000000 00:00 0 
+b7532000-b7538000 r-xp 00000000 08:01 36438047   /lib/tls/i686/cmov/libnss_compat-2.11.1.so
+b7538000-b7539000 r--p 00006000 08:01 36438047   /lib/tls/i686/cmov/libnss_compat-2.11.1.so
+b7539000-b753a000 rw-p 00007000 08:01 36438047   /lib/tls/i686/cmov/libnss_compat-2.11.1.so
+b753a000-b753c000 rw-p 00000000 00:00 0 
+b753c000-b7695000 r-xp 00000000 08:01 36438052   /lib/tls/i686/cmov/libc-2.11.1.so
+b7695000-b7697000 r--p 00159000 08:01 36438052   /lib/tls/i686/cmov/libc-2.11.1.so
+b7697000-b7698000 rw-p 0015b000 08:01 36438052   /lib/tls/i686/cmov/libc-2.11.1.so
+b7698000-b769b000 rw-p 00000000 00:00 0 
+b769b000-b769d000 r-xp 00000000 08:01 36438044   /lib/tls/i686/cmov/libdl-2.11.1.so
+b769d000-b769e000 r--p 00001000 08:01 36438044   /lib/tls/i686/cmov/libdl-2.11.1.so
+b769e000-b769f000 rw-p 00002000 08:01 36438044   /lib/tls/i686/cmov/libdl-2.11.1.so
+b769f000-b76a0000 rw-p 00000000 00:00 0 
+b76a0000-b76b5000 r-xp 00000000 08:01 36438042   /lib/tls/i686/cmov/libpthread-2.11.1.so
+b76b5000-b76b6000 r--p 00014000 08:01 36438042   /lib/tls/i686/cmov/libpthread-2.11.1.so
+b76b6000-b76b7000 rw-p 00015000 08:01 36438042   /lib/tls/i686/cmov/libpthread-2.11.1.so
+b76b7000-b76b9000 rw-p 00000000 00:00 0 
+b76b9000-b76c2000 r-xp 00000000 08:01 36438038   /lib/tls/i686/cmov/libcrypt-2.11.1.so
+b76c2000-b76c3000 r--p 00008000 08:01 36438038   /lib/tls/i686/cmov/libcrypt-2.11.1.so
+b76c3000-b76c4000 rw-p 00009000 08:01 36438038   /lib/tls/i686/cmov/libcrypt-2.11.1.so
+b76c4000-b76eb000 rw-p 00000000 00:00 0 
+b76eb000-b76f2000 r-xp 00000000 08:01 36438048   /lib/tls/i686/cmov/librt-2.11.1.so
+b76f2000-b76f3000 r--p 00006000 08:01 36438048   /lib/tls/i686/cmov/librt-2.11.1.so
+b76f3000-b76f4000 rw-p 00007000 08:01 36438048   /lib/tls/i686/cmov/librt-2.11.1.so
+b76f4000-b771d000 r-xp 00000000 08:01 922156     /home/dcashman/thesis/misc/ASLR/apache/lib/libapr-1.so.0.4.6
+b771d000-b771e000 r--p 00028000 08:01 922156     /home/dcashman/thesis/misc/ASLR/apache/lib/libapr-1.so.0.4.6
+b771e000-b771f000 rw-p 00029000 08:01 922156     /home/dcashman/thesis/misc/ASLR/apache/lib/libapr-1.so.0.4.6
+b771f000-b7740000 r-xp 00000000 08:01 922207     /home/dcashman/thesis/misc/ASLR/apache/lib/libexpat.so.0.5.0
+b7740000-b7742000 r--p 00020000 08:01 922207     /home/dcashman/thesis/misc/ASLR/apache/lib/libexpat.so.0.5.0
+b7742000-b7743000 rw-p 00022000 08:01 922207     /home/dcashman/thesis/misc/ASLR/apache/lib/libexpat.so.0.5.0
+b7743000-b7744000 rw-p 00000000 00:00 0 
+b7744000-b7760000 r-xp 00000000 08:01 922213     /home/dcashman/thesis/misc/ASLR/apache/lib/libaprutil-1.so.0.4.1
+b7760000-b7761000 r--p 0001c000 08:01 922213     /home/dcashman/thesis/misc/ASLR/apache/lib/libaprutil-1.so.0.4.1
+b7761000-b7762000 rw-p 0001d000 08:01 922213     /home/dcashman/thesis/misc/ASLR/apache/lib/libaprutil-1.so.0.4.1
+b7762000-b7786000 r-xp 00000000 08:01 36438046   /lib/tls/i686/cmov/libm-2.11.1.so
+b7786000-b7787000 r--p 00023000 08:01 36438046   /lib/tls/i686/cmov/libm-2.11.1.so
+b7787000-b7788000 rw-p 00024000 08:01 36438046   /lib/tls/i686/cmov/libm-2.11.1.so
+b7790000-b7792000 rw-p 00000000 00:00 0 
+b7792000-b7793000 r-xp 00000000 00:00 0          [vdso]
+b7793000-b77ae000 r-xp 00000000 08:01 36441758   /lib/ld-2.11.1.so
+b77ae000-b77af000 r--p 0001a000 08:01 36441758   /lib/ld-2.11.1.so
+b77af000-b77b0000 rw-p 0001b000 08:01 36441758   /lib/ld-2.11.1.so
+bfa71000-bfa86000 rw-p 00000000 00:00 0          [stack]

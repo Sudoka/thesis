@@ -745,6 +745,7 @@ pid_t os_fork(const char *user)
     switch (os_forktype(0)) {
 
       case bs2_FORK:
+	printf("FORKING unixd.c fork!\n");
         pid = fork();
         break;
 

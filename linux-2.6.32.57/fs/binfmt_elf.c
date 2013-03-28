@@ -577,6 +577,13 @@ static int load_elf_binary(struct linux_binprm *bprm, struct pt_regs *regs)
 	unsigned long reloc_func_desc = 0;
 	int executable_stack = EXSTACK_DEFAULT;
 	unsigned long def_flags = 0;
+	
+	/*dacashman change */
+	char comm[TASK_COMM_LEN];
+	get_task_comm(comm, current);	
+
+	  printk(KERN_INFO "Loading Elf Binary for pid: %u comm: %s\n", current->pid, comm);
+
 	struct {
 		struct elfhdr elf_ex;
 		struct elfhdr interp_elf_ex;

@@ -723,6 +723,9 @@ static int make_child(server_rec *s, int slot)
 #elif defined(TPF)
     if ((pid = os_fork(s, slot)) == -1) {
 #else
+      /* dacashman */
+      //printf("FORKING prefork used!\n");
+      ap_log_error(APLOG_MARK, APLOG_ERR, 0, s, "FORKING: prefork!"); 
     if ((pid = fork()) == -1) {
 #endif
         ap_log_error(APLOG_MARK, APLOG_ERR, errno, s, "fork: Unable to fork new process");
