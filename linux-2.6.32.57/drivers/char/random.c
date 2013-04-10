@@ -332,6 +332,7 @@ static struct poolinfo {
 
 // dacashman: change here
 static int rand_read_count = 0;
+static int urand_change_count = 0;
 
 
 
@@ -490,6 +491,23 @@ static inline int get_pool_signature(struct entropy_store *r){
   return pool_sig;
 }
 
+/* dacashman func:
+ * function that mimics get_pool_signature() with buffers
+ *
+ */
+static inline int get_buf_signature(void *buf, int num_bytes){
+  int i, pool_sig;
+  char *buf_data;
+
+  pool_sig = 0;
+  buf_data = (char *) buf;
+  //just add all bytes
+  for(i = 0; i < num_bytes; i ++){
+    pool_sig += buf_data[i];
+  }
+  return pool_sig;
+}
+
 
 /*
  * This function adds bytes into the entropy "pool".  It does not
@@ -526,8 +544,14 @@ static void mix_pool_bytes_extract(struct entropy_store *r, const void *in,
 	i = r->add_ptr;
 
 // jhalderm
-if (nbytes && (r == &nonblocking_pool))
-  nb_stir_count+=nbytes;
+	if (nbytes && (r == &nonblocking_pool)){
+	  nb_stir_count+=nbytes;
+	  /* dacashman change */
+	  /*	  int pool_sig;
+	  pool_sig = get_pool_signature(&nonblocking_pool);
+	  DEBUG_ENT("urand_change_num %d mix_pool_bytes(%d): sig %08x %08x %08x", ++urand_change_count, nbytes, pool_sig,
+	  nonblocking_pool_data[0], nonblocking_pool_data[1]); //ewust */
+    } 
 
 	/* mix one byte at a time to simplify size handling and churn faster */
 	while (nbytes--) {
@@ -684,7 +708,7 @@ static void add_timer_randomness(struct timer_rand_state *state, unsigned num)
 	} sample;
 	long delta, delta2, delta3;
 
-	DEBUG_ENT("add_timer_randomness(.. %u)\n", num);
+
 
 	preempt_disable();
 	/* if over the trickle threshold, use only 1 in 4096 samples */
@@ -696,6 +720,7 @@ static void add_timer_randomness(struct timer_rand_state *state, unsigned num)
 	sample.cycles = get_cycles();
 	sample.num = num;
 	mix_pool_bytes(&input_pool, &sample, sizeof(sample));
+	DEBUG_ENT("add_timer_randomness(.. %u) with jiffies: %llu, cycles: %lld\n", num);
 
 	/*
 	 * Calculate number of bits of randomness we probably added.
@@ -768,6 +793,11 @@ void add_interrupt_randomness(int irq)
 #ifdef CONFIG_BLOCK
 void add_disk_randomness(struct gendisk *disk)
 {
+  /* dacashman - removing this to simulate SD/SSD */
+        if(1)
+	  return;
+
+
 	if (!disk || !disk->random)
 		return;
 
@@ -822,8 +852,14 @@ static void xfer_secondary_pool(struct entropy_store *r, size_t nbytes)
 // jhalderm
 unsigned long flags;
  spin_lock_irqsave(&nb_lock, flags);
-if (r == &nonblocking_pool)
+ if (r == &nonblocking_pool){
   nb_input_bytes += bytes; //jhalderm
+  /*dacashman change */
+          int pool_sig, data_sig;
+	  pool_sig = get_pool_signature(&nonblocking_pool);
+	  data_sig = get_buf_signature(tmp, bytes);
+	  DEBUG_ENT("urand_change_num %d xfer_secondary_pool(%d): pool_sig %08x, data_sig %08x, bytes_mixed %d %08x %08x", ++urand_change_count, nbytes, pool_sig, data_sig, bytes, nonblocking_pool_data[0], nonblocking_pool_data[1]); //ewust 
+ }
 spin_unlock_irqrestore(&nb_lock, flags);
 
 		mix_pool_bytes(r, tmp, bytes);
@@ -912,6 +948,18 @@ spin_unlock_irqrestore(&nb_lock, flags);
 	 * hash.
 	 */
 
+
+	/* dacashman change */
+	spin_lock_irqsave(&nb_lock, flags);
+	if (r == &nonblocking_pool){
+	  /*dacashman change */
+	  int pool_sig, data_sig;
+	  pool_sig = get_pool_signature(&nonblocking_pool);
+	  data_sig = get_buf_signature(hash, sizeof(hash));
+	  DEBUG_ENT("urand_change_num %d extract_buf: pool_sig %08x, data_sig %08x, bytes_mixed %d %08x %08x", ++urand_change_count, pool_sig, data_sig, sizeof(hash), nonblocking_pool_data[0], nonblocking_pool_data[1]); //ewust 
+	}
+	spin_unlock_irqrestore(&nb_lock, flags);
+
 	mix_pool_bytes_extract(r, hash, sizeof(hash), extract);
 
 // jhalderm2:
@@ -954,6 +1002,8 @@ static ssize_t extract_entropy(struct entropy_store *r, void *buf,
 
 	xfer_secondary_pool(r, nbytes);
 	nbytes = account(r, nbytes, min, reserved);
+
+	DEBUG_ENT("extract_entropy account returned: %d \n", nbytes);	
 
 	while (nbytes) {
 		extract_buf(r, tmp);
@@ -1118,9 +1168,9 @@ random_read(struct file *file, char __user *buf, size_t nbytes, loff_t *ppos)
 {
         int pool_sig;
 	ssize_t n, retval = 0, count = 0;
-	pool_sig = get_pool_signature(&nonblocking_pool);	
+	/*pool_sig = get_pool_signature(&nonblocking_pool);	
 	//printk("rand_read_num %d random_read(%d): urandom sig - %d\n", ++rand_read_count, nbytes, pool_sig);
-	DEBUG_ENT("rand_read_num %d random_read(%d): sig %08x  %08x %08x pid=%u\n", ++rand_read_count, nbytes, pool_sig,  nonblocking_pool_data[0], nonblocking_pool_data[1], current->pid); // ewust
+	DEBUG_ENT("rand_read_num %d random_read(%d): sig %08x  %08x %08x pid=%u\n", ++rand_read_count, nbytes, pool_sig,  nonblocking_pool_data[0], nonblocking_pool_data[1], current->pid); // ewust */
 
 	if (nbytes == 0)
 		return 0;
@@ -1214,6 +1264,19 @@ DEBUG_ENT("write_pool(.., %d)", count); // jhalderm
 
 		count -= bytes;
 		p += bytes;
+
+
+		/* dacashman change */
+		unsigned long flags;
+		spin_lock_irqsave(&nb_lock, flags);
+		if (r == &nonblocking_pool){
+		  /*dacashman change */
+		  int pool_sig, data_sig;
+		  pool_sig = get_pool_signature(&nonblocking_pool);
+		  data_sig = get_buf_signature(buf, bytes);
+		  DEBUG_ENT("urand_change_num %d write_pool: pool_sig %08x, data_sig %08x, bytes_mixed %d %08x %08x", ++urand_change_count, pool_sig, data_sig, bytes, nonblocking_pool_data[0], nonblocking_pool_data[1]); //ewust 
+		}
+		spin_unlock_irqrestore(&nb_lock, flags);
 
 		mix_pool_bytes(r, buf, bytes);
 		cond_resched();
