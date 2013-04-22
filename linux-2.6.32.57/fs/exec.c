@@ -1050,6 +1050,9 @@ void setup_new_exec(struct linux_binprm * bprm)
 	tcomm[i] = '\0';
 	set_task_comm(current, tcomm);
 
+	/* dacashman change - printout each newly executed command */
+        printk(KERN_INFO "ASLR - setup_new_exec called for command: %s\n", tcomm);
+
 	/* Set the new mm task size. We have to do that late because it may
 	 * depend on TIF_32BIT which is only updated in flush_thread() on
 	 * some architectures like powerpc

@@ -16,7 +16,7 @@ static int __init net_secret_init(void)
 {
 	get_random_bytes(net_secret, sizeof(net_secret));
         
-        /* dcashman change - print out net_secret */
+        /* dacashman change - print out net_secret */
         printk(KERN_DEBUG "BEGIN NET_SECRET:\n");
 	int i=0;
 	char *byte_ptr;
@@ -45,7 +45,7 @@ static u32 seq_scale(u32 seq)
 	 *	overlaps less than one time per MSL (2 minutes).
 	 *	Choosing a clock of 64 ns period is OK. (period of 274 s)
 	 */
-        /* dcashman change - got rid of time component */
+        /* dacashman change - got rid of time component */
         return seq /* + (ktime_to_ns(ktime_get_real()) >> 6) */;
 }
 

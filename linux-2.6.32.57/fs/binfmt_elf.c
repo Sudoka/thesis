@@ -456,6 +456,10 @@ static unsigned long load_elf_interp(struct elfhdr *interp_elf_ex,
 
 			map_addr = elf_map(interpreter, load_addr + vaddr,
 					eppnt, elf_prot, elf_type, total_size);
+
+			/* dacashman change - print elf_map value */
+			printk("ASLR - map_addr from elf_map (used for dynamic linker?) %x for PID: %d\n", map_addr, current->pid);
+
 			total_size = 0;
 			if (!*interp_map_addr)
 				*interp_map_addr = map_addr;
@@ -557,7 +561,7 @@ static unsigned long randomize_stack_top(unsigned long stack_top)
 	return PAGE_ALIGN(stack_top) + random_variable;
 #else
 	/* dacashman change - print stack value */
-	printk("ASLR - assigning stack value of %ulx for PID: %d\n", 
+	printk("ASLR - assigning stack value of %x for PID: %d\n", 
 	       PAGE_ALIGN(stack_top) - random_variable, current->pid);
 	return PAGE_ALIGN(stack_top) - random_variable;
 #endif
@@ -959,7 +963,7 @@ static int load_elf_binary(struct linux_binprm *bprm, struct pt_regs *regs)
 		current->mm->brk = current->mm->start_brk =
 			arch_randomize_brk(current->mm);
 		/* dacashman change - print start_brk */
-	printk("ASLR - assigning start_brk value of %ulx for PID: %d\n", current->mm->brk, current->pid);
+	printk("ASLR - assigning start_brk value of %x for PID: %d\n", current->mm->brk, current->pid);
 #endif
 
 	if (current->personality & MMAP_PAGE_ZERO) {

@@ -1074,6 +1074,10 @@ static ssize_t extract_entropy_user(struct entropy_store *r, void __user *buf,
  */
 void get_random_bytes(void *buf, int nbytes)
 {
+
+  unsigned long flags;
+  spin_lock_irqsave(&nb_lock, flags);
+
   int pool_sig;
   pool_sig = get_pool_signature(&nonblocking_pool);
   //printk("rand_read_num %d get_random_bytes(%d): urandom sig - %d\n", ++rand_read_count, nbytes, pool_sig);
@@ -1082,6 +1086,17 @@ void get_random_bytes(void *buf, int nbytes)
   if(rand_read_count > 150 && nbytes != 16){
     dump_stack();
   }
+  /* dacashman remove all 'special reads' from affecting nonblocking pool use lock?*/
+  if(rand_read_count > 50 && nbytes != 16){
+    if(nbytes < nonblocking_pool.poolinfo->POOLBYTES){
+      memcpy(buf, nonblocking_pool.pool, nbytes);
+    }else{
+      printk(KERN_INFO "RANDOM_ERROR! get_random_bytes() requested more than we had!\n");
+      memcpy(buf, nonblocking_pool.pool, nonblocking_pool.poolinfo->POOLBYTES);
+    }
+  }
+  spin_unlock_irqrestore(&nb_lock, flags);
+
 	extract_entropy(&nonblocking_pool, buf, nbytes, 0, 0);
 }
 EXPORT_SYMBOL(get_random_bytes);
@@ -1226,10 +1241,17 @@ random_read(struct file *file, char __user *buf, size_t nbytes, loff_t *ppos)
 static ssize_t
 urandom_read(struct file *file, char __user *buf, size_t nbytes, loff_t *ppos)
 {
+
+  unsigned long flags;
+  spin_lock_irqsave(&nb_lock, flags);
+
   int pool_sig;
   pool_sig = get_pool_signature(&nonblocking_pool);
   //printk("rand_read_num %d urandom_read(%d): urandom sig - %d\n", ++rand_read_count, nbytes, pool_sig);
   DEBUG_ENT("rand_read_num %d urandom_read(%d): sig %08x %08x %08x pid=%u\n", ++rand_read_count, nbytes, pool_sig, nonblocking_pool_data[0], nonblocking_pool_data[1], current->pid); // ewust
+
+  spin_unlock_irqrestore(&nb_lock, flags);
+
   return extract_entropy_user(&nonblocking_pool, buf, nbytes);
 }
 
@@ -1269,6 +1291,7 @@ DEBUG_ENT("write_pool(.., %d)", count); // jhalderm
 		/* dacashman change */
 		unsigned long flags;
 		spin_lock_irqsave(&nb_lock, flags);
+
 		if (r == &nonblocking_pool){
 		  /*dacashman change */
 		  int pool_sig, data_sig;
