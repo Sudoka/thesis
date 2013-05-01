@@ -1,0 +1,40 @@
+[    4.907183] random 0000 0000 0000 ae1acc27 fb595984: rand_read_num 234 get_random_bytes(8): sig 00000414 ae1acc27 fb595984
+[    4.907187]  dacashman Pid: 142, comm: modprobe Not tainted 2.6.32.57 #107
+[    4.907188] Call Trace:
+[    4.907195]  [<c059f0e4>] ? printk+0x1d/0x21
+[    4.907198]  [<c03c2ed6>] get_random_bytes+0xd6/0xe0
+[    4.907202]  [<c0552ad4>] __ipv6_regen_rndid+0x24/0xd0
+[    4.907204]  [<c0553aff>] ipv6_regen_rndid+0x5f/0xd0
+[    4.907207]  [<c0554514>] ipv6_add_dev+0x1c4/0x310
+[    4.907210]  [<c0557e0a>] addrconf_notify+0x5a/0x8f0
+[    4.907212]  [<c052d3c9>] ? ip_mc_init_dev+0x59/0xa0
+[    4.907215]  [<c0528d45>] ? inetdev_init+0xb5/0x170
+[    4.907218]  [<c0529798>] ? inetdev_event+0x328/0x450
+[    4.907221]  [<c03e7ec4>] ? put_device+0x14/0x20
+[    4.907223]  [<c03e9120>] ? device_add+0xe0/0x590
+[    4.907226]  [<c05a4373>] notifier_call_chain+0x43/0x60
+[    4.907230]  [<c0172f2f>] raw_notifier_call_chain+0x1f/0x30
+[    4.907233]  [<c04d7116>] call_netdevice_notifiers+0x16/0x20
+[    4.907235]  [<c04da332>] register_netdevice+0x2a2/0x360
+[    4.907238]  [<c0370900>] ? pci_enable_msi_block+0x1a0/0x260
+[    4.907241]  [<c04da427>] register_netdev+0x37/0x50
+[    4.907245]  [<f976debf>] rtl8169_init_one+0x6b8/0x8ec [r8169]
+[    4.907249]  [<c0264f6f>] ? sysfs_addrm_finish+0x3f/0x230
+[    4.907251]  [<c022354e>] ? ilookup5+0x3e/0x50
+[    4.907254]  [<c0264790>] ? sysfs_addrm_start+0x60/0xa0
+[    4.907257]  [<c0360573>] local_pci_probe+0x13/0x20
+[    4.907260]  [<c0361378>] pci_device_probe+0x68/0x90
+[    4.907263]  [<c03eb82f>] driver_probe_device+0x7f/0x170
+[    4.907265]  [<c03eb9a1>] __driver_attach+0x81/0x90
+[    4.907268]  [<c03eae13>] bus_for_each_dev+0x53/0x80
+[    4.907270]  [<c03eb6ce>] driver_attach+0x1e/0x20
+[    4.907272]  [<c03eb920>] ? __driver_attach+0x0/0x90
+[    4.907275]  [<c03eb095>] bus_add_driver+0xd5/0x280
+[    4.907277]  [<c03612b0>] ? pci_device_remove+0x0/0x40
+[    4.907280]  [<c03ebc9a>] driver_register+0x6a/0x130
+[    4.907283]  [<c03615b5>] __pci_register_driver+0x45/0xb0
+[    4.907286]  [<f9774017>] rtl8169_init_module+0x17/0x19 [r8169]
+[    4.907289]  [<c0103041>] do_one_initcall+0x31/0x190
+[    4.907292]  [<f9774000>] ? rtl8169_init_module+0x0/0x19 [r8169]
+[    4.907295]  [<c01884d1>] sys_init_module+0xb1/0x220
+[    4.907298]  [<c0109543>] sysenter_do_call+0x12/0x28

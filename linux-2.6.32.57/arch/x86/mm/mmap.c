@@ -91,6 +91,10 @@ static unsigned long mmap_rnd(void)
 		else
 			rnd = get_random_int() % (1<<28);
 	}
+	/* dacashman ASLR */
+	printk(KERN_INFO "ASLR mmap_rnd called! Returning value: %x\n", rnd << PAGE_SHIFT);
+	//dump_stack();
+	
 	return rnd << PAGE_SHIFT;
 }
 
@@ -124,6 +128,10 @@ static unsigned long mmap_legacy_base(void)
  */
 void arch_pick_mmap_layout(struct mm_struct *mm)
 {
+  /* dacashman change */
+  printk(KERN_INFO "ASLR arch_pick_mmap_layout() called!\n");
+
+  
 	if (mmap_is_legacy()) {
 		mm->mmap_base = mmap_legacy_base();
 		mm->get_unmapped_area = arch_get_unmapped_area;

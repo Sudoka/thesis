@@ -332,6 +332,7 @@ static struct poolinfo {
 
 // dacashman: change here
 static int rand_read_count = 0;
+static int rand_int_read_count = 0;
 static int urand_change_count = 0;
 
 
@@ -396,7 +397,7 @@ static DECLARE_WAIT_QUEUE_HEAD(random_read_wait);
 static DECLARE_WAIT_QUEUE_HEAD(random_write_wait);
 static struct fasync_struct *fasync;
 
-#if 1  /* dcashman change - temporarily disabling random debugging */
+#if 0  /* dcashman change - temporarily disabling random debugging */
 static int debug;
 module_param(debug, bool, 0644);
 #define DEBUG_ENT(fmt, arg...) do { \
@@ -1141,7 +1142,9 @@ static int rand_initialize(void)
 memset(input_pool_data, 0, INPUT_POOL_WORDS * sizeof(__u32)); 
 memset(blocking_pool_data, 0, OUTPUT_POOL_WORDS * sizeof(__u32)); 
 memset(nonblocking_pool_data, 0, OUTPUT_POOL_WORDS * sizeof(__u32)); 
-	return 0;
+
+ 
+        return 0;
 }
 module_init(rand_initialize);
 
@@ -1623,8 +1626,17 @@ unsigned int get_random_int(void)
 {
 	__u32 *hash = get_cpu_var(get_random_int_hash);
 	unsigned int ret;
+	/* dacashman change - checking how random this is */
+	//hash[0] += current->pid + jiffies + get_cycles();  original line
+	
+	__u32 cycz = get_cycles();
+	__u32 jiffz = jiffies;
 
-	hash[0] += current->pid + jiffies + get_cycles();
+	printk(KERN_INFO "get_random_int() - rand_int_num: %d, hash[0] before: %x, pid: %d, jiffz: %x, cycz: %x\n", 
+	       ++rand_int_read_count, hash[0], current->pid, jiffz, cycz);
+
+	hash[0] += current->pid + jiffz/* + cycz */;
+
 	md5_transform(hash, random_int_secret);
 	ret = hash[0];
 	put_cpu_var(get_random_int_hash);

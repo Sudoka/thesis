@@ -88,6 +88,10 @@ static int set_brk(unsigned long start, unsigned long end)
 			return addr;
 	}
 	current->mm->start_brk = current->mm->brk = end;
+	
+	/* dacashman change - print bss address? */
+	printk("ASLR - end from set_brk (used for bss?) %x for PID: %d\n", end, current->pid);
+
 	return 0;
 }
 
@@ -342,11 +346,17 @@ static unsigned long elf_map(struct file *filep, unsigned long addr,
 	* the end. (which unmap is needed for ELF images with holes.)
 	*/
 	if (total_size) {
+	  /* dacashman - tracking load_addr */
+	  printk(KERN_DEBUG "ASLR - BRANCH2\n");
+	  printk(KERN_DEBUG "ASLR - input to do_mmap - addr: %x, total_size: %x, off: %x\n", addr, total_size, off);
 		total_size = ELF_PAGEALIGN(total_size);
 		map_addr = do_mmap(filep, addr, total_size, prot, type, off);
 		if (!BAD_ADDR(map_addr))
 			do_munmap(current->mm, map_addr+size, total_size-size);
 	} else
+	  /* dacashman - tracking load_addr */
+	  printk(KERN_DEBUG "ASLR - BRANCH3\n");
+	  printk(KERN_DEBUG "ASLR - input to do_mmap - addr: %x, total_size: %x, off: %x\n", addr, total_size, off);
 		map_addr = do_mmap(filep, addr, size, prot, type, off);
 
 	up_write(&current->mm->mmap_sem);
@@ -449,16 +459,28 @@ static unsigned long load_elf_interp(struct elfhdr *interp_elf_ex,
 			if (eppnt->p_flags & PF_X)
 				elf_prot |= PROT_EXEC;
 			vaddr = eppnt->p_vaddr;
-			if (interp_elf_ex->e_type == ET_EXEC || load_addr_set)
+			if (interp_elf_ex->e_type == ET_EXEC || load_addr_set){
+			  /* dacashman - tracking load_addr */
+			  printk(KERN_DEBUG "ASLR - BRANCH1\n");
+
 				elf_type |= MAP_FIXED;
-			else if (no_base && interp_elf_ex->e_type == ET_DYN)
-				load_addr = -vaddr;
+			}
+			else if (no_base && interp_elf_ex->e_type == ET_DYN){
+			  /* dacashman - tracking load_addr */
+			  printk(KERN_DEBUG "ASLR - BRANCH0\n");
+
+			  load_addr = -vaddr;
+			}
+			/* dacashman checking before */
+			printk("ASLR - inptu BEFORE elf_map - load_addr + vaddr: %x, load_addr: %x, vaddr: %x\n", load_addr + vaddr, load_addr, vaddr);
+
 
 			map_addr = elf_map(interpreter, load_addr + vaddr,
 					eppnt, elf_prot, elf_type, total_size);
 
 			/* dacashman change - print elf_map value */
 			printk("ASLR - map_addr from elf_map (used for dynamic linker?) %x for PID: %d\n", map_addr, current->pid);
+			printk("ASLR - inptu to elf_map - load_addr + vaddr: %x, load_addr: %x, vaddr: %x\n", load_addr + vaddr, load_addr, vaddr);
 
 			total_size = 0;
 			if (!*interp_map_addr)
@@ -555,6 +577,7 @@ static unsigned long randomize_stack_top(unsigned long stack_top)
 	if ((current->flags & PF_RANDOMIZE) &&
 		!(current->personality & ADDR_NO_RANDOMIZE)) {
 		random_variable = get_random_int() & STACK_RND_MASK;
+		/* dacashman change - */
 		random_variable <<= PAGE_SHIFT;
 	}
 #ifdef CONFIG_STACK_GROWSUP
@@ -822,6 +845,9 @@ static int load_elf_binary(struct linux_binprm *bprm, struct pt_regs *regs)
 
 		error = elf_map(bprm->file, load_bias + vaddr, elf_ppnt,
 				elf_prot, elf_flags, 0);
+
+		/* dacashman change - print elf_map value */
+		printk("ASLR - error from elf_map (used for text and/or data?) %x for PID: %d\n", error, current->pid);
 		if (BAD_ADDR(error)) {
 			send_sig(SIGKILL, current, 0);
 			retval = IS_ERR((void *)error) ?

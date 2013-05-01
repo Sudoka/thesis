@@ -49,6 +49,10 @@ static void unmap_region(struct mm_struct *mm,
 		struct vm_area_struct *vma, struct vm_area_struct *prev,
 		unsigned long start, unsigned long end);
 
+
+// dacashman: change here
+static int found_count = 0;
+
 /*
  * WARNING: the debugging will use recursive algorithms so never enable this
  * unless you know what you are doing.
@@ -959,8 +963,13 @@ unsigned long do_mmap_pgoff(struct file *file, unsigned long addr,
 	 * that it represents a valid section of the address space.
 	 */
 	addr = get_unmapped_area(file, addr, len, pgoff, flags);
-	if (addr & ~PAGE_MASK)
+	if (addr & ~PAGE_MASK){
+	  /* dacashman - tracking addr */
+	if(++found_count < 20){
+	  printk("ASLR - do_mmap_pgoff - BRANCH4 - addr: %x\n", addr);
+	}
 		return addr;
+	}
 
 	/* Do simple checking here so the lower-level routines won't have
 	 * to. we assume access permissions have been handled by the open
@@ -1039,6 +1048,10 @@ unsigned long do_mmap_pgoff(struct file *file, unsigned long addr,
 			/*
 			 * Set pgoff according to addr for anon_vma.
 			 */
+		  /* dacashman - tracking addr */
+	if(++found_count < 20){
+	  printk("ASLR - do_mmap_pgoff - BRANCH5 - addr: %x\n", addr);
+	}
 			pgoff = addr >> PAGE_SHIFT;
 			break;
 		default:
@@ -1053,6 +1066,11 @@ unsigned long do_mmap_pgoff(struct file *file, unsigned long addr,
 	if (error)
 		return error;
 
+	/* dacashman change - tracking mapped address */
+	if(++found_count < 20){
+	printk("ASLR - do_mmap_pgoff - before mmap_region call - addr: %x, len %x, pgoff %x, PAGE_SHIFT: %x\n", 
+	       addr, len, pgoff, PAGE_SHIFT);
+	}
 	return mmap_region(file, addr, len, flags, vm_flags, pgoff);
 }
 EXPORT_SYMBOL(do_mmap_pgoff);
@@ -1386,7 +1404,15 @@ arch_get_unmapped_area_topdown(struct file *filp, const unsigned long addr0,
 	if (mm->mmap_base < len)
 		goto bottomup;
 
+	/*dacashman - tracking addr related to ld */
+
 	addr = mm->mmap_base-len;
+	if(++found_count < 20){
+	  printk(KERN_DEBUG "ASLR FOUND IT? mmap_base to addr with addr: %x\n", addr);
+	}
+	if(found_count < 3){
+	  dump_stack();
+	}
 
 	do {
 		/*
