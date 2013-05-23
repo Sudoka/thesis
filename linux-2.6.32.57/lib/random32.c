@@ -39,6 +39,10 @@
 #include <linux/jiffies.h>
 #include <linux/random.h>
 
+/* dacashman change - keep track of the number of calls */
+static int state_change_num = 0;
+
+
 struct rnd_state {
 	u32 s1, s2, s3;
 };
@@ -54,7 +58,7 @@ static u32 __random32(struct rnd_state *state)
 	state->s3 = TAUSWORTHE(state->s3, 3, 11, 4294967280UL, 17);
 
 	/* dacashman change */
-	printk(KERN_DEBUG "RANDOM - __random32 init called.  Value: %x\t%x\t%x\n", state->s1, state->s2, state->s3);
+	printk(KERN_DEBUG "RANDOM - __random32 called. Change num %d.  Value: %x\t%x\t%x\n", ++state_change_num, state->s1, state->s2, state->s3);
 
 	return (state->s1 ^ state->s2 ^ state->s3);
 }
@@ -85,7 +89,7 @@ u32 random32(void)
 	put_cpu_var(state);
 
 	/* dacashman change */
-	printk(KERN_DEBUG "RANDOM - random32 init called.  Value: %x\t%x\t%x\n", state->s1, state->s2, state->s3);
+	printk(KERN_DEBUG "RANDOM - random32 called.  Value: %x\t%x\t%x\n", state->s1, state->s2, state->s3);
 
 	return r;
 }
@@ -116,7 +120,8 @@ void srandom32(u32 entropy)
 	}
 
 	/* dacashman change */
-	printk(KERN_DEBUG "RANDOM - srandom32 called.  Value: %x\t%x\t%x\n", state_cpy->s1, state_cpy->s2, state_cpy->s3);
+	printk(KERN_DEBUG "RANDOM - srandom32 called with seed %d. Change num %d Value: %x\t%x\t%x\n", entropy,++state_change_num, state_cpy->s1, state_cpy->s2, state_cpy->s3);
+	dump_stack();
 }
 EXPORT_SYMBOL(srandom32);
 
@@ -181,6 +186,7 @@ static int __init random32_reseed(void)
 		__random32(state);
 		/* dacashman change */
 	printk(KERN_DEBUG "RANDOM - random32_reseed called.  Value: %x\t%x\t%x\n", state->s1, state->s2, state->s3);
+	state_change_num = 0;
 
 	}
 	return 0;
