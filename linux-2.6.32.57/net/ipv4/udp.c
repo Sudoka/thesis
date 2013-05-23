@@ -531,6 +531,10 @@ static int udp_push_pending_frames(struct sock *sk)
 	/*
 	 * Create a UDP header
 	 */
+	/* dacashman - dump_stack to find where the header value comes from */
+	printk(KERN_DEBUG "DNS - dumping stack at UDP header creation. \n");
+	dump_stack();
+
 	uh = udp_hdr(skb);
 	uh->source = fl->fl_ip_sport;
 	uh->dest = fl->fl_ip_dport;
